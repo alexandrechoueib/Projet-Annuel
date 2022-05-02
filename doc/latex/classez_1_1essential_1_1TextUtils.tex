@@ -1,0 +1,246 @@
+\hypertarget{classez_1_1essential_1_1TextUtils}{}\section{ez\+:\+:essential\+:\+:Text\+Utils Class Reference}
+\label{classez_1_1essential_1_1TextUtils}\index{ez\+::essential\+::\+Text\+Utils@{ez\+::essential\+::\+Text\+Utils}}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static void \hyperlink{classez_1_1essential_1_1TextUtils_ac863bdaba8e320a59e9fd9b7e58e802d}{inspect} (ostream \&out, text \&s)
+\item 
+static void \hyperlink{classez_1_1essential_1_1TextUtils_ad9570b43b0b7b3bcbd3e385beb36b7fb}{trim\+\_\+right} (text \&s, const text \&pattern=T\+E\+X\+T\+\_\+\+B\+L\+A\+N\+KS)
+\item 
+static void \hyperlink{classez_1_1essential_1_1TextUtils_a5c5473723c73d5df9c57712a29b5b7d2}{trim\+\_\+left} (text \&s, const text \&pattern=T\+E\+X\+T\+\_\+\+B\+L\+A\+N\+KS)
+\item 
+static void \hyperlink{classez_1_1essential_1_1TextUtils_a8050a5348d530a5e68470b68f7779d0a}{trim} (text \&s, const text \&pattern=T\+E\+X\+T\+\_\+\+B\+L\+A\+N\+KS)
+\item 
+static void \hyperlink{classez_1_1essential_1_1TextUtils_a20a364789ee8477561dd88a08abc7489}{erase} (text \&s, const text \&pattern=T\+E\+X\+T\+\_\+\+B\+L\+A\+N\+KS)
+\item 
+static void \hyperlink{classez_1_1essential_1_1TextUtils_a3058d2e043d835d9f4325b7f57ee9ed7}{remove\+\_\+spaces} (text \&s)
+\item 
+static void \hyperlink{classez_1_1essential_1_1TextUtils_ac2bffa195205d8bf85d718ef399292ed}{replace\+\_\+char} (text \&s, char src, char repl)
+\item 
+static void \hyperlink{classez_1_1essential_1_1TextUtils_a09ae87eaf31c8c0be44f616b560b9ebb}{lower} (text \&s)
+\item 
+static void \hyperlink{classez_1_1essential_1_1TextUtils_a921ab014e15e604a3a768f4840b991c0}{upper} (text \&s)
+\item 
+static void \hyperlink{classez_1_1essential_1_1TextUtils_ab751dfb12e15915bfc23039587f11cd6}{lower} (char $\ast$s)
+\item 
+static void \hyperlink{classez_1_1essential_1_1TextUtils_acdc8e1ff8d29b4ae7d62c5c4263a64b4}{upper} (char $\ast$s)
+\item 
+static void \hyperlink{classez_1_1essential_1_1TextUtils_adb3923b874c2a4c5b3af09390985d237}{explode} (text \&s, vector$<$ text $>$ \&v, const text \&delim=T\+E\+X\+T\+\_\+\+B\+L\+A\+N\+KS)
+\item 
+static void \hyperlink{classez_1_1essential_1_1TextUtils_a41ebdaae7465cb3d124c54ecc68580fa}{implode} (text \&s, vector$<$ text $>$ \&v, const text \&delim=T\+E\+X\+T\+\_\+\+B\+L\+A\+NK)
+\item 
+\mbox{\Hypertarget{classez_1_1essential_1_1TextUtils_a3fc22ea5febf687e482e2c8fa995e013}\label{classez_1_1essential_1_1TextUtils_a3fc22ea5febf687e482e2c8fa995e013}} 
+static void {\bfseries implode} (text \&s, vector$<$ char $>$ \&v, const text \&delim=T\+E\+X\+T\+\_\+\+B\+L\+A\+NK)
+\item 
+static bool \hyperlink{classez_1_1essential_1_1TextUtils_ad70575b0f44335fb0714513f5b730d82}{contains} (text \&s, text \&st\+\_\+str)
+\item 
+static size\+\_\+t \hyperlink{classez_1_1essential_1_1TextUtils_ad53a4ce5a4bb9e9851dc193c00052120}{position\+\_\+of} (text \&s, text \&st\+\_\+str)
+\item 
+static size\+\_\+t \hyperlink{classez_1_1essential_1_1TextUtils_ad7c2a4481c49b567bd49ca7fb17ec009}{position\+\_\+of} (text \&s, char $\ast$st\+\_\+str)
+\item 
+static void \hyperlink{classez_1_1essential_1_1TextUtils_aee82679b210251b3a50fe11533eda971}{remove\+\_\+at} (text \&s, natural pos, natural length)
+\item 
+static bool \hyperlink{classez_1_1essential_1_1TextUtils_a1d36db6f2b9d9f2225936f73e5c9d35f}{starts\+\_\+with} (char $\ast$s, char $\ast$st\+\_\+str, bool remove\+\_\+flag=false)
+\item 
+\mbox{\Hypertarget{classez_1_1essential_1_1TextUtils_a66372366571e38a079cbe92359402d12}\label{classez_1_1essential_1_1TextUtils_a66372366571e38a079cbe92359402d12}} 
+static bool {\bfseries starts\+\_\+with} (text \&s, text \&st\+\_\+str, bool remove\+\_\+flag=false)
+\item 
+\mbox{\Hypertarget{classez_1_1essential_1_1TextUtils_a6458222eea7e8537910e60f4e7f11109}\label{classez_1_1essential_1_1TextUtils_a6458222eea7e8537910e60f4e7f11109}} 
+static bool {\bfseries starts\+\_\+with} (text \&s, char $\ast$st\+\_\+str)
+\item 
+\mbox{\Hypertarget{classez_1_1essential_1_1TextUtils_a1f6a93a88ba8f8af57ea1348bbbdd730}\label{classez_1_1essential_1_1TextUtils_a1f6a93a88ba8f8af57ea1348bbbdd730}} 
+static bool {\bfseries starts\+\_\+with} (text \&s, const char $\ast$st\+\_\+str)
+\item 
+static bool \hyperlink{classez_1_1essential_1_1TextUtils_a0018409b4f9f5999b572325558b5a4d2}{ends\+\_\+with} (text \&s, text \&st\+\_\+str, bool remove\+\_\+flag=false)
+\item 
+\mbox{\Hypertarget{classez_1_1essential_1_1TextUtils_ae75b4e54b2047465d0495f2c1caaf6a3}\label{classez_1_1essential_1_1TextUtils_ae75b4e54b2047465d0495f2c1caaf6a3}} 
+static bool {\bfseries ends\+\_\+with} (text \&s, char $\ast$st\+\_\+str, bool remove\+\_\+flag=false)
+\item 
+\mbox{\Hypertarget{classez_1_1essential_1_1TextUtils_abe34b0721cba4423b665b65512ffd887}\label{classez_1_1essential_1_1TextUtils_abe34b0721cba4423b665b65512ffd887}} 
+static bool {\bfseries ends\+\_\+with} (text \&s, const char $\ast$st\+\_\+str, bool remove\+\_\+flag=false)
+\end{DoxyCompactItemize}
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classez_1_1essential_1_1TextUtils_ad70575b0f44335fb0714513f5b730d82}\label{classez_1_1essential_1_1TextUtils_ad70575b0f44335fb0714513f5b730d82}} 
+\index{ez\+::essential\+::\+Text\+Utils@{ez\+::essential\+::\+Text\+Utils}!contains@{contains}}
+\index{contains@{contains}!ez\+::essential\+::\+Text\+Utils@{ez\+::essential\+::\+Text\+Utils}}
+\subsubsection{\texorpdfstring{contains()}{contains()}}
+{\footnotesize\ttfamily bool Text\+Utils\+::contains (\begin{DoxyParamCaption}\item[{text \&}]{s,  }\item[{text \&}]{st\+\_\+str }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+return true if st\+\_\+str is found in s \mbox{\Hypertarget{classez_1_1essential_1_1TextUtils_a0018409b4f9f5999b572325558b5a4d2}\label{classez_1_1essential_1_1TextUtils_a0018409b4f9f5999b572325558b5a4d2}} 
+\index{ez\+::essential\+::\+Text\+Utils@{ez\+::essential\+::\+Text\+Utils}!ends\+\_\+with@{ends\+\_\+with}}
+\index{ends\+\_\+with@{ends\+\_\+with}!ez\+::essential\+::\+Text\+Utils@{ez\+::essential\+::\+Text\+Utils}}
+\subsubsection{\texorpdfstring{ends\+\_\+with()}{ends\_with()}}
+{\footnotesize\ttfamily bool Text\+Utils\+::ends\+\_\+with (\begin{DoxyParamCaption}\item[{text \&}]{s,  }\item[{text \&}]{st\+\_\+str,  }\item[{bool}]{remove\+\_\+flag = {\ttfamily false} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+check if text s ends with st\+\_\+str and remove it if remove\+\_\+flag is set 
+\begin{DoxyParams}{Parameters}
+{\em s} & text to check \\
+\hline
+{\em st\+\_\+str} & text to look for \\
+\hline
+{\em remove\+\_\+flag} & indicates if we should remove st\+\_\+str if it is found \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classez_1_1essential_1_1TextUtils_a20a364789ee8477561dd88a08abc7489}\label{classez_1_1essential_1_1TextUtils_a20a364789ee8477561dd88a08abc7489}} 
+\index{ez\+::essential\+::\+Text\+Utils@{ez\+::essential\+::\+Text\+Utils}!erase@{erase}}
+\index{erase@{erase}!ez\+::essential\+::\+Text\+Utils@{ez\+::essential\+::\+Text\+Utils}}
+\subsubsection{\texorpdfstring{erase()}{erase()}}
+{\footnotesize\ttfamily void Text\+Utils\+::erase (\begin{DoxyParamCaption}\item[{text \&}]{s,  }\item[{const text \&}]{pattern = {\ttfamily TEXT\+\_\+BLANKS} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+erase all characters that correspond to any character of pattern \mbox{\Hypertarget{classez_1_1essential_1_1TextUtils_adb3923b874c2a4c5b3af09390985d237}\label{classez_1_1essential_1_1TextUtils_adb3923b874c2a4c5b3af09390985d237}} 
+\index{ez\+::essential\+::\+Text\+Utils@{ez\+::essential\+::\+Text\+Utils}!explode@{explode}}
+\index{explode@{explode}!ez\+::essential\+::\+Text\+Utils@{ez\+::essential\+::\+Text\+Utils}}
+\subsubsection{\texorpdfstring{explode()}{explode()}}
+{\footnotesize\ttfamily void Text\+Utils\+::explode (\begin{DoxyParamCaption}\item[{text \&}]{s,  }\item[{vector$<$ text $>$ \&}]{v,  }\item[{const text \&}]{delim = {\ttfamily TEXT\+\_\+BLANKS} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+split text in subtexts when separated by any character of delimiters the subtexts are put in a vector 
+\begin{DoxyParams}{Parameters}
+{\em s} & text to explode \\
+\hline
+{\em v} & output subtexts \\
+\hline
+{\em delim} & characters used as delimiters \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classez_1_1essential_1_1TextUtils_a41ebdaae7465cb3d124c54ecc68580fa}\label{classez_1_1essential_1_1TextUtils_a41ebdaae7465cb3d124c54ecc68580fa}} 
+\index{ez\+::essential\+::\+Text\+Utils@{ez\+::essential\+::\+Text\+Utils}!implode@{implode}}
+\index{implode@{implode}!ez\+::essential\+::\+Text\+Utils@{ez\+::essential\+::\+Text\+Utils}}
+\subsubsection{\texorpdfstring{implode()}{implode()}}
+{\footnotesize\ttfamily void Text\+Utils\+::implode (\begin{DoxyParamCaption}\item[{text \&}]{s,  }\item[{vector$<$ text $>$ \&}]{v,  }\item[{const text \&}]{delim = {\ttfamily TEXT\+\_\+BLANK} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+join texts of a vector into a single text where delimiters separate each subtext 
+\begin{DoxyParams}{Parameters}
+{\em s} & text used as a result \\
+\hline
+{\em v} & vector of texts to implode \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classez_1_1essential_1_1TextUtils_ac863bdaba8e320a59e9fd9b7e58e802d}\label{classez_1_1essential_1_1TextUtils_ac863bdaba8e320a59e9fd9b7e58e802d}} 
+\index{ez\+::essential\+::\+Text\+Utils@{ez\+::essential\+::\+Text\+Utils}!inspect@{inspect}}
+\index{inspect@{inspect}!ez\+::essential\+::\+Text\+Utils@{ez\+::essential\+::\+Text\+Utils}}
+\subsubsection{\texorpdfstring{inspect()}{inspect()}}
+{\footnotesize\ttfamily void Text\+Utils\+::inspect (\begin{DoxyParamCaption}\item[{ostream \&}]{out,  }\item[{text \&}]{s }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+print each character of text as ascii code and character if its ascii code is greater than 32 (\textquotesingle{} \textquotesingle{}) \mbox{\Hypertarget{classez_1_1essential_1_1TextUtils_a09ae87eaf31c8c0be44f616b560b9ebb}\label{classez_1_1essential_1_1TextUtils_a09ae87eaf31c8c0be44f616b560b9ebb}} 
+\index{ez\+::essential\+::\+Text\+Utils@{ez\+::essential\+::\+Text\+Utils}!lower@{lower}}
+\index{lower@{lower}!ez\+::essential\+::\+Text\+Utils@{ez\+::essential\+::\+Text\+Utils}}
+\subsubsection{\texorpdfstring{lower()}{lower()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily void Text\+Utils\+::lower (\begin{DoxyParamCaption}\item[{text \&}]{s }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+convert text to lowercase \mbox{\Hypertarget{classez_1_1essential_1_1TextUtils_ab751dfb12e15915bfc23039587f11cd6}\label{classez_1_1essential_1_1TextUtils_ab751dfb12e15915bfc23039587f11cd6}} 
+\index{ez\+::essential\+::\+Text\+Utils@{ez\+::essential\+::\+Text\+Utils}!lower@{lower}}
+\index{lower@{lower}!ez\+::essential\+::\+Text\+Utils@{ez\+::essential\+::\+Text\+Utils}}
+\subsubsection{\texorpdfstring{lower()}{lower()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily void Text\+Utils\+::lower (\begin{DoxyParamCaption}\item[{char $\ast$}]{s }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+convert text represented in C format to lowercase \mbox{\Hypertarget{classez_1_1essential_1_1TextUtils_ad53a4ce5a4bb9e9851dc193c00052120}\label{classez_1_1essential_1_1TextUtils_ad53a4ce5a4bb9e9851dc193c00052120}} 
+\index{ez\+::essential\+::\+Text\+Utils@{ez\+::essential\+::\+Text\+Utils}!position\+\_\+of@{position\+\_\+of}}
+\index{position\+\_\+of@{position\+\_\+of}!ez\+::essential\+::\+Text\+Utils@{ez\+::essential\+::\+Text\+Utils}}
+\subsubsection{\texorpdfstring{position\+\_\+of()}{position\_of()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily size\+\_\+t Text\+Utils\+::position\+\_\+of (\begin{DoxyParamCaption}\item[{text \&}]{s,  }\item[{text \&}]{st\+\_\+str }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+return position of st\+\_\+str in s or text\+::npos if not found 
+\begin{DoxyParams}{Parameters}
+{\em s} & text that will be searched \\
+\hline
+{\em st\+\_\+str} & subtext searched in s \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+position of st\+\_\+str in s where first position is 1. If the st\+\_\+str text is not found we return 0. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classez_1_1essential_1_1TextUtils_ad7c2a4481c49b567bd49ca7fb17ec009}\label{classez_1_1essential_1_1TextUtils_ad7c2a4481c49b567bd49ca7fb17ec009}} 
+\index{ez\+::essential\+::\+Text\+Utils@{ez\+::essential\+::\+Text\+Utils}!position\+\_\+of@{position\+\_\+of}}
+\index{position\+\_\+of@{position\+\_\+of}!ez\+::essential\+::\+Text\+Utils@{ez\+::essential\+::\+Text\+Utils}}
+\subsubsection{\texorpdfstring{position\+\_\+of()}{position\_of()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily size\+\_\+t Text\+Utils\+::position\+\_\+of (\begin{DoxyParamCaption}\item[{text \&}]{s,  }\item[{char $\ast$}]{st\+\_\+str }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+return position of st\+\_\+str in s or text\+::npos if not found 
+\begin{DoxyParams}{Parameters}
+{\em s} & text that will be searched \\
+\hline
+{\em st\+\_\+str} & subtext searched in s \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+position of st\+\_\+str in s where first position is 1. If the st\+\_\+str text is not found we return 0. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classez_1_1essential_1_1TextUtils_aee82679b210251b3a50fe11533eda971}\label{classez_1_1essential_1_1TextUtils_aee82679b210251b3a50fe11533eda971}} 
+\index{ez\+::essential\+::\+Text\+Utils@{ez\+::essential\+::\+Text\+Utils}!remove\+\_\+at@{remove\+\_\+at}}
+\index{remove\+\_\+at@{remove\+\_\+at}!ez\+::essential\+::\+Text\+Utils@{ez\+::essential\+::\+Text\+Utils}}
+\subsubsection{\texorpdfstring{remove\+\_\+at()}{remove\_at()}}
+{\footnotesize\ttfamily void Text\+Utils\+::remove\+\_\+at (\begin{DoxyParamCaption}\item[{text \&}]{s,  }\item[{natural}]{pos,  }\item[{natural}]{length }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+remove length characters from given pos 
+\begin{DoxyParams}{Parameters}
+{\em pos} & position where to start removing (where first character is at position 1) \\
+\hline
+{\em length} & number of characters to remove \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classez_1_1essential_1_1TextUtils_a3058d2e043d835d9f4325b7f57ee9ed7}\label{classez_1_1essential_1_1TextUtils_a3058d2e043d835d9f4325b7f57ee9ed7}} 
+\index{ez\+::essential\+::\+Text\+Utils@{ez\+::essential\+::\+Text\+Utils}!remove\+\_\+spaces@{remove\+\_\+spaces}}
+\index{remove\+\_\+spaces@{remove\+\_\+spaces}!ez\+::essential\+::\+Text\+Utils@{ez\+::essential\+::\+Text\+Utils}}
+\subsubsection{\texorpdfstring{remove\+\_\+spaces()}{remove\_spaces()}}
+{\footnotesize\ttfamily void Text\+Utils\+::remove\+\_\+spaces (\begin{DoxyParamCaption}\item[{text \&}]{s }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+remove all spaces characters \mbox{\Hypertarget{classez_1_1essential_1_1TextUtils_ac2bffa195205d8bf85d718ef399292ed}\label{classez_1_1essential_1_1TextUtils_ac2bffa195205d8bf85d718ef399292ed}} 
+\index{ez\+::essential\+::\+Text\+Utils@{ez\+::essential\+::\+Text\+Utils}!replace\+\_\+char@{replace\+\_\+char}}
+\index{replace\+\_\+char@{replace\+\_\+char}!ez\+::essential\+::\+Text\+Utils@{ez\+::essential\+::\+Text\+Utils}}
+\subsubsection{\texorpdfstring{replace\+\_\+char()}{replace\_char()}}
+{\footnotesize\ttfamily void Text\+Utils\+::replace\+\_\+char (\begin{DoxyParamCaption}\item[{text \&}]{s,  }\item[{char}]{src,  }\item[{char}]{repl }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+replace all occurrences of source character by replacement character \mbox{\Hypertarget{classez_1_1essential_1_1TextUtils_a1d36db6f2b9d9f2225936f73e5c9d35f}\label{classez_1_1essential_1_1TextUtils_a1d36db6f2b9d9f2225936f73e5c9d35f}} 
+\index{ez\+::essential\+::\+Text\+Utils@{ez\+::essential\+::\+Text\+Utils}!starts\+\_\+with@{starts\+\_\+with}}
+\index{starts\+\_\+with@{starts\+\_\+with}!ez\+::essential\+::\+Text\+Utils@{ez\+::essential\+::\+Text\+Utils}}
+\subsubsection{\texorpdfstring{starts\+\_\+with()}{starts\_with()}}
+{\footnotesize\ttfamily bool Text\+Utils\+::starts\+\_\+with (\begin{DoxyParamCaption}\item[{char $\ast$}]{s,  }\item[{char $\ast$}]{st\+\_\+str,  }\item[{bool}]{remove\+\_\+flag = {\ttfamily false} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+check if text s starts with subtext st\+\_\+str 
+\begin{DoxyParams}{Parameters}
+{\em s} & main text \\
+\hline
+{\em st\+\_\+str} & subtext that might start s \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true if st\+\_\+str starts s, false otherwise 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classez_1_1essential_1_1TextUtils_a8050a5348d530a5e68470b68f7779d0a}\label{classez_1_1essential_1_1TextUtils_a8050a5348d530a5e68470b68f7779d0a}} 
+\index{ez\+::essential\+::\+Text\+Utils@{ez\+::essential\+::\+Text\+Utils}!trim@{trim}}
+\index{trim@{trim}!ez\+::essential\+::\+Text\+Utils@{ez\+::essential\+::\+Text\+Utils}}
+\subsubsection{\texorpdfstring{trim()}{trim()}}
+{\footnotesize\ttfamily void Text\+Utils\+::trim (\begin{DoxyParamCaption}\item[{text \&}]{s,  }\item[{const text \&}]{pattern = {\ttfamily TEXT\+\_\+BLANKS} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+remove all characters that correspond to any character of pattern at beginning and end of the text \mbox{\Hypertarget{classez_1_1essential_1_1TextUtils_a5c5473723c73d5df9c57712a29b5b7d2}\label{classez_1_1essential_1_1TextUtils_a5c5473723c73d5df9c57712a29b5b7d2}} 
+\index{ez\+::essential\+::\+Text\+Utils@{ez\+::essential\+::\+Text\+Utils}!trim\+\_\+left@{trim\+\_\+left}}
+\index{trim\+\_\+left@{trim\+\_\+left}!ez\+::essential\+::\+Text\+Utils@{ez\+::essential\+::\+Text\+Utils}}
+\subsubsection{\texorpdfstring{trim\+\_\+left()}{trim\_left()}}
+{\footnotesize\ttfamily void Text\+Utils\+::trim\+\_\+left (\begin{DoxyParamCaption}\item[{text \&}]{s,  }\item[{const text \&}]{pattern = {\ttfamily TEXT\+\_\+BLANKS} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+remove all characters that correspond to any character of pattern at beginning of the text \mbox{\Hypertarget{classez_1_1essential_1_1TextUtils_ad9570b43b0b7b3bcbd3e385beb36b7fb}\label{classez_1_1essential_1_1TextUtils_ad9570b43b0b7b3bcbd3e385beb36b7fb}} 
+\index{ez\+::essential\+::\+Text\+Utils@{ez\+::essential\+::\+Text\+Utils}!trim\+\_\+right@{trim\+\_\+right}}
+\index{trim\+\_\+right@{trim\+\_\+right}!ez\+::essential\+::\+Text\+Utils@{ez\+::essential\+::\+Text\+Utils}}
+\subsubsection{\texorpdfstring{trim\+\_\+right()}{trim\_right()}}
+{\footnotesize\ttfamily void Text\+Utils\+::trim\+\_\+right (\begin{DoxyParamCaption}\item[{text \&}]{s,  }\item[{const text \&}]{pattern = {\ttfamily TEXT\+\_\+BLANKS} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+remove all characters that correspond to any character of pattern at the end of the text \mbox{\Hypertarget{classez_1_1essential_1_1TextUtils_a921ab014e15e604a3a768f4840b991c0}\label{classez_1_1essential_1_1TextUtils_a921ab014e15e604a3a768f4840b991c0}} 
+\index{ez\+::essential\+::\+Text\+Utils@{ez\+::essential\+::\+Text\+Utils}!upper@{upper}}
+\index{upper@{upper}!ez\+::essential\+::\+Text\+Utils@{ez\+::essential\+::\+Text\+Utils}}
+\subsubsection{\texorpdfstring{upper()}{upper()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily void Text\+Utils\+::upper (\begin{DoxyParamCaption}\item[{text \&}]{s }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+convert text to uppercase \mbox{\Hypertarget{classez_1_1essential_1_1TextUtils_acdc8e1ff8d29b4ae7d62c5c4263a64b4}\label{classez_1_1essential_1_1TextUtils_acdc8e1ff8d29b4ae7d62c5c4263a64b4}} 
+\index{ez\+::essential\+::\+Text\+Utils@{ez\+::essential\+::\+Text\+Utils}!upper@{upper}}
+\index{upper@{upper}!ez\+::essential\+::\+Text\+Utils@{ez\+::essential\+::\+Text\+Utils}}
+\subsubsection{\texorpdfstring{upper()}{upper()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily void Text\+Utils\+::upper (\begin{DoxyParamCaption}\item[{char $\ast$}]{s }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+convert text represented in C format to uppercase 
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+src/version\+\_\+2018.\+06/essential/text\+\_\+utils.\+h\item 
+src/version\+\_\+2018.\+06/essential/text\+\_\+utils.\+cpp\end{DoxyCompactItemize}

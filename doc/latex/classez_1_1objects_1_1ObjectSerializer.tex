@@ -1,0 +1,200 @@
+\hypertarget{classez_1_1objects_1_1ObjectSerializer}{}\section{ez\+:\+:objects\+:\+:Object\+Serializer Class Reference}
+\label{classez_1_1objects_1_1ObjectSerializer}\index{ez\+::objects\+::\+Object\+Serializer@{ez\+::objects\+::\+Object\+Serializer}}
+\subsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+enum \{ \newline
+{\bfseries E\+ND} = 0, 
+{\bfseries S\+T\+R\+I\+NG}, 
+{\bfseries Q\+U\+O\+T\+E\+D\+\_\+\+S\+T\+R\+I\+NG}, 
+{\bfseries O\+P\+E\+N\+\_\+\+P\+A\+R\+E\+N\+T\+H\+E\+S\+IS}, 
+\newline
+{\bfseries C\+L\+O\+S\+E\+\_\+\+P\+A\+R\+E\+N\+T\+H\+E\+S\+IS}, 
+{\bfseries O\+P\+E\+N\+\_\+\+B\+R\+A\+C\+K\+ET}, 
+{\bfseries C\+L\+O\+S\+E\+\_\+\+B\+R\+A\+C\+K\+ET}, 
+{\bfseries O\+P\+E\+N\+\_\+\+S\+Q\+U\+A\+R\+E\+\_\+\+B\+R\+A\+C\+K\+ET}, 
+\newline
+{\bfseries C\+L\+O\+S\+E\+\_\+\+S\+Q\+U\+A\+R\+E\+\_\+\+B\+R\+A\+C\+K\+ET}, 
+{\bfseries C\+O\+M\+MA}, 
+{\bfseries C\+O\+L\+ON}
+ \}
+\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static integer \hyperlink{classez_1_1objects_1_1ObjectSerializer_a35016a821006ca66f92a38f5fd686cab}{lex} (std\+::istream \&stream, std\+::string \&lexem)
+\item 
+\mbox{\Hypertarget{classez_1_1objects_1_1ObjectSerializer_a5b07fe9acf0b1cab4f409951e2d3e82c}\label{classez_1_1objects_1_1ObjectSerializer_a5b07fe9acf0b1cab4f409951e2d3e82c}} 
+static integer {\bfseries lex} (std\+::istream \&stream)
+\item 
+static void \hyperlink{classez_1_1objects_1_1ObjectSerializer_a4fd0c72f3d2402f1c5fc764c577ff014}{object\+\_\+error} (std\+::string)
+\item 
+static void \hyperlink{classez_1_1objects_1_1ObjectSerializer_ae0095f6fcfbeb5b0aaf98d3f1b355f45}{parse\+\_\+ob} (std\+::istream \&stream)
+\item 
+static void \hyperlink{classez_1_1objects_1_1ObjectSerializer_a6afc5c5fc7eb99ed2fec22a99b01dd44}{parse\+\_\+cb} (std\+::istream \&stream)
+\item 
+static void \hyperlink{classez_1_1objects_1_1ObjectSerializer_a4935aafbceb01000ea63ce77ce216ceb}{parse\+\_\+osb} (std\+::istream \&stream)
+\item 
+static void \hyperlink{classez_1_1objects_1_1ObjectSerializer_af1df61d63076f1f47629162bdd344ff0}{parse\+\_\+csb} (std\+::istream \&stream)
+\item 
+static void \hyperlink{classez_1_1objects_1_1ObjectSerializer_aff1ebd4f37272cac1fdc3bfa11311d66}{parse\+\_\+opa} (std\+::istream \&stream)
+\item 
+static void \hyperlink{classez_1_1objects_1_1ObjectSerializer_af90884b54943ccd2f17a2ac9cfd8bfc1}{parse\+\_\+cpa} (std\+::istream \&stream)
+\item 
+\mbox{\Hypertarget{classez_1_1objects_1_1ObjectSerializer_a8f2bc86818e9164db8c8cfc7f4090bd4}\label{classez_1_1objects_1_1ObjectSerializer_a8f2bc86818e9164db8c8cfc7f4090bd4}} 
+static void {\bfseries parse\+\_\+comma} (std\+::istream \&stream)
+\item 
+\mbox{\Hypertarget{classez_1_1objects_1_1ObjectSerializer_aab94a7535a07e4872aaf236e8c5af62e}\label{classez_1_1objects_1_1ObjectSerializer_aab94a7535a07e4872aaf236e8c5af62e}} 
+static void {\bfseries parse\+\_\+colon} (std\+::istream \&stream)
+\item 
+static void \hyperlink{classez_1_1objects_1_1ObjectSerializer_ae121be9b0887d5b43039d053e4b6cb65}{parse\+\_\+lexem} (std\+::istream \&stream, std\+::string \&lexem)
+\item 
+static void \hyperlink{classez_1_1objects_1_1ObjectSerializer_ad107ac3c87034f219755a1309420494c}{parse\+\_\+lexem\+\_\+as} (std\+::istream \&stream, std\+::string expected)
+\item 
+static integer \hyperlink{classez_1_1objects_1_1ObjectSerializer_adec5d6150d5944b7a5b3899e3b17d074}{parse\+\_\+lexem\+\_\+nth} (std\+::istream \&stream, std\+::string list)
+\item 
+static void \hyperlink{classez_1_1objects_1_1ObjectSerializer_a71dd48f69cbcb3321ab1f01b4c629c44}{parse\+\_\+character} (std\+::istream \&stream, character $\ast$v)
+\item 
+static void \hyperlink{classez_1_1objects_1_1ObjectSerializer_a34008fa22db3c164b5d7eef2b991ed0f}{parse\+\_\+integer} (std\+::istream \&stream, integer $\ast$v)
+\item 
+static void \hyperlink{classez_1_1objects_1_1ObjectSerializer_a9019cc0ebd7ea59945af0f77fe819e5b}{parse\+\_\+natural} (std\+::istream \&stream, natural $\ast$v)
+\item 
+static void \hyperlink{classez_1_1objects_1_1ObjectSerializer_a591158e6375b60f82c58294a866263f8}{parse\+\_\+long\+\_\+integer} (std\+::istream \&stream, long\+\_\+integer $\ast$v)
+\item 
+static void \hyperlink{classez_1_1objects_1_1ObjectSerializer_a9f7293c4f1154b1e4a34c62838f5e00c}{parse\+\_\+real} (std\+::istream \&stream, real $\ast$v)
+\item 
+\mbox{\Hypertarget{classez_1_1objects_1_1ObjectSerializer_a4710607198a3789c4eb3379064ab39ef}\label{classez_1_1objects_1_1ObjectSerializer_a4710607198a3789c4eb3379064ab39ef}} 
+static void {\bfseries parse\+\_\+long\+\_\+real} (std\+::istream \&stream, long\+\_\+real $\ast$v)
+\item 
+static void \hyperlink{classez_1_1objects_1_1ObjectSerializer_a6c36b150271e3e410c52e6bb7f14c55c}{parse\+\_\+text} (std\+::istream \&stream, std\+::string $\ast$v)
+\item 
+\mbox{\Hypertarget{classez_1_1objects_1_1ObjectSerializer_a76600bd7cb8190ece6339ebd4805dd1b}\label{classez_1_1objects_1_1ObjectSerializer_a76600bd7cb8190ece6339ebd4805dd1b}} 
+{\footnotesize template$<$class Numeric $>$ }\\static void {\bfseries parse\+\_\+numeric} (std\+::istream \&stream, Numeric $\ast$v)
+\item 
+\mbox{\Hypertarget{classez_1_1objects_1_1ObjectSerializer_a72b078f9fdaa2c4c4267a06ba3b0d916}\label{classez_1_1objects_1_1ObjectSerializer_a72b078f9fdaa2c4c4267a06ba3b0d916}} 
+static void {\bfseries serialize} (\hyperlink{classez_1_1objects_1_1Object}{ez\+::objects\+::\+Object} $\ast$obj, std\+::ostream \&out)
+\item 
+\mbox{\Hypertarget{classez_1_1objects_1_1ObjectSerializer_a23fb04c7e0e499c60f850536ef49daaf}\label{classez_1_1objects_1_1ObjectSerializer_a23fb04c7e0e499c60f850536ef49daaf}} 
+static void {\bfseries unserialize} (\hyperlink{classez_1_1objects_1_1Object}{ez\+::objects\+::\+Object} $\ast$obj, std\+::istream \&in)
+\end{DoxyCompactItemize}
+
+
+\subsection{Member Enumeration Documentation}
+\mbox{\Hypertarget{classez_1_1objects_1_1ObjectSerializer_af5cff5aa2658b6f48adeed4489bd9b5d}\label{classez_1_1objects_1_1ObjectSerializer_af5cff5aa2658b6f48adeed4489bd9b5d}} 
+\subsubsection{\texorpdfstring{anonymous enum}{anonymous enum}}
+{\footnotesize\ttfamily anonymous enum}
+
+definition of symbols that can be encountered 
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classez_1_1objects_1_1ObjectSerializer_a35016a821006ca66f92a38f5fd686cab}\label{classez_1_1objects_1_1ObjectSerializer_a35016a821006ca66f92a38f5fd686cab}} 
+\index{ez\+::objects\+::\+Object\+Serializer@{ez\+::objects\+::\+Object\+Serializer}!lex@{lex}}
+\index{lex@{lex}!ez\+::objects\+::\+Object\+Serializer@{ez\+::objects\+::\+Object\+Serializer}}
+\subsubsection{\texorpdfstring{lex()}{lex()}}
+{\footnotesize\ttfamily integer Object\+Serializer\+::lex (\begin{DoxyParamCaption}\item[{std\+::istream \&}]{stream,  }\item[{std\+::string \&}]{lexem }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+definition of a lexical analyzer that uses the lex function to return lexical units and the lexem found \mbox{\Hypertarget{classez_1_1objects_1_1ObjectSerializer_a4fd0c72f3d2402f1c5fc764c577ff014}\label{classez_1_1objects_1_1ObjectSerializer_a4fd0c72f3d2402f1c5fc764c577ff014}} 
+\index{ez\+::objects\+::\+Object\+Serializer@{ez\+::objects\+::\+Object\+Serializer}!object\+\_\+error@{object\+\_\+error}}
+\index{object\+\_\+error@{object\+\_\+error}!ez\+::objects\+::\+Object\+Serializer@{ez\+::objects\+::\+Object\+Serializer}}
+\subsubsection{\texorpdfstring{object\+\_\+error()}{object\_error()}}
+{\footnotesize\ttfamily void Object\+Serializer\+::object\+\_\+error (\begin{DoxyParamCaption}\item[{std\+::string}]{msg }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+throw exception with given message \mbox{\Hypertarget{classez_1_1objects_1_1ObjectSerializer_a6afc5c5fc7eb99ed2fec22a99b01dd44}\label{classez_1_1objects_1_1ObjectSerializer_a6afc5c5fc7eb99ed2fec22a99b01dd44}} 
+\index{ez\+::objects\+::\+Object\+Serializer@{ez\+::objects\+::\+Object\+Serializer}!parse\+\_\+cb@{parse\+\_\+cb}}
+\index{parse\+\_\+cb@{parse\+\_\+cb}!ez\+::objects\+::\+Object\+Serializer@{ez\+::objects\+::\+Object\+Serializer}}
+\subsubsection{\texorpdfstring{parse\+\_\+cb()}{parse\_cb()}}
+{\footnotesize\ttfamily void Object\+Serializer\+::parse\+\_\+cb (\begin{DoxyParamCaption}\item[{std\+::istream \&}]{stream }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+expected next lexical unit to be \textquotesingle{}\}\textquotesingle{} \mbox{\Hypertarget{classez_1_1objects_1_1ObjectSerializer_a71dd48f69cbcb3321ab1f01b4c629c44}\label{classez_1_1objects_1_1ObjectSerializer_a71dd48f69cbcb3321ab1f01b4c629c44}} 
+\index{ez\+::objects\+::\+Object\+Serializer@{ez\+::objects\+::\+Object\+Serializer}!parse\+\_\+character@{parse\+\_\+character}}
+\index{parse\+\_\+character@{parse\+\_\+character}!ez\+::objects\+::\+Object\+Serializer@{ez\+::objects\+::\+Object\+Serializer}}
+\subsubsection{\texorpdfstring{parse\+\_\+character()}{parse\_character()}}
+{\footnotesize\ttfamily void Object\+Serializer\+::parse\+\_\+character (\begin{DoxyParamCaption}\item[{std\+::istream \&}]{stream,  }\item[{character $\ast$}]{v }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+expected next lexical unit to be a character \mbox{\Hypertarget{classez_1_1objects_1_1ObjectSerializer_af90884b54943ccd2f17a2ac9cfd8bfc1}\label{classez_1_1objects_1_1ObjectSerializer_af90884b54943ccd2f17a2ac9cfd8bfc1}} 
+\index{ez\+::objects\+::\+Object\+Serializer@{ez\+::objects\+::\+Object\+Serializer}!parse\+\_\+cpa@{parse\+\_\+cpa}}
+\index{parse\+\_\+cpa@{parse\+\_\+cpa}!ez\+::objects\+::\+Object\+Serializer@{ez\+::objects\+::\+Object\+Serializer}}
+\subsubsection{\texorpdfstring{parse\+\_\+cpa()}{parse\_cpa()}}
+{\footnotesize\ttfamily void Object\+Serializer\+::parse\+\_\+cpa (\begin{DoxyParamCaption}\item[{std\+::istream \&}]{stream }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+expected next lexical unit to be \textquotesingle{})\textquotesingle{} \mbox{\Hypertarget{classez_1_1objects_1_1ObjectSerializer_af1df61d63076f1f47629162bdd344ff0}\label{classez_1_1objects_1_1ObjectSerializer_af1df61d63076f1f47629162bdd344ff0}} 
+\index{ez\+::objects\+::\+Object\+Serializer@{ez\+::objects\+::\+Object\+Serializer}!parse\+\_\+csb@{parse\+\_\+csb}}
+\index{parse\+\_\+csb@{parse\+\_\+csb}!ez\+::objects\+::\+Object\+Serializer@{ez\+::objects\+::\+Object\+Serializer}}
+\subsubsection{\texorpdfstring{parse\+\_\+csb()}{parse\_csb()}}
+{\footnotesize\ttfamily void Object\+Serializer\+::parse\+\_\+csb (\begin{DoxyParamCaption}\item[{std\+::istream \&}]{stream }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+expected next lexical unit to be \textquotesingle{}\mbox{]}\textquotesingle{} \mbox{\Hypertarget{classez_1_1objects_1_1ObjectSerializer_a34008fa22db3c164b5d7eef2b991ed0f}\label{classez_1_1objects_1_1ObjectSerializer_a34008fa22db3c164b5d7eef2b991ed0f}} 
+\index{ez\+::objects\+::\+Object\+Serializer@{ez\+::objects\+::\+Object\+Serializer}!parse\+\_\+integer@{parse\+\_\+integer}}
+\index{parse\+\_\+integer@{parse\+\_\+integer}!ez\+::objects\+::\+Object\+Serializer@{ez\+::objects\+::\+Object\+Serializer}}
+\subsubsection{\texorpdfstring{parse\+\_\+integer()}{parse\_integer()}}
+{\footnotesize\ttfamily void Object\+Serializer\+::parse\+\_\+integer (\begin{DoxyParamCaption}\item[{std\+::istream \&}]{stream,  }\item[{integer $\ast$}]{v }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+expected next lexical unit to be an integer \mbox{\Hypertarget{classez_1_1objects_1_1ObjectSerializer_ae121be9b0887d5b43039d053e4b6cb65}\label{classez_1_1objects_1_1ObjectSerializer_ae121be9b0887d5b43039d053e4b6cb65}} 
+\index{ez\+::objects\+::\+Object\+Serializer@{ez\+::objects\+::\+Object\+Serializer}!parse\+\_\+lexem@{parse\+\_\+lexem}}
+\index{parse\+\_\+lexem@{parse\+\_\+lexem}!ez\+::objects\+::\+Object\+Serializer@{ez\+::objects\+::\+Object\+Serializer}}
+\subsubsection{\texorpdfstring{parse\+\_\+lexem()}{parse\_lexem()}}
+{\footnotesize\ttfamily void Object\+Serializer\+::parse\+\_\+lexem (\begin{DoxyParamCaption}\item[{std\+::istream \&}]{stream,  }\item[{std\+::string \&}]{lexem }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+read next lexem and check it is a string and return its value in the lexem variable \mbox{\Hypertarget{classez_1_1objects_1_1ObjectSerializer_ad107ac3c87034f219755a1309420494c}\label{classez_1_1objects_1_1ObjectSerializer_ad107ac3c87034f219755a1309420494c}} 
+\index{ez\+::objects\+::\+Object\+Serializer@{ez\+::objects\+::\+Object\+Serializer}!parse\+\_\+lexem\+\_\+as@{parse\+\_\+lexem\+\_\+as}}
+\index{parse\+\_\+lexem\+\_\+as@{parse\+\_\+lexem\+\_\+as}!ez\+::objects\+::\+Object\+Serializer@{ez\+::objects\+::\+Object\+Serializer}}
+\subsubsection{\texorpdfstring{parse\+\_\+lexem\+\_\+as()}{parse\_lexem\_as()}}
+{\footnotesize\ttfamily void Object\+Serializer\+::parse\+\_\+lexem\+\_\+as (\begin{DoxyParamCaption}\item[{std\+::istream \&}]{stream,  }\item[{std\+::string}]{expected }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+read next lexem, check it is a string and that the value is the one provided as parameter \mbox{\Hypertarget{classez_1_1objects_1_1ObjectSerializer_adec5d6150d5944b7a5b3899e3b17d074}\label{classez_1_1objects_1_1ObjectSerializer_adec5d6150d5944b7a5b3899e3b17d074}} 
+\index{ez\+::objects\+::\+Object\+Serializer@{ez\+::objects\+::\+Object\+Serializer}!parse\+\_\+lexem\+\_\+nth@{parse\+\_\+lexem\+\_\+nth}}
+\index{parse\+\_\+lexem\+\_\+nth@{parse\+\_\+lexem\+\_\+nth}!ez\+::objects\+::\+Object\+Serializer@{ez\+::objects\+::\+Object\+Serializer}}
+\subsubsection{\texorpdfstring{parse\+\_\+lexem\+\_\+nth()}{parse\_lexem\_nth()}}
+{\footnotesize\ttfamily integer Object\+Serializer\+::parse\+\_\+lexem\+\_\+nth (\begin{DoxyParamCaption}\item[{std\+::istream \&}]{stream,  }\item[{std\+::string}]{list }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Read next lexem, check it is a string and that the value is one of the list provided as parameter. The list of possible values is given with \textquotesingle{} \textquotesingle{} (space) as a separator. \begin{DoxyReturn}{Returns}
+0 for the first token, 1 for the second token, ... or raise an exception 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classez_1_1objects_1_1ObjectSerializer_a591158e6375b60f82c58294a866263f8}\label{classez_1_1objects_1_1ObjectSerializer_a591158e6375b60f82c58294a866263f8}} 
+\index{ez\+::objects\+::\+Object\+Serializer@{ez\+::objects\+::\+Object\+Serializer}!parse\+\_\+long\+\_\+integer@{parse\+\_\+long\+\_\+integer}}
+\index{parse\+\_\+long\+\_\+integer@{parse\+\_\+long\+\_\+integer}!ez\+::objects\+::\+Object\+Serializer@{ez\+::objects\+::\+Object\+Serializer}}
+\subsubsection{\texorpdfstring{parse\+\_\+long\+\_\+integer()}{parse\_long\_integer()}}
+{\footnotesize\ttfamily void Object\+Serializer\+::parse\+\_\+long\+\_\+integer (\begin{DoxyParamCaption}\item[{std\+::istream \&}]{stream,  }\item[{long\+\_\+integer $\ast$}]{v }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+expected next lexical unit to be a long integer \mbox{\Hypertarget{classez_1_1objects_1_1ObjectSerializer_a9019cc0ebd7ea59945af0f77fe819e5b}\label{classez_1_1objects_1_1ObjectSerializer_a9019cc0ebd7ea59945af0f77fe819e5b}} 
+\index{ez\+::objects\+::\+Object\+Serializer@{ez\+::objects\+::\+Object\+Serializer}!parse\+\_\+natural@{parse\+\_\+natural}}
+\index{parse\+\_\+natural@{parse\+\_\+natural}!ez\+::objects\+::\+Object\+Serializer@{ez\+::objects\+::\+Object\+Serializer}}
+\subsubsection{\texorpdfstring{parse\+\_\+natural()}{parse\_natural()}}
+{\footnotesize\ttfamily void Object\+Serializer\+::parse\+\_\+natural (\begin{DoxyParamCaption}\item[{std\+::istream \&}]{stream,  }\item[{natural $\ast$}]{v }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+expected next lexical unit to be a natural \mbox{\Hypertarget{classez_1_1objects_1_1ObjectSerializer_ae0095f6fcfbeb5b0aaf98d3f1b355f45}\label{classez_1_1objects_1_1ObjectSerializer_ae0095f6fcfbeb5b0aaf98d3f1b355f45}} 
+\index{ez\+::objects\+::\+Object\+Serializer@{ez\+::objects\+::\+Object\+Serializer}!parse\+\_\+ob@{parse\+\_\+ob}}
+\index{parse\+\_\+ob@{parse\+\_\+ob}!ez\+::objects\+::\+Object\+Serializer@{ez\+::objects\+::\+Object\+Serializer}}
+\subsubsection{\texorpdfstring{parse\+\_\+ob()}{parse\_ob()}}
+{\footnotesize\ttfamily void Object\+Serializer\+::parse\+\_\+ob (\begin{DoxyParamCaption}\item[{std\+::istream \&}]{stream }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+expected next lexical unit to be \textquotesingle{}\{\textquotesingle{} \mbox{\Hypertarget{classez_1_1objects_1_1ObjectSerializer_aff1ebd4f37272cac1fdc3bfa11311d66}\label{classez_1_1objects_1_1ObjectSerializer_aff1ebd4f37272cac1fdc3bfa11311d66}} 
+\index{ez\+::objects\+::\+Object\+Serializer@{ez\+::objects\+::\+Object\+Serializer}!parse\+\_\+opa@{parse\+\_\+opa}}
+\index{parse\+\_\+opa@{parse\+\_\+opa}!ez\+::objects\+::\+Object\+Serializer@{ez\+::objects\+::\+Object\+Serializer}}
+\subsubsection{\texorpdfstring{parse\+\_\+opa()}{parse\_opa()}}
+{\footnotesize\ttfamily void Object\+Serializer\+::parse\+\_\+opa (\begin{DoxyParamCaption}\item[{std\+::istream \&}]{stream }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+expected next lexical unit to be \textquotesingle{}(\textquotesingle{} \mbox{\Hypertarget{classez_1_1objects_1_1ObjectSerializer_a4935aafbceb01000ea63ce77ce216ceb}\label{classez_1_1objects_1_1ObjectSerializer_a4935aafbceb01000ea63ce77ce216ceb}} 
+\index{ez\+::objects\+::\+Object\+Serializer@{ez\+::objects\+::\+Object\+Serializer}!parse\+\_\+osb@{parse\+\_\+osb}}
+\index{parse\+\_\+osb@{parse\+\_\+osb}!ez\+::objects\+::\+Object\+Serializer@{ez\+::objects\+::\+Object\+Serializer}}
+\subsubsection{\texorpdfstring{parse\+\_\+osb()}{parse\_osb()}}
+{\footnotesize\ttfamily void Object\+Serializer\+::parse\+\_\+osb (\begin{DoxyParamCaption}\item[{std\+::istream \&}]{stream }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+expected next lexical unit to be \textquotesingle{}\mbox{[}\textquotesingle{} \mbox{\Hypertarget{classez_1_1objects_1_1ObjectSerializer_a9f7293c4f1154b1e4a34c62838f5e00c}\label{classez_1_1objects_1_1ObjectSerializer_a9f7293c4f1154b1e4a34c62838f5e00c}} 
+\index{ez\+::objects\+::\+Object\+Serializer@{ez\+::objects\+::\+Object\+Serializer}!parse\+\_\+real@{parse\+\_\+real}}
+\index{parse\+\_\+real@{parse\+\_\+real}!ez\+::objects\+::\+Object\+Serializer@{ez\+::objects\+::\+Object\+Serializer}}
+\subsubsection{\texorpdfstring{parse\+\_\+real()}{parse\_real()}}
+{\footnotesize\ttfamily void Object\+Serializer\+::parse\+\_\+real (\begin{DoxyParamCaption}\item[{std\+::istream \&}]{stream,  }\item[{real $\ast$}]{v }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+expected next lexical unit to be a real \mbox{\Hypertarget{classez_1_1objects_1_1ObjectSerializer_a6c36b150271e3e410c52e6bb7f14c55c}\label{classez_1_1objects_1_1ObjectSerializer_a6c36b150271e3e410c52e6bb7f14c55c}} 
+\index{ez\+::objects\+::\+Object\+Serializer@{ez\+::objects\+::\+Object\+Serializer}!parse\+\_\+text@{parse\+\_\+text}}
+\index{parse\+\_\+text@{parse\+\_\+text}!ez\+::objects\+::\+Object\+Serializer@{ez\+::objects\+::\+Object\+Serializer}}
+\subsubsection{\texorpdfstring{parse\+\_\+text()}{parse\_text()}}
+{\footnotesize\ttfamily void Object\+Serializer\+::parse\+\_\+text (\begin{DoxyParamCaption}\item[{std\+::istream \&}]{stream,  }\item[{std\+::string $\ast$}]{v }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+expected next lexical unit to be a string 
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+src/version\+\_\+2018.\+06/objects/object\+\_\+serializer.\+h\item 
+src/version\+\_\+2018.\+06/objects/object\+\_\+serializer.\+cpp\end{DoxyCompactItemize}

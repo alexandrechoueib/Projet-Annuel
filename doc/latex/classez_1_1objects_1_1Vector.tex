@@ -1,0 +1,371 @@
+\hypertarget{classez_1_1objects_1_1Vector}{}\section{ez\+:\+:objects\+:\+:Vector$<$ Data\+Type $>$ Class Template Reference}
+\label{classez_1_1objects_1_1Vector}\index{ez\+::objects\+::\+Vector$<$ Data\+Type $>$@{ez\+::objects\+::\+Vector$<$ Data\+Type $>$}}
+
+
+Inheritance diagram for ez\+:\+:objects\+:\+:Vector$<$ Data\+Type $>$\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=310pt]{classez_1_1objects_1_1Vector__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for ez\+:\+:objects\+:\+:Vector$<$ Data\+Type $>$\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=310pt]{classez_1_1objects_1_1Vector__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classez_1_1objects_1_1Vector_ab7b578e86498287ae9b6dd7fb615ff15}\label{classez_1_1objects_1_1Vector_ab7b578e86498287ae9b6dd7fb615ff15}} 
+typedef \hyperlink{classez_1_1objects_1_1Vector}{Vector}$<$ Data\+Type $>$ {\bfseries self}
+\item 
+\mbox{\Hypertarget{classez_1_1objects_1_1Vector_a251d6033c8797e9b6d76a97a9a4f0543}\label{classez_1_1objects_1_1Vector_a251d6033c8797e9b6d76a97a9a4f0543}} 
+typedef std\+::vector$<$ Data\+Type $>$\+::iterator {\bfseries iterator}
+\item 
+\mbox{\Hypertarget{classez_1_1objects_1_1Vector_a20daf0d3c0f8b7a7f3c1a0ce0c4e0969}\label{classez_1_1objects_1_1Vector_a20daf0d3c0f8b7a7f3c1a0ce0c4e0969}} 
+typedef std\+::vector$<$ Data\+Type $>$\+::reverse\+\_\+iterator {\bfseries reverse\+\_\+iterator}
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classez_1_1objects_1_1Vector_aa038e392499b2feed97b02a56ca949c1}{Vector} ()
+\item 
+\hyperlink{classez_1_1objects_1_1Vector_a5eb6b99b1017a86ef85edc6a205295ea}{Vector} (natural sz)
+\item 
+\hyperlink{classez_1_1objects_1_1Vector_a04cb74d7bc97e5c752891d88ad1044b0}{Vector} (const \hyperlink{classez_1_1objects_1_1Vector}{Vector}$<$ Data\+Type $>$ \&obj)
+\item 
+\hyperlink{classez_1_1objects_1_1Vector}{Vector}$<$ Data\+Type $>$ \& \hyperlink{classez_1_1objects_1_1Vector_a26bb7742a22ce16d505feb5084e3a31c}{operator=} (const \hyperlink{classez_1_1objects_1_1Vector}{Vector}$<$ Data\+Type $>$ \&obj)
+\item 
+\hyperlink{classez_1_1objects_1_1Vector_a76477cc76b16c89b59478ca1b1cd7f7e}{Vector} (const std\+::initializer\+\_\+list$<$ Data\+Type $>$ \&l)
+\item 
+\hyperlink{classez_1_1objects_1_1Vector_a71fe918da47724d508de0875b6bc5fdd}{$\sim$\+Vector} ()
+\item 
+natural \hyperlink{classez_1_1objects_1_1Vector_a0c9401b7eb53dc1bff3becb8d87e5a90}{size} () override
+\item 
+void \hyperlink{classez_1_1objects_1_1Vector_a126fc8c7cff41e8b2a4f3dda84431687}{put\+\_\+first} (Data\+Type x)
+\item 
+void \hyperlink{classez_1_1objects_1_1Vector_a618cef3efe3117c70c6838dee95edc2b}{put\+\_\+last} (Data\+Type x)
+\item 
+\mbox{\Hypertarget{classez_1_1objects_1_1Vector_ac12ab6f98c20025825ed668db349e858}\label{classez_1_1objects_1_1Vector_ac12ab6f98c20025825ed668db349e858}} 
+void {\bfseries put\+\_\+last} (\hyperlink{classez_1_1objects_1_1Vector}{ez\+::objects\+::\+Vector}$<$ Data\+Type $>$ \&v)
+\item 
+void \hyperlink{classez_1_1objects_1_1Vector_a660269dc0dd23fc3d59bb9b50093396b}{put\+\_\+at} (integer pos, Data\+Type x)
+\item 
+Data\+Type \hyperlink{classez_1_1objects_1_1Vector_aa83f2702c3d95a1b03842b113b36ecbf}{first} ()
+\item 
+Data\+Type \hyperlink{classez_1_1objects_1_1Vector_a548b8f584d5272d19f267ea5585ad305}{last} ()
+\item 
+Data\+Type \hyperlink{classez_1_1objects_1_1Vector_a167a5c74341831e735f10bb731fb2e6f}{at} (integer pos)
+\item 
+Data\+Type \& \hyperlink{classez_1_1objects_1_1Vector_aee5011651f4f13353fd0b8906467b6e3}{operator\mbox{[}$\,$\mbox{]}} (integer pos)
+\item 
+void \hyperlink{classez_1_1objects_1_1Vector_a6758995f2b561c6e078368fa85a8e552}{remove\+\_\+first} ()
+\item 
+void \hyperlink{classez_1_1objects_1_1Vector_a76e84ee9ab9024011adb4ac57571c27a}{remove\+\_\+last} ()
+\item 
+void \hyperlink{classez_1_1objects_1_1Vector_ad0c0f45ce57d1c99650d0a7bf0b9c2bd}{remove\+\_\+at} (integer pos)
+\item 
+void \hyperlink{classez_1_1objects_1_1Vector_a1c548586b93d57a8fa99e38167442f37}{print} (std\+::ostream \&stream) override
+\item 
+void \hyperlink{classez_1_1objects_1_1Vector_a934bda76e5686f1af4a45dda39d75744}{output} (std\+::ostream \&stream) override
+\item 
+void \hyperlink{classez_1_1objects_1_1Vector_af89b5f0546a049c7ade93d48eb84fa6b}{input} (std\+::istream \&stream) override
+\item 
+integer \hyperlink{classez_1_1objects_1_1Vector_af4bd9b005b03d1a9e5ec958d96cc24ee}{compare} (const \hyperlink{classez_1_1objects_1_1Object}{Object} \&y) override
+\item 
+\hyperlink{classez_1_1objects_1_1Object}{Object} $\ast$ \hyperlink{classez_1_1objects_1_1Vector_adc6a4145747c6dfa104cd68d3ced3d35}{clone} () override
+\item 
+bool \hyperlink{classez_1_1objects_1_1Vector_a9fc4334b5da19dc41382f25b18c6e4bc}{is\+\_\+empty} ()
+\item 
+iterator \hyperlink{classez_1_1objects_1_1Vector_a93276f2c67cc9acf95a9a571b574dcd7}{begin} ()
+\item 
+iterator \hyperlink{classez_1_1objects_1_1Vector_ab427cb054be9433127b77a98f5dd581f}{end} ()
+\item 
+reverse\+\_\+iterator \hyperlink{classez_1_1objects_1_1Vector_a7688a52e5860bc4df8b13aa234731c97}{rbegin} ()
+\item 
+reverse\+\_\+iterator \hyperlink{classez_1_1objects_1_1Vector_a1b39e82a877657e283dd4700597bfff5}{rend} ()
+\end{DoxyCompactItemize}
+\subsection*{Data Fields}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classez_1_1objects_1_1Vector_ab087a472289298fe52af4e1b9df79800}\label{classez_1_1objects_1_1Vector_ab087a472289298fe52af4e1b9df79800}} 
+std\+::vector$<$ Data\+Type $>$ {\bfseries m\+\_\+data}
+\end{DoxyCompactItemize}
+\subsection*{Friends}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classez_1_1objects_1_1Vector_ace48be602ed1ae3d276b4f458b9302c6}\label{classez_1_1objects_1_1Vector_ace48be602ed1ae3d276b4f458b9302c6}} 
+\hyperlink{classez_1_1objects_1_1Vector}{Vector} \& {\bfseries operator$<$$<$} (\hyperlink{classez_1_1objects_1_1Vector}{Vector} \&v, Data\+Type n)
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classez_1_1objects_1_1Vector_aa038e392499b2feed97b02a56ca949c1}\label{classez_1_1objects_1_1Vector_aa038e392499b2feed97b02a56ca949c1}} 
+\index{ez\+::objects\+::\+Vector@{ez\+::objects\+::\+Vector}!Vector@{Vector}}
+\index{Vector@{Vector}!ez\+::objects\+::\+Vector@{ez\+::objects\+::\+Vector}}
+\subsubsection{\texorpdfstring{Vector()}{Vector()}\hspace{0.1cm}{\footnotesize\ttfamily [1/4]}}
+{\footnotesize\ttfamily template$<$class Data\+Type$>$ \\
+\hyperlink{classez_1_1objects_1_1Vector}{ez\+::objects\+::\+Vector}$<$ Data\+Type $>$\+::\hyperlink{classez_1_1objects_1_1Vector}{Vector} (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Default constructor of empty vector \mbox{\Hypertarget{classez_1_1objects_1_1Vector_a5eb6b99b1017a86ef85edc6a205295ea}\label{classez_1_1objects_1_1Vector_a5eb6b99b1017a86ef85edc6a205295ea}} 
+\index{ez\+::objects\+::\+Vector@{ez\+::objects\+::\+Vector}!Vector@{Vector}}
+\index{Vector@{Vector}!ez\+::objects\+::\+Vector@{ez\+::objects\+::\+Vector}}
+\subsubsection{\texorpdfstring{Vector()}{Vector()}\hspace{0.1cm}{\footnotesize\ttfamily [2/4]}}
+{\footnotesize\ttfamily template$<$class Data\+Type$>$ \\
+\hyperlink{classez_1_1objects_1_1Vector}{ez\+::objects\+::\+Vector}$<$ Data\+Type $>$\+::\hyperlink{classez_1_1objects_1_1Vector}{Vector} (\begin{DoxyParamCaption}\item[{natural}]{sz }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Constructor given size 
+\begin{DoxyParams}{Parameters}
+{\em size} & size of the vector \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classez_1_1objects_1_1Vector_a04cb74d7bc97e5c752891d88ad1044b0}\label{classez_1_1objects_1_1Vector_a04cb74d7bc97e5c752891d88ad1044b0}} 
+\index{ez\+::objects\+::\+Vector@{ez\+::objects\+::\+Vector}!Vector@{Vector}}
+\index{Vector@{Vector}!ez\+::objects\+::\+Vector@{ez\+::objects\+::\+Vector}}
+\subsubsection{\texorpdfstring{Vector()}{Vector()}\hspace{0.1cm}{\footnotesize\ttfamily [3/4]}}
+{\footnotesize\ttfamily template$<$class Data\+Type$>$ \\
+\hyperlink{classez_1_1objects_1_1Vector}{ez\+::objects\+::\+Vector}$<$ Data\+Type $>$\+::\hyperlink{classez_1_1objects_1_1Vector}{Vector} (\begin{DoxyParamCaption}\item[{const \hyperlink{classez_1_1objects_1_1Vector}{Vector}$<$ Data\+Type $>$ \&}]{obj }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Copy constructor 
+\begin{DoxyParams}{Parameters}
+{\em obj} & reference to existing object \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classez_1_1objects_1_1Vector_a76477cc76b16c89b59478ca1b1cd7f7e}\label{classez_1_1objects_1_1Vector_a76477cc76b16c89b59478ca1b1cd7f7e}} 
+\index{ez\+::objects\+::\+Vector@{ez\+::objects\+::\+Vector}!Vector@{Vector}}
+\index{Vector@{Vector}!ez\+::objects\+::\+Vector@{ez\+::objects\+::\+Vector}}
+\subsubsection{\texorpdfstring{Vector()}{Vector()}\hspace{0.1cm}{\footnotesize\ttfamily [4/4]}}
+{\footnotesize\ttfamily template$<$class Data\+Type$>$ \\
+\hyperlink{classez_1_1objects_1_1Vector}{ez\+::objects\+::\+Vector}$<$ Data\+Type $>$\+::\hyperlink{classez_1_1objects_1_1Vector}{Vector} (\begin{DoxyParamCaption}\item[{const std\+::initializer\+\_\+list$<$ Data\+Type $>$ \&}]{l }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Constructor given a list of values 
+\begin{DoxyParams}{Parameters}
+{\em l} & list of values \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classez_1_1objects_1_1Vector_a71fe918da47724d508de0875b6bc5fdd}\label{classez_1_1objects_1_1Vector_a71fe918da47724d508de0875b6bc5fdd}} 
+\index{ez\+::objects\+::\+Vector@{ez\+::objects\+::\+Vector}!````~Vector@{$\sim$\+Vector}}
+\index{````~Vector@{$\sim$\+Vector}!ez\+::objects\+::\+Vector@{ez\+::objects\+::\+Vector}}
+\subsubsection{\texorpdfstring{$\sim$\+Vector()}{~Vector()}}
+{\footnotesize\ttfamily template$<$class Data\+Type$>$ \\
+\hyperlink{classez_1_1objects_1_1Vector}{ez\+::objects\+::\+Vector}$<$ Data\+Type $>$\+::$\sim$\hyperlink{classez_1_1objects_1_1Vector}{Vector} (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Destructor 
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classez_1_1objects_1_1Vector_a167a5c74341831e735f10bb731fb2e6f}\label{classez_1_1objects_1_1Vector_a167a5c74341831e735f10bb731fb2e6f}} 
+\index{ez\+::objects\+::\+Vector@{ez\+::objects\+::\+Vector}!at@{at}}
+\index{at@{at}!ez\+::objects\+::\+Vector@{ez\+::objects\+::\+Vector}}
+\subsubsection{\texorpdfstring{at()}{at()}}
+{\footnotesize\ttfamily template$<$class Data\+Type$>$ \\
+Data\+Type \hyperlink{classez_1_1objects_1_1Vector}{ez\+::objects\+::\+Vector}$<$ Data\+Type $>$\+::at (\begin{DoxyParamCaption}\item[{integer}]{pos }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Return element at given position 
+\begin{DoxyItemize}
+\item the first element is at position 1 
+\item last position is at position \hyperlink{classez_1_1objects_1_1Vector_a0c9401b7eb53dc1bff3becb8d87e5a90}{size()} 
+\end{DoxyItemize}\mbox{\Hypertarget{classez_1_1objects_1_1Vector_a93276f2c67cc9acf95a9a571b574dcd7}\label{classez_1_1objects_1_1Vector_a93276f2c67cc9acf95a9a571b574dcd7}} 
+\index{ez\+::objects\+::\+Vector@{ez\+::objects\+::\+Vector}!begin@{begin}}
+\index{begin@{begin}!ez\+::objects\+::\+Vector@{ez\+::objects\+::\+Vector}}
+\subsubsection{\texorpdfstring{begin()}{begin()}}
+{\footnotesize\ttfamily template$<$class Data\+Type$>$ \\
+iterator \hyperlink{classez_1_1objects_1_1Vector}{ez\+::objects\+::\+Vector}$<$ Data\+Type $>$\+::begin (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Return iterator to beginning of \hyperlink{classez_1_1objects_1_1Vector}{Vector} \mbox{\Hypertarget{classez_1_1objects_1_1Vector_adc6a4145747c6dfa104cd68d3ced3d35}\label{classez_1_1objects_1_1Vector_adc6a4145747c6dfa104cd68d3ced3d35}} 
+\index{ez\+::objects\+::\+Vector@{ez\+::objects\+::\+Vector}!clone@{clone}}
+\index{clone@{clone}!ez\+::objects\+::\+Vector@{ez\+::objects\+::\+Vector}}
+\subsubsection{\texorpdfstring{clone()}{clone()}}
+{\footnotesize\ttfamily template$<$class Data\+Type$>$ \\
+\hyperlink{classez_1_1objects_1_1Object}{Object}$\ast$ \hyperlink{classez_1_1objects_1_1Vector}{ez\+::objects\+::\+Vector}$<$ Data\+Type $>$\+::clone (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [override]}, {\ttfamily [virtual]}}
+
+Create and return an exact copy of the object 
+
+Reimplemented from \hyperlink{classez_1_1objects_1_1Object_acf444b2581d898eb4b8c92c2d5865c9e}{ez\+::objects\+::\+Object}.
+
+\mbox{\Hypertarget{classez_1_1objects_1_1Vector_af4bd9b005b03d1a9e5ec958d96cc24ee}\label{classez_1_1objects_1_1Vector_af4bd9b005b03d1a9e5ec958d96cc24ee}} 
+\index{ez\+::objects\+::\+Vector@{ez\+::objects\+::\+Vector}!compare@{compare}}
+\index{compare@{compare}!ez\+::objects\+::\+Vector@{ez\+::objects\+::\+Vector}}
+\subsubsection{\texorpdfstring{compare()}{compare()}}
+{\footnotesize\ttfamily template$<$class Data\+Type$>$ \\
+integer \hyperlink{classez_1_1objects_1_1Vector}{ez\+::objects\+::\+Vector}$<$ Data\+Type $>$\+::compare (\begin{DoxyParamCaption}\item[{const \hyperlink{classez_1_1objects_1_1Object}{Object} \&}]{y }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [override]}, {\ttfamily [virtual]}}
+
+Overloading of Compare method to compare two vectors 
+
+Reimplemented from \hyperlink{classez_1_1objects_1_1Object_aca311d389dffa204e425463145f4e1e6}{ez\+::objects\+::\+Object}.
+
+\mbox{\Hypertarget{classez_1_1objects_1_1Vector_ab427cb054be9433127b77a98f5dd581f}\label{classez_1_1objects_1_1Vector_ab427cb054be9433127b77a98f5dd581f}} 
+\index{ez\+::objects\+::\+Vector@{ez\+::objects\+::\+Vector}!end@{end}}
+\index{end@{end}!ez\+::objects\+::\+Vector@{ez\+::objects\+::\+Vector}}
+\subsubsection{\texorpdfstring{end()}{end()}}
+{\footnotesize\ttfamily template$<$class Data\+Type$>$ \\
+iterator \hyperlink{classez_1_1objects_1_1Vector}{ez\+::objects\+::\+Vector}$<$ Data\+Type $>$\+::end (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Return iterator to end of \hyperlink{classez_1_1objects_1_1Vector}{Vector} \mbox{\Hypertarget{classez_1_1objects_1_1Vector_aa83f2702c3d95a1b03842b113b36ecbf}\label{classez_1_1objects_1_1Vector_aa83f2702c3d95a1b03842b113b36ecbf}} 
+\index{ez\+::objects\+::\+Vector@{ez\+::objects\+::\+Vector}!first@{first}}
+\index{first@{first}!ez\+::objects\+::\+Vector@{ez\+::objects\+::\+Vector}}
+\subsubsection{\texorpdfstring{first()}{first()}}
+{\footnotesize\ttfamily template$<$class Data\+Type$>$ \\
+Data\+Type \hyperlink{classez_1_1objects_1_1Vector}{ez\+::objects\+::\+Vector}$<$ Data\+Type $>$\+::first (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Return first element except if \hyperlink{classez_1_1objects_1_1Vector}{Vector} is empty \mbox{\Hypertarget{classez_1_1objects_1_1Vector_af89b5f0546a049c7ade93d48eb84fa6b}\label{classez_1_1objects_1_1Vector_af89b5f0546a049c7ade93d48eb84fa6b}} 
+\index{ez\+::objects\+::\+Vector@{ez\+::objects\+::\+Vector}!input@{input}}
+\index{input@{input}!ez\+::objects\+::\+Vector@{ez\+::objects\+::\+Vector}}
+\subsubsection{\texorpdfstring{input()}{input()}}
+{\footnotesize\ttfamily template$<$class Data\+Type$>$ \\
+void \hyperlink{classez_1_1objects_1_1Vector}{ez\+::objects\+::\+Vector}$<$ Data\+Type $>$\+::input (\begin{DoxyParamCaption}\item[{std\+::istream \&}]{stream }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [override]}, {\ttfamily [virtual]}}
+
+Overloading of output method to unserialize object 
+
+Reimplemented from \hyperlink{classez_1_1objects_1_1Object_a878bdc53b7f16fda6fa15dab214c4b6a}{ez\+::objects\+::\+Object}.
+
+\mbox{\Hypertarget{classez_1_1objects_1_1Vector_a9fc4334b5da19dc41382f25b18c6e4bc}\label{classez_1_1objects_1_1Vector_a9fc4334b5da19dc41382f25b18c6e4bc}} 
+\index{ez\+::objects\+::\+Vector@{ez\+::objects\+::\+Vector}!is\+\_\+empty@{is\+\_\+empty}}
+\index{is\+\_\+empty@{is\+\_\+empty}!ez\+::objects\+::\+Vector@{ez\+::objects\+::\+Vector}}
+\subsubsection{\texorpdfstring{is\+\_\+empty()}{is\_empty()}}
+{\footnotesize\ttfamily template$<$class Data\+Type$>$ \\
+bool \hyperlink{classez_1_1objects_1_1Vector}{ez\+::objects\+::\+Vector}$<$ Data\+Type $>$\+::is\+\_\+empty (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+Return true if vector is empty 
+
+Implements \hyperlink{classez_1_1objects_1_1Container_a205eb4f8a4fe967d425fdf04e5db5f93}{ez\+::objects\+::\+Container$<$ Data\+Type, natural $>$}.
+
+\mbox{\Hypertarget{classez_1_1objects_1_1Vector_a548b8f584d5272d19f267ea5585ad305}\label{classez_1_1objects_1_1Vector_a548b8f584d5272d19f267ea5585ad305}} 
+\index{ez\+::objects\+::\+Vector@{ez\+::objects\+::\+Vector}!last@{last}}
+\index{last@{last}!ez\+::objects\+::\+Vector@{ez\+::objects\+::\+Vector}}
+\subsubsection{\texorpdfstring{last()}{last()}}
+{\footnotesize\ttfamily template$<$class Data\+Type$>$ \\
+Data\+Type \hyperlink{classez_1_1objects_1_1Vector}{ez\+::objects\+::\+Vector}$<$ Data\+Type $>$\+::last (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Return last element except if \hyperlink{classez_1_1objects_1_1Vector}{Vector} is empty \mbox{\Hypertarget{classez_1_1objects_1_1Vector_a26bb7742a22ce16d505feb5084e3a31c}\label{classez_1_1objects_1_1Vector_a26bb7742a22ce16d505feb5084e3a31c}} 
+\index{ez\+::objects\+::\+Vector@{ez\+::objects\+::\+Vector}!operator=@{operator=}}
+\index{operator=@{operator=}!ez\+::objects\+::\+Vector@{ez\+::objects\+::\+Vector}}
+\subsubsection{\texorpdfstring{operator=()}{operator=()}}
+{\footnotesize\ttfamily template$<$class Data\+Type$>$ \\
+\hyperlink{classez_1_1objects_1_1Vector}{Vector}$<$Data\+Type$>$\& \hyperlink{classez_1_1objects_1_1Vector}{ez\+::objects\+::\+Vector}$<$ Data\+Type $>$\+::operator= (\begin{DoxyParamCaption}\item[{const \hyperlink{classez_1_1objects_1_1Vector}{Vector}$<$ Data\+Type $>$ \&}]{obj }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Overloading of assignment operator 
+\begin{DoxyParams}{Parameters}
+{\em obj} & reference to existing object \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classez_1_1objects_1_1Vector_aee5011651f4f13353fd0b8906467b6e3}\label{classez_1_1objects_1_1Vector_aee5011651f4f13353fd0b8906467b6e3}} 
+\index{ez\+::objects\+::\+Vector@{ez\+::objects\+::\+Vector}!operator\mbox{[}\mbox{]}@{operator[]}}
+\index{operator\mbox{[}\mbox{]}@{operator[]}!ez\+::objects\+::\+Vector@{ez\+::objects\+::\+Vector}}
+\subsubsection{\texorpdfstring{operator[]()}{operator[]()}}
+{\footnotesize\ttfamily template$<$class Data\+Type$>$ \\
+Data\+Type\& \hyperlink{classez_1_1objects_1_1Vector}{ez\+::objects\+::\+Vector}$<$ Data\+Type $>$\+::operator\mbox{[}$\,$\mbox{]} (\begin{DoxyParamCaption}\item[{integer}]{pos }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Return element at given position 
+\begin{DoxyItemize}
+\item the first element is at position 1 
+\item last position is at position \hyperlink{classez_1_1objects_1_1Vector_a0c9401b7eb53dc1bff3becb8d87e5a90}{size()} 
+\end{DoxyItemize}\mbox{\Hypertarget{classez_1_1objects_1_1Vector_a934bda76e5686f1af4a45dda39d75744}\label{classez_1_1objects_1_1Vector_a934bda76e5686f1af4a45dda39d75744}} 
+\index{ez\+::objects\+::\+Vector@{ez\+::objects\+::\+Vector}!output@{output}}
+\index{output@{output}!ez\+::objects\+::\+Vector@{ez\+::objects\+::\+Vector}}
+\subsubsection{\texorpdfstring{output()}{output()}}
+{\footnotesize\ttfamily template$<$class Data\+Type$>$ \\
+void \hyperlink{classez_1_1objects_1_1Vector}{ez\+::objects\+::\+Vector}$<$ Data\+Type $>$\+::output (\begin{DoxyParamCaption}\item[{std\+::ostream \&}]{stream }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [override]}, {\ttfamily [virtual]}}
+
+Overloading of output method to serialize object 
+
+Reimplemented from \hyperlink{classez_1_1objects_1_1Object_a0fdfe18e6c35d6b0d7e7a01265aded15}{ez\+::objects\+::\+Object}.
+
+\mbox{\Hypertarget{classez_1_1objects_1_1Vector_a1c548586b93d57a8fa99e38167442f37}\label{classez_1_1objects_1_1Vector_a1c548586b93d57a8fa99e38167442f37}} 
+\index{ez\+::objects\+::\+Vector@{ez\+::objects\+::\+Vector}!print@{print}}
+\index{print@{print}!ez\+::objects\+::\+Vector@{ez\+::objects\+::\+Vector}}
+\subsubsection{\texorpdfstring{print()}{print()}}
+{\footnotesize\ttfamily template$<$class Data\+Type$>$ \\
+void \hyperlink{classez_1_1objects_1_1Vector}{ez\+::objects\+::\+Vector}$<$ Data\+Type $>$\+::print (\begin{DoxyParamCaption}\item[{std\+::ostream \&}]{stream }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [override]}, {\ttfamily [virtual]}}
+
+Overloading of print method of class \hyperlink{classez_1_1objects_1_1Object}{Object} 
+
+Reimplemented from \hyperlink{classez_1_1objects_1_1Object_a9e20f39a78163f67f000576149d858b3}{ez\+::objects\+::\+Object}.
+
+\mbox{\Hypertarget{classez_1_1objects_1_1Vector_a660269dc0dd23fc3d59bb9b50093396b}\label{classez_1_1objects_1_1Vector_a660269dc0dd23fc3d59bb9b50093396b}} 
+\index{ez\+::objects\+::\+Vector@{ez\+::objects\+::\+Vector}!put\+\_\+at@{put\+\_\+at}}
+\index{put\+\_\+at@{put\+\_\+at}!ez\+::objects\+::\+Vector@{ez\+::objects\+::\+Vector}}
+\subsubsection{\texorpdfstring{put\+\_\+at()}{put\_at()}}
+{\footnotesize\ttfamily template$<$class Data\+Type$>$ \\
+void \hyperlink{classez_1_1objects_1_1Vector}{ez\+::objects\+::\+Vector}$<$ Data\+Type $>$\+::put\+\_\+at (\begin{DoxyParamCaption}\item[{integer}]{pos,  }\item[{Data\+Type}]{x }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Put element at given position in the vector 
+\begin{DoxyItemize}
+\item the first element is at position 1 
+\item last position is at position \hyperlink{classez_1_1objects_1_1Vector_a0c9401b7eb53dc1bff3becb8d87e5a90}{size()} 
+\end{DoxyItemize}To put value 
+\begin{DoxyItemize}
+\item at the beginning use position less or equal to 1 
+\item at the end use position greater than \hyperlink{classez_1_1objects_1_1Vector_a0c9401b7eb53dc1bff3becb8d87e5a90}{size()} 
+\end{DoxyItemize}\mbox{\Hypertarget{classez_1_1objects_1_1Vector_a126fc8c7cff41e8b2a4f3dda84431687}\label{classez_1_1objects_1_1Vector_a126fc8c7cff41e8b2a4f3dda84431687}} 
+\index{ez\+::objects\+::\+Vector@{ez\+::objects\+::\+Vector}!put\+\_\+first@{put\+\_\+first}}
+\index{put\+\_\+first@{put\+\_\+first}!ez\+::objects\+::\+Vector@{ez\+::objects\+::\+Vector}}
+\subsubsection{\texorpdfstring{put\+\_\+first()}{put\_first()}}
+{\footnotesize\ttfamily template$<$class Data\+Type$>$ \\
+void \hyperlink{classez_1_1objects_1_1Vector}{ez\+::objects\+::\+Vector}$<$ Data\+Type $>$\+::put\+\_\+first (\begin{DoxyParamCaption}\item[{Data\+Type}]{x }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Put element at the beginning of the vector \mbox{\Hypertarget{classez_1_1objects_1_1Vector_a618cef3efe3117c70c6838dee95edc2b}\label{classez_1_1objects_1_1Vector_a618cef3efe3117c70c6838dee95edc2b}} 
+\index{ez\+::objects\+::\+Vector@{ez\+::objects\+::\+Vector}!put\+\_\+last@{put\+\_\+last}}
+\index{put\+\_\+last@{put\+\_\+last}!ez\+::objects\+::\+Vector@{ez\+::objects\+::\+Vector}}
+\subsubsection{\texorpdfstring{put\+\_\+last()}{put\_last()}}
+{\footnotesize\ttfamily template$<$class Data\+Type$>$ \\
+void \hyperlink{classez_1_1objects_1_1Vector}{ez\+::objects\+::\+Vector}$<$ Data\+Type $>$\+::put\+\_\+last (\begin{DoxyParamCaption}\item[{Data\+Type}]{x }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Put element at the end of the vector \mbox{\Hypertarget{classez_1_1objects_1_1Vector_a7688a52e5860bc4df8b13aa234731c97}\label{classez_1_1objects_1_1Vector_a7688a52e5860bc4df8b13aa234731c97}} 
+\index{ez\+::objects\+::\+Vector@{ez\+::objects\+::\+Vector}!rbegin@{rbegin}}
+\index{rbegin@{rbegin}!ez\+::objects\+::\+Vector@{ez\+::objects\+::\+Vector}}
+\subsubsection{\texorpdfstring{rbegin()}{rbegin()}}
+{\footnotesize\ttfamily template$<$class Data\+Type$>$ \\
+reverse\+\_\+iterator \hyperlink{classez_1_1objects_1_1Vector}{ez\+::objects\+::\+Vector}$<$ Data\+Type $>$\+::rbegin (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Return iterator to beginning of \hyperlink{classez_1_1objects_1_1Vector}{Vector} \mbox{\Hypertarget{classez_1_1objects_1_1Vector_ad0c0f45ce57d1c99650d0a7bf0b9c2bd}\label{classez_1_1objects_1_1Vector_ad0c0f45ce57d1c99650d0a7bf0b9c2bd}} 
+\index{ez\+::objects\+::\+Vector@{ez\+::objects\+::\+Vector}!remove\+\_\+at@{remove\+\_\+at}}
+\index{remove\+\_\+at@{remove\+\_\+at}!ez\+::objects\+::\+Vector@{ez\+::objects\+::\+Vector}}
+\subsubsection{\texorpdfstring{remove\+\_\+at()}{remove\_at()}}
+{\footnotesize\ttfamily template$<$class Data\+Type$>$ \\
+void \hyperlink{classez_1_1objects_1_1Vector}{ez\+::objects\+::\+Vector}$<$ Data\+Type $>$\+::remove\+\_\+at (\begin{DoxyParamCaption}\item[{integer}]{pos }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Remove element at given position \mbox{\Hypertarget{classez_1_1objects_1_1Vector_a6758995f2b561c6e078368fa85a8e552}\label{classez_1_1objects_1_1Vector_a6758995f2b561c6e078368fa85a8e552}} 
+\index{ez\+::objects\+::\+Vector@{ez\+::objects\+::\+Vector}!remove\+\_\+first@{remove\+\_\+first}}
+\index{remove\+\_\+first@{remove\+\_\+first}!ez\+::objects\+::\+Vector@{ez\+::objects\+::\+Vector}}
+\subsubsection{\texorpdfstring{remove\+\_\+first()}{remove\_first()}}
+{\footnotesize\ttfamily template$<$class Data\+Type$>$ \\
+void \hyperlink{classez_1_1objects_1_1Vector}{ez\+::objects\+::\+Vector}$<$ Data\+Type $>$\+::remove\+\_\+first (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Remove first element if vector is not empty \mbox{\Hypertarget{classez_1_1objects_1_1Vector_a76e84ee9ab9024011adb4ac57571c27a}\label{classez_1_1objects_1_1Vector_a76e84ee9ab9024011adb4ac57571c27a}} 
+\index{ez\+::objects\+::\+Vector@{ez\+::objects\+::\+Vector}!remove\+\_\+last@{remove\+\_\+last}}
+\index{remove\+\_\+last@{remove\+\_\+last}!ez\+::objects\+::\+Vector@{ez\+::objects\+::\+Vector}}
+\subsubsection{\texorpdfstring{remove\+\_\+last()}{remove\_last()}}
+{\footnotesize\ttfamily template$<$class Data\+Type$>$ \\
+void \hyperlink{classez_1_1objects_1_1Vector}{ez\+::objects\+::\+Vector}$<$ Data\+Type $>$\+::remove\+\_\+last (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Remove last element if vector is not empty \mbox{\Hypertarget{classez_1_1objects_1_1Vector_a1b39e82a877657e283dd4700597bfff5}\label{classez_1_1objects_1_1Vector_a1b39e82a877657e283dd4700597bfff5}} 
+\index{ez\+::objects\+::\+Vector@{ez\+::objects\+::\+Vector}!rend@{rend}}
+\index{rend@{rend}!ez\+::objects\+::\+Vector@{ez\+::objects\+::\+Vector}}
+\subsubsection{\texorpdfstring{rend()}{rend()}}
+{\footnotesize\ttfamily template$<$class Data\+Type$>$ \\
+reverse\+\_\+iterator \hyperlink{classez_1_1objects_1_1Vector}{ez\+::objects\+::\+Vector}$<$ Data\+Type $>$\+::rend (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Return iterator to end of \hyperlink{classez_1_1objects_1_1Vector}{Vector} \mbox{\Hypertarget{classez_1_1objects_1_1Vector_a0c9401b7eb53dc1bff3becb8d87e5a90}\label{classez_1_1objects_1_1Vector_a0c9401b7eb53dc1bff3becb8d87e5a90}} 
+\index{ez\+::objects\+::\+Vector@{ez\+::objects\+::\+Vector}!size@{size}}
+\index{size@{size}!ez\+::objects\+::\+Vector@{ez\+::objects\+::\+Vector}}
+\subsubsection{\texorpdfstring{size()}{size()}}
+{\footnotesize\ttfamily template$<$class Data\+Type$>$ \\
+natural \hyperlink{classez_1_1objects_1_1Vector}{ez\+::objects\+::\+Vector}$<$ Data\+Type $>$\+::size (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [override]}, {\ttfamily [virtual]}}
+
+Return number of elements in the vector 
+
+Implements \hyperlink{classez_1_1objects_1_1Container_affd294810c6c29530d1d1e3c2151ad28}{ez\+::objects\+::\+Container$<$ Data\+Type, natural $>$}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+src/version\+\_\+2018.\+06/objects/vector.\+h\end{DoxyCompactItemize}

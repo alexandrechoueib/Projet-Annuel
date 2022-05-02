@@ -1,0 +1,52 @@
+#!/bin/sh
+# Description: run performance tests for a compiler
+#              and an architecture
+# Author: Jean-Michel Richer
+
+if test $# -eq 2 ; then
+
+arch=$1
+comp=$2
+
+else
+
+arch=""
+while [ "$arch" != "32" ] && [ "$arch" != "64" ] ; do
+	echo "--------------------------------"
+	echo "Please enter memory model:"
+	echo "- 32 for 32 bits"
+	echo "- 64 for 64 bits"
+	read -p "memory model (default 32) ? " arch
+	arch=${arch:-32}
+	echo $arch
+done
+
+comp=""
+while [ "$comp" != "gnu" ] && [ "$comp" != "llvm" ] && [ "$comp" != "intel" ] ; do
+	echo "--------------------------------"
+	echo "Please enter compiler:"
+	echo "- gnu for g++ GNU"
+	echo "- llvm for clang++"
+	echo "- intel for icpc"
+	read -p "compiler (default gnu) ? " comp
+	comp=${comp:-gnu}
+	echo $comp
+done
+
+fi
+
+configuration_file="app/config.ezp"
+cat $configuration_file | sed -e "s/MY_ARCHITECTURE=[[:digit:]]\+/MY_ARCHITECTURE=$arch/g" | sed -e "s/MY_COMPILER=[[:alpha:]]\+/MY_COMPILER=$comp/g" >tmp.txt
+cp tmp.txt $configuration_file
+rm -rf tmp.txt
+
+make clean --no-print-directory
+make config --no-print-directory
+make --no-print-directory
+if test $? -ne 0 ; then
+	exit 1
+fi
+
+make performance --no-print-directory
+make plots --no-print-directory
+

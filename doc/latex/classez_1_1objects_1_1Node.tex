@@ -1,0 +1,247 @@
+\hypertarget{classez_1_1objects_1_1Node}{}\section{ez\+:\+:objects\+:\+:Node$<$ T, Max\+Nodes $>$ Class Template Reference}
+\label{classez_1_1objects_1_1Node}\index{ez\+::objects\+::\+Node$<$ T, Max\+Nodes $>$@{ez\+::objects\+::\+Node$<$ T, Max\+Nodes $>$}}
+
+
+{\ttfamily \#include $<$node.\+h$>$}
+
+
+
+Inheritance diagram for ez\+:\+:objects\+:\+:Node$<$ T, Max\+Nodes $>$\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=180pt]{classez_1_1objects_1_1Node__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for ez\+:\+:objects\+:\+:Node$<$ T, Max\+Nodes $>$\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=238pt]{classez_1_1objects_1_1Node__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classez_1_1objects_1_1Node_a73eb39480a3572832b9d852cf127eb72}\label{classez_1_1objects_1_1Node_a73eb39480a3572832b9d852cf127eb72}} 
+enum \{ {\bfseries P\+A\+R\+E\+NT} = 0, 
+{\bfseries L\+E\+FT} = 1, 
+{\bfseries R\+I\+G\+HT} = 2
+ \}
+\item 
+\mbox{\Hypertarget{classez_1_1objects_1_1Node_a36ce2c35f03e113ed433bfb230f8cbab}\label{classez_1_1objects_1_1Node_a36ce2c35f03e113ed433bfb230f8cbab}} 
+typedef \hyperlink{classez_1_1objects_1_1Node}{Node}$<$ T, Max\+Nodes $>$ {\bfseries self}
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classez_1_1objects_1_1Node_a7f6279fa0fafc1c205baeb0ce5f55ae0}{Node} (T x)
+\item 
+\hyperlink{classez_1_1objects_1_1Node_ab02e679bf8159e7743f96b86c4572fad}{Node} (const \hyperlink{classez_1_1objects_1_1Node}{self} \&obj)
+\item 
+\hyperlink{classez_1_1objects_1_1Node}{self} \& \hyperlink{classez_1_1objects_1_1Node_a057ec528cc64665369c2b25377d231dd}{operator=} (const \hyperlink{classez_1_1objects_1_1Node}{self} \&obj)
+\item 
+bool \hyperlink{classez_1_1objects_1_1Node_a5aff43ff4a0189a4a170e98c5c07e02e}{is\+\_\+leaf} ()
+\item 
+bool \hyperlink{classez_1_1objects_1_1Node_a954a589a87e9d63d8f070ac792a6d95f}{is\+\_\+root} ()
+\item 
+void \hyperlink{classez_1_1objects_1_1Node_ac47d8b9b552dea606aeeceb4d00fb2e2}{add} (\hyperlink{classez_1_1objects_1_1Node}{self} $\ast$obj)
+\item 
+\hyperlink{classez_1_1objects_1_1Node}{self} $\ast$ \hyperlink{classez_1_1objects_1_1Node_a6b86a03d9be4c515e624fe01f873ce8b}{remove} (integer pos)
+\item 
+natural \hyperlink{classez_1_1objects_1_1Node_a8c9182f152380cec769955b451a76347}{depth} ()
+\item 
+\hyperlink{classez_1_1objects_1_1Node}{self} $\ast$ \hyperlink{classez_1_1objects_1_1Node_ae2876fa89991bf6593f54e015f22a156}{clone} ()
+\item 
+void \hyperlink{classez_1_1objects_1_1Node_a56c80924a071a04d3fbb55c536efe293}{print} (std\+::ostream \&out)
+\item 
+void \hyperlink{classez_1_1objects_1_1Node_accf427aa06dc326baa7a12497cae6045}{output} (std\+::ostream \&out)
+\item 
+void \hyperlink{classez_1_1objects_1_1Node_a637eb76e0f2597e92c5f827b80bff0ca}{input} (std\+::istream \&out)
+\item 
+integer \hyperlink{classez_1_1objects_1_1Node_af5a55f4379b2f6be1ba3cf905d124462}{compare} (const \hyperlink{classez_1_1objects_1_1Object}{Object} \&y)
+\item 
+void \hyperlink{classez_1_1objects_1_1Node_aa6267eadf5df3a5e855d3cceec037653}{remove\+\_\+all} ()
+\item 
+void \hyperlink{classez_1_1objects_1_1Node_ae9b583e4373ecc7bf70ce30566c0817d}{empty} ()
+\item 
+\mbox{\Hypertarget{classez_1_1objects_1_1Node_a0bd82219824d37ec094d7cd3fd51a09e}\label{classez_1_1objects_1_1Node_a0bd82219824d37ec094d7cd3fd51a09e}} 
+bool {\bfseries is\+\_\+empty} ()
+\item 
+\mbox{\Hypertarget{classez_1_1objects_1_1Node_a047820ffcfae5f9325f5201762713201}\label{classez_1_1objects_1_1Node_a047820ffcfae5f9325f5201762713201}} 
+bool {\bfseries belongs\+\_\+to} (\hyperlink{classez_1_1objects_1_1Node}{Node}$<$ T, Max\+Nodes $>$ $\ast$n)
+\item 
+\mbox{\Hypertarget{classez_1_1objects_1_1Node_aac28009e2faeff0643f23a1898bf1c04}\label{classez_1_1objects_1_1Node_aac28009e2faeff0643f23a1898bf1c04}} 
+void {\bfseries find\+\_\+nodes} (std\+::vector$<$ \hyperlink{classez_1_1objects_1_1Node}{Node}$<$ T, Max\+Nodes $>$ $\ast$$>$ \&vnodes)
+\item 
+\mbox{\Hypertarget{classez_1_1objects_1_1Node_a4b61ad7d2fab6fea944092fa020478e4}\label{classez_1_1objects_1_1Node_a4b61ad7d2fab6fea944092fa020478e4}} 
+void {\bfseries find\+\_\+externals} (std\+::vector$<$ \hyperlink{classez_1_1objects_1_1Node}{Node}$<$ T, Max\+Nodes $>$ $\ast$$>$ \&vnodes)
+\item 
+\mbox{\Hypertarget{classez_1_1objects_1_1Node_a73ef9591b20535196408e37de761a229}\label{classez_1_1objects_1_1Node_a73ef9591b20535196408e37de761a229}} 
+void {\bfseries find\+\_\+internals} (std\+::vector$<$ \hyperlink{classez_1_1objects_1_1Node}{Node}$<$ T, Max\+Nodes $>$ $\ast$$>$ \&vnodes)
+\item 
+\mbox{\Hypertarget{classez_1_1objects_1_1Node_a5307d05dca2b87d57472d43d62d629f6}\label{classez_1_1objects_1_1Node_a5307d05dca2b87d57472d43d62d629f6}} 
+\hyperlink{classez_1_1objects_1_1Node}{Node}$<$ T, Max\+Nodes $>$ $\ast$ {\bfseries sibling} (\hyperlink{classez_1_1objects_1_1Node}{Node}$<$ T, Max\+Nodes $>$ $\ast$n)
+\end{DoxyCompactItemize}
+\subsection*{Data Fields}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classez_1_1objects_1_1Node_a55076daf3064fbe3b68e135d137791a2}\label{classez_1_1objects_1_1Node_a55076daf3064fbe3b68e135d137791a2}} 
+\hyperlink{classez_1_1objects_1_1Node}{self} $\ast$ {\bfseries c\+\_\+nodes} \mbox{[}Max\+Nodes+1\mbox{]}
+\item 
+\mbox{\Hypertarget{classez_1_1objects_1_1Node_a5d8e7203a8b3b8a3a72274e8274e4b01}\label{classez_1_1objects_1_1Node_a5d8e7203a8b3b8a3a72274e8274e4b01}} 
+natural {\bfseries n\+\_\+size}
+\item 
+\mbox{\Hypertarget{classez_1_1objects_1_1Node_a349594bab99609ba0ad32d60242d1f43}\label{classez_1_1objects_1_1Node_a349594bab99609ba0ad32d60242d1f43}} 
+T {\bfseries t\+\_\+data}
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+\subsubsection*{template$<$class T, natural Max\+Nodes$>$\newline
+class ez\+::objects\+::\+Node$<$ T, Max\+Nodes $>$}
+
+implementation of a \hyperlink{classez_1_1objects_1_1Node}{Node} used by a Tree. The \hyperlink{classez_1_1objects_1_1Node}{Node} can have 0 to Max\+Nodes sibling. 
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classez_1_1objects_1_1Node_a7f6279fa0fafc1c205baeb0ce5f55ae0}\label{classez_1_1objects_1_1Node_a7f6279fa0fafc1c205baeb0ce5f55ae0}} 
+\index{ez\+::objects\+::\+Node@{ez\+::objects\+::\+Node}!Node@{Node}}
+\index{Node@{Node}!ez\+::objects\+::\+Node@{ez\+::objects\+::\+Node}}
+\subsubsection{\texorpdfstring{Node()}{Node()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily template$<$class T, natural Max\+Nodes$>$ \\
+\hyperlink{classez_1_1objects_1_1Node}{ez\+::objects\+::\+Node}$<$ T, Max\+Nodes $>$\+::\hyperlink{classez_1_1objects_1_1Node}{Node} (\begin{DoxyParamCaption}\item[{T}]{x }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+constructor with given data \mbox{\Hypertarget{classez_1_1objects_1_1Node_ab02e679bf8159e7743f96b86c4572fad}\label{classez_1_1objects_1_1Node_ab02e679bf8159e7743f96b86c4572fad}} 
+\index{ez\+::objects\+::\+Node@{ez\+::objects\+::\+Node}!Node@{Node}}
+\index{Node@{Node}!ez\+::objects\+::\+Node@{ez\+::objects\+::\+Node}}
+\subsubsection{\texorpdfstring{Node()}{Node()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily template$<$class T, natural Max\+Nodes$>$ \\
+\hyperlink{classez_1_1objects_1_1Node}{ez\+::objects\+::\+Node}$<$ T, Max\+Nodes $>$\+::\hyperlink{classez_1_1objects_1_1Node}{Node} (\begin{DoxyParamCaption}\item[{const \hyperlink{classez_1_1objects_1_1Node}{self} \&}]{obj }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+copy constructor 
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classez_1_1objects_1_1Node_ac47d8b9b552dea606aeeceb4d00fb2e2}\label{classez_1_1objects_1_1Node_ac47d8b9b552dea606aeeceb4d00fb2e2}} 
+\index{ez\+::objects\+::\+Node@{ez\+::objects\+::\+Node}!add@{add}}
+\index{add@{add}!ez\+::objects\+::\+Node@{ez\+::objects\+::\+Node}}
+\subsubsection{\texorpdfstring{add()}{add()}}
+{\footnotesize\ttfamily template$<$class T, natural Max\+Nodes$>$ \\
+void \hyperlink{classez_1_1objects_1_1Node}{ez\+::objects\+::\+Node}$<$ T, Max\+Nodes $>$\+::add (\begin{DoxyParamCaption}\item[{\hyperlink{classez_1_1objects_1_1Node}{self} $\ast$}]{obj }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+add sibling \mbox{\Hypertarget{classez_1_1objects_1_1Node_ae2876fa89991bf6593f54e015f22a156}\label{classez_1_1objects_1_1Node_ae2876fa89991bf6593f54e015f22a156}} 
+\index{ez\+::objects\+::\+Node@{ez\+::objects\+::\+Node}!clone@{clone}}
+\index{clone@{clone}!ez\+::objects\+::\+Node@{ez\+::objects\+::\+Node}}
+\subsubsection{\texorpdfstring{clone()}{clone()}}
+{\footnotesize\ttfamily template$<$class T, natural Max\+Nodes$>$ \\
+\hyperlink{classez_1_1objects_1_1Node}{self}$\ast$ \hyperlink{classez_1_1objects_1_1Node}{ez\+::objects\+::\+Node}$<$ T, Max\+Nodes $>$\+::clone (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+clone tree that starts from this node 
+
+Reimplemented from \hyperlink{classez_1_1objects_1_1Object_acf444b2581d898eb4b8c92c2d5865c9e}{ez\+::objects\+::\+Object}.
+
+\mbox{\Hypertarget{classez_1_1objects_1_1Node_af5a55f4379b2f6be1ba3cf905d124462}\label{classez_1_1objects_1_1Node_af5a55f4379b2f6be1ba3cf905d124462}} 
+\index{ez\+::objects\+::\+Node@{ez\+::objects\+::\+Node}!compare@{compare}}
+\index{compare@{compare}!ez\+::objects\+::\+Node@{ez\+::objects\+::\+Node}}
+\subsubsection{\texorpdfstring{compare()}{compare()}}
+{\footnotesize\ttfamily template$<$class T, natural Max\+Nodes$>$ \\
+integer \hyperlink{classez_1_1objects_1_1Node}{ez\+::objects\+::\+Node}$<$ T, Max\+Nodes $>$\+::compare (\begin{DoxyParamCaption}\item[{const \hyperlink{classez_1_1objects_1_1Object}{Object} \&}]{y }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+compare two objects \begin{DoxyReturn}{Returns}
+0 if objects are identical, negative value if this $<$ y, positive value if this $>$ y 
+\end{DoxyReturn}
+
+
+Reimplemented from \hyperlink{classez_1_1objects_1_1Object_aca311d389dffa204e425463145f4e1e6}{ez\+::objects\+::\+Object}.
+
+\mbox{\Hypertarget{classez_1_1objects_1_1Node_a8c9182f152380cec769955b451a76347}\label{classez_1_1objects_1_1Node_a8c9182f152380cec769955b451a76347}} 
+\index{ez\+::objects\+::\+Node@{ez\+::objects\+::\+Node}!depth@{depth}}
+\index{depth@{depth}!ez\+::objects\+::\+Node@{ez\+::objects\+::\+Node}}
+\subsubsection{\texorpdfstring{depth()}{depth()}}
+{\footnotesize\ttfamily template$<$class T, natural Max\+Nodes$>$ \\
+natural \hyperlink{classez_1_1objects_1_1Node}{ez\+::objects\+::\+Node}$<$ T, Max\+Nodes $>$\+::depth (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+return depth of node \mbox{\Hypertarget{classez_1_1objects_1_1Node_ae9b583e4373ecc7bf70ce30566c0817d}\label{classez_1_1objects_1_1Node_ae9b583e4373ecc7bf70ce30566c0817d}} 
+\index{ez\+::objects\+::\+Node@{ez\+::objects\+::\+Node}!empty@{empty}}
+\index{empty@{empty}!ez\+::objects\+::\+Node@{ez\+::objects\+::\+Node}}
+\subsubsection{\texorpdfstring{empty()}{empty()}}
+{\footnotesize\ttfamily template$<$class T, natural Max\+Nodes$>$ \\
+void \hyperlink{classez_1_1objects_1_1Node}{ez\+::objects\+::\+Node}$<$ T, Max\+Nodes $>$\+::empty (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+set number of sibling to 0 but don\textquotesingle{}t delete sibling \mbox{\Hypertarget{classez_1_1objects_1_1Node_a637eb76e0f2597e92c5f827b80bff0ca}\label{classez_1_1objects_1_1Node_a637eb76e0f2597e92c5f827b80bff0ca}} 
+\index{ez\+::objects\+::\+Node@{ez\+::objects\+::\+Node}!input@{input}}
+\index{input@{input}!ez\+::objects\+::\+Node@{ez\+::objects\+::\+Node}}
+\subsubsection{\texorpdfstring{input()}{input()}}
+{\footnotesize\ttfamily template$<$class T, natural Max\+Nodes$>$ \\
+void \hyperlink{classez_1_1objects_1_1Node}{ez\+::objects\+::\+Node}$<$ T, Max\+Nodes $>$\+::input (\begin{DoxyParamCaption}\item[{std\+::istream \&}]{stream }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+this function is used to get the data field members of an object from a stream and acts as unserialize 
+
+Reimplemented from \hyperlink{classez_1_1objects_1_1Object_a878bdc53b7f16fda6fa15dab214c4b6a}{ez\+::objects\+::\+Object}.
+
+\mbox{\Hypertarget{classez_1_1objects_1_1Node_a5aff43ff4a0189a4a170e98c5c07e02e}\label{classez_1_1objects_1_1Node_a5aff43ff4a0189a4a170e98c5c07e02e}} 
+\index{ez\+::objects\+::\+Node@{ez\+::objects\+::\+Node}!is\+\_\+leaf@{is\+\_\+leaf}}
+\index{is\+\_\+leaf@{is\+\_\+leaf}!ez\+::objects\+::\+Node@{ez\+::objects\+::\+Node}}
+\subsubsection{\texorpdfstring{is\+\_\+leaf()}{is\_leaf()}}
+{\footnotesize\ttfamily template$<$class T, natural Max\+Nodes$>$ \\
+bool \hyperlink{classez_1_1objects_1_1Node}{ez\+::objects\+::\+Node}$<$ T, Max\+Nodes $>$\+::is\+\_\+leaf (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+return true if node is leaf, i.\+e. has no descendant \mbox{\Hypertarget{classez_1_1objects_1_1Node_a954a589a87e9d63d8f070ac792a6d95f}\label{classez_1_1objects_1_1Node_a954a589a87e9d63d8f070ac792a6d95f}} 
+\index{ez\+::objects\+::\+Node@{ez\+::objects\+::\+Node}!is\+\_\+root@{is\+\_\+root}}
+\index{is\+\_\+root@{is\+\_\+root}!ez\+::objects\+::\+Node@{ez\+::objects\+::\+Node}}
+\subsubsection{\texorpdfstring{is\+\_\+root()}{is\_root()}}
+{\footnotesize\ttfamily template$<$class T, natural Max\+Nodes$>$ \\
+bool \hyperlink{classez_1_1objects_1_1Node}{ez\+::objects\+::\+Node}$<$ T, Max\+Nodes $>$\+::is\+\_\+root (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+return true if node is root, i.\+e. has no parent \mbox{\Hypertarget{classez_1_1objects_1_1Node_a057ec528cc64665369c2b25377d231dd}\label{classez_1_1objects_1_1Node_a057ec528cc64665369c2b25377d231dd}} 
+\index{ez\+::objects\+::\+Node@{ez\+::objects\+::\+Node}!operator=@{operator=}}
+\index{operator=@{operator=}!ez\+::objects\+::\+Node@{ez\+::objects\+::\+Node}}
+\subsubsection{\texorpdfstring{operator=()}{operator=()}}
+{\footnotesize\ttfamily template$<$class T, natural Max\+Nodes$>$ \\
+\hyperlink{classez_1_1objects_1_1Node}{self}\& \hyperlink{classez_1_1objects_1_1Node}{ez\+::objects\+::\+Node}$<$ T, Max\+Nodes $>$\+::operator= (\begin{DoxyParamCaption}\item[{const \hyperlink{classez_1_1objects_1_1Node}{self} \&}]{obj }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+assignment operator \mbox{\Hypertarget{classez_1_1objects_1_1Node_accf427aa06dc326baa7a12497cae6045}\label{classez_1_1objects_1_1Node_accf427aa06dc326baa7a12497cae6045}} 
+\index{ez\+::objects\+::\+Node@{ez\+::objects\+::\+Node}!output@{output}}
+\index{output@{output}!ez\+::objects\+::\+Node@{ez\+::objects\+::\+Node}}
+\subsubsection{\texorpdfstring{output()}{output()}}
+{\footnotesize\ttfamily template$<$class T, natural Max\+Nodes$>$ \\
+void \hyperlink{classez_1_1objects_1_1Node}{ez\+::objects\+::\+Node}$<$ T, Max\+Nodes $>$\+::output (\begin{DoxyParamCaption}\item[{std\+::ostream \&}]{stream }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+this function is used to print the contents of the object in a serializable manner 
+
+Reimplemented from \hyperlink{classez_1_1objects_1_1Object_a0fdfe18e6c35d6b0d7e7a01265aded15}{ez\+::objects\+::\+Object}.
+
+\mbox{\Hypertarget{classez_1_1objects_1_1Node_a56c80924a071a04d3fbb55c536efe293}\label{classez_1_1objects_1_1Node_a56c80924a071a04d3fbb55c536efe293}} 
+\index{ez\+::objects\+::\+Node@{ez\+::objects\+::\+Node}!print@{print}}
+\index{print@{print}!ez\+::objects\+::\+Node@{ez\+::objects\+::\+Node}}
+\subsubsection{\texorpdfstring{print()}{print()}}
+{\footnotesize\ttfamily template$<$class T, natural Max\+Nodes$>$ \\
+void \hyperlink{classez_1_1objects_1_1Node}{ez\+::objects\+::\+Node}$<$ T, Max\+Nodes $>$\+::print (\begin{DoxyParamCaption}\item[{std\+::ostream \&}]{out }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+print subtree 
+
+Reimplemented from \hyperlink{classez_1_1objects_1_1Object_a9e20f39a78163f67f000576149d858b3}{ez\+::objects\+::\+Object}.
+
+\mbox{\Hypertarget{classez_1_1objects_1_1Node_a6b86a03d9be4c515e624fe01f873ce8b}\label{classez_1_1objects_1_1Node_a6b86a03d9be4c515e624fe01f873ce8b}} 
+\index{ez\+::objects\+::\+Node@{ez\+::objects\+::\+Node}!remove@{remove}}
+\index{remove@{remove}!ez\+::objects\+::\+Node@{ez\+::objects\+::\+Node}}
+\subsubsection{\texorpdfstring{remove()}{remove()}}
+{\footnotesize\ttfamily template$<$class T, natural Max\+Nodes$>$ \\
+\hyperlink{classez_1_1objects_1_1Node}{self}$\ast$ \hyperlink{classez_1_1objects_1_1Node}{ez\+::objects\+::\+Node}$<$ T, Max\+Nodes $>$\+::remove (\begin{DoxyParamCaption}\item[{integer}]{pos }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+remove node at given position \mbox{\Hypertarget{classez_1_1objects_1_1Node_aa6267eadf5df3a5e855d3cceec037653}\label{classez_1_1objects_1_1Node_aa6267eadf5df3a5e855d3cceec037653}} 
+\index{ez\+::objects\+::\+Node@{ez\+::objects\+::\+Node}!remove\+\_\+all@{remove\+\_\+all}}
+\index{remove\+\_\+all@{remove\+\_\+all}!ez\+::objects\+::\+Node@{ez\+::objects\+::\+Node}}
+\subsubsection{\texorpdfstring{remove\+\_\+all()}{remove\_all()}}
+{\footnotesize\ttfamily template$<$class T, natural Max\+Nodes$>$ \\
+void \hyperlink{classez_1_1objects_1_1Node}{ez\+::objects\+::\+Node}$<$ T, Max\+Nodes $>$\+::remove\+\_\+all (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+remove all descendants and delete them 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+src/version\+\_\+2018.\+06/objects/node.\+h\end{DoxyCompactItemize}

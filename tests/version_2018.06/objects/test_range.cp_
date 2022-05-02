@@ -1,0 +1,76 @@
+/*
+ * test_range.cpp
+ *
+ *  Created on: Apr 19, 2017
+ *      Author: richer
+ */
+
+
+#include <gtest/gtest.h>
+#include "objects/integer.h"
+#include "objects/range.h"
+#include <vector>
+
+using namespace std;
+
+namespace eze = ez::essential;
+namespace ezo = ez::objects;
+
+
+TEST(TestRange, create1) {
+	ezo::Range r1(-30,+30);
+
+	EXPECT_EQ(r1.size(), 61);
+}
+
+TEST(TestRange, create2) {
+	ezo::IntegerRange r1(-30,+30);
+
+	EXPECT_EQ(r1.size(), 61);
+}
+
+TEST(TestRange, create3) {
+	ezo::IntegerRange r1(-30,+30,2);
+
+	EXPECT_EQ(r1.size(), 31);
+}
+
+TEST(TestRange, create4) {
+	ezo::RealRange r1(1.0,2.0,0.4);
+
+	cout << "!!!!!!!!!!!!!" << endl;
+	cout << "size=" << ceil((2.0-(1.0) )/0.4) << endl;
+	cout << "real_range.size=" << r1.size() << endl;
+	cout << "!!!!!!!!!!!!!" << endl;
+
+	//EXPECT_EQ(r1.size(), 16);
+}
+
+TEST(TestRange, iterate1) {
+	ezo::RealRange r1(1.0,2.0,0.4);
+
+	ezo::RealRange::iterator it;
+	for (it = r1.begin(); it != r1.end(); ++it) {
+		cout << *it << endl;
+	}
+	//EXPECT_EQ(r1.size(), 16);
+}
+
+TEST(TestRange, create5) {
+	ezo::Range<character> r1('A','Z');
+
+	EXPECT_EQ(r1.size(), 26);
+}
+
+
+
+
+
+int main(int argc, char *argv[]) {
+	::testing::InitGoogleTest( &argc, argv );
+	return RUN_ALL_TESTS();
+}
+
+
+
+

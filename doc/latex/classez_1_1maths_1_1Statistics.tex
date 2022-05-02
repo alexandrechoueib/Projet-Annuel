@@ -1,0 +1,131 @@
+\hypertarget{classez_1_1maths_1_1Statistics}{}\section{ez\+:\+:maths\+:\+:Statistics$<$ Data\+Type, Real\+Type $>$ Class Template Reference}
+\label{classez_1_1maths_1_1Statistics}\index{ez\+::maths\+::\+Statistics$<$ Data\+Type, Real\+Type $>$@{ez\+::maths\+::\+Statistics$<$ Data\+Type, Real\+Type $>$}}
+
+
+template class used to compute statistics on a series of data  
+
+
+
+
+{\ttfamily \#include $<$statistics.\+h$>$}
+
+\subsection*{Data Structures}
+\begin{DoxyCompactItemize}
+\item 
+class \hyperlink{classez_1_1maths_1_1Statistics_1_1Insider}{Insider}
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classez_1_1maths_1_1Statistics_aa1a3aade13e58b388d48380cd0d44374}{Statistics} (vector$<$ \hyperlink{classez_1_1maths_1_1Value}{Value}$<$ Data\+Type $>$ $>$ \&v, eze\+::natural print\+\_\+flags=P\+R\+I\+N\+T\+\_\+\+A\+LL)
+\item 
+\mbox{\Hypertarget{classez_1_1maths_1_1Statistics_acbfacb0236c78ff590aa9e9e9aaaa9d4}\label{classez_1_1maths_1_1Statistics_acbfacb0236c78ff590aa9e9e9aaaa9d4}} 
+{\bfseries Statistics} (\hyperlink{classez_1_1maths_1_1Series}{Series}$<$ Data\+Type $>$ \&v, eze\+::natural print\+\_\+flags=P\+R\+I\+N\+T\+\_\+\+A\+LL)
+\item 
+\mbox{\Hypertarget{classez_1_1maths_1_1Statistics_a06b87094064ec772e872bd0b8d1bfc2a}\label{classez_1_1maths_1_1Statistics_a06b87094064ec772e872bd0b8d1bfc2a}} 
+{\bfseries Statistics} (vector$<$ Data\+Type $>$ \&v, eze\+::natural print\+\_\+flags=P\+R\+I\+N\+T\+\_\+\+A\+LL)
+\item 
+void \hyperlink{classez_1_1maths_1_1Statistics_a3bdb44726f6e8948779f71cdfada0ee4}{compute} ()
+\item 
+\mbox{\Hypertarget{classez_1_1maths_1_1Statistics_aa9812d032bc10d7b3c7f7f0f9f7d1fbe}\label{classez_1_1maths_1_1Statistics_aa9812d032bc10d7b3c7f7f0f9f7d1fbe}} 
+Data\+Type {\bfseries sum} ()
+\item 
+\mbox{\Hypertarget{classez_1_1maths_1_1Statistics_a90103d38ca241180bd7e698b03aaaebd}\label{classez_1_1maths_1_1Statistics_a90103d38ca241180bd7e698b03aaaebd}} 
+Real\+Type {\bfseries average} ()
+\item 
+\mbox{\Hypertarget{classez_1_1maths_1_1Statistics_af89768f7b418ea6942dd6ac10aaf74d7}\label{classez_1_1maths_1_1Statistics_af89768f7b418ea6942dd6ac10aaf74d7}} 
+Real\+Type {\bfseries variance} ()
+\item 
+\mbox{\Hypertarget{classez_1_1maths_1_1Statistics_a2a2aabc6fa4b35d6306986b2438157f8}\label{classez_1_1maths_1_1Statistics_a2a2aabc6fa4b35d6306986b2438157f8}} 
+Real\+Type {\bfseries standard\+\_\+deviation} ()
+\item 
+\mbox{\Hypertarget{classez_1_1maths_1_1Statistics_a5487e1665a3a5773ec783fc209a1f0af}\label{classez_1_1maths_1_1Statistics_a5487e1665a3a5773ec783fc209a1f0af}} 
+ostream \& {\bfseries print} (ostream \&out)
+\end{DoxyCompactItemize}
+\subsection*{Data Fields}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classez_1_1maths_1_1Statistics_ac5cc29318f54794c7d0df104d4d27fe0}\label{classez_1_1maths_1_1Statistics_ac5cc29318f54794c7d0df104d4d27fe0}} 
+std\+::vector$<$ \hyperlink{classez_1_1maths_1_1Value}{Value}$<$ Data\+Type $>$ $>$ {\bfseries m\+\_\+values}
+\item 
+\mbox{\Hypertarget{classez_1_1maths_1_1Statistics_aa87d4cb454663d23a372df4a9733ef6d}\label{classez_1_1maths_1_1Statistics_aa87d4cb454663d23a372df4a9733ef6d}} 
+Data\+Type {\bfseries m\+\_\+min}
+\item 
+\mbox{\Hypertarget{classez_1_1maths_1_1Statistics_aa5198d48209e9de0ae02da3b78cecb0a}\label{classez_1_1maths_1_1Statistics_aa5198d48209e9de0ae02da3b78cecb0a}} 
+Data\+Type {\bfseries m\+\_\+max}
+\item 
+\mbox{\Hypertarget{classez_1_1maths_1_1Statistics_ac64a8b6142ce5aa84188a8f1f6c0007f}\label{classez_1_1maths_1_1Statistics_ac64a8b6142ce5aa84188a8f1f6c0007f}} 
+eze\+::natural {\bfseries m\+\_\+freq\+\_\+min}
+\item 
+\mbox{\Hypertarget{classez_1_1maths_1_1Statistics_a6ae8ee105c09bebe715ffe8ce81ad17d}\label{classez_1_1maths_1_1Statistics_a6ae8ee105c09bebe715ffe8ce81ad17d}} 
+eze\+::natural {\bfseries m\+\_\+freq\+\_\+max}
+\item 
+\mbox{\Hypertarget{classez_1_1maths_1_1Statistics_ae8875486a3cf7fd6f2c58832a1a70e89}\label{classez_1_1maths_1_1Statistics_ae8875486a3cf7fd6f2c58832a1a70e89}} 
+Data\+Type {\bfseries m\+\_\+centiles} \mbox{[}10\mbox{]}
+\item 
+\mbox{\Hypertarget{classez_1_1maths_1_1Statistics_a3bd3659824061c27583d7b8907b0503f}\label{classez_1_1maths_1_1Statistics_a3bd3659824061c27583d7b8907b0503f}} 
+Data\+Type {\bfseries m\+\_\+sum}
+\item 
+\mbox{\Hypertarget{classez_1_1maths_1_1Statistics_afc9e42d9fdc894b60733d31c2c845621}\label{classez_1_1maths_1_1Statistics_afc9e42d9fdc894b60733d31c2c845621}} 
+Real\+Type {\bfseries m\+\_\+avg}
+\item 
+\mbox{\Hypertarget{classez_1_1maths_1_1Statistics_ab842f1de265f4b2eebaf90f99df6f789}\label{classez_1_1maths_1_1Statistics_ab842f1de265f4b2eebaf90f99df6f789}} 
+Real\+Type {\bfseries m\+\_\+var}
+\item 
+\mbox{\Hypertarget{classez_1_1maths_1_1Statistics_aed8408db4acb34a66782c8974e6ba112}\label{classez_1_1maths_1_1Statistics_aed8408db4acb34a66782c8974e6ba112}} 
+Real\+Type {\bfseries m\+\_\+sdv}
+\item 
+\mbox{\Hypertarget{classez_1_1maths_1_1Statistics_aff2d7537cee12d47a8ba3c5c938b3a64}\label{classez_1_1maths_1_1Statistics_aff2d7537cee12d47a8ba3c5c938b3a64}} 
+Real\+Type {\bfseries m\+\_\+med}
+\item 
+\mbox{\Hypertarget{classez_1_1maths_1_1Statistics_a32534f7ef8d0c5671858a0ffbf1839bf}\label{classez_1_1maths_1_1Statistics_a32534f7ef8d0c5671858a0ffbf1839bf}} 
+eze\+::natural {\bfseries m\+\_\+print\+\_\+flags}
+\end{DoxyCompactItemize}
+\subsection*{Friends}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classez_1_1maths_1_1Statistics_a69cf0896adb2c328366d30bb7baf69fc}\label{classez_1_1maths_1_1Statistics_a69cf0896adb2c328366d30bb7baf69fc}} 
+ostream \& {\bfseries operator$<$$<$} (ostream \&out, \hyperlink{classez_1_1maths_1_1Statistics}{Statistics}$<$ Data\+Type, Real\+Type $>$ \&s)
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\subsubsection*{template$<$class Data\+Type, class Real\+Type$>$\newline
+class ez\+::maths\+::\+Statistics$<$ Data\+Type, Real\+Type $>$}
+
+template class used to compute statistics on a series of data 
+
+
+\begin{DoxyItemize}
+\item Data\+Type is the type of input data (ex\+: int) 
+\item Real\+Type is the type of output data (float or double) 
+\end{DoxyItemize}
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classez_1_1maths_1_1Statistics_aa1a3aade13e58b388d48380cd0d44374}\label{classez_1_1maths_1_1Statistics_aa1a3aade13e58b388d48380cd0d44374}} 
+\index{ez\+::maths\+::\+Statistics@{ez\+::maths\+::\+Statistics}!Statistics@{Statistics}}
+\index{Statistics@{Statistics}!ez\+::maths\+::\+Statistics@{ez\+::maths\+::\+Statistics}}
+\subsubsection{\texorpdfstring{Statistics()}{Statistics()}}
+{\footnotesize\ttfamily template$<$class Data\+Type , class Real\+Type $>$ \\
+\hyperlink{classez_1_1maths_1_1Statistics}{ez\+::maths\+::\+Statistics}$<$ Data\+Type, Real\+Type $>$\+::\hyperlink{classez_1_1maths_1_1Statistics}{Statistics} (\begin{DoxyParamCaption}\item[{vector$<$ \hyperlink{classez_1_1maths_1_1Value}{Value}$<$ Data\+Type $>$ $>$ \&}]{v,  }\item[{eze\+::natural}]{print\+\_\+flags = {\ttfamily PRINT\+\_\+ALL} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+constructor with initial data Description\+: data are copied into 
+\begin{DoxyParams}{Parameters}
+{\em v} & vector of data \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classez_1_1maths_1_1Statistics_a3bdb44726f6e8948779f71cdfada0ee4}\label{classez_1_1maths_1_1Statistics_a3bdb44726f6e8948779f71cdfada0ee4}} 
+\index{ez\+::maths\+::\+Statistics@{ez\+::maths\+::\+Statistics}!compute@{compute}}
+\index{compute@{compute}!ez\+::maths\+::\+Statistics@{ez\+::maths\+::\+Statistics}}
+\subsubsection{\texorpdfstring{compute()}{compute()}}
+{\footnotesize\ttfamily template$<$class Data\+Type , class Real\+Type $>$ \\
+void \hyperlink{classez_1_1maths_1_1Statistics}{ez\+::maths\+::\+Statistics}$<$ Data\+Type, Real\+Type $>$\+::compute (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+main method used to compute average, ... 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+src/version\+\_\+2018.\+06/maths/statistics.\+h\end{DoxyCompactItemize}

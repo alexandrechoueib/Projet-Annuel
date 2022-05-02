@@ -1,0 +1,70 @@
+\hypertarget{classez_1_1essential_1_1Exception}{}\section{ez\+:\+:essential\+:\+:Exception Class Reference}
+\label{classez_1_1essential_1_1Exception}\index{ez\+::essential\+::\+Exception@{ez\+::essential\+::\+Exception}}
+
+
+{\ttfamily \#include $<$exception.\+h$>$}
+
+
+
+Inheritance diagram for ez\+:\+:essential\+:\+:Exception\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=202pt]{classez_1_1essential_1_1Exception__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for ez\+:\+:essential\+:\+:Exception\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=202pt]{classez_1_1essential_1_1Exception__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classez_1_1essential_1_1Exception_a0fd6d33274aa5d386399a1d35c65a640}\label{classez_1_1essential_1_1Exception_a0fd6d33274aa5d386399a1d35c65a640}} 
+{\bfseries Exception} (const char $\ast$in\+\_\+file, integer at\+\_\+line)
+\item 
+const char $\ast$ \hyperlink{classez_1_1essential_1_1Exception_aa330aa854000f17a93919417d977bcac}{what} () const  throw ()
+\item 
+\mbox{\Hypertarget{classez_1_1essential_1_1Exception_a8352ffc60d214a4b9a5739fee37bc829}\label{classez_1_1essential_1_1Exception_a8352ffc60d214a4b9a5739fee37bc829}} 
+void {\bfseries print\+\_\+stack\+\_\+trace} (std\+::ostream \&out)
+\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classez_1_1essential_1_1Exception_aedbe86bdf9456a597c6b9f11cde481fd}\label{classez_1_1essential_1_1Exception_aedbe86bdf9456a597c6b9f11cde481fd}} 
+static void {\bfseries clear} ()
+\end{DoxyCompactItemize}
+\subsection*{Data Fields}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classez_1_1essential_1_1Exception_aea83319eb701ca107bbfd3e5e3900840}\label{classez_1_1essential_1_1Exception_aea83319eb701ca107bbfd3e5e3900840}} 
+const char $\ast$ {\bfseries m\+\_\+in\+\_\+file}
+\item 
+\mbox{\Hypertarget{classez_1_1essential_1_1Exception_a0d9fb7703923a5e5780429c9dd088592}\label{classez_1_1essential_1_1Exception_a0d9fb7703923a5e5780429c9dd088592}} 
+integer {\bfseries m\+\_\+at\+\_\+line}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\hyperlink{classez_1_1essential_1_1Exception}{Exception} for the EZ Library We are using the cexc stream to give some message about the cause of the error and we record the file and line where it occured 
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classez_1_1essential_1_1Exception_aa330aa854000f17a93919417d977bcac}\label{classez_1_1essential_1_1Exception_aa330aa854000f17a93919417d977bcac}} 
+\index{ez\+::essential\+::\+Exception@{ez\+::essential\+::\+Exception}!what@{what}}
+\index{what@{what}!ez\+::essential\+::\+Exception@{ez\+::essential\+::\+Exception}}
+\subsubsection{\texorpdfstring{what()}{what()}}
+{\footnotesize\ttfamily const char $\ast$ Exception\+::what (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const throw  ) }
+
+return error message to print 
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+src/version\+\_\+2018.\+06/essential/exception.\+h\item 
+src/version\+\_\+2018.\+06/essential/exception.\+cpp\end{DoxyCompactItemize}

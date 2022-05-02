@@ -1,0 +1,6 @@
+<map id="ez::logging::Logger" name="ez::logging::Logger">
+<area shape="rect" id="node3" href="$classez_1_1logging_1_1ConsoleLogger.html" title="ez::logging::ConsoleLogger" alt="" coords="5,155,185,181"/>
+<area shape="rect" id="node4" href="$classez_1_1logging_1_1FileLogger.html" title="ez::logging::FileLogger" alt="" coords="209,155,363,181"/>
+<area shape="rect" id="node5" href="$classez_1_1logging_1_1MemoryLogger.html" title="ez::logging::MemoryLogger" alt="" coords="387,155,566,181"/>
+<area shape="rect" id="node2" href="$classez_1_1logging_1_1BaseLogger.html" title="ez::logging::BaseLogger" alt="" coords="205,5,367,32"/>
+</map>

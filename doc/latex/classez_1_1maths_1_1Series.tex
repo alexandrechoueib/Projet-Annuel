@@ -1,0 +1,104 @@
+\hypertarget{classez_1_1maths_1_1Series}{}\section{ez\+:\+:maths\+:\+:Series$<$ Data\+Type $>$ Class Template Reference}
+\label{classez_1_1maths_1_1Series}\index{ez\+::maths\+::\+Series$<$ Data\+Type $>$@{ez\+::maths\+::\+Series$<$ Data\+Type $>$}}
+
+
+{\ttfamily \#include $<$series.\+h$>$}
+
+\subsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classez_1_1maths_1_1Series_a0c38091ad519ac987e0a530ac6772225}\label{classez_1_1maths_1_1Series_a0c38091ad519ac987e0a530ac6772225}} 
+typedef vector$<$ \hyperlink{classez_1_1maths_1_1Value}{Value}$<$ Data\+Type $>$ $>$\+::iterator {\bfseries iterator}
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classez_1_1maths_1_1Series_a53985929bac84b0bde2294088e14f175}{Series} ()
+\item 
+\hyperlink{classez_1_1maths_1_1Series_ad52dec35d6341c5e6971bd24c70fe585}{Series} (vector$<$ Data\+Type $>$ \&v)
+\item 
+\mbox{\Hypertarget{classez_1_1maths_1_1Series_a38a4586f46c7a51989206fb69a6c345f}\label{classez_1_1maths_1_1Series_a38a4586f46c7a51989206fb69a6c345f}} 
+{\bfseries Series} (const \hyperlink{classez_1_1maths_1_1Series}{Series}$<$ Data\+Type $>$ \&obj)
+\item 
+\mbox{\Hypertarget{classez_1_1maths_1_1Series_aaee5e146acbd2c0fc89cc777dc3cc891}\label{classez_1_1maths_1_1Series_aaee5e146acbd2c0fc89cc777dc3cc891}} 
+\hyperlink{classez_1_1maths_1_1Series}{Series}$<$ Data\+Type $>$ \& {\bfseries operator=} (const \hyperlink{classez_1_1maths_1_1Series}{Series}$<$ Data\+Type $>$ \&obj)
+\item 
+\mbox{\Hypertarget{classez_1_1maths_1_1Series_a91899948fba6b804489fd0a99ad3b3a6}\label{classez_1_1maths_1_1Series_a91899948fba6b804489fd0a99ad3b3a6}} 
+integer {\bfseries size} ()
+\item 
+\mbox{\Hypertarget{classez_1_1maths_1_1Series_a676d36ad13a7114c730a24d224b024de}\label{classez_1_1maths_1_1Series_a676d36ad13a7114c730a24d224b024de}} 
+\hyperlink{classez_1_1maths_1_1Value}{Value}$<$ Data\+Type $>$ \& {\bfseries operator\mbox{[}$\,$\mbox{]}} (integer n)
+\item 
+\mbox{\Hypertarget{classez_1_1maths_1_1Series_a3232e2fc63ed3b1839b764fadef2b414}\label{classez_1_1maths_1_1Series_a3232e2fc63ed3b1839b764fadef2b414}} 
+iterator {\bfseries find\+\_\+by\+\_\+name} (string n)
+\item 
+\mbox{\Hypertarget{classez_1_1maths_1_1Series_a43a122938300f3844f53f3dc3c61dddd}\label{classez_1_1maths_1_1Series_a43a122938300f3844f53f3dc3c61dddd}} 
+iterator {\bfseries begin} ()
+\item 
+\mbox{\Hypertarget{classez_1_1maths_1_1Series_ae97b3663ff1b5d0bd86f7c0bdde452b6}\label{classez_1_1maths_1_1Series_ae97b3663ff1b5d0bd86f7c0bdde452b6}} 
+iterator {\bfseries end} ()
+\item 
+\mbox{\Hypertarget{classez_1_1maths_1_1Series_aea40980b9162417d6803827553c00ef3}\label{classez_1_1maths_1_1Series_aea40980b9162417d6803827553c00ef3}} 
+void {\bfseries clear} ()
+\item 
+\mbox{\Hypertarget{classez_1_1maths_1_1Series_a0678da807c1edd794ecd38aa8c320695}\label{classez_1_1maths_1_1Series_a0678da807c1edd794ecd38aa8c320695}} 
+void {\bfseries record} (Data\+Type x)
+\item 
+\mbox{\Hypertarget{classez_1_1maths_1_1Series_a1a54c4a270dd475621e818a541bb00fc}\label{classez_1_1maths_1_1Series_a1a54c4a270dd475621e818a541bb00fc}} 
+void {\bfseries record} (const \hyperlink{classez_1_1maths_1_1Value}{Value}$<$ Data\+Type $>$ \&v)
+\item 
+\mbox{\Hypertarget{classez_1_1maths_1_1Series_aa43d9e98629a7393b6a1a7be75c1e46a}\label{classez_1_1maths_1_1Series_aa43d9e98629a7393b6a1a7be75c1e46a}} 
+void {\bfseries percentage} ()
+\item 
+\mbox{\Hypertarget{classez_1_1maths_1_1Series_a2581b7712b1a93ebb7dfa23933039b0e}\label{classez_1_1maths_1_1Series_a2581b7712b1a93ebb7dfa23933039b0e}} 
+ostream \& {\bfseries print} (ostream \&out)
+\item 
+\mbox{\Hypertarget{classez_1_1maths_1_1Series_af3c448bdc8b7b890afa2d82cd13099dd}\label{classez_1_1maths_1_1Series_af3c448bdc8b7b890afa2d82cd13099dd}} 
+void {\bfseries export\+\_\+as\+\_\+series} (ostream \&out)
+\item 
+\mbox{\Hypertarget{classez_1_1maths_1_1Series_ac570d87d41bb8f9dc63281152c237af3}\label{classez_1_1maths_1_1Series_ac570d87d41bb8f9dc63281152c237af3}} 
+void {\bfseries export\+\_\+as} (\hyperlink{classez_1_1maths_1_1Series}{Series}$<$ long\+\_\+real $>$ \&s)
+\item 
+\mbox{\Hypertarget{classez_1_1maths_1_1Series_a265100b5fe761ebb2f096b38dc2558e8}\label{classez_1_1maths_1_1Series_a265100b5fe761ebb2f096b38dc2558e8}} 
+void {\bfseries export\+\_\+as\+\_\+gnuplot} (ostream \&out)
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classez_1_1maths_1_1Series_abff25e7c45cf942429299e013e5949e4}\label{classez_1_1maths_1_1Series_abff25e7c45cf942429299e013e5949e4}} 
+vector$<$ \hyperlink{classez_1_1maths_1_1Value}{Value}$<$ Data\+Type $>$ $>$ {\bfseries m\+\_\+values}
+\end{DoxyCompactItemize}
+\subsection*{Friends}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classez_1_1maths_1_1Series_a1b2351e1596a6da5ee7e040e48881887}\label{classez_1_1maths_1_1Series_a1b2351e1596a6da5ee7e040e48881887}} 
+ostream \& {\bfseries operator$<$$<$} (ostream \&out, \hyperlink{classez_1_1maths_1_1Series}{Series}$<$ Data\+Type $>$ \&obj)
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\subsubsection*{template$<$class Data\+Type$>$\newline
+class ez\+::maths\+::\+Series$<$ Data\+Type $>$}
+
+class used to represent series of data 
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classez_1_1maths_1_1Series_a53985929bac84b0bde2294088e14f175}\label{classez_1_1maths_1_1Series_a53985929bac84b0bde2294088e14f175}} 
+\index{ez\+::maths\+::\+Series@{ez\+::maths\+::\+Series}!Series@{Series}}
+\index{Series@{Series}!ez\+::maths\+::\+Series@{ez\+::maths\+::\+Series}}
+\subsubsection{\texorpdfstring{Series()}{Series()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily template$<$class Data\+Type$>$ \\
+\hyperlink{classez_1_1maths_1_1Series}{ez\+::maths\+::\+Series}$<$ Data\+Type $>$\+::\hyperlink{classez_1_1maths_1_1Series}{Series} (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Default constructor \mbox{\Hypertarget{classez_1_1maths_1_1Series_ad52dec35d6341c5e6971bd24c70fe585}\label{classez_1_1maths_1_1Series_ad52dec35d6341c5e6971bd24c70fe585}} 
+\index{ez\+::maths\+::\+Series@{ez\+::maths\+::\+Series}!Series@{Series}}
+\index{Series@{Series}!ez\+::maths\+::\+Series@{ez\+::maths\+::\+Series}}
+\subsubsection{\texorpdfstring{Series()}{Series()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily template$<$class Data\+Type$>$ \\
+\hyperlink{classez_1_1maths_1_1Series}{ez\+::maths\+::\+Series}$<$ Data\+Type $>$\+::\hyperlink{classez_1_1maths_1_1Series}{Series} (\begin{DoxyParamCaption}\item[{vector$<$ Data\+Type $>$ \&}]{v }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Constructor given vector of values 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+src/version\+\_\+2018.\+06/maths/series.\+h\end{DoxyCompactItemize}

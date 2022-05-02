@@ -1,0 +1,71 @@
+\hypertarget{classez_1_1essential_1_1Range_1_1iterator}{}\section{ez\+:\+:essential\+:\+:Range\+:\+:iterator Class Reference}
+\label{classez_1_1essential_1_1Range_1_1iterator}\index{ez\+::essential\+::\+Range\+::iterator@{ez\+::essential\+::\+Range\+::iterator}}
+
+
+{\ttfamily \#include $<$range.\+h$>$}
+
+\subsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classez_1_1essential_1_1Range_1_1iterator_a713bdf44d4b985f87e10dffe035541fd}\label{classez_1_1essential_1_1Range_1_1iterator_a713bdf44d4b985f87e10dffe035541fd}} 
+typedef \hyperlink{classez_1_1essential_1_1Range_1_1iterator}{iterator} {\bfseries self\+\_\+type}
+\item 
+\mbox{\Hypertarget{classez_1_1essential_1_1Range_1_1iterator_abb176db665ef7ba9a38d95d2bc044022}\label{classez_1_1essential_1_1Range_1_1iterator_abb176db665ef7ba9a38d95d2bc044022}} 
+typedef integer {\bfseries value\+\_\+type}
+\item 
+\mbox{\Hypertarget{classez_1_1essential_1_1Range_1_1iterator_aa10a860a661f89117b0801607b91450e}\label{classez_1_1essential_1_1Range_1_1iterator_aa10a860a661f89117b0801607b91450e}} 
+typedef integer \& {\bfseries reference}
+\item 
+\mbox{\Hypertarget{classez_1_1essential_1_1Range_1_1iterator_aa45fb2492e39ce4f9e2c1b13ff04704e}\label{classez_1_1essential_1_1Range_1_1iterator_aa45fb2492e39ce4f9e2c1b13ff04704e}} 
+typedef integer {\bfseries pointer}
+\item 
+\mbox{\Hypertarget{classez_1_1essential_1_1Range_1_1iterator_abc9e68ae81132580f9091febf2ec5395}\label{classez_1_1essential_1_1Range_1_1iterator_abc9e68ae81132580f9091febf2ec5395}} 
+typedef std\+::forward\+\_\+iterator\+\_\+tag {\bfseries iterator\+\_\+category}
+\item 
+\mbox{\Hypertarget{classez_1_1essential_1_1Range_1_1iterator_a7b590b7ff09b70ca5fac6da60c72ab28}\label{classez_1_1essential_1_1Range_1_1iterator_a7b590b7ff09b70ca5fac6da60c72ab28}} 
+typedef int {\bfseries difference\+\_\+type}
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classez_1_1essential_1_1Range_1_1iterator_aa1a44c4ae0b2acb491168cbdbb11d018}\label{classez_1_1essential_1_1Range_1_1iterator_aa1a44c4ae0b2acb491168cbdbb11d018}} 
+{\bfseries iterator} (pointer v, pointer i)
+\item 
+\mbox{\Hypertarget{classez_1_1essential_1_1Range_1_1iterator_af36d5567840a856e7868bf70e55b98bf}\label{classez_1_1essential_1_1Range_1_1iterator_af36d5567840a856e7868bf70e55b98bf}} 
+{\bfseries iterator} (const \hyperlink{classez_1_1essential_1_1Range_1_1iterator}{iterator} \&it)
+\item 
+\mbox{\Hypertarget{classez_1_1essential_1_1Range_1_1iterator_a4f60e924409b3b68acaf77d820666a97}\label{classez_1_1essential_1_1Range_1_1iterator_a4f60e924409b3b68acaf77d820666a97}} 
+\hyperlink{classez_1_1essential_1_1Range_1_1iterator}{iterator} \& {\bfseries operator++} ()
+\item 
+\mbox{\Hypertarget{classez_1_1essential_1_1Range_1_1iterator_a194e55bccf3e691f3441bf86b82ca850}\label{classez_1_1essential_1_1Range_1_1iterator_a194e55bccf3e691f3441bf86b82ca850}} 
+\hyperlink{classez_1_1essential_1_1Range_1_1iterator}{iterator} {\bfseries operator++} (int junk)
+\item 
+\mbox{\Hypertarget{classez_1_1essential_1_1Range_1_1iterator_a5fd875db66712ec87b83aa33788c8ffa}\label{classez_1_1essential_1_1Range_1_1iterator_a5fd875db66712ec87b83aa33788c8ffa}} 
+reference {\bfseries operator$\ast$} ()
+\item 
+\mbox{\Hypertarget{classez_1_1essential_1_1Range_1_1iterator_ace7d39f6e2251143d20333246371fd80}\label{classez_1_1essential_1_1Range_1_1iterator_ace7d39f6e2251143d20333246371fd80}} 
+pointer {\bfseries operator-\/$>$} ()
+\item 
+\mbox{\Hypertarget{classez_1_1essential_1_1Range_1_1iterator_ae0149f2f478465a6945e4690b72fbd90}\label{classez_1_1essential_1_1Range_1_1iterator_ae0149f2f478465a6945e4690b72fbd90}} 
+bool {\bfseries operator==} (const \hyperlink{classez_1_1essential_1_1Range_1_1iterator}{iterator} \&y)
+\item 
+\mbox{\Hypertarget{classez_1_1essential_1_1Range_1_1iterator_a761354ac7770def39f8ace39dd30bf59}\label{classez_1_1essential_1_1Range_1_1iterator_a761354ac7770def39f8ace39dd30bf59}} 
+bool {\bfseries operator!=} (const \hyperlink{classez_1_1essential_1_1Range_1_1iterator}{iterator} \&y)
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classez_1_1essential_1_1Range_1_1iterator_ab5508b933297f8afa3d23327d22927e9}\label{classez_1_1essential_1_1Range_1_1iterator_ab5508b933297f8afa3d23327d22927e9}} 
+integer {\bfseries m\+\_\+current\+\_\+value}
+\item 
+\mbox{\Hypertarget{classez_1_1essential_1_1Range_1_1iterator_a2ef5060eceb33714aa3fd978af5f9a59}\label{classez_1_1essential_1_1Range_1_1iterator_a2ef5060eceb33714aa3fd978af5f9a59}} 
+integer {\bfseries m\+\_\+increment}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Definition of an iterator for the range which is useful for {\bfseries for} loops 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+src/version\+\_\+2018.\+06/essential/range.\+h\end{DoxyCompactItemize}

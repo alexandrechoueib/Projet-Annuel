@@ -1,0 +1,206 @@
+\hypertarget{classez_1_1objects_1_1Set}{}\section{ez\+:\+:objects\+:\+:Set$<$ Data\+Type $>$ Class Template Reference}
+\label{classez_1_1objects_1_1Set}\index{ez\+::objects\+::\+Set$<$ Data\+Type $>$@{ez\+::objects\+::\+Set$<$ Data\+Type $>$}}
+
+
+Inheritance diagram for ez\+:\+:objects\+:\+:Set$<$ Data\+Type $>$\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=310pt]{classez_1_1objects_1_1Set__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for ez\+:\+:objects\+:\+:Set$<$ Data\+Type $>$\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=310pt]{classez_1_1objects_1_1Set__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classez_1_1objects_1_1Set_af268f1b4453b28e81e7338e84abc6cc8}\label{classez_1_1objects_1_1Set_af268f1b4453b28e81e7338e84abc6cc8}} 
+typedef \hyperlink{classez_1_1objects_1_1Set}{Set}$<$ Data\+Type $>$ {\bfseries self}
+\item 
+\mbox{\Hypertarget{classez_1_1objects_1_1Set_a5e10b3a2e56eeeb1ed005d32c41c96ed}\label{classez_1_1objects_1_1Set_a5e10b3a2e56eeeb1ed005d32c41c96ed}} 
+typedef std\+::set$<$ Data\+Type $>$\+::iterator {\bfseries iterator}
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classez_1_1objects_1_1Set_ac76e5e6f5cc80a3ad3d89b4ba8d8def4}{Set} ()
+\item 
+\hyperlink{classez_1_1objects_1_1Set_a98c649d945406b540cc6b733b296227f}{Set} (const \hyperlink{classez_1_1objects_1_1Set}{Set}$<$ Data\+Type $>$ \&obj)
+\item 
+\hyperlink{classez_1_1objects_1_1Set}{Set}$<$ Data\+Type $>$ \& \hyperlink{classez_1_1objects_1_1Set_a34b861364e501b39bc619daf9b4bc830}{operator=} (const \hyperlink{classez_1_1objects_1_1Set}{Set}$<$ Data\+Type $>$ \&obj)
+\item 
+\mbox{\Hypertarget{classez_1_1objects_1_1Set_a41eac2c0a8d0652842c4d955f1af4d8d}\label{classez_1_1objects_1_1Set_a41eac2c0a8d0652842c4d955f1af4d8d}} 
+{\bfseries Set} (const std\+::initializer\+\_\+list$<$ Data\+Type $>$ \&l)
+\item 
+\hyperlink{classez_1_1objects_1_1Set_a14737e16cb0ebd77b9df7f6d76111149}{$\sim$\+Set} ()
+\item 
+natural \hyperlink{classez_1_1objects_1_1Set_afb546d4097dc6a89b5c114922139619d}{size} ()
+\item 
+\mbox{\Hypertarget{classez_1_1objects_1_1Set_a0ac2a73e03177c02bfd64b51d048f380}\label{classez_1_1objects_1_1Set_a0ac2a73e03177c02bfd64b51d048f380}} 
+void {\bfseries put} (Data\+Type v)
+\item 
+\mbox{\Hypertarget{classez_1_1objects_1_1Set_ad9c2657ac5174643fb7f4ef5ceebb089}\label{classez_1_1objects_1_1Set_ad9c2657ac5174643fb7f4ef5ceebb089}} 
+bool {\bfseries exists} (Data\+Type v)
+\item 
+\mbox{\Hypertarget{classez_1_1objects_1_1Set_a684d3e24789bbb94cc530f19ddf001ce}\label{classez_1_1objects_1_1Set_a684d3e24789bbb94cc530f19ddf001ce}} 
+void {\bfseries remove} (Data\+Type v)
+\item 
+void \hyperlink{classez_1_1objects_1_1Set_a6fd40ec895d19ec7ab00cc8c55b505a1}{print} (std\+::ostream \&stream) override
+\item 
+void \hyperlink{classez_1_1objects_1_1Set_a1a98246f459de08368b425eae3720873}{output} (std\+::ostream \&stream) override
+\item 
+void \hyperlink{classez_1_1objects_1_1Set_a338e14cc6fe1afa7031a6f5f4959acf1}{input} (std\+::istream \&stream) override
+\item 
+integer \hyperlink{classez_1_1objects_1_1Set_aeaab2cadd3a001a94acb40d7cf2b2b00}{compare} (const \hyperlink{classez_1_1objects_1_1Object}{Object} \&y) override
+\item 
+\hyperlink{classez_1_1objects_1_1Object}{Object} $\ast$ \hyperlink{classez_1_1objects_1_1Set_a1faa8b09dc50d82e203d3e31f3b9f33e}{clone} () override
+\item 
+bool \hyperlink{classez_1_1objects_1_1Set_a0b65ed5aee3fa32d0ddcb5a4a89f4dc3}{is\+\_\+empty} ()
+\item 
+\mbox{\Hypertarget{classez_1_1objects_1_1Set_a7b27ebf6feeb83f6c1a5d167f5cb25be}\label{classez_1_1objects_1_1Set_a7b27ebf6feeb83f6c1a5d167f5cb25be}} 
+Data\+Type {\bfseries sum} (Data\+Type zero)
+\item 
+\mbox{\Hypertarget{classez_1_1objects_1_1Set_ab8e5fecd8078714c3bdebed0ba3f60eb}\label{classez_1_1objects_1_1Set_ab8e5fecd8078714c3bdebed0ba3f60eb}} 
+void {\bfseries sort} ()
+\item 
+\mbox{\Hypertarget{classez_1_1objects_1_1Set_ad75d62e5e34a3954100f817bd6d281a4}\label{classez_1_1objects_1_1Set_ad75d62e5e34a3954100f817bd6d281a4}} 
+iterator {\bfseries begin} ()
+\item 
+\mbox{\Hypertarget{classez_1_1objects_1_1Set_a6d09c0a3f3482c1419e810da0ee7c1a1}\label{classez_1_1objects_1_1Set_a6d09c0a3f3482c1419e810da0ee7c1a1}} 
+iterator {\bfseries end} ()
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classez_1_1objects_1_1Set_aa736747be215dbb5611c9954d084e53a}\label{classez_1_1objects_1_1Set_aa736747be215dbb5611c9954d084e53a}} 
+std\+::set$<$ Data\+Type $>$ {\bfseries data}
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classez_1_1objects_1_1Set_ac76e5e6f5cc80a3ad3d89b4ba8d8def4}\label{classez_1_1objects_1_1Set_ac76e5e6f5cc80a3ad3d89b4ba8d8def4}} 
+\index{ez\+::objects\+::\+Set@{ez\+::objects\+::\+Set}!Set@{Set}}
+\index{Set@{Set}!ez\+::objects\+::\+Set@{ez\+::objects\+::\+Set}}
+\subsubsection{\texorpdfstring{Set()}{Set()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily template$<$class Data\+Type$>$ \\
+\hyperlink{classez_1_1objects_1_1Set}{ez\+::objects\+::\+Set}$<$ Data\+Type $>$\+::\hyperlink{classez_1_1objects_1_1Set}{Set} (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Default constructor \mbox{\Hypertarget{classez_1_1objects_1_1Set_a98c649d945406b540cc6b733b296227f}\label{classez_1_1objects_1_1Set_a98c649d945406b540cc6b733b296227f}} 
+\index{ez\+::objects\+::\+Set@{ez\+::objects\+::\+Set}!Set@{Set}}
+\index{Set@{Set}!ez\+::objects\+::\+Set@{ez\+::objects\+::\+Set}}
+\subsubsection{\texorpdfstring{Set()}{Set()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily template$<$class Data\+Type$>$ \\
+\hyperlink{classez_1_1objects_1_1Set}{ez\+::objects\+::\+Set}$<$ Data\+Type $>$\+::\hyperlink{classez_1_1objects_1_1Set}{Set} (\begin{DoxyParamCaption}\item[{const \hyperlink{classez_1_1objects_1_1Set}{Set}$<$ Data\+Type $>$ \&}]{obj }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Copy constructor \mbox{\Hypertarget{classez_1_1objects_1_1Set_a14737e16cb0ebd77b9df7f6d76111149}\label{classez_1_1objects_1_1Set_a14737e16cb0ebd77b9df7f6d76111149}} 
+\index{ez\+::objects\+::\+Set@{ez\+::objects\+::\+Set}!````~Set@{$\sim$\+Set}}
+\index{````~Set@{$\sim$\+Set}!ez\+::objects\+::\+Set@{ez\+::objects\+::\+Set}}
+\subsubsection{\texorpdfstring{$\sim$\+Set()}{~Set()}}
+{\footnotesize\ttfamily template$<$class Data\+Type$>$ \\
+\hyperlink{classez_1_1objects_1_1Set}{ez\+::objects\+::\+Set}$<$ Data\+Type $>$\+::$\sim$\hyperlink{classez_1_1objects_1_1Set}{Set} (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Destructor 
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classez_1_1objects_1_1Set_a1faa8b09dc50d82e203d3e31f3b9f33e}\label{classez_1_1objects_1_1Set_a1faa8b09dc50d82e203d3e31f3b9f33e}} 
+\index{ez\+::objects\+::\+Set@{ez\+::objects\+::\+Set}!clone@{clone}}
+\index{clone@{clone}!ez\+::objects\+::\+Set@{ez\+::objects\+::\+Set}}
+\subsubsection{\texorpdfstring{clone()}{clone()}}
+{\footnotesize\ttfamily template$<$class Data\+Type$>$ \\
+\hyperlink{classez_1_1objects_1_1Object}{Object}$\ast$ \hyperlink{classez_1_1objects_1_1Set}{ez\+::objects\+::\+Set}$<$ Data\+Type $>$\+::clone (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [override]}, {\ttfamily [virtual]}}
+
+return a copy of the object 
+
+Reimplemented from \hyperlink{classez_1_1objects_1_1Object_acf444b2581d898eb4b8c92c2d5865c9e}{ez\+::objects\+::\+Object}.
+
+\mbox{\Hypertarget{classez_1_1objects_1_1Set_aeaab2cadd3a001a94acb40d7cf2b2b00}\label{classez_1_1objects_1_1Set_aeaab2cadd3a001a94acb40d7cf2b2b00}} 
+\index{ez\+::objects\+::\+Set@{ez\+::objects\+::\+Set}!compare@{compare}}
+\index{compare@{compare}!ez\+::objects\+::\+Set@{ez\+::objects\+::\+Set}}
+\subsubsection{\texorpdfstring{compare()}{compare()}}
+{\footnotesize\ttfamily template$<$class Data\+Type$>$ \\
+integer \hyperlink{classez_1_1objects_1_1Set}{ez\+::objects\+::\+Set}$<$ Data\+Type $>$\+::compare (\begin{DoxyParamCaption}\item[{const \hyperlink{classez_1_1objects_1_1Object}{Object} \&}]{y }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [override]}, {\ttfamily [virtual]}}
+
+compare two objects \begin{DoxyReturn}{Returns}
+0 if objects are identical, negative value if this $<$ y, positive value if this $>$ y 
+\end{DoxyReturn}
+
+
+Reimplemented from \hyperlink{classez_1_1objects_1_1Object_aca311d389dffa204e425463145f4e1e6}{ez\+::objects\+::\+Object}.
+
+\mbox{\Hypertarget{classez_1_1objects_1_1Set_a338e14cc6fe1afa7031a6f5f4959acf1}\label{classez_1_1objects_1_1Set_a338e14cc6fe1afa7031a6f5f4959acf1}} 
+\index{ez\+::objects\+::\+Set@{ez\+::objects\+::\+Set}!input@{input}}
+\index{input@{input}!ez\+::objects\+::\+Set@{ez\+::objects\+::\+Set}}
+\subsubsection{\texorpdfstring{input()}{input()}}
+{\footnotesize\ttfamily template$<$class Data\+Type$>$ \\
+void \hyperlink{classez_1_1objects_1_1Set}{ez\+::objects\+::\+Set}$<$ Data\+Type $>$\+::input (\begin{DoxyParamCaption}\item[{std\+::istream \&}]{stream }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [override]}, {\ttfamily [virtual]}}
+
+this function is used to get the data field members of an object from a stream and acts as unserialize 
+
+Reimplemented from \hyperlink{classez_1_1objects_1_1Object_a878bdc53b7f16fda6fa15dab214c4b6a}{ez\+::objects\+::\+Object}.
+
+\mbox{\Hypertarget{classez_1_1objects_1_1Set_a0b65ed5aee3fa32d0ddcb5a4a89f4dc3}\label{classez_1_1objects_1_1Set_a0b65ed5aee3fa32d0ddcb5a4a89f4dc3}} 
+\index{ez\+::objects\+::\+Set@{ez\+::objects\+::\+Set}!is\+\_\+empty@{is\+\_\+empty}}
+\index{is\+\_\+empty@{is\+\_\+empty}!ez\+::objects\+::\+Set@{ez\+::objects\+::\+Set}}
+\subsubsection{\texorpdfstring{is\+\_\+empty()}{is\_empty()}}
+{\footnotesize\ttfamily template$<$class Data\+Type$>$ \\
+bool \hyperlink{classez_1_1objects_1_1Set}{ez\+::objects\+::\+Set}$<$ Data\+Type $>$\+::is\+\_\+empty (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+Return true if container has no element, false otherwise 
+
+Implements \hyperlink{classez_1_1objects_1_1Container_a205eb4f8a4fe967d425fdf04e5db5f93}{ez\+::objects\+::\+Container$<$ Data\+Type, natural $>$}.
+
+\mbox{\Hypertarget{classez_1_1objects_1_1Set_a34b861364e501b39bc619daf9b4bc830}\label{classez_1_1objects_1_1Set_a34b861364e501b39bc619daf9b4bc830}} 
+\index{ez\+::objects\+::\+Set@{ez\+::objects\+::\+Set}!operator=@{operator=}}
+\index{operator=@{operator=}!ez\+::objects\+::\+Set@{ez\+::objects\+::\+Set}}
+\subsubsection{\texorpdfstring{operator=()}{operator=()}}
+{\footnotesize\ttfamily template$<$class Data\+Type$>$ \\
+\hyperlink{classez_1_1objects_1_1Set}{Set}$<$Data\+Type$>$\& \hyperlink{classez_1_1objects_1_1Set}{ez\+::objects\+::\+Set}$<$ Data\+Type $>$\+::operator= (\begin{DoxyParamCaption}\item[{const \hyperlink{classez_1_1objects_1_1Set}{Set}$<$ Data\+Type $>$ \&}]{obj }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Assignment operator \mbox{\Hypertarget{classez_1_1objects_1_1Set_a1a98246f459de08368b425eae3720873}\label{classez_1_1objects_1_1Set_a1a98246f459de08368b425eae3720873}} 
+\index{ez\+::objects\+::\+Set@{ez\+::objects\+::\+Set}!output@{output}}
+\index{output@{output}!ez\+::objects\+::\+Set@{ez\+::objects\+::\+Set}}
+\subsubsection{\texorpdfstring{output()}{output()}}
+{\footnotesize\ttfamily template$<$class Data\+Type$>$ \\
+void \hyperlink{classez_1_1objects_1_1Set}{ez\+::objects\+::\+Set}$<$ Data\+Type $>$\+::output (\begin{DoxyParamCaption}\item[{std\+::ostream \&}]{stream }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [override]}, {\ttfamily [virtual]}}
+
+this function is used to print the contents of the object in a serializable manner 
+
+Reimplemented from \hyperlink{classez_1_1objects_1_1Object_a0fdfe18e6c35d6b0d7e7a01265aded15}{ez\+::objects\+::\+Object}.
+
+\mbox{\Hypertarget{classez_1_1objects_1_1Set_a6fd40ec895d19ec7ab00cc8c55b505a1}\label{classez_1_1objects_1_1Set_a6fd40ec895d19ec7ab00cc8c55b505a1}} 
+\index{ez\+::objects\+::\+Set@{ez\+::objects\+::\+Set}!print@{print}}
+\index{print@{print}!ez\+::objects\+::\+Set@{ez\+::objects\+::\+Set}}
+\subsubsection{\texorpdfstring{print()}{print()}}
+{\footnotesize\ttfamily template$<$class Data\+Type$>$ \\
+void \hyperlink{classez_1_1objects_1_1Set}{ez\+::objects\+::\+Set}$<$ Data\+Type $>$\+::print (\begin{DoxyParamCaption}\item[{std\+::ostream \&}]{stream }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [override]}, {\ttfamily [virtual]}}
+
+overloading of print method of class \hyperlink{classez_1_1objects_1_1Object}{Object} 
+
+Reimplemented from \hyperlink{classez_1_1objects_1_1Object_a9e20f39a78163f67f000576149d858b3}{ez\+::objects\+::\+Object}.
+
+\mbox{\Hypertarget{classez_1_1objects_1_1Set_afb546d4097dc6a89b5c114922139619d}\label{classez_1_1objects_1_1Set_afb546d4097dc6a89b5c114922139619d}} 
+\index{ez\+::objects\+::\+Set@{ez\+::objects\+::\+Set}!size@{size}}
+\index{size@{size}!ez\+::objects\+::\+Set@{ez\+::objects\+::\+Set}}
+\subsubsection{\texorpdfstring{size()}{size()}}
+{\footnotesize\ttfamily template$<$class Data\+Type$>$ \\
+natural \hyperlink{classez_1_1objects_1_1Set}{ez\+::objects\+::\+Set}$<$ Data\+Type $>$\+::size (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+Return number of elements 
+
+Implements \hyperlink{classez_1_1objects_1_1Container_affd294810c6c29530d1d1e3c2151ad28}{ez\+::objects\+::\+Container$<$ Data\+Type, natural $>$}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+src/version\+\_\+2018.\+06/objects/set.\+h\end{DoxyCompactItemize}

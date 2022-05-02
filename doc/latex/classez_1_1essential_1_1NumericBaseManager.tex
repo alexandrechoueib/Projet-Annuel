@@ -1,0 +1,86 @@
+\hypertarget{classez_1_1essential_1_1NumericBaseManager}{}\section{ez\+:\+:essential\+:\+:Numeric\+Base\+Manager Class Reference}
+\label{classez_1_1essential_1_1NumericBaseManager}\index{ez\+::essential\+::\+Numeric\+Base\+Manager@{ez\+::essential\+::\+Numeric\+Base\+Manager}}
+
+
+{\ttfamily \#include $<$numeric\+\_\+base.\+h$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classez_1_1essential_1_1NumericBase}{Numeric\+Base} \& \hyperlink{classez_1_1essential_1_1NumericBaseManager_af219a70d368485268f5c8dd66f2a6df1}{by\+\_\+id} (Base id)
+\item 
+\hyperlink{classez_1_1essential_1_1NumericBase}{Numeric\+Base} \& \hyperlink{classez_1_1essential_1_1NumericBaseManager_a08b4f97124709d5641d595a8863f300e}{by\+\_\+name} (text \+\_\+name)
+\item 
+\hyperlink{classez_1_1essential_1_1NumericBase}{Numeric\+Base} \& \hyperlink{classez_1_1essential_1_1NumericBaseManager_a52a521ef2f57e881184724a38ba97cc2}{by\+\_\+suffix} (text number)
+\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static \hyperlink{classez_1_1essential_1_1NumericBaseManager}{Numeric\+Base\+Manager} \& \hyperlink{classez_1_1essential_1_1NumericBaseManager_ae0211a05efad4e04051e8ebf30ea2b7c}{get\+\_\+instance} ()
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Manager for Numeric\+Bases that lets you have access to a given base. Note that this class implements the singleton design pattern. 
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classez_1_1essential_1_1NumericBaseManager_af219a70d368485268f5c8dd66f2a6df1}\label{classez_1_1essential_1_1NumericBaseManager_af219a70d368485268f5c8dd66f2a6df1}} 
+\index{ez\+::essential\+::\+Numeric\+Base\+Manager@{ez\+::essential\+::\+Numeric\+Base\+Manager}!by\+\_\+id@{by\+\_\+id}}
+\index{by\+\_\+id@{by\+\_\+id}!ez\+::essential\+::\+Numeric\+Base\+Manager@{ez\+::essential\+::\+Numeric\+Base\+Manager}}
+\subsubsection{\texorpdfstring{by\+\_\+id()}{by\_id()}}
+{\footnotesize\ttfamily \hyperlink{classez_1_1essential_1_1NumericBase}{Numeric\+Base} \& Numeric\+Base\+Manager\+::by\+\_\+id (\begin{DoxyParamCaption}\item[{Base}]{id }\end{DoxyParamCaption})}
+
+Return reference to base using integer identifier 
+\begin{DoxyParams}{Parameters}
+{\em id} & integer identifier (\\
+\hline
+\end{DoxyParams}
+\begin{DoxySeeAlso}{See also}
+Base) 
+\end{DoxySeeAlso}
+\begin{DoxyReturn}{Returns}
+reference to base 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classez_1_1essential_1_1NumericBaseManager_a08b4f97124709d5641d595a8863f300e}\label{classez_1_1essential_1_1NumericBaseManager_a08b4f97124709d5641d595a8863f300e}} 
+\index{ez\+::essential\+::\+Numeric\+Base\+Manager@{ez\+::essential\+::\+Numeric\+Base\+Manager}!by\+\_\+name@{by\+\_\+name}}
+\index{by\+\_\+name@{by\+\_\+name}!ez\+::essential\+::\+Numeric\+Base\+Manager@{ez\+::essential\+::\+Numeric\+Base\+Manager}}
+\subsubsection{\texorpdfstring{by\+\_\+name()}{by\_name()}}
+{\footnotesize\ttfamily \hyperlink{classez_1_1essential_1_1NumericBase}{Numeric\+Base} \& Numeric\+Base\+Manager\+::by\+\_\+name (\begin{DoxyParamCaption}\item[{text}]{\+\_\+name }\end{DoxyParamCaption})}
+
+Return reference to base using name 
+\begin{DoxyParams}{Parameters}
+{\em \+\_\+name} & name of the base (for example \char`\"{}decimal\char`\"{}) \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+reference to base or throw exception if name is not found 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classez_1_1essential_1_1NumericBaseManager_a52a521ef2f57e881184724a38ba97cc2}\label{classez_1_1essential_1_1NumericBaseManager_a52a521ef2f57e881184724a38ba97cc2}} 
+\index{ez\+::essential\+::\+Numeric\+Base\+Manager@{ez\+::essential\+::\+Numeric\+Base\+Manager}!by\+\_\+suffix@{by\+\_\+suffix}}
+\index{by\+\_\+suffix@{by\+\_\+suffix}!ez\+::essential\+::\+Numeric\+Base\+Manager@{ez\+::essential\+::\+Numeric\+Base\+Manager}}
+\subsubsection{\texorpdfstring{by\+\_\+suffix()}{by\_suffix()}}
+{\footnotesize\ttfamily \hyperlink{classez_1_1essential_1_1NumericBase}{Numeric\+Base} \& Numeric\+Base\+Manager\+::by\+\_\+suffix (\begin{DoxyParamCaption}\item[{text}]{number }\end{DoxyParamCaption})}
+
+Return reference to base using suffix of base 
+\begin{DoxyParams}{Parameters}
+{\em number} & number to analyze as string \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+reference to base 
+\end{DoxyReturn}
+\begin{DoxyNote}{Note}
+if there is not suffix i.\+e. no letter at the end of the number then the base is considered to be decimal 
+\end{DoxyNote}
+\mbox{\Hypertarget{classez_1_1essential_1_1NumericBaseManager_ae0211a05efad4e04051e8ebf30ea2b7c}\label{classez_1_1essential_1_1NumericBaseManager_ae0211a05efad4e04051e8ebf30ea2b7c}} 
+\index{ez\+::essential\+::\+Numeric\+Base\+Manager@{ez\+::essential\+::\+Numeric\+Base\+Manager}!get\+\_\+instance@{get\+\_\+instance}}
+\index{get\+\_\+instance@{get\+\_\+instance}!ez\+::essential\+::\+Numeric\+Base\+Manager@{ez\+::essential\+::\+Numeric\+Base\+Manager}}
+\subsubsection{\texorpdfstring{get\+\_\+instance()}{get\_instance()}}
+{\footnotesize\ttfamily \hyperlink{classez_1_1essential_1_1NumericBaseManager}{Numeric\+Base\+Manager} \& Numeric\+Base\+Manager\+::get\+\_\+instance (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Return reference to unique instance of this class 
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+src/version\+\_\+2018.\+06/essential/numeric\+\_\+base.\+h\item 
+src/version\+\_\+2018.\+06/essential/numeric\+\_\+base.\+cpp\end{DoxyCompactItemize}

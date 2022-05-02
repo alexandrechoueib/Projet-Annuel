@@ -1,0 +1,209 @@
+\hypertarget{classez_1_1objects_1_1Mapping}{}\section{ez\+:\+:objects\+:\+:Mapping$<$ Key\+Type, Data\+Type $>$ Class Template Reference}
+\label{classez_1_1objects_1_1Mapping}\index{ez\+::objects\+::\+Mapping$<$ Key\+Type, Data\+Type $>$@{ez\+::objects\+::\+Mapping$<$ Key\+Type, Data\+Type $>$}}
+
+
+Inheritance diagram for ez\+:\+:objects\+:\+:Mapping$<$ Key\+Type, Data\+Type $>$\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=310pt]{classez_1_1objects_1_1Mapping__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for ez\+:\+:objects\+:\+:Mapping$<$ Key\+Type, Data\+Type $>$\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=310pt]{classez_1_1objects_1_1Mapping__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classez_1_1objects_1_1Mapping_a990b23e3d9619eaa026247d0dee44076}\label{classez_1_1objects_1_1Mapping_a990b23e3d9619eaa026247d0dee44076}} 
+typedef std\+::map$<$ Key\+Type, Data\+Type $>$ {\bfseries self}
+\item 
+\mbox{\Hypertarget{classez_1_1objects_1_1Mapping_a1a0dde6f2975df504001a30fa4354387}\label{classez_1_1objects_1_1Mapping_a1a0dde6f2975df504001a30fa4354387}} 
+typedef std\+::map$<$ Key\+Type, Data\+Type $>$\+::iterator {\bfseries iterator}
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classez_1_1objects_1_1Mapping_a12a266ba49d22f9a382a4cc916253284}{Mapping} ()
+\item 
+\hyperlink{classez_1_1objects_1_1Mapping_a2e01d47b23e082e6aade1923fede999d}{Mapping} (const \hyperlink{classez_1_1objects_1_1Mapping}{Mapping}$<$ Key\+Type, Data\+Type $>$ \&obj)
+\item 
+\hyperlink{classez_1_1objects_1_1Mapping}{Mapping}$<$ Key\+Type, Data\+Type $>$ \& \hyperlink{classez_1_1objects_1_1Mapping_a62fd1fa4b2087fc0deaafa92aaba1c0b}{operator=} (const \hyperlink{classez_1_1objects_1_1Mapping}{Mapping}$<$ Key\+Type, Data\+Type $>$ \&obj)
+\item 
+\hyperlink{classez_1_1objects_1_1Mapping_af2a29688f35f5a161744c111f6ec9be0}{$\sim$\+Mapping} ()
+\item 
+natural \hyperlink{classez_1_1objects_1_1Mapping_a223f5d523a0f3cc3eff5dc7cbf78ce29}{size} ()
+\item 
+\mbox{\Hypertarget{classez_1_1objects_1_1Mapping_a40d390667d1a9cce1bb00e4128800a1e}\label{classez_1_1objects_1_1Mapping_a40d390667d1a9cce1bb00e4128800a1e}} 
+bool {\bfseries has\+\_\+key} (Key\+Type k)
+\item 
+\mbox{\Hypertarget{classez_1_1objects_1_1Mapping_addba04e486fac91d1ede7ef1af2f7c6a}\label{classez_1_1objects_1_1Mapping_addba04e486fac91d1ede7ef1af2f7c6a}} 
+Data\+Type \& {\bfseries find} (Key\+Type k)
+\item 
+\mbox{\Hypertarget{classez_1_1objects_1_1Mapping_ae018c78b91c3b6d3189d102758d180f1}\label{classez_1_1objects_1_1Mapping_ae018c78b91c3b6d3189d102758d180f1}} 
+void {\bfseries remove} (Key\+Type k)
+\item 
+\mbox{\Hypertarget{classez_1_1objects_1_1Mapping_a085397df2df6e39e2a144fc6e583a309}\label{classez_1_1objects_1_1Mapping_a085397df2df6e39e2a144fc6e583a309}} 
+void {\bfseries put} (Key\+Type k, Data\+Type v)
+\item 
+void \hyperlink{classez_1_1objects_1_1Mapping_ac30b4bf58f51ea49c8422dfce1e6cf15}{print} (std\+::ostream \&stream) override
+\item 
+void \hyperlink{classez_1_1objects_1_1Mapping_a1233daf5c8f5d7ad9539e9d7f58703c3}{output} (std\+::ostream \&stream) override
+\item 
+void \hyperlink{classez_1_1objects_1_1Mapping_ad47e98279b853fd10614a24dc201d92e}{input} (std\+::istream \&stream) override
+\item 
+integer \hyperlink{classez_1_1objects_1_1Mapping_a7eb092099b5f47b101e5c54a46373ff0}{compare} (const \hyperlink{classez_1_1objects_1_1Object}{Object} \&y) override
+\item 
+\hyperlink{classez_1_1objects_1_1Object}{Object} $\ast$ \hyperlink{classez_1_1objects_1_1Mapping_aa8eb01c13630ff6ab44438e9a25aa019}{clone} () override
+\item 
+bool \hyperlink{classez_1_1objects_1_1Mapping_a8c7cf83ebf29a35ab146e1a1d0955907}{is\+\_\+empty} ()
+\item 
+void \hyperlink{classez_1_1objects_1_1Mapping_a7986873197eb0ab7199567f8c0ace175}{to\+\_\+vector} (\hyperlink{classez_1_1objects_1_1Vector}{ez\+::objects\+::\+Vector}$<$ \hyperlink{classez_1_1objects_1_1Couple}{Couple}$<$ Key\+Type, Data\+Type $>$$>$ \&v)
+\item 
+\mbox{\Hypertarget{classez_1_1objects_1_1Mapping_a4a59e3a56359826f390771309116d077}\label{classez_1_1objects_1_1Mapping_a4a59e3a56359826f390771309116d077}} 
+iterator {\bfseries begin} ()
+\item 
+\mbox{\Hypertarget{classez_1_1objects_1_1Mapping_afe494ca1f8f80fbe796fa41f33608582}\label{classez_1_1objects_1_1Mapping_afe494ca1f8f80fbe796fa41f33608582}} 
+iterator {\bfseries end} ()
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classez_1_1objects_1_1Mapping_a5a842f943216955b68dc46605d93e1d7}\label{classez_1_1objects_1_1Mapping_a5a842f943216955b68dc46605d93e1d7}} 
+std\+::map$<$ Key\+Type, Data\+Type $>$ {\bfseries data}
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classez_1_1objects_1_1Mapping_a12a266ba49d22f9a382a4cc916253284}\label{classez_1_1objects_1_1Mapping_a12a266ba49d22f9a382a4cc916253284}} 
+\index{ez\+::objects\+::\+Mapping@{ez\+::objects\+::\+Mapping}!Mapping@{Mapping}}
+\index{Mapping@{Mapping}!ez\+::objects\+::\+Mapping@{ez\+::objects\+::\+Mapping}}
+\subsubsection{\texorpdfstring{Mapping()}{Mapping()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily template$<$class Key\+Type, class Data\+Type$>$ \\
+\hyperlink{classez_1_1objects_1_1Mapping}{ez\+::objects\+::\+Mapping}$<$ Key\+Type, Data\+Type $>$\+::\hyperlink{classez_1_1objects_1_1Mapping}{Mapping} (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Default constructor \mbox{\Hypertarget{classez_1_1objects_1_1Mapping_a2e01d47b23e082e6aade1923fede999d}\label{classez_1_1objects_1_1Mapping_a2e01d47b23e082e6aade1923fede999d}} 
+\index{ez\+::objects\+::\+Mapping@{ez\+::objects\+::\+Mapping}!Mapping@{Mapping}}
+\index{Mapping@{Mapping}!ez\+::objects\+::\+Mapping@{ez\+::objects\+::\+Mapping}}
+\subsubsection{\texorpdfstring{Mapping()}{Mapping()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily template$<$class Key\+Type, class Data\+Type$>$ \\
+\hyperlink{classez_1_1objects_1_1Mapping}{ez\+::objects\+::\+Mapping}$<$ Key\+Type, Data\+Type $>$\+::\hyperlink{classez_1_1objects_1_1Mapping}{Mapping} (\begin{DoxyParamCaption}\item[{const \hyperlink{classez_1_1objects_1_1Mapping}{Mapping}$<$ Key\+Type, Data\+Type $>$ \&}]{obj }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Copy constructor \mbox{\Hypertarget{classez_1_1objects_1_1Mapping_af2a29688f35f5a161744c111f6ec9be0}\label{classez_1_1objects_1_1Mapping_af2a29688f35f5a161744c111f6ec9be0}} 
+\index{ez\+::objects\+::\+Mapping@{ez\+::objects\+::\+Mapping}!````~Mapping@{$\sim$\+Mapping}}
+\index{````~Mapping@{$\sim$\+Mapping}!ez\+::objects\+::\+Mapping@{ez\+::objects\+::\+Mapping}}
+\subsubsection{\texorpdfstring{$\sim$\+Mapping()}{~Mapping()}}
+{\footnotesize\ttfamily template$<$class Key\+Type, class Data\+Type$>$ \\
+\hyperlink{classez_1_1objects_1_1Mapping}{ez\+::objects\+::\+Mapping}$<$ Key\+Type, Data\+Type $>$\+::$\sim$\hyperlink{classez_1_1objects_1_1Mapping}{Mapping} (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Destructor 
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classez_1_1objects_1_1Mapping_aa8eb01c13630ff6ab44438e9a25aa019}\label{classez_1_1objects_1_1Mapping_aa8eb01c13630ff6ab44438e9a25aa019}} 
+\index{ez\+::objects\+::\+Mapping@{ez\+::objects\+::\+Mapping}!clone@{clone}}
+\index{clone@{clone}!ez\+::objects\+::\+Mapping@{ez\+::objects\+::\+Mapping}}
+\subsubsection{\texorpdfstring{clone()}{clone()}}
+{\footnotesize\ttfamily template$<$class Key\+Type, class Data\+Type$>$ \\
+\hyperlink{classez_1_1objects_1_1Object}{Object}$\ast$ \hyperlink{classez_1_1objects_1_1Mapping}{ez\+::objects\+::\+Mapping}$<$ Key\+Type, Data\+Type $>$\+::clone (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [override]}, {\ttfamily [virtual]}}
+
+return a copy of the object 
+
+Reimplemented from \hyperlink{classez_1_1objects_1_1Object_acf444b2581d898eb4b8c92c2d5865c9e}{ez\+::objects\+::\+Object}.
+
+\mbox{\Hypertarget{classez_1_1objects_1_1Mapping_a7eb092099b5f47b101e5c54a46373ff0}\label{classez_1_1objects_1_1Mapping_a7eb092099b5f47b101e5c54a46373ff0}} 
+\index{ez\+::objects\+::\+Mapping@{ez\+::objects\+::\+Mapping}!compare@{compare}}
+\index{compare@{compare}!ez\+::objects\+::\+Mapping@{ez\+::objects\+::\+Mapping}}
+\subsubsection{\texorpdfstring{compare()}{compare()}}
+{\footnotesize\ttfamily template$<$class Key\+Type, class Data\+Type$>$ \\
+integer \hyperlink{classez_1_1objects_1_1Mapping}{ez\+::objects\+::\+Mapping}$<$ Key\+Type, Data\+Type $>$\+::compare (\begin{DoxyParamCaption}\item[{const \hyperlink{classez_1_1objects_1_1Object}{Object} \&}]{y }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [override]}, {\ttfamily [virtual]}}
+
+compare two objects \begin{DoxyReturn}{Returns}
+0 if objects are identical, negative value if this $<$ y, positive value if this $>$ y 
+\end{DoxyReturn}
+
+
+Reimplemented from \hyperlink{classez_1_1objects_1_1Object_aca311d389dffa204e425463145f4e1e6}{ez\+::objects\+::\+Object}.
+
+\mbox{\Hypertarget{classez_1_1objects_1_1Mapping_ad47e98279b853fd10614a24dc201d92e}\label{classez_1_1objects_1_1Mapping_ad47e98279b853fd10614a24dc201d92e}} 
+\index{ez\+::objects\+::\+Mapping@{ez\+::objects\+::\+Mapping}!input@{input}}
+\index{input@{input}!ez\+::objects\+::\+Mapping@{ez\+::objects\+::\+Mapping}}
+\subsubsection{\texorpdfstring{input()}{input()}}
+{\footnotesize\ttfamily template$<$class Key\+Type, class Data\+Type$>$ \\
+void \hyperlink{classez_1_1objects_1_1Mapping}{ez\+::objects\+::\+Mapping}$<$ Key\+Type, Data\+Type $>$\+::input (\begin{DoxyParamCaption}\item[{std\+::istream \&}]{stream }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [override]}, {\ttfamily [virtual]}}
+
+this function is used to get the data field members of an object from a stream and acts as unserialize 
+
+Reimplemented from \hyperlink{classez_1_1objects_1_1Object_a878bdc53b7f16fda6fa15dab214c4b6a}{ez\+::objects\+::\+Object}.
+
+\mbox{\Hypertarget{classez_1_1objects_1_1Mapping_a8c7cf83ebf29a35ab146e1a1d0955907}\label{classez_1_1objects_1_1Mapping_a8c7cf83ebf29a35ab146e1a1d0955907}} 
+\index{ez\+::objects\+::\+Mapping@{ez\+::objects\+::\+Mapping}!is\+\_\+empty@{is\+\_\+empty}}
+\index{is\+\_\+empty@{is\+\_\+empty}!ez\+::objects\+::\+Mapping@{ez\+::objects\+::\+Mapping}}
+\subsubsection{\texorpdfstring{is\+\_\+empty()}{is\_empty()}}
+{\footnotesize\ttfamily template$<$class Key\+Type, class Data\+Type$>$ \\
+bool \hyperlink{classez_1_1objects_1_1Mapping}{ez\+::objects\+::\+Mapping}$<$ Key\+Type, Data\+Type $>$\+::is\+\_\+empty (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+Return true if container has no element, false otherwise 
+
+Implements \hyperlink{classez_1_1objects_1_1Container_a205eb4f8a4fe967d425fdf04e5db5f93}{ez\+::objects\+::\+Container$<$ Data\+Type, natural $>$}.
+
+\mbox{\Hypertarget{classez_1_1objects_1_1Mapping_a62fd1fa4b2087fc0deaafa92aaba1c0b}\label{classez_1_1objects_1_1Mapping_a62fd1fa4b2087fc0deaafa92aaba1c0b}} 
+\index{ez\+::objects\+::\+Mapping@{ez\+::objects\+::\+Mapping}!operator=@{operator=}}
+\index{operator=@{operator=}!ez\+::objects\+::\+Mapping@{ez\+::objects\+::\+Mapping}}
+\subsubsection{\texorpdfstring{operator=()}{operator=()}}
+{\footnotesize\ttfamily template$<$class Key\+Type, class Data\+Type$>$ \\
+\hyperlink{classez_1_1objects_1_1Mapping}{Mapping}$<$Key\+Type, Data\+Type$>$\& \hyperlink{classez_1_1objects_1_1Mapping}{ez\+::objects\+::\+Mapping}$<$ Key\+Type, Data\+Type $>$\+::operator= (\begin{DoxyParamCaption}\item[{const \hyperlink{classez_1_1objects_1_1Mapping}{Mapping}$<$ Key\+Type, Data\+Type $>$ \&}]{obj }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Assignment operator \mbox{\Hypertarget{classez_1_1objects_1_1Mapping_a1233daf5c8f5d7ad9539e9d7f58703c3}\label{classez_1_1objects_1_1Mapping_a1233daf5c8f5d7ad9539e9d7f58703c3}} 
+\index{ez\+::objects\+::\+Mapping@{ez\+::objects\+::\+Mapping}!output@{output}}
+\index{output@{output}!ez\+::objects\+::\+Mapping@{ez\+::objects\+::\+Mapping}}
+\subsubsection{\texorpdfstring{output()}{output()}}
+{\footnotesize\ttfamily template$<$class Key\+Type, class Data\+Type$>$ \\
+void \hyperlink{classez_1_1objects_1_1Mapping}{ez\+::objects\+::\+Mapping}$<$ Key\+Type, Data\+Type $>$\+::output (\begin{DoxyParamCaption}\item[{std\+::ostream \&}]{stream }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [override]}, {\ttfamily [virtual]}}
+
+this function is used to print the contents of the object in a serializable manner 
+
+Reimplemented from \hyperlink{classez_1_1objects_1_1Object_a0fdfe18e6c35d6b0d7e7a01265aded15}{ez\+::objects\+::\+Object}.
+
+\mbox{\Hypertarget{classez_1_1objects_1_1Mapping_ac30b4bf58f51ea49c8422dfce1e6cf15}\label{classez_1_1objects_1_1Mapping_ac30b4bf58f51ea49c8422dfce1e6cf15}} 
+\index{ez\+::objects\+::\+Mapping@{ez\+::objects\+::\+Mapping}!print@{print}}
+\index{print@{print}!ez\+::objects\+::\+Mapping@{ez\+::objects\+::\+Mapping}}
+\subsubsection{\texorpdfstring{print()}{print()}}
+{\footnotesize\ttfamily template$<$class Key\+Type, class Data\+Type$>$ \\
+void \hyperlink{classez_1_1objects_1_1Mapping}{ez\+::objects\+::\+Mapping}$<$ Key\+Type, Data\+Type $>$\+::print (\begin{DoxyParamCaption}\item[{std\+::ostream \&}]{stream }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [override]}, {\ttfamily [virtual]}}
+
+overloading of print method of class \hyperlink{classez_1_1objects_1_1Object}{Object} 
+
+Reimplemented from \hyperlink{classez_1_1objects_1_1Object_a9e20f39a78163f67f000576149d858b3}{ez\+::objects\+::\+Object}.
+
+\mbox{\Hypertarget{classez_1_1objects_1_1Mapping_a223f5d523a0f3cc3eff5dc7cbf78ce29}\label{classez_1_1objects_1_1Mapping_a223f5d523a0f3cc3eff5dc7cbf78ce29}} 
+\index{ez\+::objects\+::\+Mapping@{ez\+::objects\+::\+Mapping}!size@{size}}
+\index{size@{size}!ez\+::objects\+::\+Mapping@{ez\+::objects\+::\+Mapping}}
+\subsubsection{\texorpdfstring{size()}{size()}}
+{\footnotesize\ttfamily template$<$class Key\+Type, class Data\+Type$>$ \\
+natural \hyperlink{classez_1_1objects_1_1Mapping}{ez\+::objects\+::\+Mapping}$<$ Key\+Type, Data\+Type $>$\+::size (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+Return number of elements 
+
+Implements \hyperlink{classez_1_1objects_1_1Container_affd294810c6c29530d1d1e3c2151ad28}{ez\+::objects\+::\+Container$<$ Data\+Type, natural $>$}.
+
+\mbox{\Hypertarget{classez_1_1objects_1_1Mapping_a7986873197eb0ab7199567f8c0ace175}\label{classez_1_1objects_1_1Mapping_a7986873197eb0ab7199567f8c0ace175}} 
+\index{ez\+::objects\+::\+Mapping@{ez\+::objects\+::\+Mapping}!to\+\_\+vector@{to\+\_\+vector}}
+\index{to\+\_\+vector@{to\+\_\+vector}!ez\+::objects\+::\+Mapping@{ez\+::objects\+::\+Mapping}}
+\subsubsection{\texorpdfstring{to\+\_\+vector()}{to\_vector()}}
+{\footnotesize\ttfamily template$<$class Key\+Type, class Data\+Type$>$ \\
+void \hyperlink{classez_1_1objects_1_1Mapping}{ez\+::objects\+::\+Mapping}$<$ Key\+Type, Data\+Type $>$\+::to\+\_\+vector (\begin{DoxyParamCaption}\item[{\hyperlink{classez_1_1objects_1_1Vector}{ez\+::objects\+::\+Vector}$<$ \hyperlink{classez_1_1objects_1_1Couple}{Couple}$<$ Key\+Type, Data\+Type $>$$>$ \&}]{v }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+convert mapping to vector of pairs in order to apply sort for example 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+src/version\+\_\+2018.\+06/objects/mapping.\+h\end{DoxyCompactItemize}

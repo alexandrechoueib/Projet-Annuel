@@ -1,0 +1,10 @@
+#!/bin/sh
+# Description: run performance tests for all compilers
+#              and architectures
+# Author: Jean-Michel Richer
+
+./app/scripts/run.sh 32 gnu
+./app/scripts/run.sh 64 gnu
+./app/scripts/run.sh 32 llvm
+./app/scripts/run.sh 64 llvm
+./app/scripts/run.sh 64 intel

@@ -1,0 +1,233 @@
+\hypertarget{classez_1_1maths_1_1Matrix}{}\section{ez\+:\+:maths\+:\+:Matrix$<$ Data\+Type $>$ Class Template Reference}
+\label{classez_1_1maths_1_1Matrix}\index{ez\+::maths\+::\+Matrix$<$ Data\+Type $>$@{ez\+::maths\+::\+Matrix$<$ Data\+Type $>$}}
+
+
+{\ttfamily \#include $<$matrix.\+h$>$}
+
+\subsection*{Data Structures}
+\begin{DoxyCompactItemize}
+\item 
+class \hyperlink{classez_1_1maths_1_1Matrix_1_1MatrixRow}{Matrix\+Row}
+\end{DoxyCompactItemize}
+\subsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classez_1_1maths_1_1Matrix_afe4c29ded12f4b2c40795da3d6580c46}\label{classez_1_1maths_1_1Matrix_afe4c29ded12f4b2c40795da3d6580c46}} 
+typedef \hyperlink{classez_1_1maths_1_1Matrix}{Matrix}$<$ Data\+Type $>$ {\bfseries self}
+\item 
+\mbox{\Hypertarget{classez_1_1maths_1_1Matrix_aa699b296a08c9251239f307cd42f4b3d}\label{classez_1_1maths_1_1Matrix_aa699b296a08c9251239f307cd42f4b3d}} 
+typedef Data\+Type {\bfseries value\+\_\+type}
+\item 
+\mbox{\Hypertarget{classez_1_1maths_1_1Matrix_ae6a09a08df99df89846f5026087f3d2b}\label{classez_1_1maths_1_1Matrix_ae6a09a08df99df89846f5026087f3d2b}} 
+typedef std\+::vector$<$ Data\+Type $>$\+::iterator {\bfseries iterator}
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classez_1_1maths_1_1Matrix_ab1ee41b4f342b94006853dc7213ab179}{Matrix} ()
+\item 
+\hyperlink{classez_1_1maths_1_1Matrix_a97b95c8be7fd18cf0beb2789dee19b2a}{Matrix} (natural rows, natural cols)
+\item 
+\mbox{\Hypertarget{classez_1_1maths_1_1Matrix_a165b105b7f0457c5fe85448c44b08abe}\label{classez_1_1maths_1_1Matrix_a165b105b7f0457c5fe85448c44b08abe}} 
+{\bfseries Matrix} (const \hyperlink{classez_1_1maths_1_1Matrix}{Matrix}$<$ Data\+Type $>$ \&obj)
+\item 
+\mbox{\Hypertarget{classez_1_1maths_1_1Matrix_ad4600cc7e192a7c76858e3a629e71c91}\label{classez_1_1maths_1_1Matrix_ad4600cc7e192a7c76858e3a629e71c91}} 
+{\bfseries Matrix} (natural size\+\_\+y, natural size\+\_\+x, const std\+::initializer\+\_\+list$<$ Data\+Type $>$ \&l)
+\item 
+\mbox{\Hypertarget{classez_1_1maths_1_1Matrix_ada5bd4986817d885f9bd33c7726618e9}\label{classez_1_1maths_1_1Matrix_ada5bd4986817d885f9bd33c7726618e9}} 
+\hyperlink{classez_1_1maths_1_1Matrix}{Matrix}$<$ Data\+Type $>$ \& {\bfseries operator=} (const \hyperlink{classez_1_1maths_1_1Matrix}{Matrix}$<$ Data\+Type $>$ \&obj)
+\item 
+\mbox{\Hypertarget{classez_1_1maths_1_1Matrix_a08f19b4b97c7e970b656d4f7ed520a3d}\label{classez_1_1maths_1_1Matrix_a08f19b4b97c7e970b656d4f7ed520a3d}} 
+natural {\bfseries size} ()
+\item 
+\mbox{\Hypertarget{classez_1_1maths_1_1Matrix_a1c74dfc803ad0827c02fda54a811e518}\label{classez_1_1maths_1_1Matrix_a1c74dfc803ad0827c02fda54a811e518}} 
+natural {\bfseries size\+\_\+x} ()
+\item 
+\mbox{\Hypertarget{classez_1_1maths_1_1Matrix_a5648d269f07126af169f6667915ffc93}\label{classez_1_1maths_1_1Matrix_a5648d269f07126af169f6667915ffc93}} 
+natural {\bfseries size\+\_\+y} ()
+\item 
+\mbox{\Hypertarget{classez_1_1maths_1_1Matrix_ab99b87184b37758d922b18bc930b07bd}\label{classez_1_1maths_1_1Matrix_ab99b87184b37758d922b18bc930b07bd}} 
+natural {\bfseries dim} (natural d=0)
+\item 
+\mbox{\Hypertarget{classez_1_1maths_1_1Matrix_a7b1faaa410f83a2e1c9ae296e4dc7fe6}\label{classez_1_1maths_1_1Matrix_a7b1faaa410f83a2e1c9ae296e4dc7fe6}} 
+std\+::vector$<$ Data\+Type $>$ \& {\bfseries data} ()
+\item 
+\mbox{\Hypertarget{classez_1_1maths_1_1Matrix_a7e22335d5a6bbd952e3c2ab2cb862a29}\label{classez_1_1maths_1_1Matrix_a7e22335d5a6bbd952e3c2ab2cb862a29}} 
+void {\bfseries resize} (natural size\+\_\+y, natural size\+\_\+x)
+\item 
+void \hyperlink{classez_1_1maths_1_1Matrix_ac2a273c2fae9801582a23e119cd89676}{fill} (Data\+Type value)
+\item 
+\mbox{\Hypertarget{classez_1_1maths_1_1Matrix_a92f12ab6e400f003b1fd6a115a84f5bb}\label{classez_1_1maths_1_1Matrix_a92f12ab6e400f003b1fd6a115a84f5bb}} 
+void {\bfseries fill\+\_\+row} (natural y, Data\+Type value)
+\item 
+Data\+Type \hyperlink{classez_1_1maths_1_1Matrix_aa0476234c21980c3896cd0c535aa935c}{dot} (natural index=1, natural axis=0)
+\item 
+\mbox{\Hypertarget{classez_1_1maths_1_1Matrix_a40635b102148f88d5c372e5df07c463e}\label{classez_1_1maths_1_1Matrix_a40635b102148f88d5c372e5df07c463e}} 
+\hyperlink{classez_1_1maths_1_1Matrix_1_1MatrixRow}{Matrix\+Row} {\bfseries operator\mbox{[}$\,$\mbox{]}} (natural y)
+\item 
+Data\+Type \& \hyperlink{classez_1_1maths_1_1Matrix_a9fdf7683e9eec9f72feedf202c98f5aa}{operator()} (natural y, natural x)
+\item 
+\mbox{\Hypertarget{classez_1_1maths_1_1Matrix_a016c8c4cfab8f4544020fcfa52b3e5d7}\label{classez_1_1maths_1_1Matrix_a016c8c4cfab8f4544020fcfa52b3e5d7}} 
+\hyperlink{classez_1_1maths_1_1Matrix}{self} {\bfseries operator+} (const \hyperlink{classez_1_1maths_1_1Matrix}{self} \&b)
+\item 
+\mbox{\Hypertarget{classez_1_1maths_1_1Matrix_a603b18b52b3e0c01ac13eaeed176b1c3}\label{classez_1_1maths_1_1Matrix_a603b18b52b3e0c01ac13eaeed176b1c3}} 
+\hyperlink{classez_1_1maths_1_1Matrix}{self} \& {\bfseries operator+=} (const \hyperlink{classez_1_1maths_1_1Matrix}{self} \&b)
+\item 
+\mbox{\Hypertarget{classez_1_1maths_1_1Matrix_a5a8b2436a5300bd008afedb7bd24891b}\label{classez_1_1maths_1_1Matrix_a5a8b2436a5300bd008afedb7bd24891b}} 
+\hyperlink{classez_1_1maths_1_1Matrix}{self} \& {\bfseries operator-\/=} (const \hyperlink{classez_1_1maths_1_1Matrix}{self} \&b)
+\item 
+\mbox{\Hypertarget{classez_1_1maths_1_1Matrix_ac2ecb9219b7c3c822a8af597e47f0283}\label{classez_1_1maths_1_1Matrix_ac2ecb9219b7c3c822a8af597e47f0283}} 
+\hyperlink{classez_1_1maths_1_1Matrix}{self} {\bfseries operator$\ast$} (const \hyperlink{classez_1_1maths_1_1Matrix}{self} \&b)
+\item 
+\mbox{\Hypertarget{classez_1_1maths_1_1Matrix_ac17580a4d464b3c849cf52b74cd6607d}\label{classez_1_1maths_1_1Matrix_ac17580a4d464b3c849cf52b74cd6607d}} 
+\hyperlink{classez_1_1maths_1_1Matrix}{self} \& {\bfseries operator$\ast$=} (const \hyperlink{classez_1_1maths_1_1Matrix}{self} \&b)
+\item 
+\mbox{\Hypertarget{classez_1_1maths_1_1Matrix_add06a09122f9d982655fa0b6a2c723fc}\label{classez_1_1maths_1_1Matrix_add06a09122f9d982655fa0b6a2c723fc}} 
+integer {\bfseries compare} (const \hyperlink{classez_1_1maths_1_1Matrix}{self} \&y)
+\item 
+\mbox{\Hypertarget{classez_1_1maths_1_1Matrix_a3b7e8b5d99b96d5bbea681ea2e806cd9}\label{classez_1_1maths_1_1Matrix_a3b7e8b5d99b96d5bbea681ea2e806cd9}} 
+iterator {\bfseries begin} ()
+\item 
+\mbox{\Hypertarget{classez_1_1maths_1_1Matrix_aa9935d5a54edca1edaa39c8267cb9d78}\label{classez_1_1maths_1_1Matrix_aa9935d5a54edca1edaa39c8267cb9d78}} 
+iterator {\bfseries end} ()
+\item 
+void \hyperlink{classez_1_1maths_1_1Matrix_a28472a82209513ed5934209c0e8b5a7a}{prod} (\hyperlink{classez_1_1maths_1_1Vector}{ez\+::maths\+::\+Vector}$<$ Data\+Type $>$ \&result, \hyperlink{classez_1_1maths_1_1Vector}{ez\+::maths\+::\+Vector}$<$ Data\+Type $>$ \&v)
+\item 
+\mbox{\Hypertarget{classez_1_1maths_1_1Matrix_a7a0682d82824b3d994786cbccbec2a03}\label{classez_1_1maths_1_1Matrix_a7a0682d82824b3d994786cbccbec2a03}} 
+void {\bfseries transpose} ()
+\item 
+\mbox{\Hypertarget{classez_1_1maths_1_1Matrix_a5f08d49f2e49d4bc32dc2452933f1093}\label{classez_1_1maths_1_1Matrix_a5f08d49f2e49d4bc32dc2452933f1093}} 
+void {\bfseries remove\+\_\+row} (natural n)
+\item 
+\mbox{\Hypertarget{classez_1_1maths_1_1Matrix_a1007c648a87f5e9dab3d9225be604e45}\label{classez_1_1maths_1_1Matrix_a1007c648a87f5e9dab3d9225be604e45}} 
+void {\bfseries remove\+\_\+column} (natural n)
+\item 
+\mbox{\Hypertarget{classez_1_1maths_1_1Matrix_aed27f1b29878684ee27af417122a0084}\label{classez_1_1maths_1_1Matrix_aed27f1b29878684ee27af417122a0084}} 
+Data\+Type {\bfseries sum} (Data\+Type init=0)
+\item 
+\mbox{\Hypertarget{classez_1_1maths_1_1Matrix_aa5ef70156e11adf93b188af921366332}\label{classez_1_1maths_1_1Matrix_aa5ef70156e11adf93b188af921366332}} 
+void {\bfseries vec\+\_\+mul\+\_\+sum} (\hyperlink{classez_1_1maths_1_1Matrix}{self} \&v, \hyperlink{classez_1_1maths_1_1Matrix}{self} \&r)
+\item 
+\mbox{\Hypertarget{classez_1_1maths_1_1Matrix_a3ebde4c806e787916b78fee9b73d89ed}\label{classez_1_1maths_1_1Matrix_a3ebde4c806e787916b78fee9b73d89ed}} 
+Data\+Type {\bfseries mat\+\_\+mul\+\_\+sum} (\hyperlink{classez_1_1maths_1_1Matrix}{self} \&m)
+\end{DoxyCompactItemize}
+\subsection*{Data Fields}
+\begin{DoxyCompactItemize}
+\item 
+std\+::vector$<$ Data\+Type $>$ \hyperlink{classez_1_1maths_1_1Matrix_a185697a4eb9527a6c3f0ecf59975f181}{m\+\_\+data}
+\item 
+natural \hyperlink{classez_1_1maths_1_1Matrix_a57afd79b657d3ca032728559e0674000}{m\+\_\+size\+\_\+x}
+\item 
+\mbox{\Hypertarget{classez_1_1maths_1_1Matrix_a8ec6800329545f6c5c2658c44b0c718b}\label{classez_1_1maths_1_1Matrix_a8ec6800329545f6c5c2658c44b0c718b}} 
+natural {\bfseries m\+\_\+size\+\_\+y}
+\end{DoxyCompactItemize}
+\subsection*{Friends}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classez_1_1maths_1_1Matrix_a0f01ab4d11317fc6cdd4af4f049e2727}\label{classez_1_1maths_1_1Matrix_a0f01ab4d11317fc6cdd4af4f049e2727}} 
+std\+::ostream \& {\bfseries operator$<$$<$} (std\+::ostream \&out, \hyperlink{classez_1_1maths_1_1Matrix}{Matrix}$<$ Data\+Type $>$ \&m)
+\item 
+\mbox{\Hypertarget{classez_1_1maths_1_1Matrix_a89b571e0607100045577d5023a77342b}\label{classez_1_1maths_1_1Matrix_a89b571e0607100045577d5023a77342b}} 
+bool {\bfseries operator==} (const \hyperlink{classez_1_1maths_1_1Matrix}{self} \&x, const \hyperlink{classez_1_1maths_1_1Matrix}{self} \&y)
+\item 
+\mbox{\Hypertarget{classez_1_1maths_1_1Matrix_a7b7b1149640de716ebef2e91527b695f}\label{classez_1_1maths_1_1Matrix_a7b7b1149640de716ebef2e91527b695f}} 
+\hyperlink{classez_1_1maths_1_1Vector}{Vector}$<$ Data\+Type $>$ {\bfseries operator$\ast$} (\hyperlink{classez_1_1maths_1_1Matrix}{Matrix}$<$ Data\+Type $>$ \&m, \hyperlink{classez_1_1maths_1_1Vector}{Vector}$<$ Data\+Type $>$ \&v)
+\item 
+\mbox{\Hypertarget{classez_1_1maths_1_1Matrix_ada11ca1e5476b320d044ea2b94431ded}\label{classez_1_1maths_1_1Matrix_ada11ca1e5476b320d044ea2b94431ded}} 
+\hyperlink{classez_1_1maths_1_1Vector}{Vector}$<$ Data\+Type $>$ {\bfseries operator$\ast$} (\hyperlink{classez_1_1maths_1_1Vector}{Vector}$<$ Data\+Type $>$ \&v, \hyperlink{classez_1_1maths_1_1Matrix}{Matrix}$<$ Data\+Type $>$ \&m)
+\item 
+\mbox{\Hypertarget{classez_1_1maths_1_1Matrix_a4eda110f2ff2f92546170cbc4a198e05}\label{classez_1_1maths_1_1Matrix_a4eda110f2ff2f92546170cbc4a198e05}} 
+bool {\bfseries operator$<$} (const \hyperlink{classez_1_1maths_1_1Matrix}{self} \&x, const \hyperlink{classez_1_1maths_1_1Matrix}{self} \&y)
+\item 
+\mbox{\Hypertarget{classez_1_1maths_1_1Matrix_a9e89bf77c37246bc1e7c1b9f59a5e369}\label{classez_1_1maths_1_1Matrix_a9e89bf77c37246bc1e7c1b9f59a5e369}} 
+bool {\bfseries operator$<$=} (const \hyperlink{classez_1_1maths_1_1Matrix}{self} \&x, const \hyperlink{classez_1_1maths_1_1Matrix}{self} \&y)
+\item 
+\mbox{\Hypertarget{classez_1_1maths_1_1Matrix_ae1705ad5d782614d851e1553f15f017b}\label{classez_1_1maths_1_1Matrix_ae1705ad5d782614d851e1553f15f017b}} 
+bool {\bfseries operator$>$} (const \hyperlink{classez_1_1maths_1_1Matrix}{self} \&x, const \hyperlink{classez_1_1maths_1_1Matrix}{self} \&y)
+\item 
+\mbox{\Hypertarget{classez_1_1maths_1_1Matrix_a79ad47b0999178d78909e91cd6a50109}\label{classez_1_1maths_1_1Matrix_a79ad47b0999178d78909e91cd6a50109}} 
+bool {\bfseries operator$>$=} (const \hyperlink{classez_1_1maths_1_1Matrix}{self} \&x, const \hyperlink{classez_1_1maths_1_1Matrix}{self} \&y)
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\subsubsection*{template$<$class Data\+Type$>$\newline
+class ez\+::maths\+::\+Matrix$<$ Data\+Type $>$}
+
+Class that implements a matrix of scalar types 
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classez_1_1maths_1_1Matrix_ab1ee41b4f342b94006853dc7213ab179}\label{classez_1_1maths_1_1Matrix_ab1ee41b4f342b94006853dc7213ab179}} 
+\index{ez\+::maths\+::\+Matrix@{ez\+::maths\+::\+Matrix}!Matrix@{Matrix}}
+\index{Matrix@{Matrix}!ez\+::maths\+::\+Matrix@{ez\+::maths\+::\+Matrix}}
+\subsubsection{\texorpdfstring{Matrix()}{Matrix()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily template$<$class Data\+Type$>$ \\
+\hyperlink{classez_1_1maths_1_1Matrix}{ez\+::maths\+::\+Matrix}$<$ Data\+Type $>$\+::\hyperlink{classez_1_1maths_1_1Matrix}{Matrix} (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+default constructor \mbox{\Hypertarget{classez_1_1maths_1_1Matrix_a97b95c8be7fd18cf0beb2789dee19b2a}\label{classez_1_1maths_1_1Matrix_a97b95c8be7fd18cf0beb2789dee19b2a}} 
+\index{ez\+::maths\+::\+Matrix@{ez\+::maths\+::\+Matrix}!Matrix@{Matrix}}
+\index{Matrix@{Matrix}!ez\+::maths\+::\+Matrix@{ez\+::maths\+::\+Matrix}}
+\subsubsection{\texorpdfstring{Matrix()}{Matrix()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily template$<$class Data\+Type$>$ \\
+\hyperlink{classez_1_1maths_1_1Matrix}{ez\+::maths\+::\+Matrix}$<$ Data\+Type $>$\+::\hyperlink{classez_1_1maths_1_1Matrix}{Matrix} (\begin{DoxyParamCaption}\item[{natural}]{rows,  }\item[{natural}]{cols }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+constructor given number of rows and columns 
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classez_1_1maths_1_1Matrix_aa0476234c21980c3896cd0c535aa935c}\label{classez_1_1maths_1_1Matrix_aa0476234c21980c3896cd0c535aa935c}} 
+\index{ez\+::maths\+::\+Matrix@{ez\+::maths\+::\+Matrix}!dot@{dot}}
+\index{dot@{dot}!ez\+::maths\+::\+Matrix@{ez\+::maths\+::\+Matrix}}
+\subsubsection{\texorpdfstring{dot()}{dot()}}
+{\footnotesize\ttfamily template$<$class Data\+Type$>$ \\
+Data\+Type \hyperlink{classez_1_1maths_1_1Matrix}{ez\+::maths\+::\+Matrix}$<$ Data\+Type $>$\+::dot (\begin{DoxyParamCaption}\item[{natural}]{index = {\ttfamily 1},  }\item[{natural}]{axis = {\ttfamily 0} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+return dot product of a row (axis == 0) or column (axis == 1) we can select the row or column using the index variable \mbox{\Hypertarget{classez_1_1maths_1_1Matrix_ac2a273c2fae9801582a23e119cd89676}\label{classez_1_1maths_1_1Matrix_ac2a273c2fae9801582a23e119cd89676}} 
+\index{ez\+::maths\+::\+Matrix@{ez\+::maths\+::\+Matrix}!fill@{fill}}
+\index{fill@{fill}!ez\+::maths\+::\+Matrix@{ez\+::maths\+::\+Matrix}}
+\subsubsection{\texorpdfstring{fill()}{fill()}}
+{\footnotesize\ttfamily template$<$class Data\+Type$>$ \\
+void \hyperlink{classez_1_1maths_1_1Matrix}{ez\+::maths\+::\+Matrix}$<$ Data\+Type $>$\+::fill (\begin{DoxyParamCaption}\item[{Data\+Type}]{value }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+fill entire matrix with given value \mbox{\Hypertarget{classez_1_1maths_1_1Matrix_a9fdf7683e9eec9f72feedf202c98f5aa}\label{classez_1_1maths_1_1Matrix_a9fdf7683e9eec9f72feedf202c98f5aa}} 
+\index{ez\+::maths\+::\+Matrix@{ez\+::maths\+::\+Matrix}!operator()@{operator()}}
+\index{operator()@{operator()}!ez\+::maths\+::\+Matrix@{ez\+::maths\+::\+Matrix}}
+\subsubsection{\texorpdfstring{operator()()}{operator()()}}
+{\footnotesize\ttfamily template$<$class Data\+Type$>$ \\
+Data\+Type\& \hyperlink{classez_1_1maths_1_1Matrix}{ez\+::maths\+::\+Matrix}$<$ Data\+Type $>$\+::operator() (\begin{DoxyParamCaption}\item[{natural}]{y,  }\item[{natural}]{x }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+return reference to element (y,x) \mbox{\Hypertarget{classez_1_1maths_1_1Matrix_a28472a82209513ed5934209c0e8b5a7a}\label{classez_1_1maths_1_1Matrix_a28472a82209513ed5934209c0e8b5a7a}} 
+\index{ez\+::maths\+::\+Matrix@{ez\+::maths\+::\+Matrix}!prod@{prod}}
+\index{prod@{prod}!ez\+::maths\+::\+Matrix@{ez\+::maths\+::\+Matrix}}
+\subsubsection{\texorpdfstring{prod()}{prod()}}
+{\footnotesize\ttfamily template$<$class Data\+Type$>$ \\
+void \hyperlink{classez_1_1maths_1_1Matrix}{ez\+::maths\+::\+Matrix}$<$ Data\+Type $>$\+::prod (\begin{DoxyParamCaption}\item[{\hyperlink{classez_1_1maths_1_1Vector}{ez\+::maths\+::\+Vector}$<$ Data\+Type $>$ \&}]{result,  }\item[{\hyperlink{classez_1_1maths_1_1Vector}{ez\+::maths\+::\+Vector}$<$ Data\+Type $>$ \&}]{v }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\hyperlink{classez_1_1maths_1_1Matrix}{Matrix} vector product 
+\begin{DoxyParams}{Parameters}
+{\em result} & vector result of product \\
+\hline
+{\em v} & vector to multiply by this matrix \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Field Documentation}
+\mbox{\Hypertarget{classez_1_1maths_1_1Matrix_a185697a4eb9527a6c3f0ecf59975f181}\label{classez_1_1maths_1_1Matrix_a185697a4eb9527a6c3f0ecf59975f181}} 
+\index{ez\+::maths\+::\+Matrix@{ez\+::maths\+::\+Matrix}!m\+\_\+data@{m\+\_\+data}}
+\index{m\+\_\+data@{m\+\_\+data}!ez\+::maths\+::\+Matrix@{ez\+::maths\+::\+Matrix}}
+\subsubsection{\texorpdfstring{m\+\_\+data}{m\_data}}
+{\footnotesize\ttfamily template$<$class Data\+Type$>$ \\
+std\+::vector$<$Data\+Type$>$ \hyperlink{classez_1_1maths_1_1Matrix}{ez\+::maths\+::\+Matrix}$<$ Data\+Type $>$\+::m\+\_\+data}
+
+the matrix is stored in raw major order as an 1D array \mbox{\Hypertarget{classez_1_1maths_1_1Matrix_a57afd79b657d3ca032728559e0674000}\label{classez_1_1maths_1_1Matrix_a57afd79b657d3ca032728559e0674000}} 
+\index{ez\+::maths\+::\+Matrix@{ez\+::maths\+::\+Matrix}!m\+\_\+size\+\_\+x@{m\+\_\+size\+\_\+x}}
+\index{m\+\_\+size\+\_\+x@{m\+\_\+size\+\_\+x}!ez\+::maths\+::\+Matrix@{ez\+::maths\+::\+Matrix}}
+\subsubsection{\texorpdfstring{m\+\_\+size\+\_\+x}{m\_size\_x}}
+{\footnotesize\ttfamily template$<$class Data\+Type$>$ \\
+natural \hyperlink{classez_1_1maths_1_1Matrix}{ez\+::maths\+::\+Matrix}$<$ Data\+Type $>$\+::m\+\_\+size\+\_\+x}
+
+sizes of the matrix 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+src/version\+\_\+2018.\+06/maths/matrix.\+h\end{DoxyCompactItemize}

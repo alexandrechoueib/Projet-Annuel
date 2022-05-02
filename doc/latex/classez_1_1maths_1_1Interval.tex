@@ -1,0 +1,62 @@
+\hypertarget{classez_1_1maths_1_1Interval}{}\section{ez\+:\+:maths\+:\+:Interval$<$ T $>$ Class Template Reference}
+\label{classez_1_1maths_1_1Interval}\index{ez\+::maths\+::\+Interval$<$ T $>$@{ez\+::maths\+::\+Interval$<$ T $>$}}
+
+
+{\ttfamily \#include $<$interval.\+h$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classez_1_1maths_1_1Interval_a1218a10c0295b667a98e046f9bed9d96}\label{classez_1_1maths_1_1Interval_a1218a10c0295b667a98e046f9bed9d96}} 
+{\bfseries Interval} (T mini, T maxi)
+\item 
+\mbox{\Hypertarget{classez_1_1maths_1_1Interval_acbf517711d35dd1141aac089c1a2ff5e}\label{classez_1_1maths_1_1Interval_acbf517711d35dd1141aac089c1a2ff5e}} 
+{\bfseries Interval} (const \hyperlink{classez_1_1maths_1_1Interval}{Interval} \&obj)
+\item 
+\mbox{\Hypertarget{classez_1_1maths_1_1Interval_a527a19ae2fa6939dece2ffd80b09ed46}\label{classez_1_1maths_1_1Interval_a527a19ae2fa6939dece2ffd80b09ed46}} 
+bool {\bfseries contains} (T value)
+\item 
+\mbox{\Hypertarget{classez_1_1maths_1_1Interval_a6111df68f59687b9c871698fea164fba}\label{classez_1_1maths_1_1Interval_a6111df68f59687b9c871698fea164fba}} 
+std\+::ostream \& {\bfseries print} (std\+::ostream \&out)
+\item 
+\mbox{\Hypertarget{classez_1_1maths_1_1Interval_a2a4c3a1d0734ec0224240994e38977b9}\label{classez_1_1maths_1_1Interval_a2a4c3a1d0734ec0224240994e38977b9}} 
+T {\bfseries min} ()
+\item 
+\mbox{\Hypertarget{classez_1_1maths_1_1Interval_a71b16542e6fc2a4178e8aa17711f3f9b}\label{classez_1_1maths_1_1Interval_a71b16542e6fc2a4178e8aa17711f3f9b}} 
+T {\bfseries max} ()
+\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classez_1_1maths_1_1Interval_add29d54b27ee7fdf2be4f944de5b2b56}\label{classez_1_1maths_1_1Interval_add29d54b27ee7fdf2be4f944de5b2b56}} 
+static void {\bfseries generate} (std\+::vector$<$ \hyperlink{classez_1_1maths_1_1Interval}{Interval}$<$ T $>$ $>$ \&v, T lo, T hi, T incr, T delta=1)
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classez_1_1maths_1_1Interval_a019037c511314756bcba2b7cca453756}\label{classez_1_1maths_1_1Interval_a019037c511314756bcba2b7cca453756}} 
+T {\bfseries m\+\_\+mini}
+\item 
+\mbox{\Hypertarget{classez_1_1maths_1_1Interval_ac22698e7c3be4ac4f2b4278f393470ef}\label{classez_1_1maths_1_1Interval_ac22698e7c3be4ac4f2b4278f393470ef}} 
+T {\bfseries m\+\_\+maxi}
+\end{DoxyCompactItemize}
+\subsection*{Friends}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classez_1_1maths_1_1Interval_a09cd95031ad758942e59a5de50ab51a2}\label{classez_1_1maths_1_1Interval_a09cd95031ad758942e59a5de50ab51a2}} 
+bool {\bfseries operator$<$} (const \hyperlink{classez_1_1maths_1_1Interval}{Interval}$<$ T $>$ \&a, const \hyperlink{classez_1_1maths_1_1Interval}{Interval}$<$ T $>$ \&b)
+\item 
+\mbox{\Hypertarget{classez_1_1maths_1_1Interval_a22024bc002a0cc02281cbe6e648ed60c}\label{classez_1_1maths_1_1Interval_a22024bc002a0cc02281cbe6e648ed60c}} 
+std\+::ostream \& {\bfseries operator$<$$<$} (std\+::ostream \&out, \hyperlink{classez_1_1maths_1_1Interval}{Interval}$<$ T $>$ \&obj)
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\subsubsection*{template$<$class T$>$\newline
+class ez\+::maths\+::\+Interval$<$ T $>$}
+
+this class represents an \hyperlink{classez_1_1maths_1_1Interval}{Interval} from values that range into \mbox{[}x..y\mbox{]} where x $<$ y 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+src/version\+\_\+2018.\+06/maths/interval.\+h\end{DoxyCompactItemize}

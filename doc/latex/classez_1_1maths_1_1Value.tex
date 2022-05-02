@@ -1,0 +1,163 @@
+\hypertarget{classez_1_1maths_1_1Value}{}\section{ez\+:\+:maths\+:\+:Value$<$ Data\+Type $>$ Class Template Reference}
+\label{classez_1_1maths_1_1Value}\index{ez\+::maths\+::\+Value$<$ Data\+Type $>$@{ez\+::maths\+::\+Value$<$ Data\+Type $>$}}
+
+
+{\ttfamily \#include $<$value.\+h$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classez_1_1maths_1_1Value_ac21c584a161b8e6d8bc9871b7b1bfa97}{Value} ()
+\item 
+\hyperlink{classez_1_1maths_1_1Value_a24dc3abce0a0b713f807cba552acd110}{Value} (Data\+Type v)
+\item 
+\hyperlink{classez_1_1maths_1_1Value_a7a52ba11e0c0fdec6d303eab54c13738}{Value} (Data\+Type value, string name)
+\item 
+\hyperlink{classez_1_1maths_1_1Value_a78b4d0d160978c3c6292e180e79b9662}{Value} (const \hyperlink{classez_1_1maths_1_1Value}{Value}$<$ Data\+Type $>$ \&obj)
+\item 
+\hyperlink{classez_1_1maths_1_1Value}{Value}$<$ Data\+Type $>$ \& \hyperlink{classez_1_1maths_1_1Value_a79c473c4b510f71607c861ee806e4050}{operator=} (const \hyperlink{classez_1_1maths_1_1Value}{Value}$<$ Data\+Type $>$ \&obj)
+\item 
+\mbox{\Hypertarget{classez_1_1maths_1_1Value_addf4c0cc5bea3573bf6eeaa46f2938d9}\label{classez_1_1maths_1_1Value_addf4c0cc5bea3573bf6eeaa46f2938d9}} 
+Data\+Type {\bfseries value} ()
+\item 
+\mbox{\Hypertarget{classez_1_1maths_1_1Value_a7e493b21dca7b9cbf36830265fa8315e}\label{classez_1_1maths_1_1Value_a7e493b21dca7b9cbf36830265fa8315e}} 
+string {\bfseries name} ()
+\item 
+\mbox{\Hypertarget{classez_1_1maths_1_1Value_ac074e1525444c95ad332bc96c2907b08}\label{classez_1_1maths_1_1Value_ac074e1525444c95ad332bc96c2907b08}} 
+void {\bfseries value} (Data\+Type value)
+\item 
+\mbox{\Hypertarget{classez_1_1maths_1_1Value_acfe7337b904455908abe9c6a886b5b56}\label{classez_1_1maths_1_1Value_acfe7337b904455908abe9c6a886b5b56}} 
+void {\bfseries name} (string name)
+\item 
+\hyperlink{classez_1_1maths_1_1Series}{Series}$<$ Data\+Type $>$ \& \hyperlink{classez_1_1maths_1_1Value_ad94111af5be1b5cb3fbde35d38f0d8a1}{series} ()
+\item 
+void \hyperlink{classez_1_1maths_1_1Value_a8e05fc26bd5bce27feecaa5131efa946}{export\+\_\+as\+\_\+series} (ostream \&out)
+\item 
+\mbox{\Hypertarget{classez_1_1maths_1_1Value_ace410049464f8a4f643c8f130b0e6f8f}\label{classez_1_1maths_1_1Value_ace410049464f8a4f643c8f130b0e6f8f}} 
+ostream \& {\bfseries print} (ostream \&out)
+\end{DoxyCompactItemize}
+\subsection*{Data Fields}
+\begin{DoxyCompactItemize}
+\item 
+string \hyperlink{classez_1_1maths_1_1Value_a2ee76ebdeaa2dd1d8180cc40811ea36c}{m\+\_\+name}
+\item 
+Data\+Type \hyperlink{classez_1_1maths_1_1Value_a7894cb6036753caeed0443ccd38f2116}{m\+\_\+value}
+\item 
+\hyperlink{classez_1_1maths_1_1Series}{Series}$<$ Data\+Type $>$ \hyperlink{classez_1_1maths_1_1Value_a3bfd4fd59073f378c85d688bee3cb363}{m\+\_\+series}
+\end{DoxyCompactItemize}
+\subsection*{Friends}
+\begin{DoxyCompactItemize}
+\item 
+bool \hyperlink{classez_1_1maths_1_1Value_a16981d384689784ee36af11bddfc2af4}{operator$<$} (const \hyperlink{classez_1_1maths_1_1Value}{Value}$<$ Data\+Type $>$ \&a, const \hyperlink{classez_1_1maths_1_1Value}{Value}$<$ Data\+Type $>$ \&b)
+\item 
+\mbox{\Hypertarget{classez_1_1maths_1_1Value_a2804de4c37a14418af6cea5991081a19}\label{classez_1_1maths_1_1Value_a2804de4c37a14418af6cea5991081a19}} 
+ostream \& {\bfseries operator$<$$<$} (ostream \&out, \hyperlink{classez_1_1maths_1_1Value}{Value}$<$ Data\+Type $>$ \&obj)
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\subsubsection*{template$<$class Data\+Type$>$\newline
+class ez\+::maths\+::\+Value$<$ Data\+Type $>$}
+
+define a \hyperlink{classez_1_1maths_1_1Value}{Value} as a field that contains a value of Data\+Type, a name as a string if needed and a series of values if needed 
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classez_1_1maths_1_1Value_ac21c584a161b8e6d8bc9871b7b1bfa97}\label{classez_1_1maths_1_1Value_ac21c584a161b8e6d8bc9871b7b1bfa97}} 
+\index{ez\+::maths\+::\+Value@{ez\+::maths\+::\+Value}!Value@{Value}}
+\index{Value@{Value}!ez\+::maths\+::\+Value@{ez\+::maths\+::\+Value}}
+\subsubsection{\texorpdfstring{Value()}{Value()}\hspace{0.1cm}{\footnotesize\ttfamily [1/4]}}
+{\footnotesize\ttfamily template$<$class Data\+Type$>$ \\
+\hyperlink{classez_1_1maths_1_1Value}{ez\+::maths\+::\+Value}$<$ Data\+Type $>$\+::\hyperlink{classez_1_1maths_1_1Value}{Value} (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+default constructor \mbox{\Hypertarget{classez_1_1maths_1_1Value_a24dc3abce0a0b713f807cba552acd110}\label{classez_1_1maths_1_1Value_a24dc3abce0a0b713f807cba552acd110}} 
+\index{ez\+::maths\+::\+Value@{ez\+::maths\+::\+Value}!Value@{Value}}
+\index{Value@{Value}!ez\+::maths\+::\+Value@{ez\+::maths\+::\+Value}}
+\subsubsection{\texorpdfstring{Value()}{Value()}\hspace{0.1cm}{\footnotesize\ttfamily [2/4]}}
+{\footnotesize\ttfamily template$<$class Data\+Type$>$ \\
+\hyperlink{classez_1_1maths_1_1Value}{ez\+::maths\+::\+Value}$<$ Data\+Type $>$\+::\hyperlink{classez_1_1maths_1_1Value}{Value} (\begin{DoxyParamCaption}\item[{Data\+Type}]{v }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+constructor with value \mbox{\Hypertarget{classez_1_1maths_1_1Value_a7a52ba11e0c0fdec6d303eab54c13738}\label{classez_1_1maths_1_1Value_a7a52ba11e0c0fdec6d303eab54c13738}} 
+\index{ez\+::maths\+::\+Value@{ez\+::maths\+::\+Value}!Value@{Value}}
+\index{Value@{Value}!ez\+::maths\+::\+Value@{ez\+::maths\+::\+Value}}
+\subsubsection{\texorpdfstring{Value()}{Value()}\hspace{0.1cm}{\footnotesize\ttfamily [3/4]}}
+{\footnotesize\ttfamily template$<$class Data\+Type$>$ \\
+\hyperlink{classez_1_1maths_1_1Value}{ez\+::maths\+::\+Value}$<$ Data\+Type $>$\+::\hyperlink{classez_1_1maths_1_1Value}{Value} (\begin{DoxyParamCaption}\item[{Data\+Type}]{value,  }\item[{string}]{name }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+constructor with value and name 
+\begin{DoxyParams}{Parameters}
+{\em v} & value \\
+\hline
+{\em n} & name of value, spaces (\textquotesingle{} \textquotesingle{}  ~\newline
+) are removed from the name \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classez_1_1maths_1_1Value_a78b4d0d160978c3c6292e180e79b9662}\label{classez_1_1maths_1_1Value_a78b4d0d160978c3c6292e180e79b9662}} 
+\index{ez\+::maths\+::\+Value@{ez\+::maths\+::\+Value}!Value@{Value}}
+\index{Value@{Value}!ez\+::maths\+::\+Value@{ez\+::maths\+::\+Value}}
+\subsubsection{\texorpdfstring{Value()}{Value()}\hspace{0.1cm}{\footnotesize\ttfamily [4/4]}}
+{\footnotesize\ttfamily template$<$class Data\+Type$>$ \\
+\hyperlink{classez_1_1maths_1_1Value}{ez\+::maths\+::\+Value}$<$ Data\+Type $>$\+::\hyperlink{classez_1_1maths_1_1Value}{Value} (\begin{DoxyParamCaption}\item[{const \hyperlink{classez_1_1maths_1_1Value}{Value}$<$ Data\+Type $>$ \&}]{obj }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+copy constructor 
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classez_1_1maths_1_1Value_a8e05fc26bd5bce27feecaa5131efa946}\label{classez_1_1maths_1_1Value_a8e05fc26bd5bce27feecaa5131efa946}} 
+\index{ez\+::maths\+::\+Value@{ez\+::maths\+::\+Value}!export\+\_\+as\+\_\+series@{export\+\_\+as\+\_\+series}}
+\index{export\+\_\+as\+\_\+series@{export\+\_\+as\+\_\+series}!ez\+::maths\+::\+Value@{ez\+::maths\+::\+Value}}
+\subsubsection{\texorpdfstring{export\+\_\+as\+\_\+series()}{export\_as\_series()}}
+{\footnotesize\ttfamily template$<$class Data\+Type$>$ \\
+void \hyperlink{classez_1_1maths_1_1Value}{ez\+::maths\+::\+Value}$<$ Data\+Type $>$\+::export\+\_\+as\+\_\+series (\begin{DoxyParamCaption}\item[{ostream \&}]{out }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+export as series of values for Highcharts graphs \mbox{\Hypertarget{classez_1_1maths_1_1Value_a79c473c4b510f71607c861ee806e4050}\label{classez_1_1maths_1_1Value_a79c473c4b510f71607c861ee806e4050}} 
+\index{ez\+::maths\+::\+Value@{ez\+::maths\+::\+Value}!operator=@{operator=}}
+\index{operator=@{operator=}!ez\+::maths\+::\+Value@{ez\+::maths\+::\+Value}}
+\subsubsection{\texorpdfstring{operator=()}{operator=()}}
+{\footnotesize\ttfamily template$<$class Data\+Type$>$ \\
+\hyperlink{classez_1_1maths_1_1Value}{Value}$<$Data\+Type$>$\& \hyperlink{classez_1_1maths_1_1Value}{ez\+::maths\+::\+Value}$<$ Data\+Type $>$\+::operator= (\begin{DoxyParamCaption}\item[{const \hyperlink{classez_1_1maths_1_1Value}{Value}$<$ Data\+Type $>$ \&}]{obj }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+assignment operator \mbox{\Hypertarget{classez_1_1maths_1_1Value_ad94111af5be1b5cb3fbde35d38f0d8a1}\label{classez_1_1maths_1_1Value_ad94111af5be1b5cb3fbde35d38f0d8a1}} 
+\index{ez\+::maths\+::\+Value@{ez\+::maths\+::\+Value}!series@{series}}
+\index{series@{series}!ez\+::maths\+::\+Value@{ez\+::maths\+::\+Value}}
+\subsubsection{\texorpdfstring{series()}{series()}}
+{\footnotesize\ttfamily template$<$class Data\+Type$>$ \\
+\hyperlink{classez_1_1maths_1_1Series}{Series}$<$Data\+Type$>$\& \hyperlink{classez_1_1maths_1_1Value}{ez\+::maths\+::\+Value}$<$ Data\+Type $>$\+::series (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+return access to series of values 
+
+\subsection{Friends And Related Function Documentation}
+\mbox{\Hypertarget{classez_1_1maths_1_1Value_a16981d384689784ee36af11bddfc2af4}\label{classez_1_1maths_1_1Value_a16981d384689784ee36af11bddfc2af4}} 
+\index{ez\+::maths\+::\+Value@{ez\+::maths\+::\+Value}!operator$<$@{operator$<$}}
+\index{operator$<$@{operator$<$}!ez\+::maths\+::\+Value@{ez\+::maths\+::\+Value}}
+\subsubsection{\texorpdfstring{operator$<$}{operator<}}
+{\footnotesize\ttfamily template$<$class Data\+Type$>$ \\
+bool operator$<$ (\begin{DoxyParamCaption}\item[{const \hyperlink{classez_1_1maths_1_1Value}{Value}$<$ Data\+Type $>$ \&}]{a,  }\item[{const \hyperlink{classez_1_1maths_1_1Value}{Value}$<$ Data\+Type $>$ \&}]{b }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [friend]}}
+
+overloading of inferior to operator to compare values 
+
+\subsection{Field Documentation}
+\mbox{\Hypertarget{classez_1_1maths_1_1Value_a2ee76ebdeaa2dd1d8180cc40811ea36c}\label{classez_1_1maths_1_1Value_a2ee76ebdeaa2dd1d8180cc40811ea36c}} 
+\index{ez\+::maths\+::\+Value@{ez\+::maths\+::\+Value}!m\+\_\+name@{m\+\_\+name}}
+\index{m\+\_\+name@{m\+\_\+name}!ez\+::maths\+::\+Value@{ez\+::maths\+::\+Value}}
+\subsubsection{\texorpdfstring{m\+\_\+name}{m\_name}}
+{\footnotesize\ttfamily template$<$class Data\+Type$>$ \\
+string \hyperlink{classez_1_1maths_1_1Value}{ez\+::maths\+::\+Value}$<$ Data\+Type $>$\+::m\+\_\+name}
+
+name of value if it needs to be identified \mbox{\Hypertarget{classez_1_1maths_1_1Value_a3bfd4fd59073f378c85d688bee3cb363}\label{classez_1_1maths_1_1Value_a3bfd4fd59073f378c85d688bee3cb363}} 
+\index{ez\+::maths\+::\+Value@{ez\+::maths\+::\+Value}!m\+\_\+series@{m\+\_\+series}}
+\index{m\+\_\+series@{m\+\_\+series}!ez\+::maths\+::\+Value@{ez\+::maths\+::\+Value}}
+\subsubsection{\texorpdfstring{m\+\_\+series}{m\_series}}
+{\footnotesize\ttfamily template$<$class Data\+Type$>$ \\
+\hyperlink{classez_1_1maths_1_1Series}{Series}$<$Data\+Type$>$ \hyperlink{classez_1_1maths_1_1Value}{ez\+::maths\+::\+Value}$<$ Data\+Type $>$\+::m\+\_\+series}
+
+a sub series of values in the case of Highcharts drilldown graphs \mbox{\Hypertarget{classez_1_1maths_1_1Value_a7894cb6036753caeed0443ccd38f2116}\label{classez_1_1maths_1_1Value_a7894cb6036753caeed0443ccd38f2116}} 
+\index{ez\+::maths\+::\+Value@{ez\+::maths\+::\+Value}!m\+\_\+value@{m\+\_\+value}}
+\index{m\+\_\+value@{m\+\_\+value}!ez\+::maths\+::\+Value@{ez\+::maths\+::\+Value}}
+\subsubsection{\texorpdfstring{m\+\_\+value}{m\_value}}
+{\footnotesize\ttfamily template$<$class Data\+Type$>$ \\
+Data\+Type \hyperlink{classez_1_1maths_1_1Value}{ez\+::maths\+::\+Value}$<$ Data\+Type $>$\+::m\+\_\+value}
+
+value stored 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+src/version\+\_\+2018.\+06/maths/value.\+h\end{DoxyCompactItemize}

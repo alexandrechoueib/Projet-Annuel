@@ -1,0 +1,118 @@
+\hypertarget{classez_1_1objects_1_1Matrix3D}{}\section{ez\+:\+:objects\+:\+:Matrix3D$<$ Data\+Type $>$ Class Template Reference}
+\label{classez_1_1objects_1_1Matrix3D}\index{ez\+::objects\+::\+Matrix3\+D$<$ Data\+Type $>$@{ez\+::objects\+::\+Matrix3\+D$<$ Data\+Type $>$}}
+
+
+Inheritance diagram for ez\+:\+:objects\+:\+:Matrix3D$<$ Data\+Type $>$\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=190pt]{classez_1_1objects_1_1Matrix3D__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for ez\+:\+:objects\+:\+:Matrix3D$<$ Data\+Type $>$\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=304pt]{classez_1_1objects_1_1Matrix3D__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classez_1_1objects_1_1Matrix3D_a5a17da6e4dc5af4923219ce71c8790c8}\label{classez_1_1objects_1_1Matrix3D_a5a17da6e4dc5af4923219ce71c8790c8}} 
+typedef \hyperlink{classez_1_1objects_1_1Matrix2D}{Matrix2D}$<$ Data\+Type $>$ {\bfseries self}
+\item 
+\mbox{\Hypertarget{classez_1_1objects_1_1Matrix3D_abcdbe37fb87dbfb21149eb2105cd94df}\label{classez_1_1objects_1_1Matrix3D_abcdbe37fb87dbfb21149eb2105cd94df}} 
+typedef Data\+Type $\ast$ {\bfseries iterator}
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classez_1_1objects_1_1Matrix3D_a4c811f58573ac9d4e6734a661040610d}\label{classez_1_1objects_1_1Matrix3D_a4c811f58573ac9d4e6734a661040610d}} 
+{\bfseries Matrix3D} (\hyperlink{classez_1_1essential_1_1Range}{ez\+::essential\+::\+Range} x\+\_\+range, \hyperlink{classez_1_1essential_1_1Range}{ez\+::essential\+::\+Range} y\+\_\+range, \hyperlink{classez_1_1essential_1_1Range}{ez\+::essential\+::\+Range} z\+\_\+range)
+\item 
+\mbox{\Hypertarget{classez_1_1objects_1_1Matrix3D_a9c59c894cd089e7df30e898825608159}\label{classez_1_1objects_1_1Matrix3D_a9c59c894cd089e7df30e898825608159}} 
+{\bfseries Matrix3D} (const \hyperlink{classez_1_1objects_1_1Matrix2D}{self} \&obj)
+\item 
+\mbox{\Hypertarget{classez_1_1objects_1_1Matrix3D_a57c03371c577f882b6c3d44c10d681da}\label{classez_1_1objects_1_1Matrix3D_a57c03371c577f882b6c3d44c10d681da}} 
+\hyperlink{classez_1_1objects_1_1Matrix2D}{self} \& {\bfseries operator=} (const \hyperlink{classez_1_1objects_1_1Matrix2D}{self} \&obj)
+\item 
+\mbox{\Hypertarget{classez_1_1objects_1_1Matrix3D_ad1ea1261c73a0d24d03e2511c01e1ec8}\label{classez_1_1objects_1_1Matrix3D_ad1ea1261c73a0d24d03e2511c01e1ec8}} 
+void {\bfseries resize} (\hyperlink{classez_1_1essential_1_1Range}{ez\+::essential\+::\+Range} x\+\_\+range, \hyperlink{classez_1_1essential_1_1Range}{ez\+::essential\+::\+Range} y\+\_\+range, \hyperlink{classez_1_1essential_1_1Range}{ez\+::essential\+::\+Range} z\+\_\+range)
+\item 
+\mbox{\Hypertarget{classez_1_1objects_1_1Matrix3D_af5488d52918f0f34f9cfffe8ed604b70}\label{classez_1_1objects_1_1Matrix3D_af5488d52918f0f34f9cfffe8ed604b70}} 
+natural {\bfseries size} ()
+\item 
+\mbox{\Hypertarget{classez_1_1objects_1_1Matrix3D_abcaf2e884ff6322ea00b111eb7f1144f}\label{classez_1_1objects_1_1Matrix3D_abcaf2e884ff6322ea00b111eb7f1144f}} 
+Data\+Type \& {\bfseries safe\+\_\+get} (int x, int y, int z)
+\item 
+\mbox{\Hypertarget{classez_1_1objects_1_1Matrix3D_a1d88a788f1f065f9dbfc5ca80ea8c7ae}\label{classez_1_1objects_1_1Matrix3D_a1d88a788f1f065f9dbfc5ca80ea8c7ae}} 
+Data\+Type \& {\bfseries get} (int x, int y, int z)
+\item 
+\mbox{\Hypertarget{classez_1_1objects_1_1Matrix3D_a01be5d7137b0e505f23b98b9ead84fc7}\label{classez_1_1objects_1_1Matrix3D_a01be5d7137b0e505f23b98b9ead84fc7}} 
+void {\bfseries safe\+\_\+put} (int x, int y, int z, Data\+Type value)
+\item 
+\mbox{\Hypertarget{classez_1_1objects_1_1Matrix3D_aac440ad88f5346e5d10f9f1ae53f4bf6}\label{classez_1_1objects_1_1Matrix3D_aac440ad88f5346e5d10f9f1ae53f4bf6}} 
+void {\bfseries put} (int x, int y, int z, Data\+Type value)
+\item 
+void \hyperlink{classez_1_1objects_1_1Matrix3D_a5e68194ecbc90039bf694377a579b59c}{print} (std\+::ostream \&stream)
+\item 
+\mbox{\Hypertarget{classez_1_1objects_1_1Matrix3D_a8f7565cbeff933a77c6a418a1ef33de7}\label{classez_1_1objects_1_1Matrix3D_a8f7565cbeff933a77c6a418a1ef33de7}} 
+iterator {\bfseries begin} ()
+\item 
+\mbox{\Hypertarget{classez_1_1objects_1_1Matrix3D_a4455fc86c241687009196f983994ddf5}\label{classez_1_1objects_1_1Matrix3D_a4455fc86c241687009196f983994ddf5}} 
+iterator {\bfseries end} ()
+\end{DoxyCompactItemize}
+\subsection*{Data Fields}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classez_1_1objects_1_1Matrix3D_a0544904c21295ea452d0e0180db3e41f}\label{classez_1_1objects_1_1Matrix3D_a0544904c21295ea452d0e0180db3e41f}} 
+\hyperlink{classez_1_1essential_1_1Range}{ez\+::essential\+::\+Range} {\bfseries m\+\_\+x\+\_\+range}
+\item 
+\mbox{\Hypertarget{classez_1_1objects_1_1Matrix3D_add280dfed8a17e70a78d34caea7e9cf2}\label{classez_1_1objects_1_1Matrix3D_add280dfed8a17e70a78d34caea7e9cf2}} 
+\hyperlink{classez_1_1essential_1_1Range}{ez\+::essential\+::\+Range} {\bfseries m\+\_\+y\+\_\+range}
+\item 
+\mbox{\Hypertarget{classez_1_1objects_1_1Matrix3D_a06da3c5d6d3f37b7edb5958cce62f679}\label{classez_1_1objects_1_1Matrix3D_a06da3c5d6d3f37b7edb5958cce62f679}} 
+\hyperlink{classez_1_1essential_1_1Range}{ez\+::essential\+::\+Range} {\bfseries m\+\_\+z\+\_\+range}
+\item 
+\mbox{\Hypertarget{classez_1_1objects_1_1Matrix3D_a58ae013adbf48027f42590ecdb668b60}\label{classez_1_1objects_1_1Matrix3D_a58ae013adbf48027f42590ecdb668b60}} 
+natural {\bfseries m\+\_\+x\+\_\+size}
+\item 
+\mbox{\Hypertarget{classez_1_1objects_1_1Matrix3D_a529b9fe5dad9cf31f0a3a2169f194247}\label{classez_1_1objects_1_1Matrix3D_a529b9fe5dad9cf31f0a3a2169f194247}} 
+natural {\bfseries m\+\_\+xy\+\_\+size}
+\item 
+\mbox{\Hypertarget{classez_1_1objects_1_1Matrix3D_a03de23a09ae91fcdc5b65408d280e3c9}\label{classez_1_1objects_1_1Matrix3D_a03de23a09ae91fcdc5b65408d280e3c9}} 
+natural {\bfseries m\+\_\+size}
+\item 
+\mbox{\Hypertarget{classez_1_1objects_1_1Matrix3D_a292ada7dbe95708f68c757cdf36a5a56}\label{classez_1_1objects_1_1Matrix3D_a292ada7dbe95708f68c757cdf36a5a56}} 
+Data\+Type $\ast$ {\bfseries m\+\_\+data}
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classez_1_1objects_1_1Matrix3D_a5e68194ecbc90039bf694377a579b59c}\label{classez_1_1objects_1_1Matrix3D_a5e68194ecbc90039bf694377a579b59c}} 
+\index{ez\+::objects\+::\+Matrix3D@{ez\+::objects\+::\+Matrix3D}!print@{print}}
+\index{print@{print}!ez\+::objects\+::\+Matrix3D@{ez\+::objects\+::\+Matrix3D}}
+\subsubsection{\texorpdfstring{print()}{print()}}
+{\footnotesize\ttfamily template$<$class Data\+Type $>$ \\
+void \hyperlink{classez_1_1objects_1_1Matrix3D}{ez\+::objects\+::\+Matrix3D}$<$ Data\+Type $>$\+::print (\begin{DoxyParamCaption}\item[{std\+::ostream \&}]{stream }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+this function is used to print the contents of the object in a human readable format 
+\begin{DoxyParams}{Parameters}
+{\em stream} & output stream for example std\+::cout \\
+\hline
+\end{DoxyParams}
+
+
+Reimplemented from \hyperlink{classez_1_1objects_1_1Object_a9e20f39a78163f67f000576149d858b3}{ez\+::objects\+::\+Object}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+src/version\+\_\+2018.\+06/objects/matrix3d.\+h\end{DoxyCompactItemize}

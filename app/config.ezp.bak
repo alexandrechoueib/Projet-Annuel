@@ -1,0 +1,133 @@
+# ===================================================================
+# Configuration file with ezp format (Easy Language Parameters)
+# ===================================================================
+
+# -------------------------------------------------------------------
+# Define project name
+# Note: generally this is also the name of the directory of the
+#       project 
+# -------------------------------------------------------------------
+MY_PROJECT_NAME=cpp_aos_soa
+
+# -------------------------------------------------------------------
+# Define project version
+# Note: we use the year followed by the month and eventually the
+# day
+# -------------------------------------------------------------------
+MY_PROJECT_VERSION=2017.03
+
+# -------------------------------------------------------------------
+# Name of the author
+# -------------------------------------------------------------------
+MY_AUTHOR_NAME=Jean-Michel Richer
+
+# -------------------------------------------------------------------
+# Email address of the author
+# -------------------------------------------------------------------
+MY_AUTHOR_EMAIL=jean-michel.richer@univ-angers.fr
+
+# -+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-
+# -+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-
+#                       SECTION IMPLEMENTATION
+# -+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-
+# -+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-
+
+# -------------------------------------------------------------------
+# Define operating system on which the source are compiled
+# possible values: 
+#  - linux (for Ubuntu, Debian adnd other Linux distributions)
+# 
+# -------------------------------------------------------------------
+MY_OPERATING_SYSTEM=gnu_linux. 
+
+# -------------------------------------------------------------------
+# Define hardware on which this project will be built.
+# Given by the 'uname -m' command
+# possible values:
+#  - x86_64 for Intel/AMD 64 bits
+#  - armv7
+# -------------------------------------------------------------------
+MY_HARDWARE=x86_64.x86_64
+
+# -------------------------------------------------------------------
+# Architecture of the system
+# possible values: 
+#  - 32 (bits, x86)
+#  - 64 (bits, AMD64)
+# -------------------------------------------------------------------
+MY_ARCHITECTURE=64
+
+# -------------------------------------------------------------------
+# Compiler that will be used to compile sources
+# possible values: 
+#  - gnu (for G++) 
+#  - intel (for icpc) 
+#  - llvm (for clang++)
+# -------------------------------------------------------------------
+MY_COMPILER=intel
+
+# -------------------------------------------------------------------
+# Define distribution which will influence the compilation
+# flags
+# possible values: 
+#  - release (Optimization)
+#  - debug (debug mode)
+#  - advisor (for intel advisor)
+# -------------------------------------------------------------------
+MY_DISTRIBUTION=release
+
+# -------------------------------------------------------------------
+# Size in bits of the data used
+# possible values: 
+#  - 8 (bits so 1 byte)
+# note: only one value possible
+# -------------------------------------------------------------------
+MY_DATA_SIZE=8
+
+# -------------------------------------------------------------------
+# Memory alignment boundary
+# possible values: 
+#  - 1 (byte)
+#  - 16 (bytes)
+#  - 32 (bytes)
+# note: use 16 for SSE2 or SSE4.2 instruction set and 32 for AVX2
+#       by default 32 is a good value to use
+# -------------------------------------------------------------------
+MY_MEMORY_ALIGNMENT=32
+
+# -------------------------------------------------------------------
+# Implementation of real numbers
+# possible values: 
+#  - float (for 32 bits floatting point) 
+#  - double (for 64 bits)
+# note: this parameter is not relevant for this project
+# -------------------------------------------------------------------
+MY_REAL_IMPLEMENTATION=float
+
+
+# -+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-
+# -+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-
+#        SECTION AUTOMATIC EXECUTION AND RESULTS GATHERING
+# -+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-
+# -+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-
+
+# -------------------------------------------------------------------
+# Name of the user on server and remote hosts
+# -------------------------------------------------------------------
+MY_USER=richer
+
+# -------------------------------------------------------------------
+# Server identification used to gather results
+# Note: it can also be an IP address
+# -------------------------------------------------------------------
+MY_SERVER=richer@192.168.0.1
+
+# -------------------------------------------------------------------
+# Directory on server that received results
+# -------------------------------------------------------------------
+MY_SERVER_DIRECTORY=/home/richer/workspace/cpp_aos_soa/results
+
+# -------------------------------------------------------------------
+# Directory on remote hosts that receive the archive of the project
+# -------------------------------------------------------------------
+MY_REMOTE_DIRECTORY=/home/richer/export

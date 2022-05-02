@@ -1,0 +1,49 @@
+\hypertarget{classez_1_1essential_1_1RunTime}{}\section{ez\+:\+:essential\+:\+:Run\+Time Class Reference}
+\label{classez_1_1essential_1_1RunTime}\index{ez\+::essential\+::\+Run\+Time@{ez\+::essential\+::\+Run\+Time}}
+
+
+{\ttfamily \#include $<$run\+\_\+time.\+h$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classez_1_1essential_1_1RunTime_a18df9d77d3e2b12356bb1bee105ee540}\label{classez_1_1essential_1_1RunTime_a18df9d77d3e2b12356bb1bee105ee540}} 
+void {\bfseries init} ()
+\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static void \hyperlink{classez_1_1essential_1_1RunTime_a1ee4569c16d51377188bd2023ea87c7d}{set\+\_\+interrupt} ()
+\item 
+static bool \hyperlink{classez_1_1essential_1_1RunTime_a19c72bc8f521a376e68e7d63d5f14a13}{get\+\_\+interrupt} ()
+\end{DoxyCompactItemize}
+\subsection*{Static Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classez_1_1essential_1_1RunTime_a1ed5a71c5d1760595e049fbb51d8cfaa}\label{classez_1_1essential_1_1RunTime_a1ed5a71c5d1760595e049fbb51d8cfaa}} 
+static bool {\bfseries s\+\_\+interrupt\+\_\+program} = false
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+This class is used when running a program to indicate if we should exit from some main loop. 
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classez_1_1essential_1_1RunTime_a19c72bc8f521a376e68e7d63d5f14a13}\label{classez_1_1essential_1_1RunTime_a19c72bc8f521a376e68e7d63d5f14a13}} 
+\index{ez\+::essential\+::\+Run\+Time@{ez\+::essential\+::\+Run\+Time}!get\+\_\+interrupt@{get\+\_\+interrupt}}
+\index{get\+\_\+interrupt@{get\+\_\+interrupt}!ez\+::essential\+::\+Run\+Time@{ez\+::essential\+::\+Run\+Time}}
+\subsubsection{\texorpdfstring{get\+\_\+interrupt()}{get\_interrupt()}}
+{\footnotesize\ttfamily bool Run\+Time\+::get\+\_\+interrupt (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+return value of flag that tells to interrupt the program \mbox{\Hypertarget{classez_1_1essential_1_1RunTime_a1ee4569c16d51377188bd2023ea87c7d}\label{classez_1_1essential_1_1RunTime_a1ee4569c16d51377188bd2023ea87c7d}} 
+\index{ez\+::essential\+::\+Run\+Time@{ez\+::essential\+::\+Run\+Time}!set\+\_\+interrupt@{set\+\_\+interrupt}}
+\index{set\+\_\+interrupt@{set\+\_\+interrupt}!ez\+::essential\+::\+Run\+Time@{ez\+::essential\+::\+Run\+Time}}
+\subsubsection{\texorpdfstring{set\+\_\+interrupt()}{set\_interrupt()}}
+{\footnotesize\ttfamily void Run\+Time\+::set\+\_\+interrupt (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+set flags that tells to interrupt the program the flag must be checked by using the \hyperlink{classez_1_1essential_1_1RunTime_a19c72bc8f521a376e68e7d63d5f14a13}{get\+\_\+interrupt()} method to escape from a loop for example 
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+src/version\+\_\+2018.\+06/essential/run\+\_\+time.\+h\item 
+src/version\+\_\+2018.\+06/essential/run\+\_\+time.\+cpp\end{DoxyCompactItemize}

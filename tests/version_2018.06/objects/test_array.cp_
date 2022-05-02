@@ -1,0 +1,231 @@
+/*
+ * test_array.cpp
+ *
+ *  Created on: Apr 11, 2017
+ *      Author: richer
+ */
+
+#include "objects/integer.h"
+#include "objects/real.h"
+#include "string.h"
+#include "objects/array.h"
+#include "objects/string.h"
+
+#include <gtest/gtest.h>
+
+namespace eze = ez::essential;
+namespace ezo = ez::objects;
+
+/**
+ * declare array and fill with constant
+ */
+TEST(TestArray, fill_cste) {
+
+	ezo::Array<integer> a(-10,10);
+
+	a.fill(1);
+
+	integer sum = 0;
+	for (auto i = a.begin(); i != a.end(); ++i) {
+		sum += *i;
+	}
+
+	EXPECT_EQ(sum, a.size());
+
+}
+
+integer generator_value = 1;
+integer generator() {
+	//cerr << generator_value << " ";
+	return generator_value++;
+}
+
+/**
+ * declare array and fill with function
+ */
+TEST(TestArray, fill_generator) {
+
+	ezo::Array<integer> a(ezo::Range(-10,10));
+
+	generator_value = 1;
+	a.fill(generator);
+
+	integer sum = 0;
+	for (auto i = a.begin(); i != a.end(); ++i) {
+		sum += *i;
+	}
+
+	//cout << "sum=" << sum << endl;
+	EXPECT_EQ(sum, 231);
+
+}
+
+/**
+ * declare array and fill with function
+ */
+TEST(TestArray, sum) {
+
+	ezo::Array<integer> a(ezo::Range(-10,10));
+
+	generator_value = 1;
+	a.fill(generator);
+
+	integer sum = a.sum(ezo::Integer::zero);
+
+	//cout << "sum=" << sum << endl;
+	EXPECT_EQ(sum, 231);
+
+}
+
+/**
+ * find value in array
+ */
+TEST(TestArray, find) {
+
+	ezo::Array<integer> a1(ezo::Range(-10,10));
+
+	generator_value = 1;
+	a1.fill(generator);
+
+	integer c_index = 0;
+	integer r_index = 0;
+	bool result;
+
+	integer value_to_find = 7;
+
+	result = a1.find_range_index(value_to_find, r_index);
+	EXPECT_EQ(result, true);
+	EXPECT_EQ(r_index, -4);
+	EXPECT_EQ(a1[r_index], value_to_find);
+	result = a1.find_c_index(value_to_find, c_index);
+	EXPECT_EQ(result, true);
+	EXPECT_EQ(c_index, 6);
+
+	// second test
+	ezo::Array<integer> a2(ezo::Range(3,20));
+
+	generator_value = 1;
+	a2.fill(generator);
+
+	value_to_find = 7;
+
+	result = a2.find_range_index(value_to_find, r_index);
+	EXPECT_EQ(result, true);
+	EXPECT_EQ(r_index, 9);
+	EXPECT_EQ(a2[r_index], value_to_find);
+	result = a1.find_c_index(value_to_find, c_index);
+	EXPECT_EQ(result, true);
+	EXPECT_EQ(c_index, 6);
+
+	// third test : non existing value
+	value_to_find = 99;
+	result = a2.find_range_index(value_to_find, r_index);
+	EXPECT_EQ(result, false);
+
+
+}
+
+/**
+ * check lower and upper bounds
+ */
+TEST(TestArray, bounds) {
+
+	ezo::Array<integer> a1(ezo::Range(-10,10));
+
+	a1.fill_iota(-10, 1);
+
+	for (int i=-10; i <= 10; ++i) {
+		EXPECT_EQ( a1[i], i );
+	}
+}
+
+TEST(TestArray, addition) {
+	ezo::Array<real> a1(ezo::Range(-10,10));
+	ezo::Array<real> a2(ezo::Range(20,40));
+
+	a1.fill(ezo::Range(-10,10));
+	a2.fill(ezo::Range(20,40));
+
+	ezo::Array<real> a3;
+	a3 = a1 + a2;
+
+	auto it_a1 = a1.begin();
+	auto it_a2 = a2.begin();
+	auto it_a3 = a3.begin();
+
+	while (it_a1 != a1.end()) {
+		real x = *it_a1;
+		real y = *it_a2;
+		real z = *it_a3;
+		EXPECT_EQ(x + y, z);
+		++it_a1;
+		++it_a2;
+		++it_a3;
+	}
+}
+
+TEST(TestArray, multiplication) {
+	ezo::Array<real> a1(ezo::Range(-10,10));
+	ezo::Array<real> a2(ezo::Range(20,40));
+
+	a1.fill(ezo::Range(-10,10));
+	a2.fill(ezo::Range(20,40));
+
+	ezo::Array<real> a3;
+	a3 = a1 * a2;
+
+	auto it_a1 = a1.begin();
+	auto it_a2 = a2.begin();
+	auto it_a3 = a3.begin();
+
+	while (it_a1 != a1.end()) {
+		real x = *it_a1;
+		real y = *it_a2;
+		real z = *it_a3;
+		EXPECT_EQ(x * y, z);
+		++it_a1;
+		++it_a2;
+		++it_a3;
+	}
+}
+
+TEST(TestArray, output_input) {
+	ezo::Array<integer> a1(-10,10);
+	ezo::Array<integer> a2(-3,3);
+
+	a1.fill_iota(-99,3);
+	integer sum1 = a1.sum(ezo::Integer::zero);
+
+	ostringstream oss;
+	a1.output(oss);
+
+	istringstream iss(oss.str());
+	a2.input(iss);
+	integer sum2 = a2.sum(ezo::Integer::zero);
+
+	EXPECT_EQ(sum1, sum2);
+	EXPECT_EQ(a1, a2);
+}
+
+TEST(TestArray, output_input_object) {
+	ezo::Array<ezo::Object *> a(1,3);
+	a[1] = new ezo::Integer(123);
+	a[2] = new ezo::Integer(456);
+	a[3] = new ezo::String("toto");
+
+	ostringstream oss;
+	a.output(oss);
+
+	cout << "%%%% " << oss.str() << endl;
+}
+
+int main(int argc, char *argv[]) {
+	::testing::InitGoogleTest( &argc, argv );
+	return RUN_ALL_TESTS();
+}
+
+
+
+
+
+

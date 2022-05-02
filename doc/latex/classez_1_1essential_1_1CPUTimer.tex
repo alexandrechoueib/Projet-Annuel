@@ -1,0 +1,104 @@
+\hypertarget{classez_1_1essential_1_1CPUTimer}{}\section{ez\+:\+:essential\+:\+:C\+P\+U\+Timer Class Reference}
+\label{classez_1_1essential_1_1CPUTimer}\index{ez\+::essential\+::\+C\+P\+U\+Timer@{ez\+::essential\+::\+C\+P\+U\+Timer}}
+
+
+{\ttfamily \#include $<$cpu\+\_\+timer.\+h$>$}
+
+\subsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classez_1_1essential_1_1CPUTimer_accb93c3ac1ba89c9dceedd765f4a11ee}\label{classez_1_1essential_1_1CPUTimer_accb93c3ac1ba89c9dceedd765f4a11ee}} 
+typedef std\+::chrono\+::time\+\_\+point$<$ std\+::chrono\+::high\+\_\+resolution\+\_\+clock $>$ {\bfseries Time}
+\item 
+\mbox{\Hypertarget{classez_1_1essential_1_1CPUTimer_ac07c2f4cfa8f31ae7a99345178d8deba}\label{classez_1_1essential_1_1CPUTimer_ac07c2f4cfa8f31ae7a99345178d8deba}} 
+typedef std\+::chrono\+::milliseconds {\bfseries millis}
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classez_1_1essential_1_1CPUTimer_aa06f8e13b3c82bbb8642f4981bfff7e7}{C\+P\+U\+Timer} ()
+\item 
+void \hyperlink{classez_1_1essential_1_1CPUTimer_a2117cc7fd9f933bb0c6d28fdf9a9f74a}{start} ()
+\item 
+void \hyperlink{classez_1_1essential_1_1CPUTimer_a318dfb72b3b7e61ab90ea3699e7d66a6}{stop} ()
+\item 
+long\+\_\+integer \hyperlink{classez_1_1essential_1_1CPUTimer_a4a8a5f9a298400052e54c0219ff254c2}{get\+\_\+milli\+\_\+seconds} ()
+\item 
+long\+\_\+integer \hyperlink{classez_1_1essential_1_1CPUTimer_a5514bcd6ee6e46961b66497bf5b27751}{get\+\_\+seconds} ()
+\item 
+long\+\_\+integer \hyperlink{classez_1_1essential_1_1CPUTimer_a867ed5183849fa164f01a035b04e0ad5}{get\+\_\+seconds\+\_\+elapsed} ()
+\item 
+\mbox{\Hypertarget{classez_1_1essential_1_1CPUTimer_a4fc87e7c3591adf9fec42917caa38464}\label{classez_1_1essential_1_1CPUTimer_a4fc87e7c3591adf9fec42917caa38464}} 
+ostream \& {\bfseries print} (ostream \&out)
+\end{DoxyCompactItemize}
+\subsection*{Data Fields}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classez_1_1essential_1_1CPUTimer_a9153ec33fb7ea258b0633eb183d792d1}\label{classez_1_1essential_1_1CPUTimer_a9153ec33fb7ea258b0633eb183d792d1}} 
+Time {\bfseries event\+\_\+start}
+\item 
+\mbox{\Hypertarget{classez_1_1essential_1_1CPUTimer_a3b76f40057f1d012e4c33a4923047923}\label{classez_1_1essential_1_1CPUTimer_a3b76f40057f1d012e4c33a4923047923}} 
+Time {\bfseries event\+\_\+stop}
+\end{DoxyCompactItemize}
+\subsection*{Friends}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classez_1_1essential_1_1CPUTimer_a50a6415ed758f854d5211347e860452a}\label{classez_1_1essential_1_1CPUTimer_a50a6415ed758f854d5211347e860452a}} 
+ostream \& {\bfseries operator$<$$<$} (ostream \&out, \hyperlink{classez_1_1essential_1_1CPUTimer}{C\+P\+U\+Timer} \&c)
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+class used to measure performances of algorithms. 
+\begin{DoxyItemize}
+\item use \hyperlink{classez_1_1essential_1_1CPUTimer_a2117cc7fd9f933bb0c6d28fdf9a9f74a}{start()} method to start timer 
+\item use \hyperlink{classez_1_1essential_1_1CPUTimer_a318dfb72b3b7e61ab90ea3699e7d66a6}{stop()} method to stop 
+\item use \hyperlink{classez_1_1essential_1_1CPUTimer_a5514bcd6ee6e46961b66497bf5b27751}{get\+\_\+seconds()} method to obtain the number of seconds between start and stop 
+\end{DoxyItemize}
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classez_1_1essential_1_1CPUTimer_aa06f8e13b3c82bbb8642f4981bfff7e7}\label{classez_1_1essential_1_1CPUTimer_aa06f8e13b3c82bbb8642f4981bfff7e7}} 
+\index{ez\+::essential\+::\+C\+P\+U\+Timer@{ez\+::essential\+::\+C\+P\+U\+Timer}!C\+P\+U\+Timer@{C\+P\+U\+Timer}}
+\index{C\+P\+U\+Timer@{C\+P\+U\+Timer}!ez\+::essential\+::\+C\+P\+U\+Timer@{ez\+::essential\+::\+C\+P\+U\+Timer}}
+\subsubsection{\texorpdfstring{C\+P\+U\+Timer()}{CPUTimer()}}
+{\footnotesize\ttfamily C\+P\+U\+Timer\+::\+C\+P\+U\+Timer (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+default constructor 
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classez_1_1essential_1_1CPUTimer_a4a8a5f9a298400052e54c0219ff254c2}\label{classez_1_1essential_1_1CPUTimer_a4a8a5f9a298400052e54c0219ff254c2}} 
+\index{ez\+::essential\+::\+C\+P\+U\+Timer@{ez\+::essential\+::\+C\+P\+U\+Timer}!get\+\_\+milli\+\_\+seconds@{get\+\_\+milli\+\_\+seconds}}
+\index{get\+\_\+milli\+\_\+seconds@{get\+\_\+milli\+\_\+seconds}!ez\+::essential\+::\+C\+P\+U\+Timer@{ez\+::essential\+::\+C\+P\+U\+Timer}}
+\subsubsection{\texorpdfstring{get\+\_\+milli\+\_\+seconds()}{get\_milli\_seconds()}}
+{\footnotesize\ttfamily long\+\_\+integer C\+P\+U\+Timer\+::get\+\_\+milli\+\_\+seconds (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+get number of milli seconds from start to stop events \mbox{\Hypertarget{classez_1_1essential_1_1CPUTimer_a5514bcd6ee6e46961b66497bf5b27751}\label{classez_1_1essential_1_1CPUTimer_a5514bcd6ee6e46961b66497bf5b27751}} 
+\index{ez\+::essential\+::\+C\+P\+U\+Timer@{ez\+::essential\+::\+C\+P\+U\+Timer}!get\+\_\+seconds@{get\+\_\+seconds}}
+\index{get\+\_\+seconds@{get\+\_\+seconds}!ez\+::essential\+::\+C\+P\+U\+Timer@{ez\+::essential\+::\+C\+P\+U\+Timer}}
+\subsubsection{\texorpdfstring{get\+\_\+seconds()}{get\_seconds()}}
+{\footnotesize\ttfamily long\+\_\+integer C\+P\+U\+Timer\+::get\+\_\+seconds (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+get number of seconds from start to stop events \mbox{\Hypertarget{classez_1_1essential_1_1CPUTimer_a867ed5183849fa164f01a035b04e0ad5}\label{classez_1_1essential_1_1CPUTimer_a867ed5183849fa164f01a035b04e0ad5}} 
+\index{ez\+::essential\+::\+C\+P\+U\+Timer@{ez\+::essential\+::\+C\+P\+U\+Timer}!get\+\_\+seconds\+\_\+elapsed@{get\+\_\+seconds\+\_\+elapsed}}
+\index{get\+\_\+seconds\+\_\+elapsed@{get\+\_\+seconds\+\_\+elapsed}!ez\+::essential\+::\+C\+P\+U\+Timer@{ez\+::essential\+::\+C\+P\+U\+Timer}}
+\subsubsection{\texorpdfstring{get\+\_\+seconds\+\_\+elapsed()}{get\_seconds\_elapsed()}}
+{\footnotesize\ttfamily long\+\_\+integer C\+P\+U\+Timer\+::get\+\_\+seconds\+\_\+elapsed (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+get number of seconds since start event \mbox{\Hypertarget{classez_1_1essential_1_1CPUTimer_a2117cc7fd9f933bb0c6d28fdf9a9f74a}\label{classez_1_1essential_1_1CPUTimer_a2117cc7fd9f933bb0c6d28fdf9a9f74a}} 
+\index{ez\+::essential\+::\+C\+P\+U\+Timer@{ez\+::essential\+::\+C\+P\+U\+Timer}!start@{start}}
+\index{start@{start}!ez\+::essential\+::\+C\+P\+U\+Timer@{ez\+::essential\+::\+C\+P\+U\+Timer}}
+\subsubsection{\texorpdfstring{start()}{start()}}
+{\footnotesize\ttfamily void C\+P\+U\+Timer\+::start (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+start chrono and record clocks \mbox{\Hypertarget{classez_1_1essential_1_1CPUTimer_a318dfb72b3b7e61ab90ea3699e7d66a6}\label{classez_1_1essential_1_1CPUTimer_a318dfb72b3b7e61ab90ea3699e7d66a6}} 
+\index{ez\+::essential\+::\+C\+P\+U\+Timer@{ez\+::essential\+::\+C\+P\+U\+Timer}!stop@{stop}}
+\index{stop@{stop}!ez\+::essential\+::\+C\+P\+U\+Timer@{ez\+::essential\+::\+C\+P\+U\+Timer}}
+\subsubsection{\texorpdfstring{stop()}{stop()}}
+{\footnotesize\ttfamily void C\+P\+U\+Timer\+::stop (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+stop chrono and record clocks 
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+src/version\+\_\+2018.\+06/essential/cpu\+\_\+timer.\+h\item 
+src/version\+\_\+2018.\+06/essential/cpu\+\_\+timer.\+cpp\end{DoxyCompactItemize}

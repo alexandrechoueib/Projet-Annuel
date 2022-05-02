@@ -1,0 +1,101 @@
+\hypertarget{classez_1_1essential_1_1Format}{}\section{ez\+:\+:essential\+:\+:Format Class Reference}
+\label{classez_1_1essential_1_1Format}\index{ez\+::essential\+::\+Format@{ez\+::essential\+::\+Format}}
+
+
+{\ttfamily \#include $<$format.\+h$>$}
+
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static text \hyperlink{classez_1_1essential_1_1Format_ad77d7f94ad041e3905107c391dbcd00a}{left} (text s, integer width, character fill\+\_\+char=\textquotesingle{} \textquotesingle{})
+\item 
+static text \hyperlink{classez_1_1essential_1_1Format_aad619b944b2ab388ccb82b1d82ef610b}{center} (text s, integer width, character fill\+\_\+char=\textquotesingle{} \textquotesingle{})
+\item 
+static text \hyperlink{classez_1_1essential_1_1Format_a46180d9a7dd6202fb5225b1fe83f50bb}{right} (text s, integer width, character fill\+\_\+char=\textquotesingle{} \textquotesingle{})
+\item 
+static text \hyperlink{classez_1_1essential_1_1Format_ab163df0d05d66c0402c46ecfae2dee82}{dec} (long\+\_\+natural n)
+\item 
+static text \hyperlink{classez_1_1essential_1_1Format_a9fe91dede9e02e992d4ab410d89a0e21}{bin} (long\+\_\+natural n, natural size\+\_\+in\+\_\+bits=32)
+\item 
+static text \hyperlink{classez_1_1essential_1_1Format_ac5e90b9408d5ff10bbdf4cc0d4f55895}{oct} (long\+\_\+natural n)
+\item 
+static text \hyperlink{classez_1_1essential_1_1Format_aa61095f58c70d7a4dfcb1e555fd3673d}{hex} (long\+\_\+natural n)
+\item 
+\mbox{\Hypertarget{classez_1_1essential_1_1Format_a3afc25d1fc2e5085caaa56f64b6747b5}\label{classez_1_1essential_1_1Format_a3afc25d1fc2e5085caaa56f64b6747b5}} 
+static text {\bfseries flt} (real n, natural size=0, natural decimals=0)
+\end{DoxyCompactItemize}
+\subsection*{Static Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classez_1_1essential_1_1Format_abd388160f737b12027656a9a6328e7c0}\label{classez_1_1essential_1_1Format_abd388160f737b12027656a9a6328e7c0}} 
+static text {\bfseries \+\_\+to\+\_\+base} (natural n, \hyperlink{classez_1_1essential_1_1NumericBase}{Numeric\+Base} \&base)
+\item 
+\mbox{\Hypertarget{classez_1_1essential_1_1Format_aed6b5776c9c040d952d7a4058fa0a51d}\label{classez_1_1essential_1_1Format_aed6b5776c9c040d952d7a4058fa0a51d}} 
+static text {\bfseries \+\_\+to\+\_\+base} (long\+\_\+natural n, \hyperlink{classez_1_1essential_1_1NumericBase}{Numeric\+Base} \&base)
+\item 
+\mbox{\Hypertarget{classez_1_1essential_1_1Format_a243e4d7ade39eaf54436b198b67b1243}\label{classez_1_1essential_1_1Format_a243e4d7ade39eaf54436b198b67b1243}} 
+static text {\bfseries \+\_\+format} (text s, integer distance)
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\hyperlink{classez_1_1essential_1_1Format}{Format} to pretty print data 
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classez_1_1essential_1_1Format_a9fe91dede9e02e992d4ab410d89a0e21}\label{classez_1_1essential_1_1Format_a9fe91dede9e02e992d4ab410d89a0e21}} 
+\index{ez\+::essential\+::\+Format@{ez\+::essential\+::\+Format}!bin@{bin}}
+\index{bin@{bin}!ez\+::essential\+::\+Format@{ez\+::essential\+::\+Format}}
+\subsubsection{\texorpdfstring{bin()}{bin()}}
+{\footnotesize\ttfamily text Format\+::bin (\begin{DoxyParamCaption}\item[{long\+\_\+natural}]{n,  }\item[{natural}]{size\+\_\+in\+\_\+bits = {\ttfamily 32} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+convert natural number to binary format \mbox{\Hypertarget{classez_1_1essential_1_1Format_aad619b944b2ab388ccb82b1d82ef610b}\label{classez_1_1essential_1_1Format_aad619b944b2ab388ccb82b1d82ef610b}} 
+\index{ez\+::essential\+::\+Format@{ez\+::essential\+::\+Format}!center@{center}}
+\index{center@{center}!ez\+::essential\+::\+Format@{ez\+::essential\+::\+Format}}
+\subsubsection{\texorpdfstring{center()}{center()}}
+{\footnotesize\ttfamily text Format\+::center (\begin{DoxyParamCaption}\item[{text}]{s,  }\item[{integer}]{width,  }\item[{character}]{fill\+\_\+char = {\ttfamily \textquotesingle{}~\textquotesingle{}} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Print a string on the center of a given width and will with spaces \mbox{\Hypertarget{classez_1_1essential_1_1Format_ab163df0d05d66c0402c46ecfae2dee82}\label{classez_1_1essential_1_1Format_ab163df0d05d66c0402c46ecfae2dee82}} 
+\index{ez\+::essential\+::\+Format@{ez\+::essential\+::\+Format}!dec@{dec}}
+\index{dec@{dec}!ez\+::essential\+::\+Format@{ez\+::essential\+::\+Format}}
+\subsubsection{\texorpdfstring{dec()}{dec()}}
+{\footnotesize\ttfamily text Format\+::dec (\begin{DoxyParamCaption}\item[{long\+\_\+natural}]{n }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+convert to decimal format \mbox{\Hypertarget{classez_1_1essential_1_1Format_aa61095f58c70d7a4dfcb1e555fd3673d}\label{classez_1_1essential_1_1Format_aa61095f58c70d7a4dfcb1e555fd3673d}} 
+\index{ez\+::essential\+::\+Format@{ez\+::essential\+::\+Format}!hex@{hex}}
+\index{hex@{hex}!ez\+::essential\+::\+Format@{ez\+::essential\+::\+Format}}
+\subsubsection{\texorpdfstring{hex()}{hex()}}
+{\footnotesize\ttfamily text Format\+::hex (\begin{DoxyParamCaption}\item[{long\+\_\+natural}]{n }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+convert natural number to hexadecimal format \mbox{\Hypertarget{classez_1_1essential_1_1Format_ad77d7f94ad041e3905107c391dbcd00a}\label{classez_1_1essential_1_1Format_ad77d7f94ad041e3905107c391dbcd00a}} 
+\index{ez\+::essential\+::\+Format@{ez\+::essential\+::\+Format}!left@{left}}
+\index{left@{left}!ez\+::essential\+::\+Format@{ez\+::essential\+::\+Format}}
+\subsubsection{\texorpdfstring{left()}{left()}}
+{\footnotesize\ttfamily text Format\+::left (\begin{DoxyParamCaption}\item[{text}]{s,  }\item[{integer}]{width,  }\item[{character}]{fill\+\_\+char = {\ttfamily \textquotesingle{}~\textquotesingle{}} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Print a string on the left of a given width and will with spaces 
+\begin{DoxyParams}{Parameters}
+{\em s} & string to print \\
+\hline
+{\em width} & \\
+\hline
+{\em fill\+\_\+char} & character to use to fill rest of the width \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classez_1_1essential_1_1Format_ac5e90b9408d5ff10bbdf4cc0d4f55895}\label{classez_1_1essential_1_1Format_ac5e90b9408d5ff10bbdf4cc0d4f55895}} 
+\index{ez\+::essential\+::\+Format@{ez\+::essential\+::\+Format}!oct@{oct}}
+\index{oct@{oct}!ez\+::essential\+::\+Format@{ez\+::essential\+::\+Format}}
+\subsubsection{\texorpdfstring{oct()}{oct()}}
+{\footnotesize\ttfamily text Format\+::oct (\begin{DoxyParamCaption}\item[{long\+\_\+natural}]{n }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+convert natural number to octal format \mbox{\Hypertarget{classez_1_1essential_1_1Format_a46180d9a7dd6202fb5225b1fe83f50bb}\label{classez_1_1essential_1_1Format_a46180d9a7dd6202fb5225b1fe83f50bb}} 
+\index{ez\+::essential\+::\+Format@{ez\+::essential\+::\+Format}!right@{right}}
+\index{right@{right}!ez\+::essential\+::\+Format@{ez\+::essential\+::\+Format}}
+\subsubsection{\texorpdfstring{right()}{right()}}
+{\footnotesize\ttfamily text Format\+::right (\begin{DoxyParamCaption}\item[{text}]{s,  }\item[{integer}]{width,  }\item[{character}]{fill\+\_\+char = {\ttfamily \textquotesingle{}~\textquotesingle{}} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Print a string on the right of a given width and will with spaces 
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+src/version\+\_\+2018.\+06/essential/format.\+h\item 
+src/version\+\_\+2018.\+06/essential/format.\+cpp\end{DoxyCompactItemize}

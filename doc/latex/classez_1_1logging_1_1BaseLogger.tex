@@ -1,0 +1,95 @@
+\hypertarget{classez_1_1logging_1_1BaseLogger}{}\section{ez\+:\+:logging\+:\+:Base\+Logger Class Reference}
+\label{classez_1_1logging_1_1BaseLogger}\index{ez\+::logging\+::\+Base\+Logger@{ez\+::logging\+::\+Base\+Logger}}
+
+
+{\ttfamily \#include $<$logger.\+h$>$}
+
+
+
+Inheritance diagram for ez\+:\+:logging\+:\+:Base\+Logger\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classez_1_1logging_1_1BaseLogger__inherit__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classez_1_1logging_1_1BaseLogger_ac0f5809baaacc153b6b51eb1a028127b}{Base\+Logger} ()
+\item 
+virtual \hyperlink{classez_1_1logging_1_1BaseLogger_a8f3ff996b9cd518dc53760ece4083813}{$\sim$\+Base\+Logger} ()
+\item 
+virtual void \hyperlink{classez_1_1logging_1_1BaseLogger_a508a25672c704ec73260978b7f17dd13}{set\+\_\+record\+\_\+level} (integer n)=0
+\item 
+virtual void \hyperlink{classez_1_1logging_1_1BaseLogger_a2b9ecfbaff4e53d15b3b8bedd53ea2f8}{set\+\_\+verbose\+\_\+level} (integer n)=0
+\item 
+virtual void \hyperlink{classez_1_1logging_1_1BaseLogger_a1cad8cfe8029ecd0360573b3dd4a0543}{print\+\_\+ln} ()=0
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Base class for \hyperlink{classez_1_1logging_1_1Logger}{Logger} used to define kind of iomanip operations for Loggers 
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classez_1_1logging_1_1BaseLogger_ac0f5809baaacc153b6b51eb1a028127b}\label{classez_1_1logging_1_1BaseLogger_ac0f5809baaacc153b6b51eb1a028127b}} 
+\index{ez\+::logging\+::\+Base\+Logger@{ez\+::logging\+::\+Base\+Logger}!Base\+Logger@{Base\+Logger}}
+\index{Base\+Logger@{Base\+Logger}!ez\+::logging\+::\+Base\+Logger@{ez\+::logging\+::\+Base\+Logger}}
+\subsubsection{\texorpdfstring{Base\+Logger()}{BaseLogger()}}
+{\footnotesize\ttfamily ez\+::logging\+::\+Base\+Logger\+::\+Base\+Logger (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+default constructor \mbox{\Hypertarget{classez_1_1logging_1_1BaseLogger_a8f3ff996b9cd518dc53760ece4083813}\label{classez_1_1logging_1_1BaseLogger_a8f3ff996b9cd518dc53760ece4083813}} 
+\index{ez\+::logging\+::\+Base\+Logger@{ez\+::logging\+::\+Base\+Logger}!````~Base\+Logger@{$\sim$\+Base\+Logger}}
+\index{````~Base\+Logger@{$\sim$\+Base\+Logger}!ez\+::logging\+::\+Base\+Logger@{ez\+::logging\+::\+Base\+Logger}}
+\subsubsection{\texorpdfstring{$\sim$\+Base\+Logger()}{~BaseLogger()}}
+{\footnotesize\ttfamily virtual ez\+::logging\+::\+Base\+Logger\+::$\sim$\+Base\+Logger (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+destructor 
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classez_1_1logging_1_1BaseLogger_a1cad8cfe8029ecd0360573b3dd4a0543}\label{classez_1_1logging_1_1BaseLogger_a1cad8cfe8029ecd0360573b3dd4a0543}} 
+\index{ez\+::logging\+::\+Base\+Logger@{ez\+::logging\+::\+Base\+Logger}!print\+\_\+ln@{print\+\_\+ln}}
+\index{print\+\_\+ln@{print\+\_\+ln}!ez\+::logging\+::\+Base\+Logger@{ez\+::logging\+::\+Base\+Logger}}
+\subsubsection{\texorpdfstring{print\+\_\+ln()}{print\_ln()}}
+{\footnotesize\ttfamily virtual void ez\+::logging\+::\+Base\+Logger\+::print\+\_\+ln (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+virtual function used to print new line 
+
+Implemented in \hyperlink{classez_1_1logging_1_1Logger_ab8e5b19223eca4b3af5ff7df2db607b7}{ez\+::logging\+::\+Logger}.
+
+\mbox{\Hypertarget{classez_1_1logging_1_1BaseLogger_a508a25672c704ec73260978b7f17dd13}\label{classez_1_1logging_1_1BaseLogger_a508a25672c704ec73260978b7f17dd13}} 
+\index{ez\+::logging\+::\+Base\+Logger@{ez\+::logging\+::\+Base\+Logger}!set\+\_\+record\+\_\+level@{set\+\_\+record\+\_\+level}}
+\index{set\+\_\+record\+\_\+level@{set\+\_\+record\+\_\+level}!ez\+::logging\+::\+Base\+Logger@{ez\+::logging\+::\+Base\+Logger}}
+\subsubsection{\texorpdfstring{set\+\_\+record\+\_\+level()}{set\_record\_level()}}
+{\footnotesize\ttfamily virtual void ez\+::logging\+::\+Base\+Logger\+::set\+\_\+record\+\_\+level (\begin{DoxyParamCaption}\item[{integer}]{n }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+virtual function used to set record level of information sent to \hyperlink{classez_1_1logging_1_1Logger}{Logger} 
+\begin{DoxyParams}{Parameters}
+{\em n} & level of information \\
+\hline
+\end{DoxyParams}
+
+
+Implemented in \hyperlink{classez_1_1logging_1_1Logger_a64bfdfc5a20a7ee660144c50dfd0514e}{ez\+::logging\+::\+Logger}.
+
+\mbox{\Hypertarget{classez_1_1logging_1_1BaseLogger_a2b9ecfbaff4e53d15b3b8bedd53ea2f8}\label{classez_1_1logging_1_1BaseLogger_a2b9ecfbaff4e53d15b3b8bedd53ea2f8}} 
+\index{ez\+::logging\+::\+Base\+Logger@{ez\+::logging\+::\+Base\+Logger}!set\+\_\+verbose\+\_\+level@{set\+\_\+verbose\+\_\+level}}
+\index{set\+\_\+verbose\+\_\+level@{set\+\_\+verbose\+\_\+level}!ez\+::logging\+::\+Base\+Logger@{ez\+::logging\+::\+Base\+Logger}}
+\subsubsection{\texorpdfstring{set\+\_\+verbose\+\_\+level()}{set\_verbose\_level()}}
+{\footnotesize\ttfamily virtual void ez\+::logging\+::\+Base\+Logger\+::set\+\_\+verbose\+\_\+level (\begin{DoxyParamCaption}\item[{integer}]{n }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+virtual function used to set verbose level of information sent to \hyperlink{classez_1_1logging_1_1Logger}{Logger} 
+\begin{DoxyParams}{Parameters}
+{\em n} & level of information \\
+\hline
+\end{DoxyParams}
+
+
+Implemented in \hyperlink{classez_1_1logging_1_1Logger_ae9fd25392d4dc7611acafd335bfe5f94}{ez\+::logging\+::\+Logger}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+src/version\+\_\+2018.\+06/logging/logger.\+h\end{DoxyCompactItemize}

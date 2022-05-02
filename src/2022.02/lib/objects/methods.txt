@@ -1,0 +1,29 @@
+Array<T> array(Range& r);        r.min .. r.max
+Array<T> array(int min, int max)   min .. max
+Array<T> array(int size);            1 .. size
+
+int size()             return number of elements
+Range& x_range()       return range of indices
+T at(int x)            return element at given position x in [min..max]
+
+void replace(T v, int x)  replace element at range index x by v
+
+Array<T>  slice(int x1, int x2)   return array with elements from x1 to x2 with
+                                  range x1 .. x2
+                                  
+void sort()
+void sort(Comparator& c)
+void shuffle()
+
+void fill(T v)
+void fill_iota(T v)
+void fill_generator(Generator& g)
+
+void resize(Range& r)
+void resize(int min, int max)
+
+============================================================================================
+
+
+
+ 

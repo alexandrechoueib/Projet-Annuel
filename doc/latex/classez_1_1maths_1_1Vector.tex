@@ -1,0 +1,133 @@
+\hypertarget{classez_1_1maths_1_1Vector}{}\section{ez\+:\+:maths\+:\+:Vector$<$ Data\+Type $>$ Class Template Reference}
+\label{classez_1_1maths_1_1Vector}\index{ez\+::maths\+::\+Vector$<$ Data\+Type $>$@{ez\+::maths\+::\+Vector$<$ Data\+Type $>$}}
+\subsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classez_1_1maths_1_1Vector_a22eabac93ae9d2e2923dc1e3be6b7ca0}\label{classez_1_1maths_1_1Vector_a22eabac93ae9d2e2923dc1e3be6b7ca0}} 
+typedef \hyperlink{classez_1_1maths_1_1Vector}{Vector}$<$ Data\+Type $>$ {\bfseries self}
+\item 
+\mbox{\Hypertarget{classez_1_1maths_1_1Vector_ac3cc9e50502105ffad53a1c92d34e5f2}\label{classez_1_1maths_1_1Vector_ac3cc9e50502105ffad53a1c92d34e5f2}} 
+typedef Data\+Type {\bfseries value\+\_\+type}
+\item 
+\mbox{\Hypertarget{classez_1_1maths_1_1Vector_a2d84a0ccbbf9a0c4d4873501da68d851}\label{classez_1_1maths_1_1Vector_a2d84a0ccbbf9a0c4d4873501da68d851}} 
+typedef std\+::vector$<$ Data\+Type $>$\+::iterator {\bfseries iterator}
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classez_1_1maths_1_1Vector_a91c04bdb0e9cdba97affc0c2918e2c34}{Vector} ()
+\item 
+\mbox{\Hypertarget{classez_1_1maths_1_1Vector_a12664c78d5ed14af0b7f4e9170830071}\label{classez_1_1maths_1_1Vector_a12664c78d5ed14af0b7f4e9170830071}} 
+{\bfseries Vector} (natural size\+\_\+x)
+\item 
+\mbox{\Hypertarget{classez_1_1maths_1_1Vector_adf99adc771f4ccb20274d6fbc7729850}\label{classez_1_1maths_1_1Vector_adf99adc771f4ccb20274d6fbc7729850}} 
+{\bfseries Vector} (const \hyperlink{classez_1_1maths_1_1Vector}{self} \&obj)
+\item 
+\mbox{\Hypertarget{classez_1_1maths_1_1Vector_ab374e5d1284555c75f4842563b60650a}\label{classez_1_1maths_1_1Vector_ab374e5d1284555c75f4842563b60650a}} 
+{\bfseries Vector} (natural size\+\_\+x, const std\+::initializer\+\_\+list$<$ Data\+Type $>$ \&l)
+\item 
+\mbox{\Hypertarget{classez_1_1maths_1_1Vector_afe1d34cecaaaf270d13e8799deb17a3f}\label{classez_1_1maths_1_1Vector_afe1d34cecaaaf270d13e8799deb17a3f}} 
+\hyperlink{classez_1_1maths_1_1Vector}{self} \& {\bfseries operator=} (const \hyperlink{classez_1_1maths_1_1Vector}{self} \&obj)
+\item 
+\mbox{\Hypertarget{classez_1_1maths_1_1Vector_a066caa4ad34cad4f837ae6829d9856d0}\label{classez_1_1maths_1_1Vector_a066caa4ad34cad4f837ae6829d9856d0}} 
+void {\bfseries resize} (natural size\+\_\+x)
+\item 
+\mbox{\Hypertarget{classez_1_1maths_1_1Vector_af6d9a0091cfc04321b62222d319921cf}\label{classez_1_1maths_1_1Vector_af6d9a0091cfc04321b62222d319921cf}} 
+natural {\bfseries size} ()
+\item 
+\mbox{\Hypertarget{classez_1_1maths_1_1Vector_aea7e74920e38c1dd0e29f0637025a8f2}\label{classez_1_1maths_1_1Vector_aea7e74920e38c1dd0e29f0637025a8f2}} 
+void {\bfseries remove} (natural x)
+\item 
+\mbox{\Hypertarget{classez_1_1maths_1_1Vector_a74d160fb45e8122a4414b3f734f03f72}\label{classez_1_1maths_1_1Vector_a74d160fb45e8122a4414b3f734f03f72}} 
+void {\bfseries remove} (natural x1, natural x2)
+\item 
+\mbox{\Hypertarget{classez_1_1maths_1_1Vector_a08f354b6b79d3f75ad155a9eb01cead5}\label{classez_1_1maths_1_1Vector_a08f354b6b79d3f75ad155a9eb01cead5}} 
+Data\+Type \& {\bfseries operator\mbox{[}$\,$\mbox{]}} (natural x)
+\item 
+\mbox{\Hypertarget{classez_1_1maths_1_1Vector_a7de68743ffea023795749636e5c3fd40}\label{classez_1_1maths_1_1Vector_a7de68743ffea023795749636e5c3fd40}} 
+Data\+Type \& {\bfseries operator()} (natural x)
+\item 
+\mbox{\Hypertarget{classez_1_1maths_1_1Vector_a8cc2e4dd8f86218972ac5d6fdc2b5d77}\label{classez_1_1maths_1_1Vector_a8cc2e4dd8f86218972ac5d6fdc2b5d77}} 
+integer {\bfseries compare} (const \hyperlink{classez_1_1maths_1_1Vector}{self} \&y)
+\item 
+\mbox{\Hypertarget{classez_1_1maths_1_1Vector_a65ff3bc553678e93e4c071a3fdbf8f55}\label{classez_1_1maths_1_1Vector_a65ff3bc553678e93e4c071a3fdbf8f55}} 
+\hyperlink{classez_1_1maths_1_1Vector}{self} \& {\bfseries operator+=} (const \hyperlink{classez_1_1maths_1_1Vector}{self} \&y)
+\item 
+\mbox{\Hypertarget{classez_1_1maths_1_1Vector_a4ab730b53e0d7dfe6a8512434ad6d22c}\label{classez_1_1maths_1_1Vector_a4ab730b53e0d7dfe6a8512434ad6d22c}} 
+\hyperlink{classez_1_1maths_1_1Vector}{self} \& {\bfseries operator-\/=} (const \hyperlink{classez_1_1maths_1_1Vector}{self} \&y)
+\item 
+\mbox{\Hypertarget{classez_1_1maths_1_1Vector_a830817d63372e56513e7cb50c0840f37}\label{classez_1_1maths_1_1Vector_a830817d63372e56513e7cb50c0840f37}} 
+\hyperlink{classez_1_1maths_1_1Vector}{self} \& {\bfseries operator$\ast$=} (const \hyperlink{classez_1_1maths_1_1Vector}{self} \&y)
+\item 
+\mbox{\Hypertarget{classez_1_1maths_1_1Vector_a3e87b1636b0cbc232328b90a9b22b054}\label{classez_1_1maths_1_1Vector_a3e87b1636b0cbc232328b90a9b22b054}} 
+\hyperlink{classez_1_1maths_1_1Vector}{self} \& {\bfseries operator/=} (const \hyperlink{classez_1_1maths_1_1Vector}{self} \&y)
+\item 
+\mbox{\Hypertarget{classez_1_1maths_1_1Vector_aef1cbfa443ba402d9f4d5fa3be240dd4}\label{classez_1_1maths_1_1Vector_aef1cbfa443ba402d9f4d5fa3be240dd4}} 
+std\+::vector$<$ Data\+Type $>$ \& {\bfseries data} ()
+\item 
+\mbox{\Hypertarget{classez_1_1maths_1_1Vector_a1f5765553675beb41fc2a584cd76f4b9}\label{classez_1_1maths_1_1Vector_a1f5765553675beb41fc2a584cd76f4b9}} 
+iterator {\bfseries begin} ()
+\item 
+\mbox{\Hypertarget{classez_1_1maths_1_1Vector_a7f412869469e72bf02a990bec781db77}\label{classez_1_1maths_1_1Vector_a7f412869469e72bf02a990bec781db77}} 
+iterator {\bfseries end} ()
+\item 
+\mbox{\Hypertarget{classez_1_1maths_1_1Vector_af15ef4c65e880324592dd48622c3e664}\label{classez_1_1maths_1_1Vector_af15ef4c65e880324592dd48622c3e664}} 
+void {\bfseries fill} (Data\+Type value)
+\item 
+\mbox{\Hypertarget{classez_1_1maths_1_1Vector_a3140d8b5e6aec1ac16b8607bc277551f}\label{classez_1_1maths_1_1Vector_a3140d8b5e6aec1ac16b8607bc277551f}} 
+void {\bfseries fill} (\hyperlink{classez_1_1essential_1_1Range}{ez\+::essential\+::\+Range} range, Data\+Type value)
+\item 
+\mbox{\Hypertarget{classez_1_1maths_1_1Vector_a6cdee22c3c62e40d9eac8b44f47a6e30}\label{classez_1_1maths_1_1Vector_a6cdee22c3c62e40d9eac8b44f47a6e30}} 
+Data\+Type {\bfseries first} ()
+\item 
+\mbox{\Hypertarget{classez_1_1maths_1_1Vector_a816b2cfa16bbcf8d54dd43ebd24b59b6}\label{classez_1_1maths_1_1Vector_a816b2cfa16bbcf8d54dd43ebd24b59b6}} 
+Data\+Type {\bfseries last} ()
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classez_1_1maths_1_1Vector_a267b04ede91373b05d814f2f610e998d}\label{classez_1_1maths_1_1Vector_a267b04ede91373b05d814f2f610e998d}} 
+std\+::vector$<$ Data\+Type $>$ {\bfseries m\+\_\+data}
+\item 
+\mbox{\Hypertarget{classez_1_1maths_1_1Vector_a98f1b2a1e607d7b6ca44ed9c619bbe0b}\label{classez_1_1maths_1_1Vector_a98f1b2a1e607d7b6ca44ed9c619bbe0b}} 
+natural {\bfseries m\+\_\+size\+\_\+x}
+\end{DoxyCompactItemize}
+\subsection*{Friends}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classez_1_1maths_1_1Vector_aa1d826e7fbedbc2b2358e08bc03fc894}\label{classez_1_1maths_1_1Vector_aa1d826e7fbedbc2b2358e08bc03fc894}} 
+std\+::ostream \& {\bfseries operator$<$$<$} (std\+::ostream \&out, \hyperlink{classez_1_1maths_1_1Vector}{self} \&obj)
+\item 
+\mbox{\Hypertarget{classez_1_1maths_1_1Vector_a89b571e0607100045577d5023a77342b}\label{classez_1_1maths_1_1Vector_a89b571e0607100045577d5023a77342b}} 
+bool {\bfseries operator==} (const \hyperlink{classez_1_1maths_1_1Vector}{self} \&x, const \hyperlink{classez_1_1maths_1_1Vector}{self} \&y)
+\item 
+\mbox{\Hypertarget{classez_1_1maths_1_1Vector_ac219ecb06730e7707b9bb78b5da63c3b}\label{classez_1_1maths_1_1Vector_ac219ecb06730e7707b9bb78b5da63c3b}} 
+\hyperlink{classez_1_1maths_1_1Vector}{self} {\bfseries operator+} (const \hyperlink{classez_1_1maths_1_1Vector}{self} x, const \hyperlink{classez_1_1maths_1_1Vector}{self} y)
+\item 
+\mbox{\Hypertarget{classez_1_1maths_1_1Vector_a6750cba02a1d652b1bd892bfba555e50}\label{classez_1_1maths_1_1Vector_a6750cba02a1d652b1bd892bfba555e50}} 
+\hyperlink{classez_1_1maths_1_1Vector}{self} {\bfseries operator-\/} (const \hyperlink{classez_1_1maths_1_1Vector}{self} x, const \hyperlink{classez_1_1maths_1_1Vector}{self} y)
+\item 
+\mbox{\Hypertarget{classez_1_1maths_1_1Vector_a4f9af882c7a074ed8e1f8da41bd31dc9}\label{classez_1_1maths_1_1Vector_a4f9af882c7a074ed8e1f8da41bd31dc9}} 
+\hyperlink{classez_1_1maths_1_1Vector}{self} {\bfseries operator$\ast$} (const \hyperlink{classez_1_1maths_1_1Vector}{self} x, const \hyperlink{classez_1_1maths_1_1Vector}{self} y)
+\item 
+\mbox{\Hypertarget{classez_1_1maths_1_1Vector_aa69c5e8b6898bb99a6f4d6e8962560c8}\label{classez_1_1maths_1_1Vector_aa69c5e8b6898bb99a6f4d6e8962560c8}} 
+\hyperlink{classez_1_1maths_1_1Vector}{self} {\bfseries operator/} (const \hyperlink{classez_1_1maths_1_1Vector}{self} x, const \hyperlink{classez_1_1maths_1_1Vector}{self} y)
+\item 
+\mbox{\Hypertarget{classez_1_1maths_1_1Vector_ace48be602ed1ae3d276b4f458b9302c6}\label{classez_1_1maths_1_1Vector_ace48be602ed1ae3d276b4f458b9302c6}} 
+\hyperlink{classez_1_1maths_1_1Vector}{Vector} \& {\bfseries operator$<$$<$} (\hyperlink{classez_1_1maths_1_1Vector}{Vector} \&v, Data\+Type n)
+\end{DoxyCompactItemize}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classez_1_1maths_1_1Vector_a91c04bdb0e9cdba97affc0c2918e2c34}\label{classez_1_1maths_1_1Vector_a91c04bdb0e9cdba97affc0c2918e2c34}} 
+\index{ez\+::maths\+::\+Vector@{ez\+::maths\+::\+Vector}!Vector@{Vector}}
+\index{Vector@{Vector}!ez\+::maths\+::\+Vector@{ez\+::maths\+::\+Vector}}
+\subsubsection{\texorpdfstring{Vector()}{Vector()}}
+{\footnotesize\ttfamily template$<$class Data\+Type$>$ \\
+\hyperlink{classez_1_1maths_1_1Vector}{ez\+::maths\+::\+Vector}$<$ Data\+Type $>$\+::\hyperlink{classez_1_1maths_1_1Vector}{Vector} (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+default constructor for empty vector 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+src/version\+\_\+2018.\+06/maths/vector.\+h\end{DoxyCompactItemize}

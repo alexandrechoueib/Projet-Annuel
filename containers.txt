@@ -1,0 +1,180 @@
+RANGE x:y:z avec x,y,z integers
+- LINEAR_INCREASING  x <= y, z = 1
+- GAP_INCREASING     x <= y, z > 1
+- LINEAR_DECREASING  x >  y, z = 1 
+- GAP_DECREASING     x >  y, x < -1
+
+
+==============================================
+CONTAINERS
+==============================================
+natural size()							retourne le nombre d'éléments
+bool is_empty()                         indique si il y ades éléments
+virtual ostream& print(ostream& out)    affichage du container
+friend ostream& operator<<(..)
+all_different( )                        retourne vrai si toutes les valeurs sont différentes
+all_equal()                             retourne vrai si toutes les valeurs sont égales  
+
+==============================================
+LINEAR_CONTAINER ONE DIMENSION: Array, Vector, List
+use only LINEAR_INCREASING
+==============================================
+
+T get(int x)
+void set(T v, int x)
+
+bool contains(T v, int strategy=sequential_search| binary_search)
+
+void export( Range r, Array<T>& a)
+void import( Range r, Array<T>& a)
+
+
+EXTENSIONS
+void sum( Range r = Range() )
+void fill( T v )
+void fill( T v, Range r )
+void generate( Generator& g)
+void generate( Generator& g, Range r)
+
+void sort( Range r = Range() )
+void sort( Comparator& g, Range r = Range() )
+
+void replace(T search, T replacement)
+void replace_all(T search, T replacement)
+
+
+==============================================
+ARRAY use only UNARY_RANGE ?
+==============================================
+Array( size, [,value])
+Array( size [, list ] )
+Array( lo, hi [, list ] )
+Array( lo, hi, value )
+Array( Range r [, list ])
+Array( Range r, value])
+Non modifiable
+
+
+==============================================
+GRID
+==============================================
+Grid( Range x_range, Range y_range,  value )
+Grid( Range x_range, Range y_range [, list] )
+Non modifiable
+
+T get( int x, int y )
+T fast_get( int x, int y )
+void set( T v, int x, int y )
+void fast_set( T v, int x, int y )
+
+void fill_border(T v, int width)
+void fill_center(T v, int width)
+
+bool contains(T v, int strategy=linear_search| binary_search)
+bool index_of(T v, int &x, int&y)
+
+void get_row(int y, Array<T>& a)
+void set_row(int y, Array<T>& a)
+void get_column(int x, Array<T>& a)
+void set_column(int x, Array<T>& a)
+
+void extract_to( Range rx, Range ry, Grid<T>& g )
+
+bool find(T v, int& x, int& y)
+
+==============================================
+MESH
+==============================================
+
+Mesh( Range x_range, Range y_range, Range z_range [, list] )
+Mesh( Range x_range, Range y_range, Range z_range T value )
+Non modifiable
+
+T get_at( int x, int y, int z )
+T fast_get_value_at( int x, int y, int z )
+void set_at( T v, int x, int y, int z )
+void fast_set_at( T v, int x, int y, int z )
+
+void fill(T v)
+void fill_border(T v, int width)
+void fill_center(T v, int width)
+
+void generate(Generator &g)
+
+bool contains(T v, int strategy=linear_search| binary_search)
+bool index_of(T v, int &x, int&y, int &z)
+
+void get_z_plan(int z, Grid<T>& g)
+...
+
+void extract_to( Range rx, Range ry, Range rz, Mesh<T>& m )
+
+bool find(T v, int& x, int& y, int& z)
+
+
+=================================================
+LIST
+=================================================
+
+List()
+List( list )
+
+void insert_first(T v)    
+void insert_last(T v)     => push(T v)
+void insert_at(T v, int x)
+
+void remove_first() => deque
+void remove_last()  => pop()
+void remove_at(int x)
+
+void replace_first(T v)
+void replace_last(T v)
+void replace_at(T v, int x)
+
+bool contains(T v, int strategy=linear_search| binary_search)
+bool index_of(T v, int &x, int&y, int strategy=linear_search| binary_search)
+
+void sum( int start=RANGE_NULL, int end=RANGE_NULL )
+void sum( Range r )
+
+void sort( int start=RANGE_NULL, int end=RANGE_NULL )
+void sort( Range r )
+
+=================================================
+SET
+=================================================
+
+Set()
+Set(List )
+
+void insert(T v)
+void remove(T v)
+
+bool contains(T v)
+
+=================================================
+MULTISET
+=================================================
+
+void insert(Key, Value)
+void remove(Key )
+Value get(Key )
+
+
+
+
+=================================================
+CONVERTER
+=================================================
+to_list(Array& a, List &v)
+to_list(Matrix& a, List &v)
+...
+to_array(List&v, Array& a)
+
+
+
+
+
+
+
+

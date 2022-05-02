@@ -1,0 +1,82 @@
+\hypertarget{classez_1_1logging_1_1FileLogger}{}\section{ez\+:\+:logging\+:\+:File\+Logger Class Reference}
+\label{classez_1_1logging_1_1FileLogger}\index{ez\+::logging\+::\+File\+Logger@{ez\+::logging\+::\+File\+Logger}}
+
+
+{\ttfamily \#include $<$logger.\+h$>$}
+
+
+
+Inheritance diagram for ez\+:\+:logging\+:\+:File\+Logger\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=202pt]{classez_1_1logging_1_1FileLogger__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for ez\+:\+:logging\+:\+:File\+Logger\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=202pt]{classez_1_1logging_1_1FileLogger__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classez_1_1logging_1_1FileLogger_a5fdc65717e3a95b6ceb59a8c1b2943b5}{File\+Logger} (std\+::string name, std\+::string fn, integer options=0)
+\item 
+\hyperlink{classez_1_1logging_1_1FileLogger_ab08af44f2de3fe1b51158132f9a399dd}{$\sim$\+File\+Logger} ()
+\end{DoxyCompactItemize}
+\subsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classez_1_1logging_1_1FileLogger_a0c9b0d3537b56031a895ee5aa942e0ad}\label{classez_1_1logging_1_1FileLogger_a0c9b0d3537b56031a895ee5aa942e0ad}} 
+static const integer {\bfseries T\+R\+U\+N\+C\+A\+TE} = 1
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classez_1_1logging_1_1FileLogger_a499080349a0e13f132c66e713d96a826}\label{classez_1_1logging_1_1FileLogger_a499080349a0e13f132c66e713d96a826}} 
+std\+::ofstream {\bfseries m\+\_\+stream}
+\item 
+\mbox{\Hypertarget{classez_1_1logging_1_1FileLogger_a15271eb566827586c5331adf2d71f179}\label{classez_1_1logging_1_1FileLogger_a15271eb566827586c5331adf2d71f179}} 
+integer {\bfseries m\+\_\+options}
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+\hyperlink{classez_1_1logging_1_1Logger}{Logger} that uses a file to store information 
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classez_1_1logging_1_1FileLogger_a5fdc65717e3a95b6ceb59a8c1b2943b5}\label{classez_1_1logging_1_1FileLogger_a5fdc65717e3a95b6ceb59a8c1b2943b5}} 
+\index{ez\+::logging\+::\+File\+Logger@{ez\+::logging\+::\+File\+Logger}!File\+Logger@{File\+Logger}}
+\index{File\+Logger@{File\+Logger}!ez\+::logging\+::\+File\+Logger@{ez\+::logging\+::\+File\+Logger}}
+\subsubsection{\texorpdfstring{File\+Logger()}{FileLogger()}}
+{\footnotesize\ttfamily File\+Logger\+::\+File\+Logger (\begin{DoxyParamCaption}\item[{std\+::string}]{name,  }\item[{std\+::string}]{fn,  }\item[{integer}]{options = {\ttfamily 0} }\end{DoxyParamCaption})}
+
+constructor 
+\begin{DoxyParams}{Parameters}
+{\em name} & identifier of logger \\
+\hline
+{\em fn} & file name \\
+\hline
+{\em opt} & options, for example T\+R\+U\+N\+C\+A\+TE will empty the file \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classez_1_1logging_1_1FileLogger_ab08af44f2de3fe1b51158132f9a399dd}\label{classez_1_1logging_1_1FileLogger_ab08af44f2de3fe1b51158132f9a399dd}} 
+\index{ez\+::logging\+::\+File\+Logger@{ez\+::logging\+::\+File\+Logger}!````~File\+Logger@{$\sim$\+File\+Logger}}
+\index{````~File\+Logger@{$\sim$\+File\+Logger}!ez\+::logging\+::\+File\+Logger@{ez\+::logging\+::\+File\+Logger}}
+\subsubsection{\texorpdfstring{$\sim$\+File\+Logger()}{~FileLogger()}}
+{\footnotesize\ttfamily File\+Logger\+::$\sim$\+File\+Logger (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+destructor 
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+src/version\+\_\+2018.\+06/logging/logger.\+h\item 
+src/version\+\_\+2018.\+06/logging/logger.\+cpp\end{DoxyCompactItemize}

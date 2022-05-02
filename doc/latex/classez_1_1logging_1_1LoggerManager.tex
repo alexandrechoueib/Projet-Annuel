@@ -1,0 +1,195 @@
+\hypertarget{classez_1_1logging_1_1LoggerManager}{}\section{ez\+:\+:logging\+:\+:Logger\+Manager Class Reference}
+\label{classez_1_1logging_1_1LoggerManager}\index{ez\+::logging\+::\+Logger\+Manager@{ez\+::logging\+::\+Logger\+Manager}}
+
+
+{\ttfamily \#include $<$logger\+\_\+manager.\+h$>$}
+
+
+
+Collaboration diagram for ez\+:\+:logging\+:\+:Logger\+Manager\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=286pt]{classez_1_1logging_1_1LoggerManager__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual \hyperlink{classez_1_1logging_1_1LoggerManager_a0738a5887eb50eba0f08a250b9aa7675}{$\sim$\+Logger\+Manager} ()
+\item 
+void \hyperlink{classez_1_1logging_1_1LoggerManager_a0358094fdf703ed5a5ff021fd5f94efd}{attach} (\hyperlink{classez_1_1logging_1_1Logger}{Logger} $\ast$l)
+\item 
+\hyperlink{classez_1_1logging_1_1Logger}{Logger} $\ast$ \hyperlink{classez_1_1logging_1_1LoggerManager_a777dcb9907e2d3cc7a314df6617ba5fb}{detach} (string name)
+\item 
+\hyperlink{classez_1_1logging_1_1Logger}{Logger} \& \hyperlink{classez_1_1logging_1_1LoggerManager_a90c836448bef5099d16d03b37bf52661}{get} (string name, string or\+\_\+create=\char`\"{}\char`\"{})
+\item 
+\hyperlink{classez_1_1logging_1_1Logger}{Logger} \& \hyperlink{classez_1_1logging_1_1LoggerManager_aa5f5fae8e256e6f3dc4269d506723b31}{root\+\_\+logger} ()
+\item 
+\hyperlink{classez_1_1logging_1_1Logger}{Logger} \& \hyperlink{classez_1_1logging_1_1LoggerManager_aba82648266530bd33f74d865c4c55878}{create} (string s)
+\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static \hyperlink{classez_1_1logging_1_1LoggerManager}{Logger\+Manager} \& \hyperlink{classez_1_1logging_1_1LoggerManager_a787219c6e31bc575de95127350da7c5a}{instance} ()
+\end{DoxyCompactItemize}
+\subsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classez_1_1logging_1_1LoggerManager_a76aa9e2191e3120990a550e064b2c691}{Logger\+Manager} ()
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+map$<$ string, \hyperlink{classez_1_1logging_1_1Logger}{Logger} $\ast$ $>$ \hyperlink{classez_1_1logging_1_1LoggerManager_a8c68f8c359e7a32438c9da137aa8b9bc}{m\+\_\+loggers}
+\end{DoxyCompactItemize}
+\subsection*{Static Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+static \hyperlink{classez_1_1logging_1_1LoggerManager}{Logger\+Manager} $\ast$ \hyperlink{classez_1_1logging_1_1LoggerManager_a635ac579d7e6e68fb248566e34d8485d}{s\+\_\+instance} = nullptr
+\item 
+static \hyperlink{classez_1_1logging_1_1Logger}{Logger} $\ast$ \hyperlink{classez_1_1logging_1_1LoggerManager_ac4e86e0e638673338ccb8d652446be92}{m\+\_\+root\+\_\+logger} = nullptr
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\hyperlink{classez_1_1logging_1_1Logger}{Logger} Manager for the simple logging package. The role of the \hyperlink{classez_1_1logging_1_1LoggerManager}{Logger\+Manager} is to record loggers (\begin{DoxySeeAlso}{See also}
+\hyperlink{classez_1_1logging_1_1Logger}{Logger}). By default a \char`\"{}root logger\char`\"{} (which is a console logger) is created. When using a logger, end line to display information by sending the \textquotesingle{}~\newline
+\textquotesingle{} character or \hyperlink{classez_1_1logging_1_1Logger_a69ba6cf7130aa70caeca9f5c8636e05a}{Logger\+::endl}.
+\end{DoxySeeAlso}
+How to use simple logging system\+: 
+\begin{DoxyItemize}
+\item register new \hyperlink{classez_1_1logging_1_1ConsoleLogger}{Console\+Logger} called {\itshape stdout}\+: 
+\begin{DoxyPre}{\ttfamily 
+LoggerManager::get\_instance().attach(new \hyperlink{classez_1_1logging_1_1ConsoleLogger}{ConsoleLogger}("stdout", \&std::cout));
+}\end{DoxyPre}
+  
+\item use logger {\itshape stdout}\+: 
+\begin{DoxyPre}{\ttfamily 
+\hyperlink{classez_1_1logging_1_1Logger}{Logger}\& log1 = \hyperlink{classez_1_1logging_1_1LoggerManager_a787219c6e31bc575de95127350da7c5a}{LoggerManager::instance()}.get\_logger("stdout");
+log1 << "hello world\(\backslash\)n";
+log1 << "message" << \hyperlink{classez_1_1logging_1_1Logger_a69ba6cf7130aa70caeca9f5c8636e05a}{Logger::endl};
+}\end{DoxyPre}
+  
+\item register new \hyperlink{classez_1_1logging_1_1FileLogger}{File\+Logger} called {\itshape my}\+: 
+\begin{DoxyPre}{\ttfamily 
+\hyperlink{classez_1_1logging_1_1LoggerManager_a787219c6e31bc575de95127350da7c5a}{LoggerManager::instance()}.attach(new \hyperlink{classez_1_1logging_1_1FileLogger}{FileLogger}("my", "file\_logger.txt",
+FileLogger::TRUNCATE));
+    \hyperlink{classez_1_1logging_1_1Logger}{Logger}\& log2 = LoggerManager::get\_instance().get\_logger("my");
+    }\end{DoxyPre}
+  
+\end{DoxyItemize}
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classez_1_1logging_1_1LoggerManager_a0738a5887eb50eba0f08a250b9aa7675}\label{classez_1_1logging_1_1LoggerManager_a0738a5887eb50eba0f08a250b9aa7675}} 
+\index{ez\+::logging\+::\+Logger\+Manager@{ez\+::logging\+::\+Logger\+Manager}!````~Logger\+Manager@{$\sim$\+Logger\+Manager}}
+\index{````~Logger\+Manager@{$\sim$\+Logger\+Manager}!ez\+::logging\+::\+Logger\+Manager@{ez\+::logging\+::\+Logger\+Manager}}
+\subsubsection{\texorpdfstring{$\sim$\+Logger\+Manager()}{~LoggerManager()}}
+{\footnotesize\ttfamily Logger\+Manager\+::$\sim$\+Logger\+Manager (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+destructor that will remove all loggers \mbox{\Hypertarget{classez_1_1logging_1_1LoggerManager_a76aa9e2191e3120990a550e064b2c691}\label{classez_1_1logging_1_1LoggerManager_a76aa9e2191e3120990a550e064b2c691}} 
+\index{ez\+::logging\+::\+Logger\+Manager@{ez\+::logging\+::\+Logger\+Manager}!Logger\+Manager@{Logger\+Manager}}
+\index{Logger\+Manager@{Logger\+Manager}!ez\+::logging\+::\+Logger\+Manager@{ez\+::logging\+::\+Logger\+Manager}}
+\subsubsection{\texorpdfstring{Logger\+Manager()}{LoggerManager()}}
+{\footnotesize\ttfamily Logger\+Manager\+::\+Logger\+Manager (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+constructor that will create a root logger 
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classez_1_1logging_1_1LoggerManager_a0358094fdf703ed5a5ff021fd5f94efd}\label{classez_1_1logging_1_1LoggerManager_a0358094fdf703ed5a5ff021fd5f94efd}} 
+\index{ez\+::logging\+::\+Logger\+Manager@{ez\+::logging\+::\+Logger\+Manager}!attach@{attach}}
+\index{attach@{attach}!ez\+::logging\+::\+Logger\+Manager@{ez\+::logging\+::\+Logger\+Manager}}
+\subsubsection{\texorpdfstring{attach()}{attach()}}
+{\footnotesize\ttfamily void Logger\+Manager\+::attach (\begin{DoxyParamCaption}\item[{\hyperlink{classez_1_1logging_1_1Logger}{Logger} $\ast$}]{l }\end{DoxyParamCaption})}
+
+add new logger, throw exception if a logger with same identifier already exists. In this case you should use the \char`\"{}get\+\_\+logger\char`\"{} method 
+\begin{DoxyParams}{Parameters}
+{\em l} & pointer to \hyperlink{classez_1_1logging_1_1Logger}{Logger} \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classez_1_1logging_1_1LoggerManager_aba82648266530bd33f74d865c4c55878}\label{classez_1_1logging_1_1LoggerManager_aba82648266530bd33f74d865c4c55878}} 
+\index{ez\+::logging\+::\+Logger\+Manager@{ez\+::logging\+::\+Logger\+Manager}!create@{create}}
+\index{create@{create}!ez\+::logging\+::\+Logger\+Manager@{ez\+::logging\+::\+Logger\+Manager}}
+\subsubsection{\texorpdfstring{create()}{create()}}
+{\footnotesize\ttfamily \hyperlink{classez_1_1logging_1_1Logger}{Logger} \& Logger\+Manager\+::create (\begin{DoxyParamCaption}\item[{string}]{s }\end{DoxyParamCaption})}
+
+create logger from string description\+: 
+\begin{DoxyItemize}
+\item for console logger use \char`\"{}console\char`\"{} or \char`\"{}console,stdout\char`\"{} or \char`\"{}console,stderr\char`\"{} 
+\item for file logger use \char`\"{}file,name-\/of-\/file\char`\"{} or \char`\"{}file,name-\/of-\/file,truncate\char`\"{} 
+\end{DoxyItemize}\mbox{\Hypertarget{classez_1_1logging_1_1LoggerManager_a777dcb9907e2d3cc7a314df6617ba5fb}\label{classez_1_1logging_1_1LoggerManager_a777dcb9907e2d3cc7a314df6617ba5fb}} 
+\index{ez\+::logging\+::\+Logger\+Manager@{ez\+::logging\+::\+Logger\+Manager}!detach@{detach}}
+\index{detach@{detach}!ez\+::logging\+::\+Logger\+Manager@{ez\+::logging\+::\+Logger\+Manager}}
+\subsubsection{\texorpdfstring{detach()}{detach()}}
+{\footnotesize\ttfamily \hyperlink{classez_1_1logging_1_1Logger}{Logger} $\ast$ Logger\+Manager\+::detach (\begin{DoxyParamCaption}\item[{string}]{name }\end{DoxyParamCaption})}
+
+remove logger and return pointer to it. An exception will be generated if the name of the logger is not found 
+\begin{DoxyParams}{Parameters}
+{\em name} & identifier of \hyperlink{classez_1_1logging_1_1Logger}{Logger} \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+pointer to \hyperlink{classez_1_1logging_1_1Logger}{Logger} 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classez_1_1logging_1_1LoggerManager_a90c836448bef5099d16d03b37bf52661}\label{classez_1_1logging_1_1LoggerManager_a90c836448bef5099d16d03b37bf52661}} 
+\index{ez\+::logging\+::\+Logger\+Manager@{ez\+::logging\+::\+Logger\+Manager}!get@{get}}
+\index{get@{get}!ez\+::logging\+::\+Logger\+Manager@{ez\+::logging\+::\+Logger\+Manager}}
+\subsubsection{\texorpdfstring{get()}{get()}}
+{\footnotesize\ttfamily \hyperlink{classez_1_1logging_1_1Logger}{Logger} \& Logger\+Manager\+::get (\begin{DoxyParamCaption}\item[{string}]{name,  }\item[{string}]{or\+\_\+create = {\ttfamily \char`\"{}\char`\"{}} }\end{DoxyParamCaption})}
+
+return reference to existing logger identified by its name, an exception is raised if the logger is not found 
+\begin{DoxyParams}{Parameters}
+{\em name} & identifier of \hyperlink{classez_1_1logging_1_1Logger}{Logger} \\
+\hline
+{\em or\+\_\+create} & string to create log (\\
+\hline
+\end{DoxyParams}
+\begin{DoxySeeAlso}{See also}
+\hyperlink{classez_1_1logging_1_1LoggerManager_aba82648266530bd33f74d865c4c55878}{create}) 
+\end{DoxySeeAlso}
+\begin{DoxyReturn}{Returns}
+reference to logger if if exists or throws exception 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classez_1_1logging_1_1LoggerManager_a787219c6e31bc575de95127350da7c5a}\label{classez_1_1logging_1_1LoggerManager_a787219c6e31bc575de95127350da7c5a}} 
+\index{ez\+::logging\+::\+Logger\+Manager@{ez\+::logging\+::\+Logger\+Manager}!instance@{instance}}
+\index{instance@{instance}!ez\+::logging\+::\+Logger\+Manager@{ez\+::logging\+::\+Logger\+Manager}}
+\subsubsection{\texorpdfstring{instance()}{instance()}}
+{\footnotesize\ttfamily \hyperlink{classez_1_1logging_1_1LoggerManager}{Logger\+Manager} \& Logger\+Manager\+::instance (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+return instance of this class \mbox{\Hypertarget{classez_1_1logging_1_1LoggerManager_aa5f5fae8e256e6f3dc4269d506723b31}\label{classez_1_1logging_1_1LoggerManager_aa5f5fae8e256e6f3dc4269d506723b31}} 
+\index{ez\+::logging\+::\+Logger\+Manager@{ez\+::logging\+::\+Logger\+Manager}!root\+\_\+logger@{root\+\_\+logger}}
+\index{root\+\_\+logger@{root\+\_\+logger}!ez\+::logging\+::\+Logger\+Manager@{ez\+::logging\+::\+Logger\+Manager}}
+\subsubsection{\texorpdfstring{root\+\_\+logger()}{root\_logger()}}
+{\footnotesize\ttfamily \hyperlink{classez_1_1logging_1_1Logger}{Logger} \& Logger\+Manager\+::root\+\_\+logger (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+return reference to root logger \begin{DoxyReturn}{Returns}
+reference to root logger 
+\end{DoxyReturn}
+
+
+\subsection{Field Documentation}
+\mbox{\Hypertarget{classez_1_1logging_1_1LoggerManager_a8c68f8c359e7a32438c9da137aa8b9bc}\label{classez_1_1logging_1_1LoggerManager_a8c68f8c359e7a32438c9da137aa8b9bc}} 
+\index{ez\+::logging\+::\+Logger\+Manager@{ez\+::logging\+::\+Logger\+Manager}!m\+\_\+loggers@{m\+\_\+loggers}}
+\index{m\+\_\+loggers@{m\+\_\+loggers}!ez\+::logging\+::\+Logger\+Manager@{ez\+::logging\+::\+Logger\+Manager}}
+\subsubsection{\texorpdfstring{m\+\_\+loggers}{m\_loggers}}
+{\footnotesize\ttfamily map$<$string, \hyperlink{classez_1_1logging_1_1Logger}{Logger} $\ast$$>$ ez\+::logging\+::\+Logger\+Manager\+::m\+\_\+loggers\hspace{0.3cm}{\ttfamily [protected]}}
+
+records the loggers and their names \mbox{\Hypertarget{classez_1_1logging_1_1LoggerManager_ac4e86e0e638673338ccb8d652446be92}\label{classez_1_1logging_1_1LoggerManager_ac4e86e0e638673338ccb8d652446be92}} 
+\index{ez\+::logging\+::\+Logger\+Manager@{ez\+::logging\+::\+Logger\+Manager}!m\+\_\+root\+\_\+logger@{m\+\_\+root\+\_\+logger}}
+\index{m\+\_\+root\+\_\+logger@{m\+\_\+root\+\_\+logger}!ez\+::logging\+::\+Logger\+Manager@{ez\+::logging\+::\+Logger\+Manager}}
+\subsubsection{\texorpdfstring{m\+\_\+root\+\_\+logger}{m\_root\_logger}}
+{\footnotesize\ttfamily \hyperlink{classez_1_1logging_1_1Logger}{Logger} $\ast$ Logger\+Manager\+::m\+\_\+root\+\_\+logger = nullptr\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [protected]}}
+
+unique instance of root logger \mbox{\Hypertarget{classez_1_1logging_1_1LoggerManager_a635ac579d7e6e68fb248566e34d8485d}\label{classez_1_1logging_1_1LoggerManager_a635ac579d7e6e68fb248566e34d8485d}} 
+\index{ez\+::logging\+::\+Logger\+Manager@{ez\+::logging\+::\+Logger\+Manager}!s\+\_\+instance@{s\+\_\+instance}}
+\index{s\+\_\+instance@{s\+\_\+instance}!ez\+::logging\+::\+Logger\+Manager@{ez\+::logging\+::\+Logger\+Manager}}
+\subsubsection{\texorpdfstring{s\+\_\+instance}{s\_instance}}
+{\footnotesize\ttfamily \hyperlink{classez_1_1logging_1_1LoggerManager}{Logger\+Manager} $\ast$ Logger\+Manager\+::s\+\_\+instance = nullptr\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [protected]}}
+
+unique instance of \hyperlink{classez_1_1logging_1_1LoggerManager}{Logger\+Manager} 
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+src/version\+\_\+2018.\+06/logging/logger\+\_\+manager.\+h\item 
+src/version\+\_\+2018.\+06/logging/logger\+\_\+manager.\+cpp\end{DoxyCompactItemize}

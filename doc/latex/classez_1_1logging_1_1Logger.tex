@@ -1,0 +1,417 @@
+\hypertarget{classez_1_1logging_1_1Logger}{}\section{ez\+:\+:logging\+:\+:Logger Class Reference}
+\label{classez_1_1logging_1_1Logger}\index{ez\+::logging\+::\+Logger@{ez\+::logging\+::\+Logger}}
+
+
+{\ttfamily \#include $<$logger.\+h$>$}
+
+
+
+Inheritance diagram for ez\+:\+:logging\+:\+:Logger\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classez_1_1logging_1_1Logger__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for ez\+:\+:logging\+:\+:Logger\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=202pt]{classez_1_1logging_1_1Logger__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classez_1_1logging_1_1Logger_ac9465bcd94c08532b30b1801d71fbd19}{Logger} (text name, std\+::ostream $\ast$out)
+\item 
+virtual \hyperlink{classez_1_1logging_1_1Logger_acb668a9e186a25fbaad2e4af6d1ed00a}{$\sim$\+Logger} ()
+\item 
+void \hyperlink{classez_1_1logging_1_1Logger_a64bfdfc5a20a7ee660144c50dfd0514e}{set\+\_\+record\+\_\+level} (integer lvl)
+\item 
+void \hyperlink{classez_1_1logging_1_1Logger_a9f9bf63329c39c8f9fb116faba1a9b1e}{inc\+\_\+record\+\_\+level} ()
+\item 
+void \hyperlink{classez_1_1logging_1_1Logger_a337c7162a46c5e7374e80b7166cc869f}{dec\+\_\+record\+\_\+level} ()
+\item 
+void \hyperlink{classez_1_1logging_1_1Logger_ae9fd25392d4dc7611acafd335bfe5f94}{set\+\_\+verbose\+\_\+level} (integer lvl)
+\item 
+void \hyperlink{classez_1_1logging_1_1Logger_a2845727c27243d47fefbd9d65df5bd6b}{set\+\_\+header} (const char $\ast$s)
+\item 
+void \hyperlink{classez_1_1logging_1_1Logger_ab8e5b19223eca4b3af5ff7df2db607b7}{print\+\_\+ln} ()
+\item 
+void \hyperlink{classez_1_1logging_1_1Logger_a74db3d434d837a1fcdeb5a6c2326eeb3}{print} (char v)
+\item 
+void \hyperlink{classez_1_1logging_1_1Logger_a85f93d25c8f5eebe65b81cb72ebaea3e}{print} (integer v)
+\item 
+void \hyperlink{classez_1_1logging_1_1Logger_aeb154caf1a7b122fea39eb9bf6f5079a}{print} (natural v)
+\item 
+void \hyperlink{classez_1_1logging_1_1Logger_a20758ba23aea43e022c3198b85b8c0ed}{print} (long\+\_\+integer v)
+\item 
+void \hyperlink{classez_1_1logging_1_1Logger_a8c1b7b0e80f11d4b74362294fe968072}{print} (long\+\_\+natural v)
+\item 
+void \hyperlink{classez_1_1logging_1_1Logger_ae8367292df1035d9bc7bd09fd5ca35a7}{print} (const char $\ast$s)
+\item 
+void \hyperlink{classez_1_1logging_1_1Logger_a9be560bcbe68f5262eb7bd019bb8775b}{print} (string s)
+\item 
+void \hyperlink{classez_1_1logging_1_1Logger_a422fea2abd8a7c364e1c4846693422f1}{print} (real f)
+\item 
+void \hyperlink{classez_1_1logging_1_1Logger_a026763cd0c90ec5e4b5d06f08b63a140}{print} (long\+\_\+real d)
+\item 
+void \hyperlink{classez_1_1logging_1_1Logger_a5c8c3349b7d4aa76dfe90b1e3dc0ce00}{print} (void $\ast$p)
+\item 
+void \hyperlink{classez_1_1logging_1_1Logger_a3fcf2f4da96bd7a0fd33b055a23fdef3}{print} (const \hyperlink{structez_1_1logging_1_1__Setrecordlevel}{\+\_\+\+Setrecordlevel} \&lvl)
+\item 
+void \hyperlink{classez_1_1logging_1_1Logger_a20117d944ec1fa0aa3302981c620d8b6}{print} (const \hyperlink{structez_1_1logging_1_1__Setverboselevel}{\+\_\+\+Setverboselevel} \&lvl)
+\item 
+void \hyperlink{classez_1_1logging_1_1Logger_a5660d40a1364e37393b3241435ed5a64}{print} (const \hyperlink{classez_1_1essential_1_1CPUTimer}{ez\+::essential\+::\+C\+P\+U\+Timer} \&obj)
+\item 
+void \hyperlink{classez_1_1logging_1_1Logger_ad95b97a1ff61d4a31a0fba5e32f805a8}{print} (const \hyperlink{classez_1_1essential_1_1Range}{ez\+::essential\+::\+Range} \&obj)
+\item 
+\hyperlink{classez_1_1logging_1_1Logger}{Logger} \& \hyperlink{classez_1_1logging_1_1Logger_a439b87c1fdbfe851afcb3cfb29534437}{operator$<$$<$} (\hyperlink{classez_1_1logging_1_1Logger}{Logger} \&($\ast$m)(\hyperlink{classez_1_1logging_1_1Logger}{Logger} \&))
+\item 
+{\footnotesize template$<$class T $>$ }\\void \hyperlink{classez_1_1logging_1_1Logger_ab81b4be85f103d81e7b25a9cdf0a68e3}{print\+\_\+object} (T $\ast$obj)
+\item 
+ostream $\ast$ \hyperlink{classez_1_1logging_1_1Logger_a5d7092dd639907ccd702eb0df062821b}{output\+\_\+stream} ()
+\item 
+{\footnotesize template$<$class T $>$ }\\\hyperlink{classez_1_1logging_1_1Logger}{Logger} \& \hyperlink{classez_1_1logging_1_1Logger_a75006590ec6d4d6c8bca7d8824d887c2}{operator$<$$<$} (const T \&a)
+\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static \hyperlink{classez_1_1logging_1_1Logger}{Logger} \& \hyperlink{classez_1_1logging_1_1Logger_a69ba6cf7130aa70caeca9f5c8636e05a}{endl} (\hyperlink{classez_1_1logging_1_1Logger}{Logger} \&l)
+\end{DoxyCompactItemize}
+\subsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+static const integer \hyperlink{classez_1_1logging_1_1Logger_aa9ff03b52cf6bdc21b9e67086510d186}{C\+L\+O\+S\+ED} = 0
+\item 
+\mbox{\Hypertarget{classez_1_1logging_1_1Logger_a5255b90ac8236f172ca5e68ca051cd92}\label{classez_1_1logging_1_1Logger_a5255b90ac8236f172ca5e68ca051cd92}} 
+static const integer {\bfseries L\+E\+V\+E\+L\+\_\+1} = 1
+\item 
+\mbox{\Hypertarget{classez_1_1logging_1_1Logger_a39efb785fbecc012ec4b43acc7f6e87b}\label{classez_1_1logging_1_1Logger_a39efb785fbecc012ec4b43acc7f6e87b}} 
+static const integer {\bfseries L\+E\+V\+E\+L\+\_\+2} = 2
+\item 
+\mbox{\Hypertarget{classez_1_1logging_1_1Logger_ac010fadbb0dc962b7d51539a71ed8bfc}\label{classez_1_1logging_1_1Logger_ac010fadbb0dc962b7d51539a71ed8bfc}} 
+static const integer {\bfseries L\+E\+V\+E\+L\+\_\+3} = 3
+\item 
+\mbox{\Hypertarget{classez_1_1logging_1_1Logger_aabfcb9853e1df58006702d7e5f0b581a}\label{classez_1_1logging_1_1Logger_aabfcb9853e1df58006702d7e5f0b581a}} 
+static const integer {\bfseries L\+E\+V\+E\+L\+\_\+4} = 4
+\item 
+\mbox{\Hypertarget{classez_1_1logging_1_1Logger_a1c52e79139d2e5f1395e90ecae319332}\label{classez_1_1logging_1_1Logger_a1c52e79139d2e5f1395e90ecae319332}} 
+static const integer {\bfseries L\+E\+V\+E\+L\+\_\+5} = 5
+\item 
+static const integer \hyperlink{classez_1_1logging_1_1Logger_a917e91166081de05403eba37ce05bdd5}{M\+A\+X\+\_\+\+L\+E\+V\+EL} = 15
+\end{DoxyCompactItemize}
+\subsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{classez_1_1logging_1_1Logger_a13d4a164577e52950fc5b06508d9f158}{print\+\_\+header} ()
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+std\+::ostream $\ast$ \hyperlink{classez_1_1logging_1_1Logger_a5859fadb7d5a62e6f39a6a6dfc36d39b}{m\+\_\+output}
+\item 
+std\+::ostringstream \hyperlink{classez_1_1logging_1_1Logger_aa6583295cf06de1b03304c454cea4c54}{m\+\_\+input}
+\item 
+std\+::string \hyperlink{classez_1_1logging_1_1Logger_abf66c0dd07742763114cb5a25b3fe7cf}{m\+\_\+name}
+\item 
+std\+::string \hyperlink{classez_1_1logging_1_1Logger_a016718b598e4266d37ca95254945f4ba}{m\+\_\+header\+\_\+format}
+\item 
+integer \hyperlink{classez_1_1logging_1_1Logger_a89f9c24612c5f6dfcc9bec176cec4ee0}{m\+\_\+record\+\_\+level}
+\item 
+integer \hyperlink{classez_1_1logging_1_1Logger_a2e236ad54b47f938d0bea066ac7c2c00}{m\+\_\+verbose\+\_\+level}
+\end{DoxyCompactItemize}
+\subsection*{Friends}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classez_1_1logging_1_1Logger_ab315504a6dd6a6c8d2514affb54a9cf2}\label{classez_1_1logging_1_1Logger_ab315504a6dd6a6c8d2514affb54a9cf2}} 
+class {\bfseries Logger\+Manager}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+base class for loggers which is composed of\+: 
+\begin{DoxyItemize}
+\item a name which serves as an identifier to retrieve the logger from the \hyperlink{classez_1_1logging_1_1LoggerManager}{Logger\+Manager} 
+\item a pointer to an output stream 
+\end{DoxyItemize}The \hyperlink{classez_1_1logging_1_1Logger}{Logger} needs to be attached to the \hyperlink{classez_1_1logging_1_1LoggerManager}{Logger\+Manager} (\begin{DoxySeeAlso}{See also}
+\hyperlink{classez_1_1logging_1_1LoggerManager}{Logger\+Manager}) Each line displayed must be ended by \textquotesingle{}~\newline
+\textquotesingle{} or by using $<$$<$ \hyperlink{classez_1_1logging_1_1Logger_a69ba6cf7130aa70caeca9f5c8636e05a}{Logger\+::endl}. Use $<$$<$ setlevel(int) to fix the level of information recorded. 
+\end{DoxySeeAlso}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classez_1_1logging_1_1Logger_ac9465bcd94c08532b30b1801d71fbd19}\label{classez_1_1logging_1_1Logger_ac9465bcd94c08532b30b1801d71fbd19}} 
+\index{ez\+::logging\+::\+Logger@{ez\+::logging\+::\+Logger}!Logger@{Logger}}
+\index{Logger@{Logger}!ez\+::logging\+::\+Logger@{ez\+::logging\+::\+Logger}}
+\subsubsection{\texorpdfstring{Logger()}{Logger()}}
+{\footnotesize\ttfamily Logger\+::\+Logger (\begin{DoxyParamCaption}\item[{text}]{name,  }\item[{std\+::ostream $\ast$}]{out }\end{DoxyParamCaption})}
+
+constructor to build new \hyperlink{classez_1_1logging_1_1Logger}{Logger} 
+\begin{DoxyParams}{Parameters}
+{\em name} & identifier of the logger \\
+\hline
+{\em out} & pointer to output stream \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classez_1_1logging_1_1Logger_acb668a9e186a25fbaad2e4af6d1ed00a}\label{classez_1_1logging_1_1Logger_acb668a9e186a25fbaad2e4af6d1ed00a}} 
+\index{ez\+::logging\+::\+Logger@{ez\+::logging\+::\+Logger}!````~Logger@{$\sim$\+Logger}}
+\index{````~Logger@{$\sim$\+Logger}!ez\+::logging\+::\+Logger@{ez\+::logging\+::\+Logger}}
+\subsubsection{\texorpdfstring{$\sim$\+Logger()}{~Logger()}}
+{\footnotesize\ttfamily Logger\+::$\sim$\+Logger (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+destructor 
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classez_1_1logging_1_1Logger_a337c7162a46c5e7374e80b7166cc869f}\label{classez_1_1logging_1_1Logger_a337c7162a46c5e7374e80b7166cc869f}} 
+\index{ez\+::logging\+::\+Logger@{ez\+::logging\+::\+Logger}!dec\+\_\+record\+\_\+level@{dec\+\_\+record\+\_\+level}}
+\index{dec\+\_\+record\+\_\+level@{dec\+\_\+record\+\_\+level}!ez\+::logging\+::\+Logger@{ez\+::logging\+::\+Logger}}
+\subsubsection{\texorpdfstring{dec\+\_\+record\+\_\+level()}{dec\_record\_level()}}
+{\footnotesize\ttfamily void Logger\+::dec\+\_\+record\+\_\+level (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+decrement record level \mbox{\Hypertarget{classez_1_1logging_1_1Logger_a69ba6cf7130aa70caeca9f5c8636e05a}\label{classez_1_1logging_1_1Logger_a69ba6cf7130aa70caeca9f5c8636e05a}} 
+\index{ez\+::logging\+::\+Logger@{ez\+::logging\+::\+Logger}!endl@{endl}}
+\index{endl@{endl}!ez\+::logging\+::\+Logger@{ez\+::logging\+::\+Logger}}
+\subsubsection{\texorpdfstring{endl()}{endl()}}
+{\footnotesize\ttfamily static \hyperlink{classez_1_1logging_1_1Logger}{Logger}\& ez\+::logging\+::\+Logger\+::endl (\begin{DoxyParamCaption}\item[{\hyperlink{classez_1_1logging_1_1Logger}{Logger} \&}]{l }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+redefinition of endl for a logger, however use \hyperlink{classez_1_1logging_1_1Logger_a69ba6cf7130aa70caeca9f5c8636e05a}{Logger\+::endl} with operator $<$$<$ \mbox{\Hypertarget{classez_1_1logging_1_1Logger_a9f9bf63329c39c8f9fb116faba1a9b1e}\label{classez_1_1logging_1_1Logger_a9f9bf63329c39c8f9fb116faba1a9b1e}} 
+\index{ez\+::logging\+::\+Logger@{ez\+::logging\+::\+Logger}!inc\+\_\+record\+\_\+level@{inc\+\_\+record\+\_\+level}}
+\index{inc\+\_\+record\+\_\+level@{inc\+\_\+record\+\_\+level}!ez\+::logging\+::\+Logger@{ez\+::logging\+::\+Logger}}
+\subsubsection{\texorpdfstring{inc\+\_\+record\+\_\+level()}{inc\_record\_level()}}
+{\footnotesize\ttfamily void Logger\+::inc\+\_\+record\+\_\+level (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+increment record level \mbox{\Hypertarget{classez_1_1logging_1_1Logger_a439b87c1fdbfe851afcb3cfb29534437}\label{classez_1_1logging_1_1Logger_a439b87c1fdbfe851afcb3cfb29534437}} 
+\index{ez\+::logging\+::\+Logger@{ez\+::logging\+::\+Logger}!operator$<$$<$@{operator$<$$<$}}
+\index{operator$<$$<$@{operator$<$$<$}!ez\+::logging\+::\+Logger@{ez\+::logging\+::\+Logger}}
+\subsubsection{\texorpdfstring{operator$<$$<$()}{operator<<()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \hyperlink{classez_1_1logging_1_1Logger}{Logger}\& ez\+::logging\+::\+Logger\+::operator$<$$<$ (\begin{DoxyParamCaption}\item[{\hyperlink{classez_1_1logging_1_1Logger}{Logger} \&($\ast$)(\hyperlink{classez_1_1logging_1_1Logger}{Logger} \&)}]{m }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+redefinition of operator $<$$<$ for a \hyperlink{classez_1_1logging_1_1Logger}{Logger} in order to be able to call endl \mbox{\Hypertarget{classez_1_1logging_1_1Logger_a75006590ec6d4d6c8bca7d8824d887c2}\label{classez_1_1logging_1_1Logger_a75006590ec6d4d6c8bca7d8824d887c2}} 
+\index{ez\+::logging\+::\+Logger@{ez\+::logging\+::\+Logger}!operator$<$$<$@{operator$<$$<$}}
+\index{operator$<$$<$@{operator$<$$<$}!ez\+::logging\+::\+Logger@{ez\+::logging\+::\+Logger}}
+\subsubsection{\texorpdfstring{operator$<$$<$()}{operator<<()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily template$<$class T $>$ \\
+\hyperlink{classez_1_1logging_1_1Logger}{Logger}\& ez\+::logging\+::\+Logger\+::operator$<$$<$ (\begin{DoxyParamCaption}\item[{const T \&}]{a }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+overloading of output operator \mbox{\Hypertarget{classez_1_1logging_1_1Logger_a5d7092dd639907ccd702eb0df062821b}\label{classez_1_1logging_1_1Logger_a5d7092dd639907ccd702eb0df062821b}} 
+\index{ez\+::logging\+::\+Logger@{ez\+::logging\+::\+Logger}!output\+\_\+stream@{output\+\_\+stream}}
+\index{output\+\_\+stream@{output\+\_\+stream}!ez\+::logging\+::\+Logger@{ez\+::logging\+::\+Logger}}
+\subsubsection{\texorpdfstring{output\+\_\+stream()}{output\_stream()}}
+{\footnotesize\ttfamily ostream$\ast$ ez\+::logging\+::\+Logger\+::output\+\_\+stream (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+return pointer to output stream \begin{DoxyReturn}{Returns}
+pointer to output stream 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classez_1_1logging_1_1Logger_a74db3d434d837a1fcdeb5a6c2326eeb3}\label{classez_1_1logging_1_1Logger_a74db3d434d837a1fcdeb5a6c2326eeb3}} 
+\index{ez\+::logging\+::\+Logger@{ez\+::logging\+::\+Logger}!print@{print}}
+\index{print@{print}!ez\+::logging\+::\+Logger@{ez\+::logging\+::\+Logger}}
+\subsubsection{\texorpdfstring{print()}{print()}\hspace{0.1cm}{\footnotesize\ttfamily [1/14]}}
+{\footnotesize\ttfamily void Logger\+::print (\begin{DoxyParamCaption}\item[{char}]{v }\end{DoxyParamCaption})}
+
+print character \mbox{\Hypertarget{classez_1_1logging_1_1Logger_a85f93d25c8f5eebe65b81cb72ebaea3e}\label{classez_1_1logging_1_1Logger_a85f93d25c8f5eebe65b81cb72ebaea3e}} 
+\index{ez\+::logging\+::\+Logger@{ez\+::logging\+::\+Logger}!print@{print}}
+\index{print@{print}!ez\+::logging\+::\+Logger@{ez\+::logging\+::\+Logger}}
+\subsubsection{\texorpdfstring{print()}{print()}\hspace{0.1cm}{\footnotesize\ttfamily [2/14]}}
+{\footnotesize\ttfamily void Logger\+::print (\begin{DoxyParamCaption}\item[{integer}]{v }\end{DoxyParamCaption})}
+
+print integer \mbox{\Hypertarget{classez_1_1logging_1_1Logger_aeb154caf1a7b122fea39eb9bf6f5079a}\label{classez_1_1logging_1_1Logger_aeb154caf1a7b122fea39eb9bf6f5079a}} 
+\index{ez\+::logging\+::\+Logger@{ez\+::logging\+::\+Logger}!print@{print}}
+\index{print@{print}!ez\+::logging\+::\+Logger@{ez\+::logging\+::\+Logger}}
+\subsubsection{\texorpdfstring{print()}{print()}\hspace{0.1cm}{\footnotesize\ttfamily [3/14]}}
+{\footnotesize\ttfamily void Logger\+::print (\begin{DoxyParamCaption}\item[{natural}]{v }\end{DoxyParamCaption})}
+
+print unsigned int \mbox{\Hypertarget{classez_1_1logging_1_1Logger_a20758ba23aea43e022c3198b85b8c0ed}\label{classez_1_1logging_1_1Logger_a20758ba23aea43e022c3198b85b8c0ed}} 
+\index{ez\+::logging\+::\+Logger@{ez\+::logging\+::\+Logger}!print@{print}}
+\index{print@{print}!ez\+::logging\+::\+Logger@{ez\+::logging\+::\+Logger}}
+\subsubsection{\texorpdfstring{print()}{print()}\hspace{0.1cm}{\footnotesize\ttfamily [4/14]}}
+{\footnotesize\ttfamily void Logger\+::print (\begin{DoxyParamCaption}\item[{long\+\_\+integer}]{v }\end{DoxyParamCaption})}
+
+print long int \mbox{\Hypertarget{classez_1_1logging_1_1Logger_a8c1b7b0e80f11d4b74362294fe968072}\label{classez_1_1logging_1_1Logger_a8c1b7b0e80f11d4b74362294fe968072}} 
+\index{ez\+::logging\+::\+Logger@{ez\+::logging\+::\+Logger}!print@{print}}
+\index{print@{print}!ez\+::logging\+::\+Logger@{ez\+::logging\+::\+Logger}}
+\subsubsection{\texorpdfstring{print()}{print()}\hspace{0.1cm}{\footnotesize\ttfamily [5/14]}}
+{\footnotesize\ttfamily void Logger\+::print (\begin{DoxyParamCaption}\item[{long\+\_\+natural}]{v }\end{DoxyParamCaption})}
+
+print unsigned long int \mbox{\Hypertarget{classez_1_1logging_1_1Logger_ae8367292df1035d9bc7bd09fd5ca35a7}\label{classez_1_1logging_1_1Logger_ae8367292df1035d9bc7bd09fd5ca35a7}} 
+\index{ez\+::logging\+::\+Logger@{ez\+::logging\+::\+Logger}!print@{print}}
+\index{print@{print}!ez\+::logging\+::\+Logger@{ez\+::logging\+::\+Logger}}
+\subsubsection{\texorpdfstring{print()}{print()}\hspace{0.1cm}{\footnotesize\ttfamily [6/14]}}
+{\footnotesize\ttfamily void Logger\+::print (\begin{DoxyParamCaption}\item[{const char $\ast$}]{s }\end{DoxyParamCaption})}
+
+print pointer to char \mbox{\Hypertarget{classez_1_1logging_1_1Logger_a9be560bcbe68f5262eb7bd019bb8775b}\label{classez_1_1logging_1_1Logger_a9be560bcbe68f5262eb7bd019bb8775b}} 
+\index{ez\+::logging\+::\+Logger@{ez\+::logging\+::\+Logger}!print@{print}}
+\index{print@{print}!ez\+::logging\+::\+Logger@{ez\+::logging\+::\+Logger}}
+\subsubsection{\texorpdfstring{print()}{print()}\hspace{0.1cm}{\footnotesize\ttfamily [7/14]}}
+{\footnotesize\ttfamily void Logger\+::print (\begin{DoxyParamCaption}\item[{string}]{s }\end{DoxyParamCaption})}
+
+print string \mbox{\Hypertarget{classez_1_1logging_1_1Logger_a422fea2abd8a7c364e1c4846693422f1}\label{classez_1_1logging_1_1Logger_a422fea2abd8a7c364e1c4846693422f1}} 
+\index{ez\+::logging\+::\+Logger@{ez\+::logging\+::\+Logger}!print@{print}}
+\index{print@{print}!ez\+::logging\+::\+Logger@{ez\+::logging\+::\+Logger}}
+\subsubsection{\texorpdfstring{print()}{print()}\hspace{0.1cm}{\footnotesize\ttfamily [8/14]}}
+{\footnotesize\ttfamily void Logger\+::print (\begin{DoxyParamCaption}\item[{real}]{f }\end{DoxyParamCaption})}
+
+print float \mbox{\Hypertarget{classez_1_1logging_1_1Logger_a026763cd0c90ec5e4b5d06f08b63a140}\label{classez_1_1logging_1_1Logger_a026763cd0c90ec5e4b5d06f08b63a140}} 
+\index{ez\+::logging\+::\+Logger@{ez\+::logging\+::\+Logger}!print@{print}}
+\index{print@{print}!ez\+::logging\+::\+Logger@{ez\+::logging\+::\+Logger}}
+\subsubsection{\texorpdfstring{print()}{print()}\hspace{0.1cm}{\footnotesize\ttfamily [9/14]}}
+{\footnotesize\ttfamily void Logger\+::print (\begin{DoxyParamCaption}\item[{long\+\_\+real}]{d }\end{DoxyParamCaption})}
+
+print double \mbox{\Hypertarget{classez_1_1logging_1_1Logger_a5c8c3349b7d4aa76dfe90b1e3dc0ce00}\label{classez_1_1logging_1_1Logger_a5c8c3349b7d4aa76dfe90b1e3dc0ce00}} 
+\index{ez\+::logging\+::\+Logger@{ez\+::logging\+::\+Logger}!print@{print}}
+\index{print@{print}!ez\+::logging\+::\+Logger@{ez\+::logging\+::\+Logger}}
+\subsubsection{\texorpdfstring{print()}{print()}\hspace{0.1cm}{\footnotesize\ttfamily [10/14]}}
+{\footnotesize\ttfamily void Logger\+::print (\begin{DoxyParamCaption}\item[{void $\ast$}]{p }\end{DoxyParamCaption})}
+
+print pointer \mbox{\Hypertarget{classez_1_1logging_1_1Logger_a3fcf2f4da96bd7a0fd33b055a23fdef3}\label{classez_1_1logging_1_1Logger_a3fcf2f4da96bd7a0fd33b055a23fdef3}} 
+\index{ez\+::logging\+::\+Logger@{ez\+::logging\+::\+Logger}!print@{print}}
+\index{print@{print}!ez\+::logging\+::\+Logger@{ez\+::logging\+::\+Logger}}
+\subsubsection{\texorpdfstring{print()}{print()}\hspace{0.1cm}{\footnotesize\ttfamily [11/14]}}
+{\footnotesize\ttfamily void Logger\+::print (\begin{DoxyParamCaption}\item[{const \hyperlink{structez_1_1logging_1_1__Setrecordlevel}{\+\_\+\+Setrecordlevel} \&}]{lvl }\end{DoxyParamCaption})}
+
+set record level (use like iomanip) 
+\begin{DoxyParams}{Parameters}
+{\em lvl} & \+\_\+\+Setlevel structure \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classez_1_1logging_1_1Logger_a20117d944ec1fa0aa3302981c620d8b6}\label{classez_1_1logging_1_1Logger_a20117d944ec1fa0aa3302981c620d8b6}} 
+\index{ez\+::logging\+::\+Logger@{ez\+::logging\+::\+Logger}!print@{print}}
+\index{print@{print}!ez\+::logging\+::\+Logger@{ez\+::logging\+::\+Logger}}
+\subsubsection{\texorpdfstring{print()}{print()}\hspace{0.1cm}{\footnotesize\ttfamily [12/14]}}
+{\footnotesize\ttfamily void Logger\+::print (\begin{DoxyParamCaption}\item[{const \hyperlink{structez_1_1logging_1_1__Setverboselevel}{\+\_\+\+Setverboselevel} \&}]{lvl }\end{DoxyParamCaption})}
+
+set verbose level (use like iomanip) 
+\begin{DoxyParams}{Parameters}
+{\em lvl} & \+\_\+\+Setlevel structure \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classez_1_1logging_1_1Logger_a5660d40a1364e37393b3241435ed5a64}\label{classez_1_1logging_1_1Logger_a5660d40a1364e37393b3241435ed5a64}} 
+\index{ez\+::logging\+::\+Logger@{ez\+::logging\+::\+Logger}!print@{print}}
+\index{print@{print}!ez\+::logging\+::\+Logger@{ez\+::logging\+::\+Logger}}
+\subsubsection{\texorpdfstring{print()}{print()}\hspace{0.1cm}{\footnotesize\ttfamily [13/14]}}
+{\footnotesize\ttfamily void Logger\+::print (\begin{DoxyParamCaption}\item[{const \hyperlink{classez_1_1essential_1_1CPUTimer}{ez\+::essential\+::\+C\+P\+U\+Timer} \&}]{obj }\end{DoxyParamCaption})}
+
+print C\+P\+U\+Timer on \hyperlink{classez_1_1logging_1_1Logger}{Logger} \mbox{\Hypertarget{classez_1_1logging_1_1Logger_ad95b97a1ff61d4a31a0fba5e32f805a8}\label{classez_1_1logging_1_1Logger_ad95b97a1ff61d4a31a0fba5e32f805a8}} 
+\index{ez\+::logging\+::\+Logger@{ez\+::logging\+::\+Logger}!print@{print}}
+\index{print@{print}!ez\+::logging\+::\+Logger@{ez\+::logging\+::\+Logger}}
+\subsubsection{\texorpdfstring{print()}{print()}\hspace{0.1cm}{\footnotesize\ttfamily [14/14]}}
+{\footnotesize\ttfamily void Logger\+::print (\begin{DoxyParamCaption}\item[{const \hyperlink{classez_1_1essential_1_1Range}{ez\+::essential\+::\+Range} \&}]{obj }\end{DoxyParamCaption})}
+
+Print Range on \hyperlink{classez_1_1logging_1_1Logger}{Logger} \mbox{\Hypertarget{classez_1_1logging_1_1Logger_a13d4a164577e52950fc5b06508d9f158}\label{classez_1_1logging_1_1Logger_a13d4a164577e52950fc5b06508d9f158}} 
+\index{ez\+::logging\+::\+Logger@{ez\+::logging\+::\+Logger}!print\+\_\+header@{print\+\_\+header}}
+\index{print\+\_\+header@{print\+\_\+header}!ez\+::logging\+::\+Logger@{ez\+::logging\+::\+Logger}}
+\subsubsection{\texorpdfstring{print\+\_\+header()}{print\_header()}}
+{\footnotesize\ttfamily void Logger\+::print\+\_\+header (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+display header at the beginning of the line \mbox{\Hypertarget{classez_1_1logging_1_1Logger_ab8e5b19223eca4b3af5ff7df2db607b7}\label{classez_1_1logging_1_1Logger_ab8e5b19223eca4b3af5ff7df2db607b7}} 
+\index{ez\+::logging\+::\+Logger@{ez\+::logging\+::\+Logger}!print\+\_\+ln@{print\+\_\+ln}}
+\index{print\+\_\+ln@{print\+\_\+ln}!ez\+::logging\+::\+Logger@{ez\+::logging\+::\+Logger}}
+\subsubsection{\texorpdfstring{print\+\_\+ln()}{print\_ln()}}
+{\footnotesize\ttfamily void Logger\+::print\+\_\+ln (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+print new line 
+
+Implements \hyperlink{classez_1_1logging_1_1BaseLogger_a1cad8cfe8029ecd0360573b3dd4a0543}{ez\+::logging\+::\+Base\+Logger}.
+
+\mbox{\Hypertarget{classez_1_1logging_1_1Logger_ab81b4be85f103d81e7b25a9cdf0a68e3}\label{classez_1_1logging_1_1Logger_ab81b4be85f103d81e7b25a9cdf0a68e3}} 
+\index{ez\+::logging\+::\+Logger@{ez\+::logging\+::\+Logger}!print\+\_\+object@{print\+\_\+object}}
+\index{print\+\_\+object@{print\+\_\+object}!ez\+::logging\+::\+Logger@{ez\+::logging\+::\+Logger}}
+\subsubsection{\texorpdfstring{print\+\_\+object()}{print\_object()}}
+{\footnotesize\ttfamily template$<$class T $>$ \\
+void ez\+::logging\+::\+Logger\+::print\+\_\+object (\begin{DoxyParamCaption}\item[{T $\ast$}]{obj }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+template function used to display objects. The object must have a void display(ostream\& out) method. \mbox{\Hypertarget{classez_1_1logging_1_1Logger_a2845727c27243d47fefbd9d65df5bd6b}\label{classez_1_1logging_1_1Logger_a2845727c27243d47fefbd9d65df5bd6b}} 
+\index{ez\+::logging\+::\+Logger@{ez\+::logging\+::\+Logger}!set\+\_\+header@{set\+\_\+header}}
+\index{set\+\_\+header@{set\+\_\+header}!ez\+::logging\+::\+Logger@{ez\+::logging\+::\+Logger}}
+\subsubsection{\texorpdfstring{set\+\_\+header()}{set\_header()}}
+{\footnotesize\ttfamily void Logger\+::set\+\_\+header (\begin{DoxyParamCaption}\item[{const char $\ast$}]{s }\end{DoxyParamCaption})}
+
+set header displayed at the beginning of each line by using the following format to display\+: 
+\begin{DoxyItemize}
+\item \%{\ttfamily d} for day 
+\item \%{\ttfamily t} for time 
+\item \%{\ttfamily n} logger name 
+\item \%{\ttfamily m} for message 
+\item \%{\ttfamily l} for record level 
+\end{DoxyItemize}\mbox{\Hypertarget{classez_1_1logging_1_1Logger_a64bfdfc5a20a7ee660144c50dfd0514e}\label{classez_1_1logging_1_1Logger_a64bfdfc5a20a7ee660144c50dfd0514e}} 
+\index{ez\+::logging\+::\+Logger@{ez\+::logging\+::\+Logger}!set\+\_\+record\+\_\+level@{set\+\_\+record\+\_\+level}}
+\index{set\+\_\+record\+\_\+level@{set\+\_\+record\+\_\+level}!ez\+::logging\+::\+Logger@{ez\+::logging\+::\+Logger}}
+\subsubsection{\texorpdfstring{set\+\_\+record\+\_\+level()}{set\_record\_level()}}
+{\footnotesize\ttfamily void Logger\+::set\+\_\+record\+\_\+level (\begin{DoxyParamCaption}\item[{integer}]{lvl }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+set logging level of information sent to logger 
+
+Implements \hyperlink{classez_1_1logging_1_1BaseLogger_a508a25672c704ec73260978b7f17dd13}{ez\+::logging\+::\+Base\+Logger}.
+
+\mbox{\Hypertarget{classez_1_1logging_1_1Logger_ae9fd25392d4dc7611acafd335bfe5f94}\label{classez_1_1logging_1_1Logger_ae9fd25392d4dc7611acafd335bfe5f94}} 
+\index{ez\+::logging\+::\+Logger@{ez\+::logging\+::\+Logger}!set\+\_\+verbose\+\_\+level@{set\+\_\+verbose\+\_\+level}}
+\index{set\+\_\+verbose\+\_\+level@{set\+\_\+verbose\+\_\+level}!ez\+::logging\+::\+Logger@{ez\+::logging\+::\+Logger}}
+\subsubsection{\texorpdfstring{set\+\_\+verbose\+\_\+level()}{set\_verbose\_level()}}
+{\footnotesize\ttfamily void Logger\+::set\+\_\+verbose\+\_\+level (\begin{DoxyParamCaption}\item[{integer}]{lvl }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+set level of information displayed, if record level is greater than verbose level, then information is not shown 
+
+Implements \hyperlink{classez_1_1logging_1_1BaseLogger_a2b9ecfbaff4e53d15b3b8bedd53ea2f8}{ez\+::logging\+::\+Base\+Logger}.
+
+
+
+\subsection{Field Documentation}
+\mbox{\Hypertarget{classez_1_1logging_1_1Logger_aa9ff03b52cf6bdc21b9e67086510d186}\label{classez_1_1logging_1_1Logger_aa9ff03b52cf6bdc21b9e67086510d186}} 
+\index{ez\+::logging\+::\+Logger@{ez\+::logging\+::\+Logger}!C\+L\+O\+S\+ED@{C\+L\+O\+S\+ED}}
+\index{C\+L\+O\+S\+ED@{C\+L\+O\+S\+ED}!ez\+::logging\+::\+Logger@{ez\+::logging\+::\+Logger}}
+\subsubsection{\texorpdfstring{C\+L\+O\+S\+ED}{CLOSED}}
+{\footnotesize\ttfamily const integer Logger\+::\+C\+L\+O\+S\+ED = 0\hspace{0.3cm}{\ttfamily [static]}}
+
+information will not be recorded \mbox{\Hypertarget{classez_1_1logging_1_1Logger_a016718b598e4266d37ca95254945f4ba}\label{classez_1_1logging_1_1Logger_a016718b598e4266d37ca95254945f4ba}} 
+\index{ez\+::logging\+::\+Logger@{ez\+::logging\+::\+Logger}!m\+\_\+header\+\_\+format@{m\+\_\+header\+\_\+format}}
+\index{m\+\_\+header\+\_\+format@{m\+\_\+header\+\_\+format}!ez\+::logging\+::\+Logger@{ez\+::logging\+::\+Logger}}
+\subsubsection{\texorpdfstring{m\+\_\+header\+\_\+format}{m\_header\_format}}
+{\footnotesize\ttfamily std\+::string ez\+::logging\+::\+Logger\+::m\+\_\+header\+\_\+format\hspace{0.3cm}{\ttfamily [protected]}}
+
+string used as header displayed at the beginnig of each line \mbox{\Hypertarget{classez_1_1logging_1_1Logger_aa6583295cf06de1b03304c454cea4c54}\label{classez_1_1logging_1_1Logger_aa6583295cf06de1b03304c454cea4c54}} 
+\index{ez\+::logging\+::\+Logger@{ez\+::logging\+::\+Logger}!m\+\_\+input@{m\+\_\+input}}
+\index{m\+\_\+input@{m\+\_\+input}!ez\+::logging\+::\+Logger@{ez\+::logging\+::\+Logger}}
+\subsubsection{\texorpdfstring{m\+\_\+input}{m\_input}}
+{\footnotesize\ttfamily std\+::ostringstream ez\+::logging\+::\+Logger\+::m\+\_\+input\hspace{0.3cm}{\ttfamily [protected]}}
+
+input stream which stores information until a new line character is found. The contents of input is then sent to the output stream \mbox{\Hypertarget{classez_1_1logging_1_1Logger_abf66c0dd07742763114cb5a25b3fe7cf}\label{classez_1_1logging_1_1Logger_abf66c0dd07742763114cb5a25b3fe7cf}} 
+\index{ez\+::logging\+::\+Logger@{ez\+::logging\+::\+Logger}!m\+\_\+name@{m\+\_\+name}}
+\index{m\+\_\+name@{m\+\_\+name}!ez\+::logging\+::\+Logger@{ez\+::logging\+::\+Logger}}
+\subsubsection{\texorpdfstring{m\+\_\+name}{m\_name}}
+{\footnotesize\ttfamily std\+::string ez\+::logging\+::\+Logger\+::m\+\_\+name\hspace{0.3cm}{\ttfamily [protected]}}
+
+identifier of \hyperlink{classez_1_1logging_1_1Logger}{Logger} \mbox{\Hypertarget{classez_1_1logging_1_1Logger_a5859fadb7d5a62e6f39a6a6dfc36d39b}\label{classez_1_1logging_1_1Logger_a5859fadb7d5a62e6f39a6a6dfc36d39b}} 
+\index{ez\+::logging\+::\+Logger@{ez\+::logging\+::\+Logger}!m\+\_\+output@{m\+\_\+output}}
+\index{m\+\_\+output@{m\+\_\+output}!ez\+::logging\+::\+Logger@{ez\+::logging\+::\+Logger}}
+\subsubsection{\texorpdfstring{m\+\_\+output}{m\_output}}
+{\footnotesize\ttfamily std\+::ostream$\ast$ ez\+::logging\+::\+Logger\+::m\+\_\+output\hspace{0.3cm}{\ttfamily [protected]}}
+
+pointer to an output stream for example \&std\+::cout \mbox{\Hypertarget{classez_1_1logging_1_1Logger_a89f9c24612c5f6dfcc9bec176cec4ee0}\label{classez_1_1logging_1_1Logger_a89f9c24612c5f6dfcc9bec176cec4ee0}} 
+\index{ez\+::logging\+::\+Logger@{ez\+::logging\+::\+Logger}!m\+\_\+record\+\_\+level@{m\+\_\+record\+\_\+level}}
+\index{m\+\_\+record\+\_\+level@{m\+\_\+record\+\_\+level}!ez\+::logging\+::\+Logger@{ez\+::logging\+::\+Logger}}
+\subsubsection{\texorpdfstring{m\+\_\+record\+\_\+level}{m\_record\_level}}
+{\footnotesize\ttfamily integer ez\+::logging\+::\+Logger\+::m\+\_\+record\+\_\+level\hspace{0.3cm}{\ttfamily [protected]}}
+
+level of information that is sent to logger if loggin\+\_\+level $>$ display level, information won\textquotesingle{}t be recorded \mbox{\Hypertarget{classez_1_1logging_1_1Logger_a2e236ad54b47f938d0bea066ac7c2c00}\label{classez_1_1logging_1_1Logger_a2e236ad54b47f938d0bea066ac7c2c00}} 
+\index{ez\+::logging\+::\+Logger@{ez\+::logging\+::\+Logger}!m\+\_\+verbose\+\_\+level@{m\+\_\+verbose\+\_\+level}}
+\index{m\+\_\+verbose\+\_\+level@{m\+\_\+verbose\+\_\+level}!ez\+::logging\+::\+Logger@{ez\+::logging\+::\+Logger}}
+\subsubsection{\texorpdfstring{m\+\_\+verbose\+\_\+level}{m\_verbose\_level}}
+{\footnotesize\ttfamily integer ez\+::logging\+::\+Logger\+::m\+\_\+verbose\+\_\+level\hspace{0.3cm}{\ttfamily [protected]}}
+
+level of information displayed \mbox{\Hypertarget{classez_1_1logging_1_1Logger_a917e91166081de05403eba37ce05bdd5}\label{classez_1_1logging_1_1Logger_a917e91166081de05403eba37ce05bdd5}} 
+\index{ez\+::logging\+::\+Logger@{ez\+::logging\+::\+Logger}!M\+A\+X\+\_\+\+L\+E\+V\+EL@{M\+A\+X\+\_\+\+L\+E\+V\+EL}}
+\index{M\+A\+X\+\_\+\+L\+E\+V\+EL@{M\+A\+X\+\_\+\+L\+E\+V\+EL}!ez\+::logging\+::\+Logger@{ez\+::logging\+::\+Logger}}
+\subsubsection{\texorpdfstring{M\+A\+X\+\_\+\+L\+E\+V\+EL}{MAX\_LEVEL}}
+{\footnotesize\ttfamily const integer Logger\+::\+M\+A\+X\+\_\+\+L\+E\+V\+EL = 15\hspace{0.3cm}{\ttfamily [static]}}
+
+maximum level for information recording 
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+src/version\+\_\+2018.\+06/logging/logger.\+h\item 
+src/version\+\_\+2018.\+06/logging/logger.\+cpp\end{DoxyCompactItemize}

@@ -1,0 +1,12 @@
+<map id="ez::arguments::Argument" name="ez::arguments::Argument">
+<area shape="rect" id="node2" href="$classez_1_1arguments_1_1BooleanArgument.html" title="ez::arguments::BooleanArgument" alt="" coords="223,5,439,32"/>
+<area shape="rect" id="node3" href="$classez_1_1arguments_1_1FlagArgument.html" title="ez::arguments::FlagArgument" alt="" coords="233,56,428,83"/>
+<area shape="rect" id="node4" href="$classez_1_1arguments_1_1IntegerArgument.html" title="ez::arguments::IntegerArgument" alt="" coords="226,107,435,133"/>
+<area shape="rect" id="node6" href="$classez_1_1arguments_1_1NaturalArgument.html" title="ez::arguments::NaturalArgument" alt="" coords="225,157,436,184"/>
+<area shape="rect" id="node8" href="$classez_1_1arguments_1_1OptionsArgument.html" title="ez::arguments::OptionsArgument" alt="" coords="223,208,438,235"/>
+<area shape="rect" id="node9" href="$classez_1_1arguments_1_1RealArgument.html" title="ez::arguments::RealArgument" alt="" coords="233,259,429,285"/>
+<area shape="rect" id="node11" href="$classez_1_1arguments_1_1TextArgument.html" title="ez::arguments::TextArgument" alt="" coords="233,309,428,336"/>
+<area shape="rect" id="node5" href="$classez_1_1arguments_1_1IntegerRangeArgument.html" title="ez::arguments::IntegerRange\lArgument" alt="" coords="488,93,679,134"/>
+<area shape="rect" id="node7" href="$classez_1_1arguments_1_1NaturalRangeArgument.html" title="ez::arguments::NaturalRange\lArgument" alt="" coords="487,158,680,199"/>
+<area shape="rect" id="node10" href="$classez_1_1arguments_1_1RealRangeArgument.html" title="ez::arguments::RealRange\lArgument" alt="" coords="494,251,673,293"/>
+</map>

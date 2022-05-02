@@ -1,0 +1,131 @@
+\hypertarget{classez_1_1essential_1_1NumericBase}{}\section{ez\+:\+:essential\+:\+:Numeric\+Base Class Reference}
+\label{classez_1_1essential_1_1NumericBase}\index{ez\+::essential\+::\+Numeric\+Base@{ez\+::essential\+::\+Numeric\+Base}}
+
+
+{\ttfamily \#include $<$numeric\+\_\+base.\+h$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classez_1_1essential_1_1NumericBase_a816e881082f2b93889da1790974a486b}{Numeric\+Base} ()
+\item 
+\hyperlink{classez_1_1essential_1_1NumericBase_a156c1bbfb6ae7aa7e43c2bcd10e6bed4}{Numeric\+Base} (Base \+\_\+id, text \+\_\+name, character \+\_\+suffix, integer \+\_\+digits, text \+\_\+in\+\_\+symbols, text \+\_\+out\+\_\+symbols)
+\item 
+text \hyperlink{classez_1_1essential_1_1NumericBase_ae8c51c7134dbee02d7ed7ab1d23b1643}{convert} (natural n)
+\end{DoxyCompactItemize}
+\subsection*{Data Fields}
+\begin{DoxyCompactItemize}
+\item 
+Base \hyperlink{classez_1_1essential_1_1NumericBase_aa809b2a41bf74d6c060d036567d9a309}{id}
+\item 
+integer \hyperlink{classez_1_1essential_1_1NumericBase_a17ca1826acad4a368ddbc17a77e1c337}{digits}
+\item 
+text \hyperlink{classez_1_1essential_1_1NumericBase_a12388b10bb1e05b0766191afc27e552e}{name}
+\item 
+text \hyperlink{classez_1_1essential_1_1NumericBase_a15523b84d459e3eec4ae4b00dc448eb3}{input\+\_\+symbols}
+\item 
+text \hyperlink{classez_1_1essential_1_1NumericBase_a42db2f729893765e4e9a5a1085085e5d}{output\+\_\+symbols}
+\item 
+text \hyperlink{classez_1_1essential_1_1NumericBase_a3a30796f5294fc6d0b4d2d248ea51cf3}{suffix}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Class used to record information about a numeric base like the name, the number of digits and the symbols used to read or write a number in the base 
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classez_1_1essential_1_1NumericBase_a816e881082f2b93889da1790974a486b}\label{classez_1_1essential_1_1NumericBase_a816e881082f2b93889da1790974a486b}} 
+\index{ez\+::essential\+::\+Numeric\+Base@{ez\+::essential\+::\+Numeric\+Base}!Numeric\+Base@{Numeric\+Base}}
+\index{Numeric\+Base@{Numeric\+Base}!ez\+::essential\+::\+Numeric\+Base@{ez\+::essential\+::\+Numeric\+Base}}
+\subsubsection{\texorpdfstring{Numeric\+Base()}{NumericBase()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily ez\+::essential\+::\+Numeric\+Base\+::\+Numeric\+Base (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+default constructor \mbox{\Hypertarget{classez_1_1essential_1_1NumericBase_a156c1bbfb6ae7aa7e43c2bcd10e6bed4}\label{classez_1_1essential_1_1NumericBase_a156c1bbfb6ae7aa7e43c2bcd10e6bed4}} 
+\index{ez\+::essential\+::\+Numeric\+Base@{ez\+::essential\+::\+Numeric\+Base}!Numeric\+Base@{Numeric\+Base}}
+\index{Numeric\+Base@{Numeric\+Base}!ez\+::essential\+::\+Numeric\+Base@{ez\+::essential\+::\+Numeric\+Base}}
+\subsubsection{\texorpdfstring{Numeric\+Base()}{NumericBase()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily ez\+::essential\+::\+Numeric\+Base\+::\+Numeric\+Base (\begin{DoxyParamCaption}\item[{Base}]{\+\_\+id,  }\item[{text}]{\+\_\+name,  }\item[{character}]{\+\_\+suffix,  }\item[{integer}]{\+\_\+digits,  }\item[{text}]{\+\_\+in\+\_\+symbols,  }\item[{text}]{\+\_\+out\+\_\+symbols }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+constructor 
+\begin{DoxyParams}{Parameters}
+{\em \+\_\+id} & integer identifier \\
+\hline
+{\em \+\_\+name} & name of the base \\
+\hline
+{\em \+\_\+suffix} & suffix character used to identify number in base (for example \textquotesingle{}b\textquotesingle{} for binary) \\
+\hline
+{\em \+\_\+digits} & number of digits (for example 16 for hexadecimal) \\
+\hline
+{\em \+\_\+in\+\_\+symbols} & input symbols allowed \\
+\hline
+{\em \+\_\+out\+\_\+symbols} & output symbols allowed to print a number \\
+\hline
+\end{DoxyParams}
+\begin{DoxySeeAlso}{See also}
+\hyperlink{classez_1_1essential_1_1NumericBase_ae8c51c7134dbee02d7ed7ab1d23b1643}{convert()} 
+\end{DoxySeeAlso}
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classez_1_1essential_1_1NumericBase_ae8c51c7134dbee02d7ed7ab1d23b1643}\label{classez_1_1essential_1_1NumericBase_ae8c51c7134dbee02d7ed7ab1d23b1643}} 
+\index{ez\+::essential\+::\+Numeric\+Base@{ez\+::essential\+::\+Numeric\+Base}!convert@{convert}}
+\index{convert@{convert}!ez\+::essential\+::\+Numeric\+Base@{ez\+::essential\+::\+Numeric\+Base}}
+\subsubsection{\texorpdfstring{convert()}{convert()}}
+{\footnotesize\ttfamily text Numeric\+Base\+::convert (\begin{DoxyParamCaption}\item[{natural}]{n }\end{DoxyParamCaption})}
+
+convert natural value into base 
+\begin{DoxyParams}{Parameters}
+{\em n} & value to convert \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+string that represents the number in the base 
+\end{DoxyReturn}
+
+
+\subsection{Field Documentation}
+\mbox{\Hypertarget{classez_1_1essential_1_1NumericBase_a17ca1826acad4a368ddbc17a77e1c337}\label{classez_1_1essential_1_1NumericBase_a17ca1826acad4a368ddbc17a77e1c337}} 
+\index{ez\+::essential\+::\+Numeric\+Base@{ez\+::essential\+::\+Numeric\+Base}!digits@{digits}}
+\index{digits@{digits}!ez\+::essential\+::\+Numeric\+Base@{ez\+::essential\+::\+Numeric\+Base}}
+\subsubsection{\texorpdfstring{digits}{digits}}
+{\footnotesize\ttfamily integer ez\+::essential\+::\+Numeric\+Base\+::digits}
+
+number of digits (ex\+: 2 for binary, 8 for octal, ...) \mbox{\Hypertarget{classez_1_1essential_1_1NumericBase_aa809b2a41bf74d6c060d036567d9a309}\label{classez_1_1essential_1_1NumericBase_aa809b2a41bf74d6c060d036567d9a309}} 
+\index{ez\+::essential\+::\+Numeric\+Base@{ez\+::essential\+::\+Numeric\+Base}!id@{id}}
+\index{id@{id}!ez\+::essential\+::\+Numeric\+Base@{ez\+::essential\+::\+Numeric\+Base}}
+\subsubsection{\texorpdfstring{id}{id}}
+{\footnotesize\ttfamily Base ez\+::essential\+::\+Numeric\+Base\+::id}
+
+identifier (\begin{DoxySeeAlso}{See also}
+Base) 
+\end{DoxySeeAlso}
+\mbox{\Hypertarget{classez_1_1essential_1_1NumericBase_a15523b84d459e3eec4ae4b00dc448eb3}\label{classez_1_1essential_1_1NumericBase_a15523b84d459e3eec4ae4b00dc448eb3}} 
+\index{ez\+::essential\+::\+Numeric\+Base@{ez\+::essential\+::\+Numeric\+Base}!input\+\_\+symbols@{input\+\_\+symbols}}
+\index{input\+\_\+symbols@{input\+\_\+symbols}!ez\+::essential\+::\+Numeric\+Base@{ez\+::essential\+::\+Numeric\+Base}}
+\subsubsection{\texorpdfstring{input\+\_\+symbols}{input\_symbols}}
+{\footnotesize\ttfamily text ez\+::essential\+::\+Numeric\+Base\+::input\+\_\+symbols}
+
+symbols allowed when reading the number in the base \mbox{\Hypertarget{classez_1_1essential_1_1NumericBase_a12388b10bb1e05b0766191afc27e552e}\label{classez_1_1essential_1_1NumericBase_a12388b10bb1e05b0766191afc27e552e}} 
+\index{ez\+::essential\+::\+Numeric\+Base@{ez\+::essential\+::\+Numeric\+Base}!name@{name}}
+\index{name@{name}!ez\+::essential\+::\+Numeric\+Base@{ez\+::essential\+::\+Numeric\+Base}}
+\subsubsection{\texorpdfstring{name}{name}}
+{\footnotesize\ttfamily text ez\+::essential\+::\+Numeric\+Base\+::name}
+
+name of base (ex\+: \char`\"{}binary\char`\"{}, \char`\"{}octal\char`\"{}, ...) \mbox{\Hypertarget{classez_1_1essential_1_1NumericBase_a42db2f729893765e4e9a5a1085085e5d}\label{classez_1_1essential_1_1NumericBase_a42db2f729893765e4e9a5a1085085e5d}} 
+\index{ez\+::essential\+::\+Numeric\+Base@{ez\+::essential\+::\+Numeric\+Base}!output\+\_\+symbols@{output\+\_\+symbols}}
+\index{output\+\_\+symbols@{output\+\_\+symbols}!ez\+::essential\+::\+Numeric\+Base@{ez\+::essential\+::\+Numeric\+Base}}
+\subsubsection{\texorpdfstring{output\+\_\+symbols}{output\_symbols}}
+{\footnotesize\ttfamily text ez\+::essential\+::\+Numeric\+Base\+::output\+\_\+symbols}
+
+symbols used to represent number when printing \mbox{\Hypertarget{classez_1_1essential_1_1NumericBase_a3a30796f5294fc6d0b4d2d248ea51cf3}\label{classez_1_1essential_1_1NumericBase_a3a30796f5294fc6d0b4d2d248ea51cf3}} 
+\index{ez\+::essential\+::\+Numeric\+Base@{ez\+::essential\+::\+Numeric\+Base}!suffix@{suffix}}
+\index{suffix@{suffix}!ez\+::essential\+::\+Numeric\+Base@{ez\+::essential\+::\+Numeric\+Base}}
+\subsubsection{\texorpdfstring{suffix}{suffix}}
+{\footnotesize\ttfamily text ez\+::essential\+::\+Numeric\+Base\+::suffix}
+
+suffix used when writing number (ex\+: \textquotesingle{}b\textquotesingle{} for binary, \textquotesingle{}o\textquotesingle{} for octal and \textquotesingle{}h\textquotesingle{} for hexadecimal) 
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+src/version\+\_\+2018.\+06/essential/numeric\+\_\+base.\+h\item 
+src/version\+\_\+2018.\+06/essential/numeric\+\_\+base.\+cpp\end{DoxyCompactItemize}

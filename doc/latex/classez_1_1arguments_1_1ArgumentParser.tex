@@ -1,0 +1,195 @@
+\hypertarget{classez_1_1arguments_1_1ArgumentParser}{}\section{ez\+:\+:arguments\+:\+:Argument\+Parser Class Reference}
+\label{classez_1_1arguments_1_1ArgumentParser}\index{ez\+::arguments\+::\+Argument\+Parser@{ez\+::arguments\+::\+Argument\+Parser}}
+
+
+{\ttfamily \#include $<$argument\+\_\+parser.\+h$>$}
+
+
+
+Collaboration diagram for ez\+:\+:arguments\+:\+:Argument\+Parser\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=247pt]{classez_1_1arguments_1_1ArgumentParser__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classez_1_1arguments_1_1ArgumentParser_a30376da1d4671529adc656a9feee49e7}{Argument\+Parser} (text program\+\_\+name, text description, integer argc, char $\ast$argv\mbox{[}$\,$\mbox{]})
+\item 
+\mbox{\Hypertarget{classez_1_1arguments_1_1ArgumentParser_a04f55da04f5da57dec7ec34ca96c0ad1}\label{classez_1_1arguments_1_1ArgumentParser_a04f55da04f5da57dec7ec34ca96c0ad1}} 
+void {\bfseries clean} ()
+\item 
+\hyperlink{classez_1_1arguments_1_1Argument}{Argument} $\ast$ \hyperlink{classez_1_1arguments_1_1ArgumentParser_aa14a00ee3b14e5d3c4ffa5b409d03274}{add} (\hyperlink{classez_1_1arguments_1_1Argument}{Argument} $\ast$arg)
+\item 
+\mbox{\Hypertarget{classez_1_1arguments_1_1ArgumentParser_a27ef9198a0bdd6c39a2897712ad402b4}\label{classez_1_1arguments_1_1ArgumentParser_a27ef9198a0bdd6c39a2897712ad402b4}} 
+\hyperlink{classez_1_1arguments_1_1Argument}{Argument} $\ast$ {\bfseries add\+\_\+flag} (text long\+\_\+label, char short\+\_\+label, bool $\ast$value, text description, trigger\+\_\+t trigger=nullptr)
+\item 
+\mbox{\Hypertarget{classez_1_1arguments_1_1ArgumentParser_addffdc87f5acb326b7b64b5144395c42}\label{classez_1_1arguments_1_1ArgumentParser_addffdc87f5acb326b7b64b5144395c42}} 
+\hyperlink{classez_1_1arguments_1_1Argument}{Argument} $\ast$ {\bfseries add\+\_\+boolean} (text long\+\_\+label, char short\+\_\+label, bool $\ast$value, text description, trigger\+\_\+t trigger=nullptr)
+\item 
+\mbox{\Hypertarget{classez_1_1arguments_1_1ArgumentParser_a83b1d6bcdb92004d97776a45ef8c17d7}\label{classez_1_1arguments_1_1ArgumentParser_a83b1d6bcdb92004d97776a45ef8c17d7}} 
+\hyperlink{classez_1_1arguments_1_1Argument}{Argument} $\ast$ {\bfseries add\+\_\+integer} (text long\+\_\+label, char short\+\_\+label, integer $\ast$value, text description, trigger\+\_\+t trigger=nullptr)
+\item 
+\mbox{\Hypertarget{classez_1_1arguments_1_1ArgumentParser_abd978af3aacae6c47a019bad89b6afde}\label{classez_1_1arguments_1_1ArgumentParser_abd978af3aacae6c47a019bad89b6afde}} 
+\hyperlink{classez_1_1arguments_1_1Argument}{Argument} $\ast$ {\bfseries add\+\_\+natural} (text long\+\_\+label, char short\+\_\+label, natural $\ast$value, text description, trigger\+\_\+t trigger=nullptr)
+\item 
+\mbox{\Hypertarget{classez_1_1arguments_1_1ArgumentParser_a849cbf117f92a755497fb37e206bf320}\label{classez_1_1arguments_1_1ArgumentParser_a849cbf117f92a755497fb37e206bf320}} 
+\hyperlink{classez_1_1arguments_1_1Argument}{Argument} $\ast$ {\bfseries add\+\_\+real} (text long\+\_\+label, char short\+\_\+label, real $\ast$value, text description, trigger\+\_\+t trigger=nullptr)
+\item 
+\mbox{\Hypertarget{classez_1_1arguments_1_1ArgumentParser_ac90051ff2c8c2d6195336a733eb9441a}\label{classez_1_1arguments_1_1ArgumentParser_ac90051ff2c8c2d6195336a733eb9441a}} 
+\hyperlink{classez_1_1arguments_1_1Argument}{Argument} $\ast$ {\bfseries add\+\_\+real\+\_\+range} (text long\+\_\+label, char short\+\_\+label, real $\ast$value, real mini, real maxi, text description, trigger\+\_\+t trigger=nullptr)
+\item 
+\mbox{\Hypertarget{classez_1_1arguments_1_1ArgumentParser_a28980f736205a085e955715079c82efa}\label{classez_1_1arguments_1_1ArgumentParser_a28980f736205a085e955715079c82efa}} 
+\hyperlink{classez_1_1arguments_1_1Argument}{Argument} $\ast$ {\bfseries add\+\_\+integer\+\_\+range} (text long\+\_\+label, char short\+\_\+label, integer $\ast$value, integer mini, integer maxi, text description, trigger\+\_\+t trigger=nullptr)
+\item 
+\mbox{\Hypertarget{classez_1_1arguments_1_1ArgumentParser_acc784dd4d36c9682ee1e7f4d466ba0aa}\label{classez_1_1arguments_1_1ArgumentParser_acc784dd4d36c9682ee1e7f4d466ba0aa}} 
+\hyperlink{classez_1_1arguments_1_1Argument}{Argument} $\ast$ {\bfseries add\+\_\+natural\+\_\+range} (text long\+\_\+label, char short\+\_\+label, natural $\ast$value, natural mini, natural maxi, text description, trigger\+\_\+t trigger=nullptr)
+\item 
+\mbox{\Hypertarget{classez_1_1arguments_1_1ArgumentParser_aabc8b35a31dd61bc334ae5d6213730fb}\label{classez_1_1arguments_1_1ArgumentParser_aabc8b35a31dd61bc334ae5d6213730fb}} 
+\hyperlink{classez_1_1arguments_1_1Argument}{Argument} $\ast$ {\bfseries add\+\_\+text} (text long\+\_\+label, char short\+\_\+label, text $\ast$value, text description, trigger\+\_\+t trigger=nullptr)
+\item 
+\mbox{\Hypertarget{classez_1_1arguments_1_1ArgumentParser_a222f678cf331cc55c463386f1ff52519}\label{classez_1_1arguments_1_1ArgumentParser_a222f678cf331cc55c463386f1ff52519}} 
+\hyperlink{classez_1_1arguments_1_1Argument}{Argument} $\ast$ {\bfseries add\+\_\+options} (text long\+\_\+label, char short\+\_\+label, natural $\ast$value, vector$<$ text $>$ \&options, text description, trigger\+\_\+t trigger=nullptr)
+\item 
+\mbox{\Hypertarget{classez_1_1arguments_1_1ArgumentParser_a9b8b290a07eac311665f91851b9d7b3d}\label{classez_1_1arguments_1_1ArgumentParser_a9b8b290a07eac311665f91851b9d7b3d}} 
+natural {\bfseries nbr\+\_\+arguments} ()
+\item 
+void \hyperlink{classez_1_1arguments_1_1ArgumentParser_a740720f7b71d51c66b2211689cccf595}{parse} ()
+\item 
+void \hyperlink{classez_1_1arguments_1_1ArgumentParser_a19a161953f44e5f8c02ad53c4f9c660b}{report\+\_\+error} (exception \&e)
+\end{DoxyCompactItemize}
+\subsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{classez_1_1arguments_1_1ArgumentParser_ac9a85ce0fb70333c02c19cb0310fe685}{print\+\_\+synopsis} (ostream \&out)
+\item 
+void \hyperlink{classez_1_1arguments_1_1ArgumentParser_a6bd8d09ae905811e2dc082f0574cbcbf}{print\+\_\+synopsis\+\_\+text} (ostream \&out, integer level, text s, natural length)
+\item 
+bool \hyperlink{classez_1_1arguments_1_1ArgumentParser_ace31a847d871c5c6c85db03716fa7047}{has\+\_\+to\+\_\+show\+\_\+synopsis} ()
+\item 
+void \hyperlink{classez_1_1arguments_1_1ArgumentParser_a0eedf118bbdf897606e5a0ebf6183102}{set\+\_\+has\+\_\+to\+\_\+show\+\_\+synopsis} (bool v)
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classez_1_1arguments_1_1ArgumentParser_a4658e78bae4efc91e96e5cc59c87d6b0}\label{classez_1_1arguments_1_1ArgumentParser_a4658e78bae4efc91e96e5cc59c87d6b0}} 
+integer {\bfseries m\+\_\+argc}
+\item 
+\mbox{\Hypertarget{classez_1_1arguments_1_1ArgumentParser_acca763aec1698533801e9d5e6bf6449d}\label{classez_1_1arguments_1_1ArgumentParser_acca763aec1698533801e9d5e6bf6449d}} 
+char $\ast$$\ast$ {\bfseries m\+\_\+argv}
+\item 
+\mbox{\Hypertarget{classez_1_1arguments_1_1ArgumentParser_ae08ee53ae5d4e14eff0a10fe9733d64e}\label{classez_1_1arguments_1_1ArgumentParser_ae08ee53ae5d4e14eff0a10fe9733d64e}} 
+vector$<$ \hyperlink{classez_1_1arguments_1_1Argument}{Argument} $\ast$ $>$ {\bfseries m\+\_\+arguments}
+\item 
+\mbox{\Hypertarget{classez_1_1arguments_1_1ArgumentParser_a61af5842e72678ca60e2398b2d01a95e}\label{classez_1_1arguments_1_1ArgumentParser_a61af5842e72678ca60e2398b2d01a95e}} 
+map$<$ text, \hyperlink{classez_1_1arguments_1_1Argument}{Argument} $\ast$ $>$ {\bfseries m\+\_\+map\+\_\+long}
+\item 
+\mbox{\Hypertarget{classez_1_1arguments_1_1ArgumentParser_ab97373f07e03f89aa32d46c60192bd52}\label{classez_1_1arguments_1_1ArgumentParser_ab97373f07e03f89aa32d46c60192bd52}} 
+map$<$ char, \hyperlink{classez_1_1arguments_1_1Argument}{Argument} $\ast$ $>$ {\bfseries m\+\_\+map\+\_\+short}
+\item 
+\mbox{\Hypertarget{classez_1_1arguments_1_1ArgumentParser_a2d1acf92339872ca0f11f050c65fb54d}\label{classez_1_1arguments_1_1ArgumentParser_a2d1acf92339872ca0f11f050c65fb54d}} 
+text {\bfseries m\+\_\+program\+\_\+name}
+\item 
+\mbox{\Hypertarget{classez_1_1arguments_1_1ArgumentParser_a47fc986ac8638c60e672d78a8643a61e}\label{classez_1_1arguments_1_1ArgumentParser_a47fc986ac8638c60e672d78a8643a61e}} 
+text {\bfseries m\+\_\+program\+\_\+desc}
+\item 
+\mbox{\Hypertarget{classez_1_1arguments_1_1ArgumentParser_aba046f65a9ba3e8b8a241e70f962f2ca}\label{classez_1_1arguments_1_1ArgumentParser_aba046f65a9ba3e8b8a241e70f962f2ca}} 
+\hyperlink{classez_1_1arguments_1_1Argument}{Argument} $\ast$ {\bfseries m\+\_\+help\+\_\+command}
+\item 
+\mbox{\Hypertarget{classez_1_1arguments_1_1ArgumentParser_a210b2bf9e058ee0f432cd50e1df3f62e}\label{classez_1_1arguments_1_1ArgumentParser_a210b2bf9e058ee0f432cd50e1df3f62e}} 
+\hyperlink{classez_1_1arguments_1_1Argument}{Argument} $\ast$ {\bfseries m\+\_\+output\+\_\+command}
+\item 
+\mbox{\Hypertarget{classez_1_1arguments_1_1ArgumentParser_a37c866a8951dd8e493f7f87162304d1f}\label{classez_1_1arguments_1_1ArgumentParser_a37c866a8951dd8e493f7f87162304d1f}} 
+bool {\bfseries m\+\_\+show\+\_\+synopsis}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+main class to treat command line arguments of argv 
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classez_1_1arguments_1_1ArgumentParser_a30376da1d4671529adc656a9feee49e7}\label{classez_1_1arguments_1_1ArgumentParser_a30376da1d4671529adc656a9feee49e7}} 
+\index{ez\+::arguments\+::\+Argument\+Parser@{ez\+::arguments\+::\+Argument\+Parser}!Argument\+Parser@{Argument\+Parser}}
+\index{Argument\+Parser@{Argument\+Parser}!ez\+::arguments\+::\+Argument\+Parser@{ez\+::arguments\+::\+Argument\+Parser}}
+\subsubsection{\texorpdfstring{Argument\+Parser()}{ArgumentParser()}}
+{\footnotesize\ttfamily Argument\+Parser\+::\+Argument\+Parser (\begin{DoxyParamCaption}\item[{text}]{program\+\_\+name,  }\item[{text}]{description,  }\item[{integer}]{argc,  }\item[{char $\ast$}]{argv\mbox{[}$\,$\mbox{]} }\end{DoxyParamCaption})}
+
+constructor with argc and argv 
+\begin{DoxyParams}{Parameters}
+{\em program\+\_\+name} & name of program \\
+\hline
+{\em description} & description of what the program does \\
+\hline
+{\em argc} & number of command line arguments \\
+\hline
+{\em argv} & array of text of command line arguments \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classez_1_1arguments_1_1ArgumentParser_aa14a00ee3b14e5d3c4ffa5b409d03274}\label{classez_1_1arguments_1_1ArgumentParser_aa14a00ee3b14e5d3c4ffa5b409d03274}} 
+\index{ez\+::arguments\+::\+Argument\+Parser@{ez\+::arguments\+::\+Argument\+Parser}!add@{add}}
+\index{add@{add}!ez\+::arguments\+::\+Argument\+Parser@{ez\+::arguments\+::\+Argument\+Parser}}
+\subsubsection{\texorpdfstring{add()}{add()}}
+{\footnotesize\ttfamily \hyperlink{classez_1_1arguments_1_1Argument}{Argument} $\ast$ Argument\+Parser\+::add (\begin{DoxyParamCaption}\item[{\hyperlink{classez_1_1arguments_1_1Argument}{Argument} $\ast$}]{arg }\end{DoxyParamCaption})}
+
+add new type of argument we check if the new argument to add does not have a short or long label equal to one of the existing arguments if it is a Label\+Argument we check if all options are different 
+\begin{DoxyParams}{Parameters}
+{\em arg} & pointer to new argument \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classez_1_1arguments_1_1ArgumentParser_ace31a847d871c5c6c85db03716fa7047}\label{classez_1_1arguments_1_1ArgumentParser_ace31a847d871c5c6c85db03716fa7047}} 
+\index{ez\+::arguments\+::\+Argument\+Parser@{ez\+::arguments\+::\+Argument\+Parser}!has\+\_\+to\+\_\+show\+\_\+synopsis@{has\+\_\+to\+\_\+show\+\_\+synopsis}}
+\index{has\+\_\+to\+\_\+show\+\_\+synopsis@{has\+\_\+to\+\_\+show\+\_\+synopsis}!ez\+::arguments\+::\+Argument\+Parser@{ez\+::arguments\+::\+Argument\+Parser}}
+\subsubsection{\texorpdfstring{has\+\_\+to\+\_\+show\+\_\+synopsis()}{has\_to\_show\_synopsis()}}
+{\footnotesize\ttfamily bool ez\+::arguments\+::\+Argument\+Parser\+::has\+\_\+to\+\_\+show\+\_\+synopsis (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [protected]}}
+
+return if we can print synopsis \mbox{\Hypertarget{classez_1_1arguments_1_1ArgumentParser_a740720f7b71d51c66b2211689cccf595}\label{classez_1_1arguments_1_1ArgumentParser_a740720f7b71d51c66b2211689cccf595}} 
+\index{ez\+::arguments\+::\+Argument\+Parser@{ez\+::arguments\+::\+Argument\+Parser}!parse@{parse}}
+\index{parse@{parse}!ez\+::arguments\+::\+Argument\+Parser@{ez\+::arguments\+::\+Argument\+Parser}}
+\subsubsection{\texorpdfstring{parse()}{parse()}}
+{\footnotesize\ttfamily void Argument\+Parser\+::parse (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+parse argv throw Exception in case of error \mbox{\Hypertarget{classez_1_1arguments_1_1ArgumentParser_ac9a85ce0fb70333c02c19cb0310fe685}\label{classez_1_1arguments_1_1ArgumentParser_ac9a85ce0fb70333c02c19cb0310fe685}} 
+\index{ez\+::arguments\+::\+Argument\+Parser@{ez\+::arguments\+::\+Argument\+Parser}!print\+\_\+synopsis@{print\+\_\+synopsis}}
+\index{print\+\_\+synopsis@{print\+\_\+synopsis}!ez\+::arguments\+::\+Argument\+Parser@{ez\+::arguments\+::\+Argument\+Parser}}
+\subsubsection{\texorpdfstring{print\+\_\+synopsis()}{print\_synopsis()}}
+{\footnotesize\ttfamily void Argument\+Parser\+::print\+\_\+synopsis (\begin{DoxyParamCaption}\item[{ostream \&}]{out }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+print synopsis of command 
+\begin{DoxyParams}{Parameters}
+{\em out} & output stream \\
+\hline
+{\em prog\+\_\+name} & name of program \\
+\hline
+{\em descr} & description of program (ex for ls \+: list directory contents) \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classez_1_1arguments_1_1ArgumentParser_a6bd8d09ae905811e2dc082f0574cbcbf}\label{classez_1_1arguments_1_1ArgumentParser_a6bd8d09ae905811e2dc082f0574cbcbf}} 
+\index{ez\+::arguments\+::\+Argument\+Parser@{ez\+::arguments\+::\+Argument\+Parser}!print\+\_\+synopsis\+\_\+text@{print\+\_\+synopsis\+\_\+text}}
+\index{print\+\_\+synopsis\+\_\+text@{print\+\_\+synopsis\+\_\+text}!ez\+::arguments\+::\+Argument\+Parser@{ez\+::arguments\+::\+Argument\+Parser}}
+\subsubsection{\texorpdfstring{print\+\_\+synopsis\+\_\+text()}{print\_synopsis\_text()}}
+{\footnotesize\ttfamily void Argument\+Parser\+::print\+\_\+synopsis\+\_\+text (\begin{DoxyParamCaption}\item[{ostream \&}]{out,  }\item[{integer}]{level,  }\item[{text}]{s,  }\item[{natural}]{length }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+print text with given display length \mbox{\Hypertarget{classez_1_1arguments_1_1ArgumentParser_a19a161953f44e5f8c02ad53c4f9c660b}\label{classez_1_1arguments_1_1ArgumentParser_a19a161953f44e5f8c02ad53c4f9c660b}} 
+\index{ez\+::arguments\+::\+Argument\+Parser@{ez\+::arguments\+::\+Argument\+Parser}!report\+\_\+error@{report\+\_\+error}}
+\index{report\+\_\+error@{report\+\_\+error}!ez\+::arguments\+::\+Argument\+Parser@{ez\+::arguments\+::\+Argument\+Parser}}
+\subsubsection{\texorpdfstring{report\+\_\+error()}{report\_error()}}
+{\footnotesize\ttfamily void Argument\+Parser\+::report\+\_\+error (\begin{DoxyParamCaption}\item[{exception \&}]{e }\end{DoxyParamCaption})}
+
+report error \mbox{\Hypertarget{classez_1_1arguments_1_1ArgumentParser_a0eedf118bbdf897606e5a0ebf6183102}\label{classez_1_1arguments_1_1ArgumentParser_a0eedf118bbdf897606e5a0ebf6183102}} 
+\index{ez\+::arguments\+::\+Argument\+Parser@{ez\+::arguments\+::\+Argument\+Parser}!set\+\_\+has\+\_\+to\+\_\+show\+\_\+synopsis@{set\+\_\+has\+\_\+to\+\_\+show\+\_\+synopsis}}
+\index{set\+\_\+has\+\_\+to\+\_\+show\+\_\+synopsis@{set\+\_\+has\+\_\+to\+\_\+show\+\_\+synopsis}!ez\+::arguments\+::\+Argument\+Parser@{ez\+::arguments\+::\+Argument\+Parser}}
+\subsubsection{\texorpdfstring{set\+\_\+has\+\_\+to\+\_\+show\+\_\+synopsis()}{set\_has\_to\_show\_synopsis()}}
+{\footnotesize\ttfamily void ez\+::arguments\+::\+Argument\+Parser\+::set\+\_\+has\+\_\+to\+\_\+show\+\_\+synopsis (\begin{DoxyParamCaption}\item[{bool}]{v }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [protected]}}
+
+tell if we can show synopsis 
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+src/version\+\_\+2018.\+06/arguments/argument\+\_\+parser.\+h\item 
+src/version\+\_\+2018.\+06/arguments/argument\+\_\+parser.\+cpp\end{DoxyCompactItemize}

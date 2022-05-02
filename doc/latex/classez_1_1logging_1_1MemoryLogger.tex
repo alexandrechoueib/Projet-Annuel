@@ -1,0 +1,99 @@
+\hypertarget{classez_1_1logging_1_1MemoryLogger}{}\section{ez\+:\+:logging\+:\+:Memory\+Logger Class Reference}
+\label{classez_1_1logging_1_1MemoryLogger}\index{ez\+::logging\+::\+Memory\+Logger@{ez\+::logging\+::\+Memory\+Logger}}
+
+
+{\ttfamily \#include $<$logger.\+h$>$}
+
+
+
+Inheritance diagram for ez\+:\+:logging\+:\+:Memory\+Logger\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=214pt]{classez_1_1logging_1_1MemoryLogger__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for ez\+:\+:logging\+:\+:Memory\+Logger\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=214pt]{classez_1_1logging_1_1MemoryLogger__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classez_1_1logging_1_1MemoryLogger_a721c1b62885a86e68819cb931c925f75}{Memory\+Logger} (std\+::string name)
+\item 
+\hyperlink{classez_1_1logging_1_1MemoryLogger_a421c0b502e122f86d5c5fbfa1660d6ee}{$\sim$\+Memory\+Logger} ()
+\item 
+std\+::string \hyperlink{classez_1_1logging_1_1MemoryLogger_aa4f77cc6ac0e272ce749b9bb4b939840}{get\+\_\+contents} ()
+\item 
+void \hyperlink{classez_1_1logging_1_1MemoryLogger_afa6c630d5e6334495f05727cdb7c3b16}{clear} ()
+\item 
+\mbox{\Hypertarget{classez_1_1logging_1_1MemoryLogger_a31cc1a88c8ee64447268ce7f46b042a1}\label{classez_1_1logging_1_1MemoryLogger_a31cc1a88c8ee64447268ce7f46b042a1}} 
+\hyperlink{classez_1_1logging_1_1MemoryLogger}{Memory\+Logger} \& {\bfseries operator$<$$<$} (std\+::string \&s)
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+std\+::ostringstream \hyperlink{classez_1_1logging_1_1MemoryLogger_a45fc2a111c72be27408aef6c7a466dc0}{m\+\_\+output\+\_\+stream}
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+\hyperlink{classez_1_1logging_1_1Logger}{Logger} for which information is kept in memory 
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classez_1_1logging_1_1MemoryLogger_a721c1b62885a86e68819cb931c925f75}\label{classez_1_1logging_1_1MemoryLogger_a721c1b62885a86e68819cb931c925f75}} 
+\index{ez\+::logging\+::\+Memory\+Logger@{ez\+::logging\+::\+Memory\+Logger}!Memory\+Logger@{Memory\+Logger}}
+\index{Memory\+Logger@{Memory\+Logger}!ez\+::logging\+::\+Memory\+Logger@{ez\+::logging\+::\+Memory\+Logger}}
+\subsubsection{\texorpdfstring{Memory\+Logger()}{MemoryLogger()}}
+{\footnotesize\ttfamily Memory\+Logger\+::\+Memory\+Logger (\begin{DoxyParamCaption}\item[{std\+::string}]{name }\end{DoxyParamCaption})}
+
+constructor 
+\begin{DoxyParams}{Parameters}
+{\em name} & identifier of the logger \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classez_1_1logging_1_1MemoryLogger_a421c0b502e122f86d5c5fbfa1660d6ee}\label{classez_1_1logging_1_1MemoryLogger_a421c0b502e122f86d5c5fbfa1660d6ee}} 
+\index{ez\+::logging\+::\+Memory\+Logger@{ez\+::logging\+::\+Memory\+Logger}!````~Memory\+Logger@{$\sim$\+Memory\+Logger}}
+\index{````~Memory\+Logger@{$\sim$\+Memory\+Logger}!ez\+::logging\+::\+Memory\+Logger@{ez\+::logging\+::\+Memory\+Logger}}
+\subsubsection{\texorpdfstring{$\sim$\+Memory\+Logger()}{~MemoryLogger()}}
+{\footnotesize\ttfamily Memory\+Logger\+::$\sim$\+Memory\+Logger (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+destructor 
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classez_1_1logging_1_1MemoryLogger_afa6c630d5e6334495f05727cdb7c3b16}\label{classez_1_1logging_1_1MemoryLogger_afa6c630d5e6334495f05727cdb7c3b16}} 
+\index{ez\+::logging\+::\+Memory\+Logger@{ez\+::logging\+::\+Memory\+Logger}!clear@{clear}}
+\index{clear@{clear}!ez\+::logging\+::\+Memory\+Logger@{ez\+::logging\+::\+Memory\+Logger}}
+\subsubsection{\texorpdfstring{clear()}{clear()}}
+{\footnotesize\ttfamily void Memory\+Logger\+::clear (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+clear information stored \mbox{\Hypertarget{classez_1_1logging_1_1MemoryLogger_aa4f77cc6ac0e272ce749b9bb4b939840}\label{classez_1_1logging_1_1MemoryLogger_aa4f77cc6ac0e272ce749b9bb4b939840}} 
+\index{ez\+::logging\+::\+Memory\+Logger@{ez\+::logging\+::\+Memory\+Logger}!get\+\_\+contents@{get\+\_\+contents}}
+\index{get\+\_\+contents@{get\+\_\+contents}!ez\+::logging\+::\+Memory\+Logger@{ez\+::logging\+::\+Memory\+Logger}}
+\subsubsection{\texorpdfstring{get\+\_\+contents()}{get\_contents()}}
+{\footnotesize\ttfamily string Memory\+Logger\+::get\+\_\+contents (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+get contents 
+
+\subsection{Field Documentation}
+\mbox{\Hypertarget{classez_1_1logging_1_1MemoryLogger_a45fc2a111c72be27408aef6c7a466dc0}\label{classez_1_1logging_1_1MemoryLogger_a45fc2a111c72be27408aef6c7a466dc0}} 
+\index{ez\+::logging\+::\+Memory\+Logger@{ez\+::logging\+::\+Memory\+Logger}!m\+\_\+output\+\_\+stream@{m\+\_\+output\+\_\+stream}}
+\index{m\+\_\+output\+\_\+stream@{m\+\_\+output\+\_\+stream}!ez\+::logging\+::\+Memory\+Logger@{ez\+::logging\+::\+Memory\+Logger}}
+\subsubsection{\texorpdfstring{m\+\_\+output\+\_\+stream}{m\_output\_stream}}
+{\footnotesize\ttfamily std\+::ostringstream ez\+::logging\+::\+Memory\+Logger\+::m\+\_\+output\+\_\+stream\hspace{0.3cm}{\ttfamily [protected]}}
+
+ostringstream used to store information 
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+src/version\+\_\+2018.\+06/logging/logger.\+h\item 
+src/version\+\_\+2018.\+06/logging/logger.\+cpp\end{DoxyCompactItemize}

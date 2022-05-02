@@ -1,0 +1,40 @@
+#!/bin/bash
+# Description: send archive of the project to different 
+#              computation nodes and execute performance
+#              tests
+# Author: Jean-Michel Richer
+
+configuration_file="app/config.ezp"
+my_project_name=`cat $configuration_file | grep "MY_PROJECT_NAME" | cut -d'=' -f2`
+my_user=`cat $configuration_file | grep "MY_USER" | cut -d'=' -f2`
+my_server=`cat $configuration_file | grep "MY_SERVER" | cut -d'=' -f2`
+my_remote_dir=`cat $configuration_file | grep "MY_REMOTE_DIRECTORY" | cut -d'=' -f2`
+
+echo "============================="
+echo "copy archive to compute nodes"
+echo "============================="
+
+if test $# -lt 1 ; then
+	echo  "!!! error: list of nodes required !!!"
+	echo  "for example use: compute1 compute2 192.168.0.3"
+	exit 99
+fi
+
+# generate archive and get back name
+archive=`make archive | grep "file:" | cut -d':' -f2`
+archive_name=`basename $archive`
+
+if test -z "$archive" ; then
+	echo "!!! error: archive was not generated properly !!!"
+		exit 99	
+fi
+
+
+for node in $* ; do
+	user_node="richer@$node"
+	user_node_dir="${my_user}@${node}:${my_remote_dir}"
+	echo "copy to node $node"
+	rsync -arvzhe ssh $archive $user_node_dir 
+	ssh $user_node tar -xvzf ${my_remote_dir}/${archive_name} -C ${my_remote_dir}
+	ssh -f $user_node "cd ${my_remote_dir}/${my_project_name}; make run_all &" >/dev/null 2>&1
+done

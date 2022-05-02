@@ -1,0 +1,188 @@
+\hypertarget{classez_1_1objects_1_1Stack}{}\section{ez\+:\+:objects\+:\+:Stack$<$ Data\+Type $>$ Class Template Reference}
+\label{classez_1_1objects_1_1Stack}\index{ez\+::objects\+::\+Stack$<$ Data\+Type $>$@{ez\+::objects\+::\+Stack$<$ Data\+Type $>$}}
+
+
+Inheritance diagram for ez\+:\+:objects\+:\+:Stack$<$ Data\+Type $>$\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=325pt]{classez_1_1objects_1_1Stack__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for ez\+:\+:objects\+:\+:Stack$<$ Data\+Type $>$\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=325pt]{classez_1_1objects_1_1Stack__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classez_1_1objects_1_1Stack_a906d00cfa314ec73d3d0d55ab65876d5}\label{classez_1_1objects_1_1Stack_a906d00cfa314ec73d3d0d55ab65876d5}} 
+typedef \hyperlink{classez_1_1objects_1_1Stack}{Stack}$<$ Data\+Type $>$ {\bfseries self}
+\item 
+\mbox{\Hypertarget{classez_1_1objects_1_1Stack_ac5007b3065c1b9dd8907d20a32437f27}\label{classez_1_1objects_1_1Stack_ac5007b3065c1b9dd8907d20a32437f27}} 
+typedef std\+::vector$<$ Data\+Type $>$\+::iterator {\bfseries iterator}
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classez_1_1objects_1_1Stack_a7ec9250560820f1e2d3a2d038ce5fc87}\label{classez_1_1objects_1_1Stack_a7ec9250560820f1e2d3a2d038ce5fc87}} 
+{\bfseries Stack} (natural n)
+\item 
+\mbox{\Hypertarget{classez_1_1objects_1_1Stack_afa887dca608226e840113ffe385eedad}\label{classez_1_1objects_1_1Stack_afa887dca608226e840113ffe385eedad}} 
+{\bfseries Stack} (const \hyperlink{classez_1_1objects_1_1Stack}{Stack}$<$ Data\+Type $>$ \&obj)
+\item 
+\mbox{\Hypertarget{classez_1_1objects_1_1Stack_a06d40590e7ef4db16d0de57c13033e8a}\label{classez_1_1objects_1_1Stack_a06d40590e7ef4db16d0de57c13033e8a}} 
+\hyperlink{classez_1_1objects_1_1Stack}{Stack}$<$ Data\+Type $>$ \& {\bfseries operator=} (const \hyperlink{classez_1_1objects_1_1Stack}{Stack}$<$ Data\+Type $>$ \&obj)
+\item 
+\mbox{\Hypertarget{classez_1_1objects_1_1Stack_af121f5e133d5ede9df531a167d5c0056}\label{classez_1_1objects_1_1Stack_af121f5e133d5ede9df531a167d5c0056}} 
+{\bfseries Stack} (const std\+::initializer\+\_\+list$<$ Data\+Type $>$ \&l)
+\item 
+natural \hyperlink{classez_1_1objects_1_1Stack_a470a691a71af423a7d30719fd71cd385}{size} ()
+\item 
+\mbox{\Hypertarget{classez_1_1objects_1_1Stack_acbf3f1637d3f9ec6ed25e55464754203}\label{classez_1_1objects_1_1Stack_acbf3f1637d3f9ec6ed25e55464754203}} 
+void {\bfseries push} (Data\+Type x)
+\item 
+\mbox{\Hypertarget{classez_1_1objects_1_1Stack_afbe2a20dc5e61d9b3dc733e723d47835}\label{classez_1_1objects_1_1Stack_afbe2a20dc5e61d9b3dc733e723d47835}} 
+Data\+Type {\bfseries top} ()
+\item 
+\mbox{\Hypertarget{classez_1_1objects_1_1Stack_a97cf074a70d3da1cb2563fd9913760ab}\label{classez_1_1objects_1_1Stack_a97cf074a70d3da1cb2563fd9913760ab}} 
+Data\+Type \& {\bfseries operator\mbox{[}$\,$\mbox{]}} (integer pos)
+\item 
+\mbox{\Hypertarget{classez_1_1objects_1_1Stack_ac5896788d796c7b7d704f95713c0c4cf}\label{classez_1_1objects_1_1Stack_ac5896788d796c7b7d704f95713c0c4cf}} 
+void {\bfseries pop} ()
+\item 
+void \hyperlink{classez_1_1objects_1_1Stack_a99dd22aaeedd73fb044aaf22c3cf12ac}{print} (std\+::ostream \&stream) override
+\item 
+void \hyperlink{classez_1_1objects_1_1Stack_a5df9f4c84fff1e025c094219765d0032}{output} (std\+::ostream \&stream) override
+\item 
+void \hyperlink{classez_1_1objects_1_1Stack_a3e9796e6bbad1be135c1911e20ec4a8a}{input} (std\+::istream \&stream) override
+\item 
+integer \hyperlink{classez_1_1objects_1_1Stack_a47b43cce6f59f79ffa0b344c109aae35}{compare} (const \hyperlink{classez_1_1objects_1_1Object}{Object} \&y) override
+\item 
+\hyperlink{classez_1_1objects_1_1Object}{Object} $\ast$ \hyperlink{classez_1_1objects_1_1Stack_a350a12fecda720df715bf1d773e1a696}{clone} () override
+\item 
+bool \hyperlink{classez_1_1objects_1_1Stack_a62bd262732579e443d8147d2c2072801}{is\+\_\+empty} ()
+\item 
+\mbox{\Hypertarget{classez_1_1objects_1_1Stack_a4414d3d2d13a73911ee1d757b355e8e7}\label{classez_1_1objects_1_1Stack_a4414d3d2d13a73911ee1d757b355e8e7}} 
+void {\bfseries fill} (Data\+Type value)
+\item 
+\mbox{\Hypertarget{classez_1_1objects_1_1Stack_ae001e301e27ddc504dd0cc667983d2a8}\label{classez_1_1objects_1_1Stack_ae001e301e27ddc504dd0cc667983d2a8}} 
+void {\bfseries fill} (Data\+Type($\ast$genf)())
+\item 
+\mbox{\Hypertarget{classez_1_1objects_1_1Stack_adcc7a36c042ada8b1b2bcd617dbb398e}\label{classez_1_1objects_1_1Stack_adcc7a36c042ada8b1b2bcd617dbb398e}} 
+{\footnotesize template$<$class Generator $>$ }\\void {\bfseries generate} (Generator g)
+\item 
+\mbox{\Hypertarget{classez_1_1objects_1_1Stack_ab96e4ada2a46bc2e289db328410336cd}\label{classez_1_1objects_1_1Stack_ab96e4ada2a46bc2e289db328410336cd}} 
+void {\bfseries iota} (Data\+Type value)
+\item 
+\mbox{\Hypertarget{classez_1_1objects_1_1Stack_affbb9c01491fcbe1fc851cf56576ce84}\label{classez_1_1objects_1_1Stack_affbb9c01491fcbe1fc851cf56576ce84}} 
+Data\+Type {\bfseries sum} (Data\+Type zero)
+\item 
+\mbox{\Hypertarget{classez_1_1objects_1_1Stack_a789253aaca87582d927884bff7db493f}\label{classez_1_1objects_1_1Stack_a789253aaca87582d927884bff7db493f}} 
+void {\bfseries sort} ()
+\item 
+\mbox{\Hypertarget{classez_1_1objects_1_1Stack_ae4e2bca96040e0ccf39f16e3ff4518c8}\label{classez_1_1objects_1_1Stack_ae4e2bca96040e0ccf39f16e3ff4518c8}} 
+iterator {\bfseries begin} ()
+\item 
+\mbox{\Hypertarget{classez_1_1objects_1_1Stack_ae6a56ad1a1a2bfee1bb587ed9f638f31}\label{classez_1_1objects_1_1Stack_ae6a56ad1a1a2bfee1bb587ed9f638f31}} 
+iterator {\bfseries end} ()
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classez_1_1objects_1_1Stack_a3f486f3a1f105bb7ccf85ba324fa50d1}\label{classez_1_1objects_1_1Stack_a3f486f3a1f105bb7ccf85ba324fa50d1}} 
+std\+::vector$<$ Data\+Type $>$ {\bfseries data}
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classez_1_1objects_1_1Stack_a350a12fecda720df715bf1d773e1a696}\label{classez_1_1objects_1_1Stack_a350a12fecda720df715bf1d773e1a696}} 
+\index{ez\+::objects\+::\+Stack@{ez\+::objects\+::\+Stack}!clone@{clone}}
+\index{clone@{clone}!ez\+::objects\+::\+Stack@{ez\+::objects\+::\+Stack}}
+\subsubsection{\texorpdfstring{clone()}{clone()}}
+{\footnotesize\ttfamily template$<$class Data\+Type$>$ \\
+\hyperlink{classez_1_1objects_1_1Object}{Object}$\ast$ \hyperlink{classez_1_1objects_1_1Stack}{ez\+::objects\+::\+Stack}$<$ Data\+Type $>$\+::clone (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [override]}, {\ttfamily [virtual]}}
+
+return a copy of the object 
+
+Reimplemented from \hyperlink{classez_1_1objects_1_1Object_acf444b2581d898eb4b8c92c2d5865c9e}{ez\+::objects\+::\+Object}.
+
+\mbox{\Hypertarget{classez_1_1objects_1_1Stack_a47b43cce6f59f79ffa0b344c109aae35}\label{classez_1_1objects_1_1Stack_a47b43cce6f59f79ffa0b344c109aae35}} 
+\index{ez\+::objects\+::\+Stack@{ez\+::objects\+::\+Stack}!compare@{compare}}
+\index{compare@{compare}!ez\+::objects\+::\+Stack@{ez\+::objects\+::\+Stack}}
+\subsubsection{\texorpdfstring{compare()}{compare()}}
+{\footnotesize\ttfamily template$<$class Data\+Type$>$ \\
+integer \hyperlink{classez_1_1objects_1_1Stack}{ez\+::objects\+::\+Stack}$<$ Data\+Type $>$\+::compare (\begin{DoxyParamCaption}\item[{const \hyperlink{classez_1_1objects_1_1Object}{Object} \&}]{y }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [override]}, {\ttfamily [virtual]}}
+
+Compare two vectors 
+
+Reimplemented from \hyperlink{classez_1_1objects_1_1Object_aca311d389dffa204e425463145f4e1e6}{ez\+::objects\+::\+Object}.
+
+\mbox{\Hypertarget{classez_1_1objects_1_1Stack_a3e9796e6bbad1be135c1911e20ec4a8a}\label{classez_1_1objects_1_1Stack_a3e9796e6bbad1be135c1911e20ec4a8a}} 
+\index{ez\+::objects\+::\+Stack@{ez\+::objects\+::\+Stack}!input@{input}}
+\index{input@{input}!ez\+::objects\+::\+Stack@{ez\+::objects\+::\+Stack}}
+\subsubsection{\texorpdfstring{input()}{input()}}
+{\footnotesize\ttfamily template$<$class Data\+Type$>$ \\
+void \hyperlink{classez_1_1objects_1_1Stack}{ez\+::objects\+::\+Stack}$<$ Data\+Type $>$\+::input (\begin{DoxyParamCaption}\item[{std\+::istream \&}]{stream }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [override]}, {\ttfamily [virtual]}}
+
+this function is used to get the data field members of an object from a stream and acts as unserialize 
+
+Reimplemented from \hyperlink{classez_1_1objects_1_1Object_a878bdc53b7f16fda6fa15dab214c4b6a}{ez\+::objects\+::\+Object}.
+
+\mbox{\Hypertarget{classez_1_1objects_1_1Stack_a62bd262732579e443d8147d2c2072801}\label{classez_1_1objects_1_1Stack_a62bd262732579e443d8147d2c2072801}} 
+\index{ez\+::objects\+::\+Stack@{ez\+::objects\+::\+Stack}!is\+\_\+empty@{is\+\_\+empty}}
+\index{is\+\_\+empty@{is\+\_\+empty}!ez\+::objects\+::\+Stack@{ez\+::objects\+::\+Stack}}
+\subsubsection{\texorpdfstring{is\+\_\+empty()}{is\_empty()}}
+{\footnotesize\ttfamily template$<$class Data\+Type$>$ \\
+bool \hyperlink{classez_1_1objects_1_1Stack}{ez\+::objects\+::\+Stack}$<$ Data\+Type $>$\+::is\+\_\+empty (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+Return true if container has no element, false otherwise 
+
+Implements \hyperlink{classez_1_1objects_1_1Container_a205eb4f8a4fe967d425fdf04e5db5f93}{ez\+::objects\+::\+Container$<$ Data\+Type, natural $>$}.
+
+\mbox{\Hypertarget{classez_1_1objects_1_1Stack_a5df9f4c84fff1e025c094219765d0032}\label{classez_1_1objects_1_1Stack_a5df9f4c84fff1e025c094219765d0032}} 
+\index{ez\+::objects\+::\+Stack@{ez\+::objects\+::\+Stack}!output@{output}}
+\index{output@{output}!ez\+::objects\+::\+Stack@{ez\+::objects\+::\+Stack}}
+\subsubsection{\texorpdfstring{output()}{output()}}
+{\footnotesize\ttfamily template$<$class Data\+Type$>$ \\
+void \hyperlink{classez_1_1objects_1_1Stack}{ez\+::objects\+::\+Stack}$<$ Data\+Type $>$\+::output (\begin{DoxyParamCaption}\item[{std\+::ostream \&}]{stream }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [override]}, {\ttfamily [virtual]}}
+
+this function is used to print the contents of the object in a serializable manner 
+
+Reimplemented from \hyperlink{classez_1_1objects_1_1Object_a0fdfe18e6c35d6b0d7e7a01265aded15}{ez\+::objects\+::\+Object}.
+
+\mbox{\Hypertarget{classez_1_1objects_1_1Stack_a99dd22aaeedd73fb044aaf22c3cf12ac}\label{classez_1_1objects_1_1Stack_a99dd22aaeedd73fb044aaf22c3cf12ac}} 
+\index{ez\+::objects\+::\+Stack@{ez\+::objects\+::\+Stack}!print@{print}}
+\index{print@{print}!ez\+::objects\+::\+Stack@{ez\+::objects\+::\+Stack}}
+\subsubsection{\texorpdfstring{print()}{print()}}
+{\footnotesize\ttfamily template$<$class Data\+Type$>$ \\
+void \hyperlink{classez_1_1objects_1_1Stack}{ez\+::objects\+::\+Stack}$<$ Data\+Type $>$\+::print (\begin{DoxyParamCaption}\item[{std\+::ostream \&}]{stream }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [override]}, {\ttfamily [virtual]}}
+
+overloading of print method of class \hyperlink{classez_1_1objects_1_1Object}{Object} 
+
+Reimplemented from \hyperlink{classez_1_1objects_1_1Object_a9e20f39a78163f67f000576149d858b3}{ez\+::objects\+::\+Object}.
+
+\mbox{\Hypertarget{classez_1_1objects_1_1Stack_a470a691a71af423a7d30719fd71cd385}\label{classez_1_1objects_1_1Stack_a470a691a71af423a7d30719fd71cd385}} 
+\index{ez\+::objects\+::\+Stack@{ez\+::objects\+::\+Stack}!size@{size}}
+\index{size@{size}!ez\+::objects\+::\+Stack@{ez\+::objects\+::\+Stack}}
+\subsubsection{\texorpdfstring{size()}{size()}}
+{\footnotesize\ttfamily template$<$class Data\+Type$>$ \\
+natural \hyperlink{classez_1_1objects_1_1Stack}{ez\+::objects\+::\+Stack}$<$ Data\+Type $>$\+::size (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+Return size of container 
+
+Implements \hyperlink{classez_1_1objects_1_1Container_affd294810c6c29530d1d1e3c2151ad28}{ez\+::objects\+::\+Container$<$ Data\+Type, natural $>$}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+src/version\+\_\+2018.\+06/objects/stack.\+h\end{DoxyCompactItemize}

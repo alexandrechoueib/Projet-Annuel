@@ -1,0 +1,325 @@
+\hypertarget{classez_1_1objects_1_1Array}{}\section{ez\+:\+:objects\+:\+:Array$<$ Data\+Type $>$ Class Template Reference}
+\label{classez_1_1objects_1_1Array}\index{ez\+::objects\+::\+Array$<$ Data\+Type $>$@{ez\+::objects\+::\+Array$<$ Data\+Type $>$}}
+
+
+{\ttfamily \#include $<$array.\+h$>$}
+
+
+
+Inheritance diagram for ez\+:\+:objects\+:\+:Array$<$ Data\+Type $>$\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=310pt]{classez_1_1objects_1_1Array__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for ez\+:\+:objects\+:\+:Array$<$ Data\+Type $>$\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classez_1_1objects_1_1Array__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classez_1_1objects_1_1Array_aca95c7484bdd1ac9a1c80be3faa53ca4}\label{classez_1_1objects_1_1Array_aca95c7484bdd1ac9a1c80be3faa53ca4}} 
+typedef \hyperlink{classez_1_1objects_1_1Array}{Array}$<$ Data\+Type $>$ {\bfseries self}
+\item 
+\mbox{\Hypertarget{classez_1_1objects_1_1Array_ad9930b3ad47ac4f2165436a1a2509a35}\label{classez_1_1objects_1_1Array_ad9930b3ad47ac4f2165436a1a2509a35}} 
+typedef Data\+Type $\ast$ {\bfseries iterator}
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classez_1_1objects_1_1Array_a88ec7bab9f66c8fe7d97b4782a39ee84}{Array} ()
+\item 
+\hyperlink{classez_1_1objects_1_1Array_ab389febcc8d618c3b660fac1236898cb}{Array} (integer lo, integer hi)
+\item 
+\hyperlink{classez_1_1objects_1_1Array_a9ece37ee368a988a62351e8df1cdf220}{Array} (const \hyperlink{classez_1_1objects_1_1Array}{self} \&obj)
+\item 
+\hyperlink{classez_1_1objects_1_1Array_acc9a9ce3babaa4f1aa6d744304e2ccd0}{Array} (\hyperlink{classez_1_1essential_1_1Range}{Range} range)
+\item 
+\hyperlink{classez_1_1objects_1_1Array_a599e786f9331bd12c7eeef4a6e1ad043}{Array} (\hyperlink{classez_1_1essential_1_1Range}{Range} range, const std\+::initializer\+\_\+list$<$ Data\+Type $>$ \&l)
+\item 
+\hyperlink{classez_1_1objects_1_1Array_aa7998741d7bd1d2f92248846b39f5b2a}{$\sim$\+Array} ()
+\item 
+\hyperlink{classez_1_1objects_1_1Array}{self} \& \hyperlink{classez_1_1objects_1_1Array_a243625ca16cb6b1f7a7f68dc7a1922cf}{operator=} (const \hyperlink{classez_1_1objects_1_1Array}{self} \&obj)
+\item 
+void \hyperlink{classez_1_1objects_1_1Array_acdd164cad40bed068075550d943d19c2}{resize} (\hyperlink{classez_1_1essential_1_1Range}{Range} range)
+\item 
+bool \hyperlink{classez_1_1objects_1_1Array_a281b310f3f9f4140520b84c2315b1352}{is\+\_\+empty} ()
+\item 
+natural \hyperlink{classez_1_1objects_1_1Array_af3ac644ccc4058fb2e13797af274a3de}{size} ()
+\item 
+Data\+Type \& \hyperlink{classez_1_1objects_1_1Array_add86e335b90914397700e6f2cad45077}{operator\mbox{[}$\,$\mbox{]}} (integer n)
+\item 
+void \hyperlink{classez_1_1objects_1_1Array_a7f0707629712319837dc0cda091456b7}{print} (std\+::ostream \&stream) override
+\item 
+void \hyperlink{classez_1_1objects_1_1Array_a7f8b26dd8b96708d0a300a1f406ce336}{output} (std\+::ostream \&stream) override
+\item 
+void \hyperlink{classez_1_1objects_1_1Array_a438c2c6187dd5cce0dae9f303b34609c}{input} (std\+::istream \&stream) override
+\item 
+integer \hyperlink{classez_1_1objects_1_1Array_ac0d97a024e177f655b2f58981a68fcf8}{compare} (const \hyperlink{classez_1_1objects_1_1Object}{Object} \&y) override
+\item 
+\hyperlink{classez_1_1objects_1_1Object}{Object} $\ast$ \hyperlink{classez_1_1objects_1_1Array_a8618e73b6309573691b1fea690b8213a}{clone} () override
+\item 
+void \hyperlink{classez_1_1objects_1_1Array_a5ba81305951bfdef7454b3d3f11fc9d9}{fill} (Data\+Type value)
+\item 
+void \hyperlink{classez_1_1objects_1_1Array_aebeb0faa252f89e996f0b3a7250fa20b}{fill} (Data\+Type($\ast$genf)())
+\item 
+\mbox{\Hypertarget{classez_1_1objects_1_1Array_a935d5465ebb01aa797d16221cbd7a1ad}\label{classez_1_1objects_1_1Array_a935d5465ebb01aa797d16221cbd7a1ad}} 
+{\footnotesize template$<$class Generator $>$ }\\void {\bfseries generate} (Generator g)
+\item 
+\mbox{\Hypertarget{classez_1_1objects_1_1Array_a13efb7e2473aebcb151b35245351644d}\label{classez_1_1objects_1_1Array_a13efb7e2473aebcb151b35245351644d}} 
+iterator {\bfseries begin} ()
+\item 
+\mbox{\Hypertarget{classez_1_1objects_1_1Array_a66963da28335730f557d63b7b4793c7d}\label{classez_1_1objects_1_1Array_a66963da28335730f557d63b7b4793c7d}} 
+iterator {\bfseries end} ()
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classez_1_1objects_1_1Array_a407695d81a0d4b0109d1238ff448fdbc}\label{classez_1_1objects_1_1Array_a407695d81a0d4b0109d1238ff448fdbc}} 
+Data\+Type $\ast$ {\bfseries m\+\_\+data}
+\item 
+\mbox{\Hypertarget{classez_1_1objects_1_1Array_ad847a900350b845d2aee2325cb6c5441}\label{classez_1_1objects_1_1Array_ad847a900350b845d2aee2325cb6c5441}} 
+\hyperlink{classez_1_1essential_1_1Range}{ez\+::essential\+::\+Range} {\bfseries m\+\_\+x\+\_\+range}
+\item 
+\mbox{\Hypertarget{classez_1_1objects_1_1Array_a53f49eb0bd13bf6aef934319cf4f11b8}\label{classez_1_1objects_1_1Array_a53f49eb0bd13bf6aef934319cf4f11b8}} 
+natural {\bfseries m\+\_\+size}
+\end{DoxyCompactItemize}
+\subsection*{Friends}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classez_1_1objects_1_1Array_aeada2177993d302d67110286099e5ccc}\label{classez_1_1objects_1_1Array_aeada2177993d302d67110286099e5ccc}} 
+class {\bfseries Matrix2\+D$<$ Data\+Type $>$}
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+\subsubsection*{template$<$class Data\+Type$>$\newline
+class ez\+::objects\+::\+Array$<$ Data\+Type $>$}
+
+Generic class that represents an array of Data\+Type values. The indexes of the array are taken in the Range\+Type interval which has integer type. For example we can represent an array of real numbers with indexes that range from -\/3 to 10 by the following declaration\+: {\ttfamily Array$<$real$>$ a(-\/3,10)} 
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classez_1_1objects_1_1Array_a88ec7bab9f66c8fe7d97b4782a39ee84}\label{classez_1_1objects_1_1Array_a88ec7bab9f66c8fe7d97b4782a39ee84}} 
+\index{ez\+::objects\+::\+Array@{ez\+::objects\+::\+Array}!Array@{Array}}
+\index{Array@{Array}!ez\+::objects\+::\+Array@{ez\+::objects\+::\+Array}}
+\subsubsection{\texorpdfstring{Array()}{Array()}\hspace{0.1cm}{\footnotesize\ttfamily [1/5]}}
+{\footnotesize\ttfamily template$<$class Data\+Type$>$ \\
+\hyperlink{classez_1_1objects_1_1Array}{ez\+::objects\+::\+Array}$<$ Data\+Type $>$\+::\hyperlink{classez_1_1objects_1_1Array}{Array} (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Default constructor \mbox{\Hypertarget{classez_1_1objects_1_1Array_ab389febcc8d618c3b660fac1236898cb}\label{classez_1_1objects_1_1Array_ab389febcc8d618c3b660fac1236898cb}} 
+\index{ez\+::objects\+::\+Array@{ez\+::objects\+::\+Array}!Array@{Array}}
+\index{Array@{Array}!ez\+::objects\+::\+Array@{ez\+::objects\+::\+Array}}
+\subsubsection{\texorpdfstring{Array()}{Array()}\hspace{0.1cm}{\footnotesize\ttfamily [2/5]}}
+{\footnotesize\ttfamily template$<$class Data\+Type$>$ \\
+\hyperlink{classez_1_1objects_1_1Array}{ez\+::objects\+::\+Array}$<$ Data\+Type $>$\+::\hyperlink{classez_1_1objects_1_1Array}{Array} (\begin{DoxyParamCaption}\item[{integer}]{lo,  }\item[{integer}]{hi }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Constructor given minimum and maximum index. 
+\begin{DoxyParams}{Parameters}
+{\em lo} & minimum index value \\
+\hline
+{\em hi} & maximum index value \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classez_1_1objects_1_1Array_a9ece37ee368a988a62351e8df1cdf220}\label{classez_1_1objects_1_1Array_a9ece37ee368a988a62351e8df1cdf220}} 
+\index{ez\+::objects\+::\+Array@{ez\+::objects\+::\+Array}!Array@{Array}}
+\index{Array@{Array}!ez\+::objects\+::\+Array@{ez\+::objects\+::\+Array}}
+\subsubsection{\texorpdfstring{Array()}{Array()}\hspace{0.1cm}{\footnotesize\ttfamily [3/5]}}
+{\footnotesize\ttfamily template$<$class Data\+Type$>$ \\
+\hyperlink{classez_1_1objects_1_1Array}{ez\+::objects\+::\+Array}$<$ Data\+Type $>$\+::\hyperlink{classez_1_1objects_1_1Array}{Array} (\begin{DoxyParamCaption}\item[{const \hyperlink{classez_1_1objects_1_1Array}{self} \&}]{obj }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Copy constructor 
+\begin{DoxyParams}{Parameters}
+{\em obj} & reference to existing array \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classez_1_1objects_1_1Array_acc9a9ce3babaa4f1aa6d744304e2ccd0}\label{classez_1_1objects_1_1Array_acc9a9ce3babaa4f1aa6d744304e2ccd0}} 
+\index{ez\+::objects\+::\+Array@{ez\+::objects\+::\+Array}!Array@{Array}}
+\index{Array@{Array}!ez\+::objects\+::\+Array@{ez\+::objects\+::\+Array}}
+\subsubsection{\texorpdfstring{Array()}{Array()}\hspace{0.1cm}{\footnotesize\ttfamily [4/5]}}
+{\footnotesize\ttfamily template$<$class Data\+Type$>$ \\
+\hyperlink{classez_1_1objects_1_1Array}{ez\+::objects\+::\+Array}$<$ Data\+Type $>$\+::\hyperlink{classez_1_1objects_1_1Array}{Array} (\begin{DoxyParamCaption}\item[{\hyperlink{classez_1_1essential_1_1Range}{Range}}]{range }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Constructor given range and initializer 
+\begin{DoxyParams}{Parameters}
+{\em range} & range of index \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classez_1_1objects_1_1Array_a599e786f9331bd12c7eeef4a6e1ad043}\label{classez_1_1objects_1_1Array_a599e786f9331bd12c7eeef4a6e1ad043}} 
+\index{ez\+::objects\+::\+Array@{ez\+::objects\+::\+Array}!Array@{Array}}
+\index{Array@{Array}!ez\+::objects\+::\+Array@{ez\+::objects\+::\+Array}}
+\subsubsection{\texorpdfstring{Array()}{Array()}\hspace{0.1cm}{\footnotesize\ttfamily [5/5]}}
+{\footnotesize\ttfamily template$<$class Data\+Type$>$ \\
+\hyperlink{classez_1_1objects_1_1Array}{ez\+::objects\+::\+Array}$<$ Data\+Type $>$\+::\hyperlink{classez_1_1objects_1_1Array}{Array} (\begin{DoxyParamCaption}\item[{\hyperlink{classez_1_1essential_1_1Range}{Range}}]{range,  }\item[{const std\+::initializer\+\_\+list$<$ Data\+Type $>$ \&}]{l }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Constructor given range and initializer 
+\begin{DoxyParams}{Parameters}
+{\em range} & range of index \\
+\hline
+{\em l} & list of values for initialization \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classez_1_1objects_1_1Array_aa7998741d7bd1d2f92248846b39f5b2a}\label{classez_1_1objects_1_1Array_aa7998741d7bd1d2f92248846b39f5b2a}} 
+\index{ez\+::objects\+::\+Array@{ez\+::objects\+::\+Array}!````~Array@{$\sim$\+Array}}
+\index{````~Array@{$\sim$\+Array}!ez\+::objects\+::\+Array@{ez\+::objects\+::\+Array}}
+\subsubsection{\texorpdfstring{$\sim$\+Array()}{~Array()}}
+{\footnotesize\ttfamily template$<$class Data\+Type$>$ \\
+\hyperlink{classez_1_1objects_1_1Array}{ez\+::objects\+::\+Array}$<$ Data\+Type $>$\+::$\sim$\hyperlink{classez_1_1objects_1_1Array}{Array} (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Destructor 
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classez_1_1objects_1_1Array_a8618e73b6309573691b1fea690b8213a}\label{classez_1_1objects_1_1Array_a8618e73b6309573691b1fea690b8213a}} 
+\index{ez\+::objects\+::\+Array@{ez\+::objects\+::\+Array}!clone@{clone}}
+\index{clone@{clone}!ez\+::objects\+::\+Array@{ez\+::objects\+::\+Array}}
+\subsubsection{\texorpdfstring{clone()}{clone()}}
+{\footnotesize\ttfamily template$<$class Data\+Type$>$ \\
+\hyperlink{classez_1_1objects_1_1Object}{Object}$\ast$ \hyperlink{classez_1_1objects_1_1Array}{ez\+::objects\+::\+Array}$<$ Data\+Type $>$\+::clone (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [override]}, {\ttfamily [virtual]}}
+
+Create and return copy of this object 
+
+Reimplemented from \hyperlink{classez_1_1objects_1_1Object_acf444b2581d898eb4b8c92c2d5865c9e}{ez\+::objects\+::\+Object}.
+
+\mbox{\Hypertarget{classez_1_1objects_1_1Array_ac0d97a024e177f655b2f58981a68fcf8}\label{classez_1_1objects_1_1Array_ac0d97a024e177f655b2f58981a68fcf8}} 
+\index{ez\+::objects\+::\+Array@{ez\+::objects\+::\+Array}!compare@{compare}}
+\index{compare@{compare}!ez\+::objects\+::\+Array@{ez\+::objects\+::\+Array}}
+\subsubsection{\texorpdfstring{compare()}{compare()}}
+{\footnotesize\ttfamily template$<$class Data\+Type$>$ \\
+integer \hyperlink{classez_1_1objects_1_1Array}{ez\+::objects\+::\+Array}$<$ Data\+Type $>$\+::compare (\begin{DoxyParamCaption}\item[{const \hyperlink{classez_1_1objects_1_1Object}{Object} \&}]{y }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [override]}, {\ttfamily [virtual]}}
+
+Overloading of Compare method to Compare two arrays The arrays are equal if they have the same size and that the elements are identical 
+
+Reimplemented from \hyperlink{classez_1_1objects_1_1Object_aca311d389dffa204e425463145f4e1e6}{ez\+::objects\+::\+Object}.
+
+\mbox{\Hypertarget{classez_1_1objects_1_1Array_a5ba81305951bfdef7454b3d3f11fc9d9}\label{classez_1_1objects_1_1Array_a5ba81305951bfdef7454b3d3f11fc9d9}} 
+\index{ez\+::objects\+::\+Array@{ez\+::objects\+::\+Array}!fill@{fill}}
+\index{fill@{fill}!ez\+::objects\+::\+Array@{ez\+::objects\+::\+Array}}
+\subsubsection{\texorpdfstring{fill()}{fill()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily template$<$class Data\+Type$>$ \\
+void \hyperlink{classez_1_1objects_1_1Array}{ez\+::objects\+::\+Array}$<$ Data\+Type $>$\+::fill (\begin{DoxyParamCaption}\item[{Data\+Type}]{value }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Fill array with given value 
+\begin{DoxyParams}{Parameters}
+{\em value} & value that will be assigned to each element \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classez_1_1objects_1_1Array_aebeb0faa252f89e996f0b3a7250fa20b}\label{classez_1_1objects_1_1Array_aebeb0faa252f89e996f0b3a7250fa20b}} 
+\index{ez\+::objects\+::\+Array@{ez\+::objects\+::\+Array}!fill@{fill}}
+\index{fill@{fill}!ez\+::objects\+::\+Array@{ez\+::objects\+::\+Array}}
+\subsubsection{\texorpdfstring{fill()}{fill()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily template$<$class Data\+Type$>$ \\
+void \hyperlink{classez_1_1objects_1_1Array}{ez\+::objects\+::\+Array}$<$ Data\+Type $>$\+::fill (\begin{DoxyParamCaption}\item[{Data\+Type($\ast$)()}]{genf }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Fill array using a generator 
+\begin{DoxyParams}{Parameters}
+{\em genf} & pointer to generator \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classez_1_1objects_1_1Array_a438c2c6187dd5cce0dae9f303b34609c}\label{classez_1_1objects_1_1Array_a438c2c6187dd5cce0dae9f303b34609c}} 
+\index{ez\+::objects\+::\+Array@{ez\+::objects\+::\+Array}!input@{input}}
+\index{input@{input}!ez\+::objects\+::\+Array@{ez\+::objects\+::\+Array}}
+\subsubsection{\texorpdfstring{input()}{input()}}
+{\footnotesize\ttfamily template$<$class Data\+Type$>$ \\
+void \hyperlink{classez_1_1objects_1_1Array}{ez\+::objects\+::\+Array}$<$ Data\+Type $>$\+::input (\begin{DoxyParamCaption}\item[{std\+::istream \&}]{stream }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [override]}, {\ttfamily [virtual]}}
+
+overloading of output method to unserialize object 
+
+Reimplemented from \hyperlink{classez_1_1objects_1_1Object_a878bdc53b7f16fda6fa15dab214c4b6a}{ez\+::objects\+::\+Object}.
+
+\mbox{\Hypertarget{classez_1_1objects_1_1Array_a281b310f3f9f4140520b84c2315b1352}\label{classez_1_1objects_1_1Array_a281b310f3f9f4140520b84c2315b1352}} 
+\index{ez\+::objects\+::\+Array@{ez\+::objects\+::\+Array}!is\+\_\+empty@{is\+\_\+empty}}
+\index{is\+\_\+empty@{is\+\_\+empty}!ez\+::objects\+::\+Array@{ez\+::objects\+::\+Array}}
+\subsubsection{\texorpdfstring{is\+\_\+empty()}{is\_empty()}}
+{\footnotesize\ttfamily template$<$class Data\+Type$>$ \\
+bool \hyperlink{classez_1_1objects_1_1Array}{ez\+::objects\+::\+Array}$<$ Data\+Type $>$\+::is\+\_\+empty (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+Return true if array is empty, false otherwise 
+
+Implements \hyperlink{classez_1_1objects_1_1Container_a205eb4f8a4fe967d425fdf04e5db5f93}{ez\+::objects\+::\+Container$<$ Data\+Type, natural $>$}.
+
+\mbox{\Hypertarget{classez_1_1objects_1_1Array_a243625ca16cb6b1f7a7f68dc7a1922cf}\label{classez_1_1objects_1_1Array_a243625ca16cb6b1f7a7f68dc7a1922cf}} 
+\index{ez\+::objects\+::\+Array@{ez\+::objects\+::\+Array}!operator=@{operator=}}
+\index{operator=@{operator=}!ez\+::objects\+::\+Array@{ez\+::objects\+::\+Array}}
+\subsubsection{\texorpdfstring{operator=()}{operator=()}}
+{\footnotesize\ttfamily template$<$class Data\+Type$>$ \\
+\hyperlink{classez_1_1objects_1_1Array}{self}\& \hyperlink{classez_1_1objects_1_1Array}{ez\+::objects\+::\+Array}$<$ Data\+Type $>$\+::operator= (\begin{DoxyParamCaption}\item[{const \hyperlink{classez_1_1objects_1_1Array}{self} \&}]{obj }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Assignment operator. 
+\begin{DoxyParams}{Parameters}
+{\em obj} & reference to existing array \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classez_1_1objects_1_1Array_add86e335b90914397700e6f2cad45077}\label{classez_1_1objects_1_1Array_add86e335b90914397700e6f2cad45077}} 
+\index{ez\+::objects\+::\+Array@{ez\+::objects\+::\+Array}!operator\mbox{[}\mbox{]}@{operator[]}}
+\index{operator\mbox{[}\mbox{]}@{operator[]}!ez\+::objects\+::\+Array@{ez\+::objects\+::\+Array}}
+\subsubsection{\texorpdfstring{operator[]()}{operator[]()}}
+{\footnotesize\ttfamily template$<$class Data\+Type$>$ \\
+Data\+Type\& \hyperlink{classez_1_1objects_1_1Array}{ez\+::objects\+::\+Array}$<$ Data\+Type $>$\+::operator\mbox{[}$\,$\mbox{]} (\begin{DoxyParamCaption}\item[{integer}]{n }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Get access to value using index 
+\begin{DoxyParams}{Parameters}
+{\em index} & of the value \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+reference to value 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classez_1_1objects_1_1Array_a7f8b26dd8b96708d0a300a1f406ce336}\label{classez_1_1objects_1_1Array_a7f8b26dd8b96708d0a300a1f406ce336}} 
+\index{ez\+::objects\+::\+Array@{ez\+::objects\+::\+Array}!output@{output}}
+\index{output@{output}!ez\+::objects\+::\+Array@{ez\+::objects\+::\+Array}}
+\subsubsection{\texorpdfstring{output()}{output()}}
+{\footnotesize\ttfamily template$<$class Data\+Type$>$ \\
+void \hyperlink{classez_1_1objects_1_1Array}{ez\+::objects\+::\+Array}$<$ Data\+Type $>$\+::output (\begin{DoxyParamCaption}\item[{std\+::ostream \&}]{stream }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [override]}, {\ttfamily [virtual]}}
+
+overloading of output method to serialize object 
+
+Reimplemented from \hyperlink{classez_1_1objects_1_1Object_a0fdfe18e6c35d6b0d7e7a01265aded15}{ez\+::objects\+::\+Object}.
+
+\mbox{\Hypertarget{classez_1_1objects_1_1Array_a7f0707629712319837dc0cda091456b7}\label{classez_1_1objects_1_1Array_a7f0707629712319837dc0cda091456b7}} 
+\index{ez\+::objects\+::\+Array@{ez\+::objects\+::\+Array}!print@{print}}
+\index{print@{print}!ez\+::objects\+::\+Array@{ez\+::objects\+::\+Array}}
+\subsubsection{\texorpdfstring{print()}{print()}}
+{\footnotesize\ttfamily template$<$class Data\+Type$>$ \\
+void \hyperlink{classez_1_1objects_1_1Array}{ez\+::objects\+::\+Array}$<$ Data\+Type $>$\+::print (\begin{DoxyParamCaption}\item[{std\+::ostream \&}]{stream }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [override]}, {\ttfamily [virtual]}}
+
+overloading of print method of class \hyperlink{classez_1_1objects_1_1Object}{Object} 
+
+Reimplemented from \hyperlink{classez_1_1objects_1_1Object_a9e20f39a78163f67f000576149d858b3}{ez\+::objects\+::\+Object}.
+
+\mbox{\Hypertarget{classez_1_1objects_1_1Array_acdd164cad40bed068075550d943d19c2}\label{classez_1_1objects_1_1Array_acdd164cad40bed068075550d943d19c2}} 
+\index{ez\+::objects\+::\+Array@{ez\+::objects\+::\+Array}!resize@{resize}}
+\index{resize@{resize}!ez\+::objects\+::\+Array@{ez\+::objects\+::\+Array}}
+\subsubsection{\texorpdfstring{resize()}{resize()}}
+{\footnotesize\ttfamily template$<$class Data\+Type$>$ \\
+void \hyperlink{classez_1_1objects_1_1Array}{ez\+::objects\+::\+Array}$<$ Data\+Type $>$\+::resize (\begin{DoxyParamCaption}\item[{\hyperlink{classez_1_1essential_1_1Range}{Range}}]{range }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+modify size of array 
+\begin{DoxyParams}{Parameters}
+{\em range} & new Range for the array \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classez_1_1objects_1_1Array_af3ac644ccc4058fb2e13797af274a3de}\label{classez_1_1objects_1_1Array_af3ac644ccc4058fb2e13797af274a3de}} 
+\index{ez\+::objects\+::\+Array@{ez\+::objects\+::\+Array}!size@{size}}
+\index{size@{size}!ez\+::objects\+::\+Array@{ez\+::objects\+::\+Array}}
+\subsubsection{\texorpdfstring{size()}{size()}}
+{\footnotesize\ttfamily template$<$class Data\+Type$>$ \\
+natural \hyperlink{classez_1_1objects_1_1Array}{ez\+::objects\+::\+Array}$<$ Data\+Type $>$\+::size (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+Return the number of elements of the array 
+
+Implements \hyperlink{classez_1_1objects_1_1Container_affd294810c6c29530d1d1e3c2151ad28}{ez\+::objects\+::\+Container$<$ Data\+Type, natural $>$}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+src/version\+\_\+2018.\+06/objects/array.\+h\end{DoxyCompactItemize}

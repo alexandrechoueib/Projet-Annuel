@@ -1,0 +1,110 @@
+=====================================================================
+Project EZLIB (Easy Library)
+Author: Jean-Michel RICHER
+Position: Associate Pr at the University of Angers, France
+Email: jean-michel.richer@univ-angers.fr
+http://www.info.univ-angers.fr/~richer
+=====================================================================
+
+    #    #    #   ####    #####    ##    #       #
+    #    ##   #  #          #     #  #   #       #
+    #    # #  #   ####      #    #    #  #       #
+    #    #  # #       #     #    ######  #       #
+    #    #   ##  #    #     #    #    #  #       #
+    #    #    #   ####      #    #    #  ######  ######
+
+
+
+---------------------------------------------------------------------
+1. INSTALL GOOGLE TEST
+---------------------------------------------------------------------
+
+	You will need 'Google Test' if you want to compile the tests.
+	You will also need 'cmake' to build the makefiles of Google Test.
+
+	Go to 
+		
+		https://github.com/google/googletest 
+		
+	and download as ZIP file and decompress
+	
+		> unzip googletest-master.zip
+		> cd googletest-master/
+		
+	create makefile by using cmake:
+		
+		> cmake -DBUILD_SHARED_LIBS=ON -Dgtest_build_samples=ON -G "Unix Makefiles" 
+		
+	then compile and install
+		
+		> make
+		> sudo make install
+		> sudo ldconfig
+		
+---------------------------------------------------------------------
+2. INSTALL 'xpath'
+---------------------------------------------------------------------
+		
+	Under Ubuntu, just type:
+			
+		> sudo apt install libxml-xpath-perl
+		
+
+---------------------------------------------------------------------
+3. COMPILE AND INSTALL EZLIB
+---------------------------------------------------------------------
+	
+		Note that version 2018.06 is using -std=c++14
+	
+	
+2.a) Configuration
+
+	You can configure the build process by modifying the 'app/config.ezp'
+	file. Then type:
+	
+		> make config
+	
+	
+2.b) Build
+
+	In the main directory type 
+	
+		> make clean && make
+	
+	In order to install the include files and the static libraries, just
+	type:
+	
+		> sudo make install
+	
+	By default libraries will be sent to the directory of the config.ezp 
+	parameters. For example, if you set 
+		MY_SYSTEM=linux
+		MY_FLAVOR=release
+		MY_ARCHITECTURE=64
+		MY_COMPILER=gnu
+		
+	then the libraries will be put under 
+	
+		/usr/local/lib/ez/2018.06/release/64/gnu
+		
+	and include files will be copied to
+	
+		/usr/local/include/ez/2018.06
+		
+	
+2.c) Build and run tests
+
+	In the main directory type 
+	
+		> make tests
+		
+	To run the tests type
+	
+		> make run_tests
+		 	
+2.d) Build examples	
+
+	In the main directory type 
+	
+		> make examples
+

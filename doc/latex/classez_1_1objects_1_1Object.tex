@@ -1,0 +1,229 @@
+\hypertarget{classez_1_1objects_1_1Object}{}\section{ez\+:\+:objects\+:\+:Object Class Reference}
+\label{classez_1_1objects_1_1Object}\index{ez\+::objects\+::\+Object@{ez\+::objects\+::\+Object}}
+
+
+{\ttfamily \#include $<$object.\+h$>$}
+
+
+
+Inheritance diagram for ez\+:\+:objects\+:\+:Object\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=550pt]{classez_1_1objects_1_1Object__inherit__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classez_1_1objects_1_1Object_ad1ec0b90f18dd3a30399fe3f80af27bb}\label{classez_1_1objects_1_1Object_ad1ec0b90f18dd3a30399fe3f80af27bb}} 
+enum \{ {\bfseries S\+T\+R\+E\+A\+M\+\_\+\+M\+O\+D\+E\+\_\+\+P\+R\+I\+NT} = 1, 
+{\bfseries S\+T\+R\+E\+A\+M\+\_\+\+M\+O\+D\+E\+\_\+\+O\+U\+T\+P\+UT} = 2
+ \}
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classez_1_1objects_1_1Object_a0c3d39046853c0eb87924e0268063175}{Object} ()
+\item 
+virtual \hyperlink{classez_1_1objects_1_1Object_a4c17ee2010ca61cf917962e2ba6bb5c5}{$\sim$\+Object} ()
+\item 
+virtual void \hyperlink{classez_1_1objects_1_1Object_a9e20f39a78163f67f000576149d858b3}{print} (std\+::ostream \&stream)
+\item 
+virtual void \hyperlink{classez_1_1objects_1_1Object_a0fdfe18e6c35d6b0d7e7a01265aded15}{output} (std\+::ostream \&stream)
+\item 
+virtual void \hyperlink{classez_1_1objects_1_1Object_a878bdc53b7f16fda6fa15dab214c4b6a}{input} (std\+::istream \&stream)
+\item 
+virtual integer \hyperlink{classez_1_1objects_1_1Object_aca311d389dffa204e425463145f4e1e6}{compare} (const \hyperlink{classez_1_1objects_1_1Object}{Object} \&y)
+\item 
+virtual \hyperlink{classez_1_1objects_1_1Object}{Object} $\ast$ \hyperlink{classez_1_1objects_1_1Object_acf444b2581d898eb4b8c92c2d5865c9e}{clone} ()
+\item 
+virtual bool \hyperlink{classez_1_1objects_1_1Object_a19ba1672d4063232c4619e016ca178f8}{is\+\_\+numeric} ()
+\item 
+virtual bool \hyperlink{classez_1_1objects_1_1Object_a08d51e793285a46e20fb578056052a48}{is\+\_\+scalar} ()
+\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classez_1_1objects_1_1Object_ad46b641b37e6d6afe53c5418928efa43}\label{classez_1_1objects_1_1Object_ad46b641b37e6d6afe53c5418928efa43}} 
+static void {\bfseries set\+\_\+stream\+\_\+mode} (int v)
+\item 
+\mbox{\Hypertarget{classez_1_1objects_1_1Object_a3a0d4e2047030ad125a003580d06f713}\label{classez_1_1objects_1_1Object_a3a0d4e2047030ad125a003580d06f713}} 
+static bool {\bfseries less\+\_\+than} (integer x, integer y)
+\item 
+\mbox{\Hypertarget{classez_1_1objects_1_1Object_a196622c6e9045be7350c4bac24e0370d}\label{classez_1_1objects_1_1Object_a196622c6e9045be7350c4bac24e0370d}} 
+static bool {\bfseries less\+\_\+or\+\_\+equal} (integer x, integer y)
+\item 
+\mbox{\Hypertarget{classez_1_1objects_1_1Object_a958cbe4573178f12839341fb6ad82a32}\label{classez_1_1objects_1_1Object_a958cbe4573178f12839341fb6ad82a32}} 
+static bool {\bfseries less\+\_\+than} (real x, real y)
+\item 
+\mbox{\Hypertarget{classez_1_1objects_1_1Object_ae9306463489907e41b94a680bf6ded86}\label{classez_1_1objects_1_1Object_ae9306463489907e41b94a680bf6ded86}} 
+static bool {\bfseries less\+\_\+or\+\_\+equal} (real x, real y)
+\end{DoxyCompactItemize}
+\subsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classez_1_1objects_1_1Object_adca3452be383704327f1ff86d95797ad}\label{classez_1_1objects_1_1Object_adca3452be383704327f1ff86d95797ad}} 
+static integer {\bfseries s\+\_\+stream\+\_\+mode} = S\+T\+R\+E\+A\+M\+\_\+\+M\+O\+D\+E\+\_\+\+P\+R\+I\+NT
+\end{DoxyCompactItemize}
+\subsection*{Friends}
+\begin{DoxyCompactItemize}
+\item 
+bool \hyperlink{classez_1_1objects_1_1Object_a2e452c05c348d53615e96b58089a9732}{operator==} (const \hyperlink{classez_1_1objects_1_1Object}{Object} \&x, const \hyperlink{classez_1_1objects_1_1Object}{Object} \&y)
+\item 
+bool \hyperlink{classez_1_1objects_1_1Object_ade135c5015a5ee3d22d1cfd37c631603}{operator!=} (const \hyperlink{classez_1_1objects_1_1Object}{Object} \&x, const \hyperlink{classez_1_1objects_1_1Object}{Object} \&y)
+\item 
+bool \hyperlink{classez_1_1objects_1_1Object_a6f011ffc58727a1b133e9cace6f5d79a}{operator$<$} (const \hyperlink{classez_1_1objects_1_1Object}{Object} \&x, const \hyperlink{classez_1_1objects_1_1Object}{Object} \&y)
+\item 
+std\+::ostream \& \hyperlink{classez_1_1objects_1_1Object_a8c4aa17f8cf91b04c722b994a7028999}{operator$<$$<$} (std\+::ostream \&stream, \hyperlink{classez_1_1objects_1_1Object}{Object} \&obj)
+\item 
+\mbox{\Hypertarget{classez_1_1objects_1_1Object_a94a0a68ffafad7b7d5737f63559707bb}\label{classez_1_1objects_1_1Object_a94a0a68ffafad7b7d5737f63559707bb}} 
+std\+::ostream \& {\bfseries operator$<$$<$} (std\+::ostream \&stream, \hyperlink{classez_1_1objects_1_1Object}{Object} $\ast$obj)
+\item 
+std\+::istream \& \hyperlink{classez_1_1objects_1_1Object_ae68a9d9e998a5694b42898cb6730cd08}{operator$>$$>$} (std\+::istream \&stream, \hyperlink{classez_1_1objects_1_1Object}{Object} \&obj)
+\item 
+\mbox{\Hypertarget{classez_1_1objects_1_1Object_a53c33202998cb89622f59494425b4570}\label{classez_1_1objects_1_1Object_a53c33202998cb89622f59494425b4570}} 
+std\+::istream \& {\bfseries operator$>$$>$} (std\+::istream \&stream, \hyperlink{classez_1_1objects_1_1Object}{Object} $\ast$obj)
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Base class used for all other objects. It contains virtual methods that must be tailored for each type of object. In some languages those methods are called {\itshape magic} methods although there is no magic here. 
+\begin{DoxyItemize}
+\item print that enables to print the contents of an object on an output stream 
+\item {\bfseries input} to enable the reading of an object from a stream, this is close to the serialize method of Java 
+\item b$>$output to enable the writing of an object on a stream, this is close to the unserialize method of Java 
+\item {\bfseries compare} which checks if two objects of the same type are equal 
+\item {\bfseries clone} to create a create a copy of an object  
+\end{DoxyItemize}
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classez_1_1objects_1_1Object_a0c3d39046853c0eb87924e0268063175}\label{classez_1_1objects_1_1Object_a0c3d39046853c0eb87924e0268063175}} 
+\index{ez\+::objects\+::\+Object@{ez\+::objects\+::\+Object}!Object@{Object}}
+\index{Object@{Object}!ez\+::objects\+::\+Object@{ez\+::objects\+::\+Object}}
+\subsubsection{\texorpdfstring{Object()}{Object()}}
+{\footnotesize\ttfamily ez\+::objects\+::\+Object\+::\+Object (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+default constructor \mbox{\Hypertarget{classez_1_1objects_1_1Object_a4c17ee2010ca61cf917962e2ba6bb5c5}\label{classez_1_1objects_1_1Object_a4c17ee2010ca61cf917962e2ba6bb5c5}} 
+\index{ez\+::objects\+::\+Object@{ez\+::objects\+::\+Object}!````~Object@{$\sim$\+Object}}
+\index{````~Object@{$\sim$\+Object}!ez\+::objects\+::\+Object@{ez\+::objects\+::\+Object}}
+\subsubsection{\texorpdfstring{$\sim$\+Object()}{~Object()}}
+{\footnotesize\ttfamily virtual ez\+::objects\+::\+Object\+::$\sim$\+Object (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+destructor 
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classez_1_1objects_1_1Object_acf444b2581d898eb4b8c92c2d5865c9e}\label{classez_1_1objects_1_1Object_acf444b2581d898eb4b8c92c2d5865c9e}} 
+\index{ez\+::objects\+::\+Object@{ez\+::objects\+::\+Object}!clone@{clone}}
+\index{clone@{clone}!ez\+::objects\+::\+Object@{ez\+::objects\+::\+Object}}
+\subsubsection{\texorpdfstring{clone()}{clone()}}
+{\footnotesize\ttfamily \hyperlink{classez_1_1objects_1_1Object}{Object} $\ast$ Object\+::clone (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+return a copy of the object 
+
+Reimplemented in \hyperlink{classez_1_1objects_1_1Vector_adc6a4145747c6dfa104cd68d3ced3d35}{ez\+::objects\+::\+Vector$<$ Data\+Type $>$}, \hyperlink{classez_1_1objects_1_1Array_a8618e73b6309573691b1fea690b8213a}{ez\+::objects\+::\+Array$<$ Data\+Type $>$}, \hyperlink{classez_1_1objects_1_1Set_a1faa8b09dc50d82e203d3e31f3b9f33e}{ez\+::objects\+::\+Set$<$ Data\+Type $>$}, \hyperlink{classez_1_1objects_1_1Mapping_aa8eb01c13630ff6ab44438e9a25aa019}{ez\+::objects\+::\+Mapping$<$ Key\+Type, Data\+Type $>$}, \hyperlink{classez_1_1objects_1_1Stack_a350a12fecda720df715bf1d773e1a696}{ez\+::objects\+::\+Stack$<$ Data\+Type $>$}, \hyperlink{classez_1_1objects_1_1Node_ae2876fa89991bf6593f54e015f22a156}{ez\+::objects\+::\+Node$<$ T, Max\+Nodes $>$}, \hyperlink{classez_1_1objects_1_1Boolean_a3b1b1775d4869ba005cf4d20623d1260}{ez\+::objects\+::\+Boolean}, \hyperlink{classez_1_1objects_1_1Integer_a83913903bdcb955ae11a08d12d9e26c6}{ez\+::objects\+::\+Integer}, \hyperlink{classez_1_1objects_1_1LongNatural_a328f33f3435bae79bbb3e9b0dcb8a3a7}{ez\+::objects\+::\+Long\+Natural}, \hyperlink{classez_1_1objects_1_1Natural_a9f94e66e21ccc25b091cc87f4879af21}{ez\+::objects\+::\+Natural}, \hyperlink{classez_1_1objects_1_1Real_a709e5a1bf422673b1b27d4d9d58de4b5}{ez\+::objects\+::\+Real}, \hyperlink{classez_1_1objects_1_1Couple_ad258aa010ee9a4bfdecb715de7d93116}{ez\+::objects\+::\+Couple$<$ Key\+Type, Data\+Type $>$}, \hyperlink{classez_1_1objects_1_1LongInteger_af19a10913ba906a81cdb164897edade6}{ez\+::objects\+::\+Long\+Integer}, \hyperlink{classez_1_1objects_1_1Text_a800bc02ede66fad6e7f95042012a918e}{ez\+::objects\+::\+Text}, and \hyperlink{classez_1_1objects_1_1Character_ad272c9b94a2d152f0832f2957cfd4e63}{ez\+::objects\+::\+Character}.
+
+\mbox{\Hypertarget{classez_1_1objects_1_1Object_aca311d389dffa204e425463145f4e1e6}\label{classez_1_1objects_1_1Object_aca311d389dffa204e425463145f4e1e6}} 
+\index{ez\+::objects\+::\+Object@{ez\+::objects\+::\+Object}!compare@{compare}}
+\index{compare@{compare}!ez\+::objects\+::\+Object@{ez\+::objects\+::\+Object}}
+\subsubsection{\texorpdfstring{compare()}{compare()}}
+{\footnotesize\ttfamily integer Object\+::compare (\begin{DoxyParamCaption}\item[{const \hyperlink{classez_1_1objects_1_1Object}{Object} \&}]{y }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+compare two objects \begin{DoxyReturn}{Returns}
+0 if objects are identical, negative value if this $<$ y, positive value if this $>$ y 
+\end{DoxyReturn}
+
+
+Reimplemented in \hyperlink{classez_1_1objects_1_1Vector_af4bd9b005b03d1a9e5ec958d96cc24ee}{ez\+::objects\+::\+Vector$<$ Data\+Type $>$}, \hyperlink{classez_1_1objects_1_1Array_ac0d97a024e177f655b2f58981a68fcf8}{ez\+::objects\+::\+Array$<$ Data\+Type $>$}, \hyperlink{classez_1_1objects_1_1Node_af5a55f4379b2f6be1ba3cf905d124462}{ez\+::objects\+::\+Node$<$ T, Max\+Nodes $>$}, \hyperlink{classez_1_1objects_1_1Matrix2D_ab0b55556ba7c31aa5ad376a91b63d6c3}{ez\+::objects\+::\+Matrix2\+D$<$ Data\+Type $>$}, \hyperlink{classez_1_1objects_1_1Set_aeaab2cadd3a001a94acb40d7cf2b2b00}{ez\+::objects\+::\+Set$<$ Data\+Type $>$}, \hyperlink{classez_1_1objects_1_1Mapping_a7eb092099b5f47b101e5c54a46373ff0}{ez\+::objects\+::\+Mapping$<$ Key\+Type, Data\+Type $>$}, \hyperlink{classez_1_1objects_1_1Stack_a47b43cce6f59f79ffa0b344c109aae35}{ez\+::objects\+::\+Stack$<$ Data\+Type $>$}, \hyperlink{classez_1_1objects_1_1Integer_ab49e5990b97a97b1954dfa9222d29c82}{ez\+::objects\+::\+Integer}, \hyperlink{classez_1_1objects_1_1LongNatural_ad2ed144e5ee01a72eff476141c6e39ae}{ez\+::objects\+::\+Long\+Natural}, \hyperlink{classez_1_1objects_1_1Natural_ad053e5ddc5242e8e94ce5f14ecc4dd13}{ez\+::objects\+::\+Natural}, \hyperlink{classez_1_1objects_1_1Real_ab5876f5ce73db15906113a2651453eca}{ez\+::objects\+::\+Real}, \hyperlink{classez_1_1objects_1_1Boolean_a6ccc996f98fece5fbe6fd6ebcbd39f4a}{ez\+::objects\+::\+Boolean}, \hyperlink{classez_1_1objects_1_1LongInteger_ac2771a597b5f2ed611d9eb10f4339019}{ez\+::objects\+::\+Long\+Integer}, \hyperlink{classez_1_1objects_1_1Couple_a0f4afb11f854f2e84fd2d413cd08212e}{ez\+::objects\+::\+Couple$<$ Key\+Type, Data\+Type $>$}, \hyperlink{classez_1_1objects_1_1Text_a05d5c20a25ced7a9ad33c997f435f226}{ez\+::objects\+::\+Text}, and \hyperlink{classez_1_1objects_1_1Character_a2e6241f13a2f749e7b1951667b4ec96a}{ez\+::objects\+::\+Character}.
+
+\mbox{\Hypertarget{classez_1_1objects_1_1Object_a878bdc53b7f16fda6fa15dab214c4b6a}\label{classez_1_1objects_1_1Object_a878bdc53b7f16fda6fa15dab214c4b6a}} 
+\index{ez\+::objects\+::\+Object@{ez\+::objects\+::\+Object}!input@{input}}
+\index{input@{input}!ez\+::objects\+::\+Object@{ez\+::objects\+::\+Object}}
+\subsubsection{\texorpdfstring{input()}{input()}}
+{\footnotesize\ttfamily void Object\+::input (\begin{DoxyParamCaption}\item[{std\+::istream \&}]{stream }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+this function is used to get the data field members of an object from a stream and acts as unserialize 
+
+Reimplemented in \hyperlink{classez_1_1objects_1_1Vector_af89b5f0546a049c7ade93d48eb84fa6b}{ez\+::objects\+::\+Vector$<$ Data\+Type $>$}, \hyperlink{classez_1_1objects_1_1Array_a438c2c6187dd5cce0dae9f303b34609c}{ez\+::objects\+::\+Array$<$ Data\+Type $>$}, \hyperlink{classez_1_1objects_1_1Node_a637eb76e0f2597e92c5f827b80bff0ca}{ez\+::objects\+::\+Node$<$ T, Max\+Nodes $>$}, \hyperlink{classez_1_1objects_1_1Set_a338e14cc6fe1afa7031a6f5f4959acf1}{ez\+::objects\+::\+Set$<$ Data\+Type $>$}, \hyperlink{classez_1_1objects_1_1Mapping_ad47e98279b853fd10614a24dc201d92e}{ez\+::objects\+::\+Mapping$<$ Key\+Type, Data\+Type $>$}, \hyperlink{classez_1_1objects_1_1Stack_a3e9796e6bbad1be135c1911e20ec4a8a}{ez\+::objects\+::\+Stack$<$ Data\+Type $>$}, \hyperlink{classez_1_1objects_1_1Boolean_a36f2ae3b2e092b0f6f1d4c0be108e9e3}{ez\+::objects\+::\+Boolean}, \hyperlink{classez_1_1objects_1_1Integer_af465d88d1b132f7131be7b29aadc5a8f}{ez\+::objects\+::\+Integer}, \hyperlink{classez_1_1objects_1_1LongNatural_a37f51f88e9b039b5b59d0392ca03eeb0}{ez\+::objects\+::\+Long\+Natural}, \hyperlink{classez_1_1objects_1_1Natural_ae914aff21b276fbb1e73f48d426cbbc7}{ez\+::objects\+::\+Natural}, \hyperlink{classez_1_1objects_1_1Real_a89711c886a9569409c7d17530b97bcc5}{ez\+::objects\+::\+Real}, \hyperlink{classez_1_1objects_1_1LongInteger_a9fa1d50b8d4d7e2ea2383bb625712349}{ez\+::objects\+::\+Long\+Integer}, \hyperlink{classez_1_1objects_1_1Couple_a4f7228308e803711bd6866c367e18d06}{ez\+::objects\+::\+Couple$<$ Key\+Type, Data\+Type $>$}, \hyperlink{classez_1_1objects_1_1Character_a021f11fd444493316c4d55e6efb031f5}{ez\+::objects\+::\+Character}, and \hyperlink{classez_1_1objects_1_1Text_a4ca781c814cc6c623e4c69ae952c6760}{ez\+::objects\+::\+Text}.
+
+\mbox{\Hypertarget{classez_1_1objects_1_1Object_a19ba1672d4063232c4619e016ca178f8}\label{classez_1_1objects_1_1Object_a19ba1672d4063232c4619e016ca178f8}} 
+\index{ez\+::objects\+::\+Object@{ez\+::objects\+::\+Object}!is\+\_\+numeric@{is\+\_\+numeric}}
+\index{is\+\_\+numeric@{is\+\_\+numeric}!ez\+::objects\+::\+Object@{ez\+::objects\+::\+Object}}
+\subsubsection{\texorpdfstring{is\+\_\+numeric()}{is\_numeric()}}
+{\footnotesize\ttfamily virtual bool ez\+::objects\+::\+Object\+::is\+\_\+numeric (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+indicates if this object can be used for computation 
+
+Reimplemented in \hyperlink{classez_1_1objects_1_1Integer_a8b35ec8937520b2227650aa489427bcd}{ez\+::objects\+::\+Integer}, \hyperlink{classez_1_1objects_1_1LongNatural_a4cd663dc6f1eff09b83d19d76dd503cb}{ez\+::objects\+::\+Long\+Natural}, \hyperlink{classez_1_1objects_1_1Natural_a0cb91a0c6b56b101bdf60e08df4d83f2}{ez\+::objects\+::\+Natural}, \hyperlink{classez_1_1objects_1_1Real_a3b215250b4df60c975bc378792b115b4}{ez\+::objects\+::\+Real}, \hyperlink{classez_1_1objects_1_1LongInteger_ad9241d39b14d6cff1173c692ac37c8fc}{ez\+::objects\+::\+Long\+Integer}, and \hyperlink{classez_1_1objects_1_1Character_ae94793b98d9c5a173ba73e110420f187}{ez\+::objects\+::\+Character}.
+
+\mbox{\Hypertarget{classez_1_1objects_1_1Object_a08d51e793285a46e20fb578056052a48}\label{classez_1_1objects_1_1Object_a08d51e793285a46e20fb578056052a48}} 
+\index{ez\+::objects\+::\+Object@{ez\+::objects\+::\+Object}!is\+\_\+scalar@{is\+\_\+scalar}}
+\index{is\+\_\+scalar@{is\+\_\+scalar}!ez\+::objects\+::\+Object@{ez\+::objects\+::\+Object}}
+\subsubsection{\texorpdfstring{is\+\_\+scalar()}{is\_scalar()}}
+{\footnotesize\ttfamily virtual bool ez\+::objects\+::\+Object\+::is\+\_\+scalar (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+indicates if this object is scalar or not. If not scalar it is considered as complex and can be a container \mbox{\Hypertarget{classez_1_1objects_1_1Object_a0fdfe18e6c35d6b0d7e7a01265aded15}\label{classez_1_1objects_1_1Object_a0fdfe18e6c35d6b0d7e7a01265aded15}} 
+\index{ez\+::objects\+::\+Object@{ez\+::objects\+::\+Object}!output@{output}}
+\index{output@{output}!ez\+::objects\+::\+Object@{ez\+::objects\+::\+Object}}
+\subsubsection{\texorpdfstring{output()}{output()}}
+{\footnotesize\ttfamily void Object\+::output (\begin{DoxyParamCaption}\item[{std\+::ostream \&}]{stream }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+this function is used to print the contents of the object in a serializable manner 
+
+Reimplemented in \hyperlink{classez_1_1objects_1_1Vector_a934bda76e5686f1af4a45dda39d75744}{ez\+::objects\+::\+Vector$<$ Data\+Type $>$}, \hyperlink{classez_1_1objects_1_1Array_a7f8b26dd8b96708d0a300a1f406ce336}{ez\+::objects\+::\+Array$<$ Data\+Type $>$}, \hyperlink{classez_1_1objects_1_1Node_accf427aa06dc326baa7a12497cae6045}{ez\+::objects\+::\+Node$<$ T, Max\+Nodes $>$}, \hyperlink{classez_1_1objects_1_1Set_a1a98246f459de08368b425eae3720873}{ez\+::objects\+::\+Set$<$ Data\+Type $>$}, \hyperlink{classez_1_1objects_1_1Mapping_a1233daf5c8f5d7ad9539e9d7f58703c3}{ez\+::objects\+::\+Mapping$<$ Key\+Type, Data\+Type $>$}, \hyperlink{classez_1_1objects_1_1Stack_a5df9f4c84fff1e025c094219765d0032}{ez\+::objects\+::\+Stack$<$ Data\+Type $>$}, \hyperlink{classez_1_1objects_1_1Boolean_a313c385e8ce93e19fd774882143f3a25}{ez\+::objects\+::\+Boolean}, \hyperlink{classez_1_1objects_1_1Integer_ab6035639fbee8c61086db044b731e213}{ez\+::objects\+::\+Integer}, \hyperlink{classez_1_1objects_1_1LongNatural_aae2570f931064a354df5553fd4425b90}{ez\+::objects\+::\+Long\+Natural}, \hyperlink{classez_1_1objects_1_1Natural_a53b32330fc4911b138033b37b90bc467}{ez\+::objects\+::\+Natural}, \hyperlink{classez_1_1objects_1_1Real_a337dff4013876656aeb1aa98ecc9864b}{ez\+::objects\+::\+Real}, \hyperlink{classez_1_1objects_1_1LongInteger_a9c4f7a8c3e60ab678b43f818a07540d5}{ez\+::objects\+::\+Long\+Integer}, \hyperlink{classez_1_1objects_1_1Character_ab72c114740fab4824d691d6219e07a67}{ez\+::objects\+::\+Character}, \hyperlink{classez_1_1objects_1_1Couple_a7d64b5194ac6092bc553d97fedbe23ad}{ez\+::objects\+::\+Couple$<$ Key\+Type, Data\+Type $>$}, and \hyperlink{classez_1_1objects_1_1Text_a7d35b931601e4fb476cd168744bc03d6}{ez\+::objects\+::\+Text}.
+
+\mbox{\Hypertarget{classez_1_1objects_1_1Object_a9e20f39a78163f67f000576149d858b3}\label{classez_1_1objects_1_1Object_a9e20f39a78163f67f000576149d858b3}} 
+\index{ez\+::objects\+::\+Object@{ez\+::objects\+::\+Object}!print@{print}}
+\index{print@{print}!ez\+::objects\+::\+Object@{ez\+::objects\+::\+Object}}
+\subsubsection{\texorpdfstring{print()}{print()}}
+{\footnotesize\ttfamily void Object\+::print (\begin{DoxyParamCaption}\item[{std\+::ostream \&}]{stream }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+this function is used to print the contents of the object in a human readable format 
+\begin{DoxyParams}{Parameters}
+{\em stream} & output stream for example std\+::cout \\
+\hline
+\end{DoxyParams}
+
+
+Reimplemented in \hyperlink{classez_1_1objects_1_1Vector_a1c548586b93d57a8fa99e38167442f37}{ez\+::objects\+::\+Vector$<$ Data\+Type $>$}, \hyperlink{classez_1_1objects_1_1Array_a7f0707629712319837dc0cda091456b7}{ez\+::objects\+::\+Array$<$ Data\+Type $>$}, \hyperlink{classez_1_1objects_1_1Matrix2D_aeef806111fdd458dfcf1f09addd7a0b7}{ez\+::objects\+::\+Matrix2\+D$<$ Data\+Type $>$}, \hyperlink{classez_1_1objects_1_1Node_a56c80924a071a04d3fbb55c536efe293}{ez\+::objects\+::\+Node$<$ T, Max\+Nodes $>$}, \hyperlink{classez_1_1objects_1_1Matrix3D_a5e68194ecbc90039bf694377a579b59c}{ez\+::objects\+::\+Matrix3\+D$<$ Data\+Type $>$}, \hyperlink{classez_1_1objects_1_1Boolean_aeedca84417b36666eb237d8453b744b6}{ez\+::objects\+::\+Boolean}, \hyperlink{classez_1_1objects_1_1Mapping_ac30b4bf58f51ea49c8422dfce1e6cf15}{ez\+::objects\+::\+Mapping$<$ Key\+Type, Data\+Type $>$}, \hyperlink{classez_1_1objects_1_1Set_a6fd40ec895d19ec7ab00cc8c55b505a1}{ez\+::objects\+::\+Set$<$ Data\+Type $>$}, \hyperlink{classez_1_1objects_1_1Stack_a99dd22aaeedd73fb044aaf22c3cf12ac}{ez\+::objects\+::\+Stack$<$ Data\+Type $>$}, \hyperlink{classez_1_1objects_1_1Integer_a4d358be1f412fd702bd332cc4bf113bf}{ez\+::objects\+::\+Integer}, \hyperlink{classez_1_1objects_1_1LongNatural_a38b758c27edf31447f3bc65228900266}{ez\+::objects\+::\+Long\+Natural}, \hyperlink{classez_1_1objects_1_1Natural_ac841a61814757882ad7f2282be3ceb1c}{ez\+::objects\+::\+Natural}, \hyperlink{classez_1_1objects_1_1Real_ab41c52af3b10d8cd5190317fc1d70d85}{ez\+::objects\+::\+Real}, \hyperlink{classez_1_1objects_1_1LongInteger_a61530e285ac30d7890564a6cbe6bc283}{ez\+::objects\+::\+Long\+Integer}, \hyperlink{classez_1_1objects_1_1Character_abf2e9f190594d03005b1cd0610f2f38c}{ez\+::objects\+::\+Character}, \hyperlink{classez_1_1objects_1_1Couple_ab419858cd3ca8fa27f637ece04d52a97}{ez\+::objects\+::\+Couple$<$ Key\+Type, Data\+Type $>$}, and \hyperlink{classez_1_1objects_1_1Text_a3c101a7589871f8fd44117a9f13a159d}{ez\+::objects\+::\+Text}.
+
+
+
+\subsection{Friends And Related Function Documentation}
+\mbox{\Hypertarget{classez_1_1objects_1_1Object_ade135c5015a5ee3d22d1cfd37c631603}\label{classez_1_1objects_1_1Object_ade135c5015a5ee3d22d1cfd37c631603}} 
+\index{ez\+::objects\+::\+Object@{ez\+::objects\+::\+Object}!operator"!=@{operator"!=}}
+\index{operator"!=@{operator"!=}!ez\+::objects\+::\+Object@{ez\+::objects\+::\+Object}}
+\subsubsection{\texorpdfstring{operator"!=}{operator!=}}
+{\footnotesize\ttfamily bool operator!= (\begin{DoxyParamCaption}\item[{const \hyperlink{classez_1_1objects_1_1Object}{Object} \&}]{x,  }\item[{const \hyperlink{classez_1_1objects_1_1Object}{Object} \&}]{y }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [friend]}}
+
+Overloading of not equal operator \mbox{\Hypertarget{classez_1_1objects_1_1Object_a6f011ffc58727a1b133e9cace6f5d79a}\label{classez_1_1objects_1_1Object_a6f011ffc58727a1b133e9cace6f5d79a}} 
+\index{ez\+::objects\+::\+Object@{ez\+::objects\+::\+Object}!operator$<$@{operator$<$}}
+\index{operator$<$@{operator$<$}!ez\+::objects\+::\+Object@{ez\+::objects\+::\+Object}}
+\subsubsection{\texorpdfstring{operator$<$}{operator<}}
+{\footnotesize\ttfamily bool operator$<$ (\begin{DoxyParamCaption}\item[{const \hyperlink{classez_1_1objects_1_1Object}{Object} \&}]{x,  }\item[{const \hyperlink{classez_1_1objects_1_1Object}{Object} \&}]{y }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [friend]}}
+
+overloading of less than operator used by the sort algorithm \mbox{\Hypertarget{classez_1_1objects_1_1Object_a8c4aa17f8cf91b04c722b994a7028999}\label{classez_1_1objects_1_1Object_a8c4aa17f8cf91b04c722b994a7028999}} 
+\index{ez\+::objects\+::\+Object@{ez\+::objects\+::\+Object}!operator$<$$<$@{operator$<$$<$}}
+\index{operator$<$$<$@{operator$<$$<$}!ez\+::objects\+::\+Object@{ez\+::objects\+::\+Object}}
+\subsubsection{\texorpdfstring{operator$<$$<$}{operator<<}}
+{\footnotesize\ttfamily std\+::ostream\& operator$<$$<$ (\begin{DoxyParamCaption}\item[{std\+::ostream \&}]{stream,  }\item[{\hyperlink{classez_1_1objects_1_1Object}{Object} \&}]{obj }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [friend]}}
+
+overloading of output stream operator \mbox{\Hypertarget{classez_1_1objects_1_1Object_a2e452c05c348d53615e96b58089a9732}\label{classez_1_1objects_1_1Object_a2e452c05c348d53615e96b58089a9732}} 
+\index{ez\+::objects\+::\+Object@{ez\+::objects\+::\+Object}!operator==@{operator==}}
+\index{operator==@{operator==}!ez\+::objects\+::\+Object@{ez\+::objects\+::\+Object}}
+\subsubsection{\texorpdfstring{operator==}{operator==}}
+{\footnotesize\ttfamily bool operator== (\begin{DoxyParamCaption}\item[{const \hyperlink{classez_1_1objects_1_1Object}{Object} \&}]{x,  }\item[{const \hyperlink{classez_1_1objects_1_1Object}{Object} \&}]{y }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [friend]}}
+
+Overloading of equal operator. Note that two references are considered equal if they point to the same object or if the compare function return 0 \mbox{\Hypertarget{classez_1_1objects_1_1Object_ae68a9d9e998a5694b42898cb6730cd08}\label{classez_1_1objects_1_1Object_ae68a9d9e998a5694b42898cb6730cd08}} 
+\index{ez\+::objects\+::\+Object@{ez\+::objects\+::\+Object}!operator$>$$>$@{operator$>$$>$}}
+\index{operator$>$$>$@{operator$>$$>$}!ez\+::objects\+::\+Object@{ez\+::objects\+::\+Object}}
+\subsubsection{\texorpdfstring{operator$>$$>$}{operator>>}}
+{\footnotesize\ttfamily std\+::istream\& operator$>$$>$ (\begin{DoxyParamCaption}\item[{std\+::istream \&}]{stream,  }\item[{\hyperlink{classez_1_1objects_1_1Object}{Object} \&}]{obj }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [friend]}}
+
+overloading od input stream operator 
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+src/version\+\_\+2018.\+06/objects/object.\+h\item 
+src/version\+\_\+2018.\+06/objects/object.\+cpp\end{DoxyCompactItemize}

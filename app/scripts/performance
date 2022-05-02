@@ -1,0 +1,117 @@
+#!/bin/bash
+# Description: run performance tests
+# Author: Jean-Michel Richer
+
+if test $# -ne 1 ; then
+	echo "error: one parameter required ARCHI "
+	echo "- ARCHI = 32 or 64"
+	exit 1
+fi
+
+archi=$1
+suffix="${archi}"
+main=`ls build/bin/*.exe | head -1`
+
+
+configuration_file="app/config.ezp"
+
+my_syst=`cat $configuration_file | grep "MY_SYSTEM" | cut -d'=' -f2 | tr -d ' '`
+my_comp=`cat $configuration_file | grep "MY_COMPILER" | cut -d'=' -f2 | tr -d ' '`
+my_arch=`cat $configuration_file | grep "MY_ARCHITECTURE" | cut -d'=' -f2 | tr -d ' '`
+cpu_name=`app/scripts/hardware_cpu_name.sh`
+
+test_dir="results/hardware/$cpu_name"
+test_file="${test_dir}/${my_syst}_${my_comp}_${my_arch}"
+
+if test ! -d $test_dir ; then
+	echo "!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!"
+	echo "No information about CPU found"
+	echo "The following directory does not exist"
+	echo "${test_dir}"
+	echo "!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!"
+	exit 1
+fi
+
+
+date=`date +%Y_%m_%d`
+
+echo "create directory: ${test_dir}" 
+mkdir -p $test_dir
+echo "create file: ${test_file}"
+echo "$date" >$test_file
+
+if test "$my_comp" = "gnu" ; then
+	g++ --version >$test_file
+elif test "$my_comp" = "llvm" ; then
+	clang++ --version >$test_file
+elif test "$my_comp" = "intel" ; then
+	icpc --version >$test_file
+else
+	echo "!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!"
+	echo "!!!          No compiler found          !!!"
+	echo "!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!"
+fi
+
+# get test parameters
+source ./app/performance_parameters.sh
+
+for treatment in $treatments ; do
+
+	iterations=`echo $iterations_per_treatment | tr '|' '\n' | grep $treatment | cut -d':' -f2`
+	lengths=`echo $lengths_per_treatment | tr '|' '\n' | grep $treatment | cut -d':' -f2`
+	
+	echo "iterations=$iterations"
+	echo "lengths tested=$lengths"
+	
+	results_file="results/data/${cpu_name}_${my_syste_${my_comp}_${my_arch}_${treatment}.txt"
+	mkdir -p `dirname $results_file`
+
+	rm -rf $results_file
+
+	echo "===================================================="
+	echo "results send on $results_file"
+	echo "===================================================="
+	
+	echo "# $date" >> $results_file
+	echo "# implementation ; treatment; size ; time" >> $results_file
+
+
+	# one minute in seconds
+	one_minute_sec=60
+	# one minute in milli seconds
+	one_minute_mis=60000
+	
+	for implementation in $implementations ; do
+		last_time=0
+		for length in $lengths ; do	 
+			#echo " !!!!!!!!! ${main} --treatment=$treatment -s $length --implementation=$implementation "
+			
+			if test $last_time -ge $one_minute_mis ; then
+				elasped=60
+				elasped_mis=$one_minute_mis
+			else
+				${main} --treatment=$treatment -s $length --implementation=$implementation --iterations=$iterations 2>&1 >stdout.txt
+				elapsed=`cat stdout.txt | grep "^cpu elapsed=" | cut -d'|' -f3`
+				elapsed_mis=`cat stdout.txt | grep "^cpu elapsed=" | cut -d'|' -f2`
+			fi
+			
+				
+			if test $elapsed_mis -ge $one_minute_mis ; then
+				last_time=$one_minute_mis
+				elapsed=$one_minute_sec
+			else
+				last_time=$elapsed_mis
+			fi	
+			
+			echo "$implementation; $treatment ; $length ; $iterations ; $elapsed"
+			echo "$implementation; $treatment ; $length ; $iterations ; $elapsed" >> $results_file
+			
+		done	
+	done
+	
+done
+
+rm -rf stdout.txt
+echo "See results in 'results/data'"
+
+

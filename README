@@ -1,0 +1,67 @@
+=====================================================================
+Project EZLIB (Easy Library)
+Author: Jean-Michel RICHER
+Position: Associate Pr at the University of Angers, France
+Email: jean-michel.richer@univ-angers.fr
+http://www.info.univ-angers.fr/~richer
+=====================================================================
+
+ #####   ######    ##    #####   #    #  ######
+ #    #  #        #  #   #    #  ##  ##  #
+ #    #  #####   #    #  #    #  # ## #  #####
+ #####   #       ######  #    #  #    #  #
+ #   #   #       #    #  #    #  #    #  #
+ #    #  ######  #    #  #####   #    #  ######
+
+---------------------------------------------------------------------
+1. DESCRIPTION
+---------------------------------------------------------------------
+
+  The EZLIB project aims at providing useful functions to help in
+  application development. The library is composed of a version
+  number which is the year and month it was created. The latest
+  version is 2018.06. For each version you will find in the 'src'
+  directory subdirectories that compose the library as follows:
+  
+  - 'essential' concerns type definition and useful functions on
+     text and convertion to numbers; all other subdirectories rely
+     on 'essential'
+     
+  - 'arguments' is the handling of command line arguments in order 
+    to automatize their parsing and the possibility to automatically
+    generate the command line synopsis
+    
+  - 'logging' is a logging system that can help send output 
+    information to standard output or to a file
+    
+  - 'extensions' represents extensions to the STL to extend algorithms
+    so that we work on whole containers instead of having to specify
+    the begin() and end() iterators
+    
+  - 'objects' is the redefinition of containers but with more explicit
+    methods like 'put_first', 'put_last', 'put_at' and also the fact
+    that the first element of a container has index 1, instead of 0
+    in C/C++
+    
+  - 'io' there is not much here for the moment except the CSVFile 
+    class to handle Comma Separated Value files
+  
+  - 'maths' is the possibility to handle series of values, compute
+    their average, standard deviation or export data as JSON file
+  
+
+---------------------------------------------------------------------
+2. INSTALLATION
+---------------------------------------------------------------------  
+
+	See the INSTALL file.
+	
+	
+---------------------------------------------------------------------
+3. BUGS
+--------------------------------------------------------------------- 	
+
+	Please report bugs and improvements to the author (see above for
+	email address).
+	
+	

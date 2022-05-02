@@ -1,0 +1,125 @@
+\hypertarget{classez_1_1maths_1_1Frequency}{}\section{ez\+:\+:maths\+:\+:Frequency$<$ T $>$ Class Template Reference}
+\label{classez_1_1maths_1_1Frequency}\index{ez\+::maths\+::\+Frequency$<$ T $>$@{ez\+::maths\+::\+Frequency$<$ T $>$}}
+
+
+{\ttfamily \#include $<$frequency.\+h$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classez_1_1maths_1_1Frequency_aa090ee7e4117d4f5a694de71c44ec789}{Frequency} ()
+\item 
+\hyperlink{classez_1_1maths_1_1Frequency_a5fe6cf61394f7fc424c4d93392f734a2}{Frequency} (T mini, T maxi, T incr, T delta=1)
+\item 
+void \hyperlink{classez_1_1maths_1_1Frequency_a93882872b801cb8f47e61f32b24a051a}{insert} (\hyperlink{classez_1_1maths_1_1Interval}{Interval}$<$ T $>$ c)
+\item 
+void \hyperlink{classez_1_1maths_1_1Frequency_acd474d72e33becac99dc5dff9bcdb3e8}{record} (T value)
+\item 
+real \hyperlink{classez_1_1maths_1_1Frequency_aa18480ae307a14ad3a528476194d022e}{total} ()
+\item 
+void \hyperlink{classez_1_1maths_1_1Frequency_a102cd5f7b102ee433126fe809b2dfccb}{store} (ostream \&out)
+\item 
+void \hyperlink{classez_1_1maths_1_1Frequency_a4b1bc9f927a526e0ca1bbc59f1a14ca6}{percentage} ()
+\item 
+void \hyperlink{classez_1_1maths_1_1Frequency_af24be0f62175280c79ef1107f4a07b8d}{export\+\_\+as\+\_\+series} (ostream \&out)
+\end{DoxyCompactItemize}
+\subsection*{Protected Types}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classez_1_1maths_1_1Frequency_aa22594e9d41c897c4aec8c8527046e17}\label{classez_1_1maths_1_1Frequency_aa22594e9d41c897c4aec8c8527046e17}} 
+typedef pair$<$ \hyperlink{classez_1_1maths_1_1Interval}{Interval}$<$ T $>$, real $>$ {\bfseries Element}
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classez_1_1maths_1_1Frequency_a0b35037580b2a5c38012f53f95f01500}\label{classez_1_1maths_1_1Frequency_a0b35037580b2a5c38012f53f95f01500}} 
+vector$<$ Element $>$ {\bfseries m\+\_\+classes}
+\end{DoxyCompactItemize}
+\subsection*{Friends}
+\begin{DoxyCompactItemize}
+\item 
+ostream \& \hyperlink{classez_1_1maths_1_1Frequency_a0909af66272f86930b70857efb6c6a7e}{operator$<$$<$} (ostream \&out, \hyperlink{classez_1_1maths_1_1Frequency}{Frequency}$<$ T $>$ \&obj)
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\subsubsection*{template$<$class T$>$\newline
+class ez\+::maths\+::\+Frequency$<$ T $>$}
+
+this class counts the number of occurrences of some values in terms of classes 
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classez_1_1maths_1_1Frequency_aa090ee7e4117d4f5a694de71c44ec789}\label{classez_1_1maths_1_1Frequency_aa090ee7e4117d4f5a694de71c44ec789}} 
+\index{ez\+::maths\+::\+Frequency@{ez\+::maths\+::\+Frequency}!Frequency@{Frequency}}
+\index{Frequency@{Frequency}!ez\+::maths\+::\+Frequency@{ez\+::maths\+::\+Frequency}}
+\subsubsection{\texorpdfstring{Frequency()}{Frequency()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily template$<$class T $>$ \\
+\hyperlink{classez_1_1maths_1_1Frequency}{ez\+::maths\+::\+Frequency}$<$ T $>$\+::\hyperlink{classez_1_1maths_1_1Frequency}{Frequency} (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+default constructor \mbox{\Hypertarget{classez_1_1maths_1_1Frequency_a5fe6cf61394f7fc424c4d93392f734a2}\label{classez_1_1maths_1_1Frequency_a5fe6cf61394f7fc424c4d93392f734a2}} 
+\index{ez\+::maths\+::\+Frequency@{ez\+::maths\+::\+Frequency}!Frequency@{Frequency}}
+\index{Frequency@{Frequency}!ez\+::maths\+::\+Frequency@{ez\+::maths\+::\+Frequency}}
+\subsubsection{\texorpdfstring{Frequency()}{Frequency()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily template$<$class T $>$ \\
+\hyperlink{classez_1_1maths_1_1Frequency}{ez\+::maths\+::\+Frequency}$<$ T $>$\+::\hyperlink{classez_1_1maths_1_1Frequency}{Frequency} (\begin{DoxyParamCaption}\item[{T}]{mini,  }\item[{T}]{maxi,  }\item[{T}]{incr,  }\item[{T}]{delta = {\ttfamily 1} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+constructor that generates classes 
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classez_1_1maths_1_1Frequency_af24be0f62175280c79ef1107f4a07b8d}\label{classez_1_1maths_1_1Frequency_af24be0f62175280c79ef1107f4a07b8d}} 
+\index{ez\+::maths\+::\+Frequency@{ez\+::maths\+::\+Frequency}!export\+\_\+as\+\_\+series@{export\+\_\+as\+\_\+series}}
+\index{export\+\_\+as\+\_\+series@{export\+\_\+as\+\_\+series}!ez\+::maths\+::\+Frequency@{ez\+::maths\+::\+Frequency}}
+\subsubsection{\texorpdfstring{export\+\_\+as\+\_\+series()}{export\_as\_series()}}
+{\footnotesize\ttfamily template$<$class T $>$ \\
+void \hyperlink{classez_1_1maths_1_1Frequency}{ez\+::maths\+::\+Frequency}$<$ T $>$\+::export\+\_\+as\+\_\+series (\begin{DoxyParamCaption}\item[{ostream \&}]{out }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+export as series for highcharts \mbox{\Hypertarget{classez_1_1maths_1_1Frequency_a93882872b801cb8f47e61f32b24a051a}\label{classez_1_1maths_1_1Frequency_a93882872b801cb8f47e61f32b24a051a}} 
+\index{ez\+::maths\+::\+Frequency@{ez\+::maths\+::\+Frequency}!insert@{insert}}
+\index{insert@{insert}!ez\+::maths\+::\+Frequency@{ez\+::maths\+::\+Frequency}}
+\subsubsection{\texorpdfstring{insert()}{insert()}}
+{\footnotesize\ttfamily template$<$class T $>$ \\
+void \hyperlink{classez_1_1maths_1_1Frequency}{ez\+::maths\+::\+Frequency}$<$ T $>$\+::insert (\begin{DoxyParamCaption}\item[{\hyperlink{classez_1_1maths_1_1Interval}{Interval}$<$ T $>$}]{c }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+insert interval of values \mbox{\Hypertarget{classez_1_1maths_1_1Frequency_a4b1bc9f927a526e0ca1bbc59f1a14ca6}\label{classez_1_1maths_1_1Frequency_a4b1bc9f927a526e0ca1bbc59f1a14ca6}} 
+\index{ez\+::maths\+::\+Frequency@{ez\+::maths\+::\+Frequency}!percentage@{percentage}}
+\index{percentage@{percentage}!ez\+::maths\+::\+Frequency@{ez\+::maths\+::\+Frequency}}
+\subsubsection{\texorpdfstring{percentage()}{percentage()}}
+{\footnotesize\ttfamily template$<$class T $>$ \\
+void \hyperlink{classez_1_1maths_1_1Frequency}{ez\+::maths\+::\+Frequency}$<$ T $>$\+::percentage (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+convert frequencies to percentages \mbox{\Hypertarget{classez_1_1maths_1_1Frequency_acd474d72e33becac99dc5dff9bcdb3e8}\label{classez_1_1maths_1_1Frequency_acd474d72e33becac99dc5dff9bcdb3e8}} 
+\index{ez\+::maths\+::\+Frequency@{ez\+::maths\+::\+Frequency}!record@{record}}
+\index{record@{record}!ez\+::maths\+::\+Frequency@{ez\+::maths\+::\+Frequency}}
+\subsubsection{\texorpdfstring{record()}{record()}}
+{\footnotesize\ttfamily template$<$class T $>$ \\
+void \hyperlink{classez_1_1maths_1_1Frequency}{ez\+::maths\+::\+Frequency}$<$ T $>$\+::record (\begin{DoxyParamCaption}\item[{T}]{value }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+record value \mbox{\Hypertarget{classez_1_1maths_1_1Frequency_a102cd5f7b102ee433126fe809b2dfccb}\label{classez_1_1maths_1_1Frequency_a102cd5f7b102ee433126fe809b2dfccb}} 
+\index{ez\+::maths\+::\+Frequency@{ez\+::maths\+::\+Frequency}!store@{store}}
+\index{store@{store}!ez\+::maths\+::\+Frequency@{ez\+::maths\+::\+Frequency}}
+\subsubsection{\texorpdfstring{store()}{store()}}
+{\footnotesize\ttfamily template$<$class T $>$ \\
+void \hyperlink{classez_1_1maths_1_1Frequency}{ez\+::maths\+::\+Frequency}$<$ T $>$\+::store (\begin{DoxyParamCaption}\item[{ostream \&}]{out }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+store data to be used by gnuplot \mbox{\Hypertarget{classez_1_1maths_1_1Frequency_aa18480ae307a14ad3a528476194d022e}\label{classez_1_1maths_1_1Frequency_aa18480ae307a14ad3a528476194d022e}} 
+\index{ez\+::maths\+::\+Frequency@{ez\+::maths\+::\+Frequency}!total@{total}}
+\index{total@{total}!ez\+::maths\+::\+Frequency@{ez\+::maths\+::\+Frequency}}
+\subsubsection{\texorpdfstring{total()}{total()}}
+{\footnotesize\ttfamily template$<$class T $>$ \\
+real \hyperlink{classez_1_1maths_1_1Frequency}{ez\+::maths\+::\+Frequency}$<$ T $>$\+::total (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+record total number of values recorded 
+
+\subsection{Friends And Related Function Documentation}
+\mbox{\Hypertarget{classez_1_1maths_1_1Frequency_a0909af66272f86930b70857efb6c6a7e}\label{classez_1_1maths_1_1Frequency_a0909af66272f86930b70857efb6c6a7e}} 
+\index{ez\+::maths\+::\+Frequency@{ez\+::maths\+::\+Frequency}!operator$<$$<$@{operator$<$$<$}}
+\index{operator$<$$<$@{operator$<$$<$}!ez\+::maths\+::\+Frequency@{ez\+::maths\+::\+Frequency}}
+\subsubsection{\texorpdfstring{operator$<$$<$}{operator<<}}
+{\footnotesize\ttfamily template$<$class T $>$ \\
+ostream\& operator$<$$<$ (\begin{DoxyParamCaption}\item[{ostream \&}]{out,  }\item[{\hyperlink{classez_1_1maths_1_1Frequency}{Frequency}$<$ T $>$ \&}]{obj }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [friend]}}
+
+overloading of output operator 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+src/version\+\_\+2018.\+06/maths/frequency.\+h\end{DoxyCompactItemize}

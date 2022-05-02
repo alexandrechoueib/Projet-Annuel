@@ -1,0 +1,128 @@
+# ===================================================================
+# Configuration file with ezp format (Easy Language Parameters)
+# ===================================================================
+
+# -------------------------------------------------------------------
+# Define project name
+# Note: generally this is also the name of the directory of the
+#       project 
+# -------------------------------------------------------------------
+MY_PROJECT_NAME=ezlib_projet_annuel
+
+# -------------------------------------------------------------------
+# Define project version
+# Note: we use the year followed by the month 
+# -------------------------------------------------------------------
+MY_PROJECT_VERSION=2022.02
+
+# -------------------------------------------------------------------
+# Name of the author
+# -------------------------------------------------------------------
+MY_AUTHOR_NAME=Jean-Michel Richer
+
+# -------------------------------------------------------------------
+# Email address of the author
+# -------------------------------------------------------------------
+MY_AUTHOR_EMAIL=jean-michel.richer@univ-angers.fr
+
+# -+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-
+# -+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-
+#                       SECTION IMPLEMENTATION
+# -+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-
+# -+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-
+
+# -------------------------------------------------------------------
+# Define operating system on which the source are compiled
+# possible values: 
+#  - linux (for Ubuntu, Debian adnd other Linux distributions)
+#  - pi (for Raspberry PI)
+# -------------------------------------------------------------------
+MY_SYSTEM=linux
+
+# -------------------------------------------------------------------
+# Define flavor which will influence the compilation
+# flags
+# possible values: 
+#  - release (Optimization)
+#  - debug (debug mode)
+#  - advisor (for intel advisor)
+# -------------------------------------------------------------------
+MY_FLAVOR=release
+
+# -------------------------------------------------------------------
+# Architecture of the system
+# possible values: 
+#  - 32 (bits, x86 i686)
+#  - 64 (bits, x86_64 AMD64)
+# Note: that you compile for 32 bits on a 64 bits Operating System
+#       you will need to install multilib for gcc and g++ under
+#       Linux
+# -------------------------------------------------------------------
+MY_ARCHITECTURE=64
+
+# -------------------------------------------------------------------
+# Compiler that will be used to compile sources
+# possible values: 
+#  - gnu (for G++) 
+#  - intel (for icpc) 
+#  - llvm (for clang++)
+#  - pgi (for pgc++)
+# -------------------------------------------------------------------
+MY_COMPILER=gnu
+
+
+# -------------------------------------------------------------------
+# Size in bits of the data used
+# possible values: 
+#  - 8 (bits so 1 byte)
+# note: only one value possible
+# -------------------------------------------------------------------
+MY_DATA_SIZE=8
+
+# -------------------------------------------------------------------
+# Memory alignment boundary
+# possible values: 
+#  - 1 (byte)
+#  - 16 (bytes)
+#  - 32 (bytes)
+# note: use 16 for SSE2 or SSE4.2 instruction set and 32 for AVX2
+#       by default 32 is a good value to use
+# -------------------------------------------------------------------
+MY_MEMORY_ALIGNMENT=32
+
+# -------------------------------------------------------------------
+# Implementation of real numbers
+# possible values: 
+#  - float (for 32 bits floating point) 
+#  - double (for 64 bits)
+# note: this parameter is not relevant for this project
+# -------------------------------------------------------------------
+MY_REAL_IMPLEMENTATION=float
+
+
+# -+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-
+# -+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-
+#        SECTION AUTOMATIC EXECUTION AND RESULTS GATHERING
+# -+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-
+# -+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-
+
+# -------------------------------------------------------------------
+# Name of the user on server and remote hosts
+# -------------------------------------------------------------------
+MY_USER=richer
+
+# -------------------------------------------------------------------
+# Server identification used to gather results
+# Note: it can also be an IP address
+# -------------------------------------------------------------------
+MY_SERVER=richer@192.168.0.1
+
+# -------------------------------------------------------------------
+# Directory on server that received results
+# -------------------------------------------------------------------
+MY_SERVER_DIRECTORY=/home/richer/workspace/cpp_aos_soa/
+
+# -------------------------------------------------------------------
+# Directory on remote hosts that receive the archive of the project
+# -------------------------------------------------------------------
+MY_REMOTE_DIRECTORY=/home/richer/export

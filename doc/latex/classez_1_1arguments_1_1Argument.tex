@@ -1,0 +1,139 @@
+\hypertarget{classez_1_1arguments_1_1Argument}{}\section{ez\+:\+:arguments\+:\+:Argument Class Reference}
+\label{classez_1_1arguments_1_1Argument}\index{ez\+::arguments\+::\+Argument@{ez\+::arguments\+::\+Argument}}
+
+
+{\ttfamily \#include $<$argument.\+h$>$}
+
+
+
+Inheritance diagram for ez\+:\+:arguments\+:\+:Argument\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classez_1_1arguments_1_1Argument__inherit__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classez_1_1arguments_1_1Argument_af4799a33a85a7c1d11190f9f285b1117}{Argument} (text long\+\_\+label, char short\+\_\+label, text description, trigger\+\_\+t trigger=nullptr)
+\item 
+\hyperlink{classez_1_1arguments_1_1Argument_a86a267b41b09aba45426c36e4e92b097}{Argument} (text long\+\_\+label, text description, trigger\+\_\+t trigger=nullptr)
+\item 
+\mbox{\Hypertarget{classez_1_1arguments_1_1Argument_afc1595edacf1f3cd7f186fad18b8e518}\label{classez_1_1arguments_1_1Argument_afc1595edacf1f3cd7f186fad18b8e518}} 
+text {\bfseries get\+\_\+long\+\_\+label} ()
+\item 
+\mbox{\Hypertarget{classez_1_1arguments_1_1Argument_a47ef11edb93c428268c19a7ab6c0aad4}\label{classez_1_1arguments_1_1Argument_a47ef11edb93c428268c19a7ab6c0aad4}} 
+char {\bfseries get\+\_\+short\+\_\+label} ()
+\item 
+\mbox{\Hypertarget{classez_1_1arguments_1_1Argument_a71d439c68e7d0c9bca9f61bce30cfaa9}\label{classez_1_1arguments_1_1Argument_a71d439c68e7d0c9bca9f61bce30cfaa9}} 
+text {\bfseries get\+\_\+description} ()
+\item 
+virtual void \hyperlink{classez_1_1arguments_1_1Argument_a7a4eb6a4d030416307584d8e77c2305a}{parse} (text \&s)=0
+\item 
+bool \hyperlink{classez_1_1arguments_1_1Argument_a049c9d70c97e990176247b5f4125f944}{is\+\_\+required} ()
+\item 
+\mbox{\Hypertarget{classez_1_1arguments_1_1Argument_a53a46cca0e608200f6b00df441c3e8b3}\label{classez_1_1arguments_1_1Argument_a53a46cca0e608200f6b00df441c3e8b3}} 
+void {\bfseries set\+\_\+required} ()
+\item 
+\mbox{\Hypertarget{classez_1_1arguments_1_1Argument_ae358f87661528ecb27e838d7af17675a}\label{classez_1_1arguments_1_1Argument_ae358f87661528ecb27e838d7af17675a}} 
+void {\bfseries set\+\_\+found} ()
+\item 
+\mbox{\Hypertarget{classez_1_1arguments_1_1Argument_a6e2f301f66312f1d45e2ade7921e7c42}\label{classez_1_1arguments_1_1Argument_a6e2f301f66312f1d45e2ade7921e7c42}} 
+bool {\bfseries was\+\_\+found} ()
+\item 
+void \hyperlink{classez_1_1arguments_1_1Argument_a740f929b9c34fbcdc20e4105034bd369}{call\+\_\+trigger} ()
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classez_1_1arguments_1_1Argument_ac0857a07d17c78753b2609dc15b516b4}\label{classez_1_1arguments_1_1Argument_ac0857a07d17c78753b2609dc15b516b4}} 
+text {\bfseries m\+\_\+long\+\_\+label}
+\item 
+\mbox{\Hypertarget{classez_1_1arguments_1_1Argument_ac21cad37b24aaa5e2bc281a197e76c21}\label{classez_1_1arguments_1_1Argument_ac21cad37b24aaa5e2bc281a197e76c21}} 
+char {\bfseries m\+\_\+short\+\_\+label}
+\item 
+\mbox{\Hypertarget{classez_1_1arguments_1_1Argument_a85dccf7365873de6e4d18b80e78ee523}\label{classez_1_1arguments_1_1Argument_a85dccf7365873de6e4d18b80e78ee523}} 
+text {\bfseries m\+\_\+description}
+\item 
+\mbox{\Hypertarget{classez_1_1arguments_1_1Argument_a8368ac83154f39c0082205460bad417c}\label{classez_1_1arguments_1_1Argument_a8368ac83154f39c0082205460bad417c}} 
+bool {\bfseries m\+\_\+required}
+\item 
+\mbox{\Hypertarget{classez_1_1arguments_1_1Argument_aed5b51cd7d343c0016a815fddb081684}\label{classez_1_1arguments_1_1Argument_aed5b51cd7d343c0016a815fddb081684}} 
+bool {\bfseries m\+\_\+found}
+\item 
+\mbox{\Hypertarget{classez_1_1arguments_1_1Argument_af5f2a640fe82cbcfcc2bb4121a6e3d50}\label{classez_1_1arguments_1_1Argument_af5f2a640fe82cbcfcc2bb4121a6e3d50}} 
+trigger\+\_\+t {\bfseries m\+\_\+trigger}
+\end{DoxyCompactItemize}
+\subsection*{Friends}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classez_1_1arguments_1_1Argument_a55c9e1ac006a645af402e3aee6b64e00}\label{classez_1_1arguments_1_1Argument_a55c9e1ac006a645af402e3aee6b64e00}} 
+class {\bfseries Argument\+Parser}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+default pattern to declare one class of argument 
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classez_1_1arguments_1_1Argument_af4799a33a85a7c1d11190f9f285b1117}\label{classez_1_1arguments_1_1Argument_af4799a33a85a7c1d11190f9f285b1117}} 
+\index{ez\+::arguments\+::\+Argument@{ez\+::arguments\+::\+Argument}!Argument@{Argument}}
+\index{Argument@{Argument}!ez\+::arguments\+::\+Argument@{ez\+::arguments\+::\+Argument}}
+\subsubsection{\texorpdfstring{Argument()}{Argument()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily ez\+::arguments\+::\+Argument\+::\+Argument (\begin{DoxyParamCaption}\item[{text}]{long\+\_\+label,  }\item[{char}]{short\+\_\+label,  }\item[{text}]{description,  }\item[{trigger\+\_\+t}]{trigger = {\ttfamily nullptr} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+constructor with labels and description 
+\begin{DoxyParams}{Parameters}
+{\em ll} & label as long format (text) \\
+\hline
+{\em sl} & label as short format (char) \\
+\hline
+{\em d} & description \\
+\hline
+{\em tg} & trigger \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classez_1_1arguments_1_1Argument_a86a267b41b09aba45426c36e4e92b097}\label{classez_1_1arguments_1_1Argument_a86a267b41b09aba45426c36e4e92b097}} 
+\index{ez\+::arguments\+::\+Argument@{ez\+::arguments\+::\+Argument}!Argument@{Argument}}
+\index{Argument@{Argument}!ez\+::arguments\+::\+Argument@{ez\+::arguments\+::\+Argument}}
+\subsubsection{\texorpdfstring{Argument()}{Argument()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily ez\+::arguments\+::\+Argument\+::\+Argument (\begin{DoxyParamCaption}\item[{text}]{long\+\_\+label,  }\item[{text}]{description,  }\item[{trigger\+\_\+t}]{trigger = {\ttfamily nullptr} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+constructor with labels and description but without short argument 
+\begin{DoxyParams}{Parameters}
+{\em ll} & label as long format (text) \\
+\hline
+{\em d} & description \\
+\hline
+{\em tg} & trigger \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classez_1_1arguments_1_1Argument_a740f929b9c34fbcdc20e4105034bd369}\label{classez_1_1arguments_1_1Argument_a740f929b9c34fbcdc20e4105034bd369}} 
+\index{ez\+::arguments\+::\+Argument@{ez\+::arguments\+::\+Argument}!call\+\_\+trigger@{call\+\_\+trigger}}
+\index{call\+\_\+trigger@{call\+\_\+trigger}!ez\+::arguments\+::\+Argument@{ez\+::arguments\+::\+Argument}}
+\subsubsection{\texorpdfstring{call\+\_\+trigger()}{call\_trigger()}}
+{\footnotesize\ttfamily void Argument\+::call\+\_\+trigger (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+call trigger if defined \mbox{\Hypertarget{classez_1_1arguments_1_1Argument_a049c9d70c97e990176247b5f4125f944}\label{classez_1_1arguments_1_1Argument_a049c9d70c97e990176247b5f4125f944}} 
+\index{ez\+::arguments\+::\+Argument@{ez\+::arguments\+::\+Argument}!is\+\_\+required@{is\+\_\+required}}
+\index{is\+\_\+required@{is\+\_\+required}!ez\+::arguments\+::\+Argument@{ez\+::arguments\+::\+Argument}}
+\subsubsection{\texorpdfstring{is\+\_\+required()}{is\_required()}}
+{\footnotesize\ttfamily bool ez\+::arguments\+::\+Argument\+::is\+\_\+required (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+tells if this argument is required \mbox{\Hypertarget{classez_1_1arguments_1_1Argument_a7a4eb6a4d030416307584d8e77c2305a}\label{classez_1_1arguments_1_1Argument_a7a4eb6a4d030416307584d8e77c2305a}} 
+\index{ez\+::arguments\+::\+Argument@{ez\+::arguments\+::\+Argument}!parse@{parse}}
+\index{parse@{parse}!ez\+::arguments\+::\+Argument@{ez\+::arguments\+::\+Argument}}
+\subsubsection{\texorpdfstring{parse()}{parse()}}
+{\footnotesize\ttfamily virtual void ez\+::arguments\+::\+Argument\+::parse (\begin{DoxyParamCaption}\item[{text \&}]{s }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+function used to parse argument argv\mbox{[}i\mbox{]}. for example if argument is \char`\"{}-\/-\/arg=value\char`\"{}, only the \char`\"{}value\char`\"{} part is given as the s parameter 
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+src/version\+\_\+2018.\+06/arguments/argument.\+h\item 
+src/version\+\_\+2018.\+06/arguments/argument.\+cpp\end{DoxyCompactItemize}

@@ -1,0 +1,22 @@
+#!/bin/sh
+
+cpu_name=`appli/scripts/get_cpu_name.sh`
+output_dir="results/hardware/${cpu_name}"
+output_file="${output_dir}/description"
+
+if test -f $output_file ; then
+	echo "Note: hardware information already gathered"
+	exit 0
+fi
+
+mkdir -p $output_dir
+
+echo "================================================="
+echo "Get hardware information"
+echo "- we need to connect as root in order to obtain"
+echo "  information from dmidecode"
+echo "================================================="
+
+echo "found CPU: $cpu_name"
+
+sudo dmidecode -t 4,7,16,17 >$output_file

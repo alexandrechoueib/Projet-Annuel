@@ -1,0 +1,115 @@
+\hypertarget{classez_1_1maths_1_1Volume}{}\section{ez\+:\+:maths\+:\+:Volume$<$ Data\+Type $>$ Class Template Reference}
+\label{classez_1_1maths_1_1Volume}\index{ez\+::maths\+::\+Volume$<$ Data\+Type $>$@{ez\+::maths\+::\+Volume$<$ Data\+Type $>$}}
+
+
+{\ttfamily \#include $<$volume.\+h$>$}
+
+\subsection*{Data Structures}
+\begin{DoxyCompactItemize}
+\item 
+class \hyperlink{classez_1_1maths_1_1Volume_1_1VolumeMatrix}{Volume\+Matrix}
+\end{DoxyCompactItemize}
+\subsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classez_1_1maths_1_1Volume_ad665ced92afef5d6b280f21a2da5d626}\label{classez_1_1maths_1_1Volume_ad665ced92afef5d6b280f21a2da5d626}} 
+typedef \hyperlink{classez_1_1maths_1_1Volume}{Volume}$<$ Data\+Type $>$ {\bfseries self}
+\item 
+\mbox{\Hypertarget{classez_1_1maths_1_1Volume_a4e05631a90197c6236828e916a51c6d4}\label{classez_1_1maths_1_1Volume_a4e05631a90197c6236828e916a51c6d4}} 
+typedef Data\+Type {\bfseries value\+\_\+type}
+\item 
+\mbox{\Hypertarget{classez_1_1maths_1_1Volume_a918f48d72d4a85a3782d728f9e5f330a}\label{classez_1_1maths_1_1Volume_a918f48d72d4a85a3782d728f9e5f330a}} 
+typedef std\+::vector$<$ Data\+Type $>$\+::iterator {\bfseries iterator}
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classez_1_1maths_1_1Volume_a6ed04fb352180b0df36dfbee44819fe5}\label{classez_1_1maths_1_1Volume_a6ed04fb352180b0df36dfbee44819fe5}} 
+{\bfseries Volume} (natural size\+\_\+z, natural size\+\_\+y, natural size\+\_\+x)
+\item 
+\mbox{\Hypertarget{classez_1_1maths_1_1Volume_ae60ce595d5f72cd2dc34a0fb68b40312}\label{classez_1_1maths_1_1Volume_ae60ce595d5f72cd2dc34a0fb68b40312}} 
+{\bfseries Volume} (const \hyperlink{classez_1_1maths_1_1Volume}{Volume}$<$ Data\+Type $>$ \&obj)
+\item 
+\mbox{\Hypertarget{classez_1_1maths_1_1Volume_a635a4b9847ee841827cca77a59fd0394}\label{classez_1_1maths_1_1Volume_a635a4b9847ee841827cca77a59fd0394}} 
+{\bfseries Volume} (natural size\+\_\+x, natural size\+\_\+y, natural size\+\_\+z, const std\+::initializer\+\_\+list$<$ Data\+Type $>$ \&l)
+\item 
+\mbox{\Hypertarget{classez_1_1maths_1_1Volume_a0ab8d8d13b2ab61d8e2ab590cfc56cb2}\label{classez_1_1maths_1_1Volume_a0ab8d8d13b2ab61d8e2ab590cfc56cb2}} 
+\hyperlink{classez_1_1maths_1_1Volume}{Volume}$<$ Data\+Type $>$ \& {\bfseries operator=} (const \hyperlink{classez_1_1maths_1_1Volume}{Volume}$<$ Data\+Type $>$ \&obj)
+\item 
+\mbox{\Hypertarget{classez_1_1maths_1_1Volume_a14d0632e4a340a636681139d05992e8e}\label{classez_1_1maths_1_1Volume_a14d0632e4a340a636681139d05992e8e}} 
+natural {\bfseries size} ()
+\item 
+\mbox{\Hypertarget{classez_1_1maths_1_1Volume_ab53fad2aa3ad7e1660adfc9aa2675c92}\label{classez_1_1maths_1_1Volume_ab53fad2aa3ad7e1660adfc9aa2675c92}} 
+std\+::vector$<$ Data\+Type $>$ \& {\bfseries data} ()
+\item 
+\mbox{\Hypertarget{classez_1_1maths_1_1Volume_adc78e170c736193ad74ab699126edf3f}\label{classez_1_1maths_1_1Volume_adc78e170c736193ad74ab699126edf3f}} 
+void {\bfseries resize} (natural size\+\_\+x, natural size\+\_\+y, natural size\+\_\+z)
+\item 
+\mbox{\Hypertarget{classez_1_1maths_1_1Volume_ac6ed242a2eaced17fd9aa74a68c308d8}\label{classez_1_1maths_1_1Volume_ac6ed242a2eaced17fd9aa74a68c308d8}} 
+void {\bfseries fill} (Data\+Type value)
+\item 
+\mbox{\Hypertarget{classez_1_1maths_1_1Volume_ad585005fb2172ebb732a29166d898e50}\label{classez_1_1maths_1_1Volume_ad585005fb2172ebb732a29166d898e50}} 
+\hyperlink{classez_1_1maths_1_1Volume_1_1VolumeMatrix}{Volume\+Matrix} {\bfseries operator\mbox{[}$\,$\mbox{]}} (natural z)
+\item 
+Data\+Type \& \hyperlink{classez_1_1maths_1_1Volume_af6447dfa426fd0fd36ab680f72b9475f}{operator()} (natural z, natural y, natural x)
+\item 
+\mbox{\Hypertarget{classez_1_1maths_1_1Volume_a1d19bde6c9233344a36d4996171fb55d}\label{classez_1_1maths_1_1Volume_a1d19bde6c9233344a36d4996171fb55d}} 
+\hyperlink{classez_1_1maths_1_1Volume}{self} {\bfseries operator+} (const \hyperlink{classez_1_1maths_1_1Volume}{self} \&b)
+\item 
+\mbox{\Hypertarget{classez_1_1maths_1_1Volume_ae9fadcb146b7c5415027eacd500bfc19}\label{classez_1_1maths_1_1Volume_ae9fadcb146b7c5415027eacd500bfc19}} 
+\hyperlink{classez_1_1maths_1_1Volume}{self} \& {\bfseries operator+=} (const \hyperlink{classez_1_1maths_1_1Volume}{self} \&b)
+\item 
+\mbox{\Hypertarget{classez_1_1maths_1_1Volume_a2f67756dd7296de1b7e0935355919c82}\label{classez_1_1maths_1_1Volume_a2f67756dd7296de1b7e0935355919c82}} 
+integer {\bfseries compare} (const \hyperlink{classez_1_1maths_1_1Volume}{self} \&y)
+\item 
+\mbox{\Hypertarget{classez_1_1maths_1_1Volume_af548d35f626f20ede1d4e8932def2c4b}\label{classez_1_1maths_1_1Volume_af548d35f626f20ede1d4e8932def2c4b}} 
+iterator {\bfseries begin} ()
+\item 
+\mbox{\Hypertarget{classez_1_1maths_1_1Volume_a0ce9feec1c16966fd546618a2172b0e4}\label{classez_1_1maths_1_1Volume_a0ce9feec1c16966fd546618a2172b0e4}} 
+iterator {\bfseries end} ()
+\end{DoxyCompactItemize}
+\subsection*{Data Fields}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classez_1_1maths_1_1Volume_a2de796352f8547618eab69885517da39}\label{classez_1_1maths_1_1Volume_a2de796352f8547618eab69885517da39}} 
+std\+::vector$<$ Data\+Type $>$ {\bfseries m\+\_\+data}
+\item 
+\mbox{\Hypertarget{classez_1_1maths_1_1Volume_ad7312c0e6e9a3c76cc70d5244d3923a9}\label{classez_1_1maths_1_1Volume_ad7312c0e6e9a3c76cc70d5244d3923a9}} 
+natural {\bfseries m\+\_\+size\+\_\+x}
+\item 
+\mbox{\Hypertarget{classez_1_1maths_1_1Volume_a21825ba3f4b18f99652546ee2cb06af1}\label{classez_1_1maths_1_1Volume_a21825ba3f4b18f99652546ee2cb06af1}} 
+natural {\bfseries m\+\_\+size\+\_\+y}
+\item 
+\mbox{\Hypertarget{classez_1_1maths_1_1Volume_ae0d7589c9d8f9202604ce69afe5928ad}\label{classez_1_1maths_1_1Volume_ae0d7589c9d8f9202604ce69afe5928ad}} 
+natural {\bfseries m\+\_\+size\+\_\+z}
+\end{DoxyCompactItemize}
+\subsection*{Friends}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classez_1_1maths_1_1Volume_aafa0d857e9814c279fdb85835a7a10d8}\label{classez_1_1maths_1_1Volume_aafa0d857e9814c279fdb85835a7a10d8}} 
+std\+::ostream \& {\bfseries operator$<$$<$} (std\+::ostream \&out, \hyperlink{classez_1_1maths_1_1Volume}{Volume}$<$ Data\+Type $>$ \&m)
+\item 
+\mbox{\Hypertarget{classez_1_1maths_1_1Volume_a89b571e0607100045577d5023a77342b}\label{classez_1_1maths_1_1Volume_a89b571e0607100045577d5023a77342b}} 
+bool {\bfseries operator==} (const \hyperlink{classez_1_1maths_1_1Volume}{self} \&x, const \hyperlink{classez_1_1maths_1_1Volume}{self} \&y)
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\subsubsection*{template$<$class Data\+Type$>$\newline
+class ez\+::maths\+::\+Volume$<$ Data\+Type $>$}
+
+Class used to define an array of three dimensions. The implementation is based on a vector of one dimension. 
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classez_1_1maths_1_1Volume_af6447dfa426fd0fd36ab680f72b9475f}\label{classez_1_1maths_1_1Volume_af6447dfa426fd0fd36ab680f72b9475f}} 
+\index{ez\+::maths\+::\+Volume@{ez\+::maths\+::\+Volume}!operator()@{operator()}}
+\index{operator()@{operator()}!ez\+::maths\+::\+Volume@{ez\+::maths\+::\+Volume}}
+\subsubsection{\texorpdfstring{operator()()}{operator()()}}
+{\footnotesize\ttfamily template$<$class Data\+Type$>$ \\
+Data\+Type\& \hyperlink{classez_1_1maths_1_1Volume}{ez\+::maths\+::\+Volume}$<$ Data\+Type $>$\+::operator() (\begin{DoxyParamCaption}\item[{natural}]{z,  }\item[{natural}]{y,  }\item[{natural}]{x }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+return reference to element (y,x) 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+src/version\+\_\+2018.\+06/maths/volume.\+h\end{DoxyCompactItemize}

@@ -1,0 +1,236 @@
+\hypertarget{classez_1_1essential_1_1Range}{}\section{ez\+:\+:essential\+:\+:Range Class Reference}
+\label{classez_1_1essential_1_1Range}\index{ez\+::essential\+::\+Range@{ez\+::essential\+::\+Range}}
+
+
+{\ttfamily \#include $<$range.\+h$>$}
+
+\subsection*{Data Structures}
+\begin{DoxyCompactItemize}
+\item 
+class \hyperlink{classez_1_1essential_1_1Range_1_1iterator}{iterator}
+\end{DoxyCompactItemize}
+\subsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classez_1_1essential_1_1Range_a0cb0cd46dfcb6bfcc50bcdad064191df}\label{classez_1_1essential_1_1Range_a0cb0cd46dfcb6bfcc50bcdad064191df}} 
+typedef \hyperlink{classez_1_1essential_1_1Range}{Range} {\bfseries self}
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{classez_1_1essential_1_1Range_ad1f022871185dd430d303ab4f049866b}{\+\_\+compute\+\_\+size} ()
+\item 
+\hyperlink{classez_1_1essential_1_1Range_ae594ee2956dd1baf07e78d988a51da29}{Range} ()
+\item 
+\hyperlink{classez_1_1essential_1_1Range_ac13f4357a3e32efad65877d279edcb41}{Range} (integer lo, integer hi, integer inc=1)
+\item 
+\hyperlink{classez_1_1essential_1_1Range_a5f5a5db6fce8c222c79ae6ea8b836f46}{Range} (const \hyperlink{classez_1_1essential_1_1Range}{Range} \&r)
+\item 
+\hyperlink{classez_1_1essential_1_1Range}{self} \& \hyperlink{classez_1_1essential_1_1Range_a9d5d4ba46b7d007004e1bae4c0838730}{operator=} (const \hyperlink{classez_1_1essential_1_1Range}{self} \&r)
+\item 
+void \hyperlink{classez_1_1essential_1_1Range_a77ce9b7d244288eb58cd7fc21b6a7973}{setup} (integer lo, integer hi, integer inc=1)
+\item 
+const natural \hyperlink{classez_1_1essential_1_1Range_a4dbc591c1c1979fa4691da3a6bb2c4f6}{size} ()
+\item 
+integer \hyperlink{classez_1_1essential_1_1Range_a7ac883fa331366305a79b41a08d6e54f}{lower\+\_\+bound} ()
+\item 
+integer \hyperlink{classez_1_1essential_1_1Range_a9310aea152b51bfe658afecc318c84b6}{upper\+\_\+bound} ()
+\item 
+integer \hyperlink{classez_1_1essential_1_1Range_ab31db0c8d2d5339b5146f9a203ced4a4}{increment} ()
+\item 
+void \hyperlink{classez_1_1essential_1_1Range_a9e2c671e2ce1fbce8aa01f5f515147a9}{lower\+\_\+bound} (integer v)
+\item 
+void \hyperlink{classez_1_1essential_1_1Range_ac02c931b80980f50048ca5ad9c0dbcf3}{upper\+\_\+bound} (integer v)
+\item 
+void \hyperlink{classez_1_1essential_1_1Range_af5cb29600994f95a5d7042c6163c3da3}{increment} (integer v)
+\item 
+bool \hyperlink{classez_1_1essential_1_1Range_a63321b30a6d5d626de3653218c278847}{includes} (integer x)
+\item 
+bool \hyperlink{classez_1_1essential_1_1Range_aef949951451297fd3e9d96f8cd773e97}{is\+\_\+inside} (\hyperlink{classez_1_1essential_1_1Range}{Range} \&r)
+\item 
+bool \hyperlink{classez_1_1essential_1_1Range_aaf3723436b1129886589642f4b49213b}{intersects} (\hyperlink{classez_1_1essential_1_1Range}{Range} \&r)
+\item 
+integer \hyperlink{classez_1_1essential_1_1Range_a89f7d608969f4d59d713d88a44f3b60f}{to\+\_\+range} (integer c\+\_\+index)
+\item 
+integer \hyperlink{classez_1_1essential_1_1Range_a1ccac3c17a4cd0da27700f4e22419eee}{to\+\_\+index} (integer range\+\_\+index)
+\item 
+\hyperlink{classez_1_1essential_1_1Range_1_1iterator}{iterator} \hyperlink{classez_1_1essential_1_1Range_aa5ea39bc7f0f60da092106a91eaadadc}{begin} ()
+\item 
+\hyperlink{classez_1_1essential_1_1Range_1_1iterator}{iterator} \hyperlink{classez_1_1essential_1_1Range_a4342f09c49f0c17667f07602c930349d}{end} ()
+\item 
+void \hyperlink{classez_1_1essential_1_1Range_a257728a7783528ffa35b5f8158db90ec}{get\+\_\+values} (std\+::vector$<$ integer $>$ \&values)
+\item 
+void \hyperlink{classez_1_1essential_1_1Range_a6a05a1d19692f5a289e1cc3b2d62c1e6}{print} (std\+::ostream \&stream)
+\end{DoxyCompactItemize}
+\subsection*{Data Fields}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classez_1_1essential_1_1Range_af0959e0d23aaaa8253ec1dfc563e80d3}\label{classez_1_1essential_1_1Range_af0959e0d23aaaa8253ec1dfc563e80d3}} 
+integer {\bfseries m\+\_\+lower\+\_\+bound}
+\item 
+\mbox{\Hypertarget{classez_1_1essential_1_1Range_ac7c5dd9ed1efa1a0b9e23930c5a79d62}\label{classez_1_1essential_1_1Range_ac7c5dd9ed1efa1a0b9e23930c5a79d62}} 
+integer {\bfseries m\+\_\+upper\+\_\+bound}
+\item 
+\mbox{\Hypertarget{classez_1_1essential_1_1Range_ae81878e4a6b9f2621523338d3b31bd5c}\label{classez_1_1essential_1_1Range_ae81878e4a6b9f2621523338d3b31bd5c}} 
+integer {\bfseries m\+\_\+increment}
+\item 
+\mbox{\Hypertarget{classez_1_1essential_1_1Range_a21f77cf12d8ad0f168333a35bbe78e0b}\label{classez_1_1essential_1_1Range_a21f77cf12d8ad0f168333a35bbe78e0b}} 
+natural {\bfseries m\+\_\+size}
+\end{DoxyCompactItemize}
+\subsection*{Friends}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classez_1_1essential_1_1Range_a55300c5f660a81fcaf9da6c888573913}\label{classez_1_1essential_1_1Range_a55300c5f660a81fcaf9da6c888573913}} 
+std\+::ostream \& {\bfseries operator$<$$<$} (std\+::ostream \&out, \hyperlink{classez_1_1essential_1_1Range}{Range} \&obj)
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Class used to define some interval (range) with lower and upper bounds and increment. 
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classez_1_1essential_1_1Range_ae594ee2956dd1baf07e78d988a51da29}\label{classez_1_1essential_1_1Range_ae594ee2956dd1baf07e78d988a51da29}} 
+\index{ez\+::essential\+::\+Range@{ez\+::essential\+::\+Range}!Range@{Range}}
+\index{Range@{Range}!ez\+::essential\+::\+Range@{ez\+::essential\+::\+Range}}
+\subsubsection{\texorpdfstring{Range()}{Range()}\hspace{0.1cm}{\footnotesize\ttfamily [1/3]}}
+{\footnotesize\ttfamily ez\+::essential\+::\+Range\+::\+Range (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Default constructor with empty range \mbox{\Hypertarget{classez_1_1essential_1_1Range_ac13f4357a3e32efad65877d279edcb41}\label{classez_1_1essential_1_1Range_ac13f4357a3e32efad65877d279edcb41}} 
+\index{ez\+::essential\+::\+Range@{ez\+::essential\+::\+Range}!Range@{Range}}
+\index{Range@{Range}!ez\+::essential\+::\+Range@{ez\+::essential\+::\+Range}}
+\subsubsection{\texorpdfstring{Range()}{Range()}\hspace{0.1cm}{\footnotesize\ttfamily [2/3]}}
+{\footnotesize\ttfamily ez\+::essential\+::\+Range\+::\+Range (\begin{DoxyParamCaption}\item[{integer}]{lo,  }\item[{integer}]{hi,  }\item[{integer}]{inc = {\ttfamily 1} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Constructor given lower and upper bounds and increment \mbox{\Hypertarget{classez_1_1essential_1_1Range_a5f5a5db6fce8c222c79ae6ea8b836f46}\label{classez_1_1essential_1_1Range_a5f5a5db6fce8c222c79ae6ea8b836f46}} 
+\index{ez\+::essential\+::\+Range@{ez\+::essential\+::\+Range}!Range@{Range}}
+\index{Range@{Range}!ez\+::essential\+::\+Range@{ez\+::essential\+::\+Range}}
+\subsubsection{\texorpdfstring{Range()}{Range()}\hspace{0.1cm}{\footnotesize\ttfamily [3/3]}}
+{\footnotesize\ttfamily ez\+::essential\+::\+Range\+::\+Range (\begin{DoxyParamCaption}\item[{const \hyperlink{classez_1_1essential_1_1Range}{Range} \&}]{r }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Copy constructor 
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classez_1_1essential_1_1Range_ad1f022871185dd430d303ab4f049866b}\label{classez_1_1essential_1_1Range_ad1f022871185dd430d303ab4f049866b}} 
+\index{ez\+::essential\+::\+Range@{ez\+::essential\+::\+Range}!\+\_\+compute\+\_\+size@{\+\_\+compute\+\_\+size}}
+\index{\+\_\+compute\+\_\+size@{\+\_\+compute\+\_\+size}!ez\+::essential\+::\+Range@{ez\+::essential\+::\+Range}}
+\subsubsection{\texorpdfstring{\+\_\+compute\+\_\+size()}{\_compute\_size()}}
+{\footnotesize\ttfamily void ez\+::essential\+::\+Range\+::\+\_\+compute\+\_\+size (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+compute the number of elements in the range \mbox{\Hypertarget{classez_1_1essential_1_1Range_aa5ea39bc7f0f60da092106a91eaadadc}\label{classez_1_1essential_1_1Range_aa5ea39bc7f0f60da092106a91eaadadc}} 
+\index{ez\+::essential\+::\+Range@{ez\+::essential\+::\+Range}!begin@{begin}}
+\index{begin@{begin}!ez\+::essential\+::\+Range@{ez\+::essential\+::\+Range}}
+\subsubsection{\texorpdfstring{begin()}{begin()}}
+{\footnotesize\ttfamily \hyperlink{classez_1_1essential_1_1Range_1_1iterator}{iterator} ez\+::essential\+::\+Range\+::begin (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Definition of begin iterator \mbox{\Hypertarget{classez_1_1essential_1_1Range_a4342f09c49f0c17667f07602c930349d}\label{classez_1_1essential_1_1Range_a4342f09c49f0c17667f07602c930349d}} 
+\index{ez\+::essential\+::\+Range@{ez\+::essential\+::\+Range}!end@{end}}
+\index{end@{end}!ez\+::essential\+::\+Range@{ez\+::essential\+::\+Range}}
+\subsubsection{\texorpdfstring{end()}{end()}}
+{\footnotesize\ttfamily \hyperlink{classez_1_1essential_1_1Range_1_1iterator}{iterator} ez\+::essential\+::\+Range\+::end (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Definition of end iterator \mbox{\Hypertarget{classez_1_1essential_1_1Range_a257728a7783528ffa35b5f8158db90ec}\label{classez_1_1essential_1_1Range_a257728a7783528ffa35b5f8158db90ec}} 
+\index{ez\+::essential\+::\+Range@{ez\+::essential\+::\+Range}!get\+\_\+values@{get\+\_\+values}}
+\index{get\+\_\+values@{get\+\_\+values}!ez\+::essential\+::\+Range@{ez\+::essential\+::\+Range}}
+\subsubsection{\texorpdfstring{get\+\_\+values()}{get\_values()}}
+{\footnotesize\ttfamily void ez\+::essential\+::\+Range\+::get\+\_\+values (\begin{DoxyParamCaption}\item[{std\+::vector$<$ integer $>$ \&}]{values }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Compute values of the range and put them in a vector \mbox{\Hypertarget{classez_1_1essential_1_1Range_a63321b30a6d5d626de3653218c278847}\label{classez_1_1essential_1_1Range_a63321b30a6d5d626de3653218c278847}} 
+\index{ez\+::essential\+::\+Range@{ez\+::essential\+::\+Range}!includes@{includes}}
+\index{includes@{includes}!ez\+::essential\+::\+Range@{ez\+::essential\+::\+Range}}
+\subsubsection{\texorpdfstring{includes()}{includes()}}
+{\footnotesize\ttfamily bool ez\+::essential\+::\+Range\+::includes (\begin{DoxyParamCaption}\item[{integer}]{x }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Check whether value x is part of the range. If the increment is 1, then it is easy to verify that x is in the range. \mbox{\Hypertarget{classez_1_1essential_1_1Range_ab31db0c8d2d5339b5146f9a203ced4a4}\label{classez_1_1essential_1_1Range_ab31db0c8d2d5339b5146f9a203ced4a4}} 
+\index{ez\+::essential\+::\+Range@{ez\+::essential\+::\+Range}!increment@{increment}}
+\index{increment@{increment}!ez\+::essential\+::\+Range@{ez\+::essential\+::\+Range}}
+\subsubsection{\texorpdfstring{increment()}{increment()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily integer ez\+::essential\+::\+Range\+::increment (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+return increment \mbox{\Hypertarget{classez_1_1essential_1_1Range_af5cb29600994f95a5d7042c6163c3da3}\label{classez_1_1essential_1_1Range_af5cb29600994f95a5d7042c6163c3da3}} 
+\index{ez\+::essential\+::\+Range@{ez\+::essential\+::\+Range}!increment@{increment}}
+\index{increment@{increment}!ez\+::essential\+::\+Range@{ez\+::essential\+::\+Range}}
+\subsubsection{\texorpdfstring{increment()}{increment()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily void ez\+::essential\+::\+Range\+::increment (\begin{DoxyParamCaption}\item[{integer}]{v }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+modify increment \mbox{\Hypertarget{classez_1_1essential_1_1Range_aaf3723436b1129886589642f4b49213b}\label{classez_1_1essential_1_1Range_aaf3723436b1129886589642f4b49213b}} 
+\index{ez\+::essential\+::\+Range@{ez\+::essential\+::\+Range}!intersects@{intersects}}
+\index{intersects@{intersects}!ez\+::essential\+::\+Range@{ez\+::essential\+::\+Range}}
+\subsubsection{\texorpdfstring{intersects()}{intersects()}}
+{\footnotesize\ttfamily bool ez\+::essential\+::\+Range\+::intersects (\begin{DoxyParamCaption}\item[{\hyperlink{classez_1_1essential_1_1Range}{Range} \&}]{r }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+return true if \hyperlink{classez_1_1essential_1_1Range}{Range} r and this range have common values \mbox{\Hypertarget{classez_1_1essential_1_1Range_aef949951451297fd3e9d96f8cd773e97}\label{classez_1_1essential_1_1Range_aef949951451297fd3e9d96f8cd773e97}} 
+\index{ez\+::essential\+::\+Range@{ez\+::essential\+::\+Range}!is\+\_\+inside@{is\+\_\+inside}}
+\index{is\+\_\+inside@{is\+\_\+inside}!ez\+::essential\+::\+Range@{ez\+::essential\+::\+Range}}
+\subsubsection{\texorpdfstring{is\+\_\+inside()}{is\_inside()}}
+{\footnotesize\ttfamily bool ez\+::essential\+::\+Range\+::is\+\_\+inside (\begin{DoxyParamCaption}\item[{\hyperlink{classez_1_1essential_1_1Range}{Range} \&}]{r }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+return true if \hyperlink{classez_1_1essential_1_1Range}{Range} r is inside this range \mbox{\Hypertarget{classez_1_1essential_1_1Range_a7ac883fa331366305a79b41a08d6e54f}\label{classez_1_1essential_1_1Range_a7ac883fa331366305a79b41a08d6e54f}} 
+\index{ez\+::essential\+::\+Range@{ez\+::essential\+::\+Range}!lower\+\_\+bound@{lower\+\_\+bound}}
+\index{lower\+\_\+bound@{lower\+\_\+bound}!ez\+::essential\+::\+Range@{ez\+::essential\+::\+Range}}
+\subsubsection{\texorpdfstring{lower\+\_\+bound()}{lower\_bound()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily integer ez\+::essential\+::\+Range\+::lower\+\_\+bound (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+return lower bound \mbox{\Hypertarget{classez_1_1essential_1_1Range_a9e2c671e2ce1fbce8aa01f5f515147a9}\label{classez_1_1essential_1_1Range_a9e2c671e2ce1fbce8aa01f5f515147a9}} 
+\index{ez\+::essential\+::\+Range@{ez\+::essential\+::\+Range}!lower\+\_\+bound@{lower\+\_\+bound}}
+\index{lower\+\_\+bound@{lower\+\_\+bound}!ez\+::essential\+::\+Range@{ez\+::essential\+::\+Range}}
+\subsubsection{\texorpdfstring{lower\+\_\+bound()}{lower\_bound()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily void ez\+::essential\+::\+Range\+::lower\+\_\+bound (\begin{DoxyParamCaption}\item[{integer}]{v }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+modify lower bound \mbox{\Hypertarget{classez_1_1essential_1_1Range_a9d5d4ba46b7d007004e1bae4c0838730}\label{classez_1_1essential_1_1Range_a9d5d4ba46b7d007004e1bae4c0838730}} 
+\index{ez\+::essential\+::\+Range@{ez\+::essential\+::\+Range}!operator=@{operator=}}
+\index{operator=@{operator=}!ez\+::essential\+::\+Range@{ez\+::essential\+::\+Range}}
+\subsubsection{\texorpdfstring{operator=()}{operator=()}}
+{\footnotesize\ttfamily \hyperlink{classez_1_1essential_1_1Range}{self}\& ez\+::essential\+::\+Range\+::operator= (\begin{DoxyParamCaption}\item[{const \hyperlink{classez_1_1essential_1_1Range}{self} \&}]{r }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Overloading of assignment operator \mbox{\Hypertarget{classez_1_1essential_1_1Range_a6a05a1d19692f5a289e1cc3b2d62c1e6}\label{classez_1_1essential_1_1Range_a6a05a1d19692f5a289e1cc3b2d62c1e6}} 
+\index{ez\+::essential\+::\+Range@{ez\+::essential\+::\+Range}!print@{print}}
+\index{print@{print}!ez\+::essential\+::\+Range@{ez\+::essential\+::\+Range}}
+\subsubsection{\texorpdfstring{print()}{print()}}
+{\footnotesize\ttfamily void ez\+::essential\+::\+Range\+::print (\begin{DoxyParamCaption}\item[{std\+::ostream \&}]{stream }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+print contents of \hyperlink{classez_1_1essential_1_1Range}{Range} 
+\begin{DoxyParams}{Parameters}
+{\em stream} & output stream \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classez_1_1essential_1_1Range_a77ce9b7d244288eb58cd7fc21b6a7973}\label{classez_1_1essential_1_1Range_a77ce9b7d244288eb58cd7fc21b6a7973}} 
+\index{ez\+::essential\+::\+Range@{ez\+::essential\+::\+Range}!setup@{setup}}
+\index{setup@{setup}!ez\+::essential\+::\+Range@{ez\+::essential\+::\+Range}}
+\subsubsection{\texorpdfstring{setup()}{setup()}}
+{\footnotesize\ttfamily void ez\+::essential\+::\+Range\+::setup (\begin{DoxyParamCaption}\item[{integer}]{lo,  }\item[{integer}]{hi,  }\item[{integer}]{inc = {\ttfamily 1} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Modify range values. Note that the assignment operator can also be used \mbox{\Hypertarget{classez_1_1essential_1_1Range_a4dbc591c1c1979fa4691da3a6bb2c4f6}\label{classez_1_1essential_1_1Range_a4dbc591c1c1979fa4691da3a6bb2c4f6}} 
+\index{ez\+::essential\+::\+Range@{ez\+::essential\+::\+Range}!size@{size}}
+\index{size@{size}!ez\+::essential\+::\+Range@{ez\+::essential\+::\+Range}}
+\subsubsection{\texorpdfstring{size()}{size()}}
+{\footnotesize\ttfamily const natural ez\+::essential\+::\+Range\+::size (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Return number of elements in the range \mbox{\Hypertarget{classez_1_1essential_1_1Range_a1ccac3c17a4cd0da27700f4e22419eee}\label{classez_1_1essential_1_1Range_a1ccac3c17a4cd0da27700f4e22419eee}} 
+\index{ez\+::essential\+::\+Range@{ez\+::essential\+::\+Range}!to\+\_\+index@{to\+\_\+index}}
+\index{to\+\_\+index@{to\+\_\+index}!ez\+::essential\+::\+Range@{ez\+::essential\+::\+Range}}
+\subsubsection{\texorpdfstring{to\+\_\+index()}{to\_index()}}
+{\footnotesize\ttfamily integer ez\+::essential\+::\+Range\+::to\+\_\+index (\begin{DoxyParamCaption}\item[{integer}]{range\+\_\+index }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Convert range index \mbox{[}lower\+\_\+bound..upper\+\_\+bound\mbox{]} into c index For example if we have the range \mbox{[}-\/10..10\mbox{]} then to\+\_\+range(-\/10) is equal to 0 and to\+\_\+range(10) is equal to 21. \mbox{\Hypertarget{classez_1_1essential_1_1Range_a89f7d608969f4d59d713d88a44f3b60f}\label{classez_1_1essential_1_1Range_a89f7d608969f4d59d713d88a44f3b60f}} 
+\index{ez\+::essential\+::\+Range@{ez\+::essential\+::\+Range}!to\+\_\+range@{to\+\_\+range}}
+\index{to\+\_\+range@{to\+\_\+range}!ez\+::essential\+::\+Range@{ez\+::essential\+::\+Range}}
+\subsubsection{\texorpdfstring{to\+\_\+range()}{to\_range()}}
+{\footnotesize\ttfamily integer ez\+::essential\+::\+Range\+::to\+\_\+range (\begin{DoxyParamCaption}\item[{integer}]{c\+\_\+index }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Convert c\+\_\+index position \mbox{[}0..n-\/1\mbox{]} into the range if increment is 1. For example if we have the range \mbox{[}-\/10..10\mbox{]} then to\+\_\+range(0) is equal to -\/10 and to\+\_\+range(21) is equal to 10. \mbox{\Hypertarget{classez_1_1essential_1_1Range_a9310aea152b51bfe658afecc318c84b6}\label{classez_1_1essential_1_1Range_a9310aea152b51bfe658afecc318c84b6}} 
+\index{ez\+::essential\+::\+Range@{ez\+::essential\+::\+Range}!upper\+\_\+bound@{upper\+\_\+bound}}
+\index{upper\+\_\+bound@{upper\+\_\+bound}!ez\+::essential\+::\+Range@{ez\+::essential\+::\+Range}}
+\subsubsection{\texorpdfstring{upper\+\_\+bound()}{upper\_bound()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily integer ez\+::essential\+::\+Range\+::upper\+\_\+bound (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+return upper bound \mbox{\Hypertarget{classez_1_1essential_1_1Range_ac02c931b80980f50048ca5ad9c0dbcf3}\label{classez_1_1essential_1_1Range_ac02c931b80980f50048ca5ad9c0dbcf3}} 
+\index{ez\+::essential\+::\+Range@{ez\+::essential\+::\+Range}!upper\+\_\+bound@{upper\+\_\+bound}}
+\index{upper\+\_\+bound@{upper\+\_\+bound}!ez\+::essential\+::\+Range@{ez\+::essential\+::\+Range}}
+\subsubsection{\texorpdfstring{upper\+\_\+bound()}{upper\_bound()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily void ez\+::essential\+::\+Range\+::upper\+\_\+bound (\begin{DoxyParamCaption}\item[{integer}]{v }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+modify upper bound 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+src/version\+\_\+2018.\+06/essential/range.\+h\end{DoxyCompactItemize}

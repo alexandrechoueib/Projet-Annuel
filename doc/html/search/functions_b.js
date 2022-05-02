@@ -1,0 +1,7 @@
+var searchData=
+[
+  ['mapping',['Mapping',['../classez_1_1objects_1_1Mapping.html#a12a266ba49d22f9a382a4cc916253284',1,'ez::objects::Mapping::Mapping()'],['../classez_1_1objects_1_1Mapping.html#a2e01d47b23e082e6aade1923fede999d',1,'ez::objects::Mapping::Mapping(const Mapping&lt; KeyType, DataType &gt; &amp;obj)']]],
+  ['matrix',['Matrix',['../classez_1_1maths_1_1Matrix.html#ab1ee41b4f342b94006853dc7213ab179',1,'ez::maths::Matrix::Matrix()'],['../classez_1_1maths_1_1Matrix.html#a97b95c8be7fd18cf0beb2789dee19b2a',1,'ez::maths::Matrix::Matrix(natural rows, natural cols)']]],
+  ['matrix2d',['Matrix2D',['../classez_1_1objects_1_1Matrix2D.html#a1984c0e18d3921f89edc9f255c7eef70',1,'ez::objects::Matrix2D::Matrix2D()'],['../classez_1_1objects_1_1Matrix2D.html#ac3bd803c3d42ae0eeb0bc50d04148d7f',1,'ez::objects::Matrix2D::Matrix2D(ez::essential::Range y_range, ez::essential::Range x_range)'],['../classez_1_1objects_1_1Matrix2D.html#aa8e3f8149bc97efb0a2c45c10520594b',1,'ez::objects::Matrix2D::Matrix2D(ez::essential::Range y_range, ez::essential::Range x_range, const std::initializer_list&lt; DataType &gt; &amp;l)'],['../classez_1_1objects_1_1Matrix2D.html#aeebbde5d2059f7e190759dfc0412f353',1,'ez::objects::Matrix2D::Matrix2D(const self &amp;obj)']]],
+  ['memorylogger',['MemoryLogger',['../classez_1_1logging_1_1MemoryLogger.html#a721c1b62885a86e68819cb931c925f75',1,'ez::logging::MemoryLogger']]]
+];
