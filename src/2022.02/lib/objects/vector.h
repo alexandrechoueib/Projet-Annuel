@@ -13,6 +13,7 @@ namespace ezo = ez::objects;
 namespace ez {
 
     namespace objects{
+        
         template<class T>
         class Vector : public Object , public Container{
             private:
@@ -26,11 +27,12 @@ namespace ez {
                 typedef Vector self;
                 typedef T * iterator;
 
-                Vector():
+                Vector();
                 Vector(const Range& r):Object(),_range_x(r.first_value());
                 Vector(const Vector& vector);
                 T get(int i);
                 void set(int i, T value);
+                T get(int i);
                 void push_back(T value);
                 void delete(int position);
                 T pop(int position);
@@ -41,8 +43,10 @@ namespace ez {
                 std::ostream& print(std::ostream& stream);
                 integer compare(const Object& y);
                 Object *clone();
-        }
-        
+
+                friend boolean operator==(const Vector &obj1, const Vector &obj2);
+                friend boolean operator!=(const Vector &obj1, const Vector &obj2);
+        };       
     }
 }
 

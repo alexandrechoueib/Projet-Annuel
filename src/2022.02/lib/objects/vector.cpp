@@ -26,9 +26,9 @@ int difference(int a, int b){
     }
     //a est forcement plus petit que b
     if(a < 0 && b < 0)
-        return (b - a) // -3 - (-5 ) = 2
+        return (b - a); // -3 - (-5 ) = 2
     else if(a < 0 && b > 0)
-        return abs(a-b)
+        return abs(a-b);
     else if(a > 0 && b > 0)
         return (b - a);
 }
@@ -58,9 +58,25 @@ void ezo::Vector<T>::delete(int position){
     for(int i=position ; i < _vector.size() ; i++){
         _vector[i++] = _vector[i];
     }
-
 }
 
 T ezo::Vector<T>::pop(int position){
 
 }
+
+boolean operator==(const Vector &obj1, const Vector &obj2){
+     if(ojb1.size() = obj2.size()) return false;
+
+     for(unsigned int i=0 ; i < obj1.size() ; i++){
+         if(obj1[i] != obj2[i]) 
+            return false;
+     }
+     return true;
+}
+
+boolean operator!=(const Vector &obj1, const Vector &obj2){
+    return !(obj1 == obj2);
+}
+
+
+
