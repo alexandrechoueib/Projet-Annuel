@@ -1,4 +1,5 @@
 #include "objects/vector.h"
+#include "essential/exception.h"
 
 
 ezo::Vector():Object(),_range_x(1){
@@ -14,9 +15,8 @@ ezo::Vector<T>(const Vector<T>& vector):Object(){
     _size = vector.size();
     
 }
-boolean isOutOfRange(int i){
-    return (i+1 < _range_x || i+1 > _range_x + _size ) ? true : false;
- 
+boolean isOutOfRange(int i){ //modifier cette methode avec le range et lever une exception
+    return xrange.to_index(i) ;
 }
 int difference(int a, int b){
     if( a > b) {
@@ -33,8 +33,11 @@ int difference(int a, int b){
         return (b - a);
 }
 
-T ezo::Vector<T>::get(int i){
-    if(isOutOfRange(i)) return null;
+T ezo::Vector<T>::get(int i) throw Exception{
+    if(isOutOfRange(i)) {
+         // lancer une exception
+        notify( "out of range i :" + i );
+    }
     return _vector[i];
 }
 
@@ -60,9 +63,7 @@ void ezo::Vector<T>::delete(int position){
     }
 }
 
-T ezo::Vector<T>::pop(int position){
 
-}
 
 boolean operator==(const Vector &obj1, const Vector &obj2){
      if(ojb1.size() = obj2.size()) return false;
@@ -78,5 +79,8 @@ boolean operator!=(const Vector &obj1, const Vector &obj2){
     return !(obj1 == obj2);
 }
 
+ezo::Object *clone(){
+    return new Vector(*this);
+}
 
 

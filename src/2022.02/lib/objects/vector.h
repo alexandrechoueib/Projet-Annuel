@@ -30,12 +30,11 @@ namespace ez {
                 Vector();
                 Vector(const Range& r):Object(),_range_x(r.first_value());
                 Vector(const Vector& vector);
-                T get(int i);
+                T get(int i) throw Exception;
                 void set(int i, T value);
                 T get(int i);
                 void push_back(T value);
                 void delete(int position);
-                T pop(int position);
 
                 iterator begin() { return _vector.begin() };
                 iterator end() { return _vector.end() };
