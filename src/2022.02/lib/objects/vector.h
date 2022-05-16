@@ -8,8 +8,6 @@
 #include "objects/container.h"
 
 
-namespace ezo = ez::objects;
-
 namespace ez {
 
     namespace objects{
@@ -20,31 +18,39 @@ namespace ez {
                 Range _range_x;
                 std::vector<T> _vector;
 
-            protected:
-                boolean isOutOfRange();
-
             public :
                 typedef Vector self;
                 typedef T * iterator;
 
-                Vector();
-                Vector(const Range& r):Object(),_range_x(r.first_value());
-                Vector(const Vector& vector);
-                T get(int i) throw Exception;
-                void set(int i, T value);
-                T get(int i);
-                void push_back(T value);
-                void delete(int position);
+                Vector():_range_x(1);
+                Vector(const Range& r):_range_x(r.first_value());
+                Vector<T>(const Vector<T>& vector){
+                    _vector = vector;
+                    
+                }
 
-                iterator begin() { return _vector.begin() };
-                iterator end() { return _vector.end() };
+                T get(int i) const;
+                void fill(int value);
+                void set(int i, T value);
+                void push_back(T value);
+                void delete_value(int position);
+
+
+                //Algorithm method implemente
+                bool all_diff() const;
+                T find(T value) const;
+
+                //iterator
+                iterator begin() const{ return _vector.begin() };
+                iterator end() const { return _vector.end() };
+                
                 //Virtual method from Object
-                std::ostream& print(std::ostream& stream);
+                std::ostream& print (std::ostream& stream);
                 integer compare(const Object& y);
                 Object *clone();
 
-                friend boolean operator==(const Vector &obj1, const Vector &obj2);
-                friend boolean operator!=(const Vector &obj1, const Vector &obj2);
+                friend boolean operator==(const Vector &obj1, const Vector &obj2) const ;
+                friend boolean operator!=(const Vector &obj1, const Vector &obj2) const ;
         };       
     }
 }
