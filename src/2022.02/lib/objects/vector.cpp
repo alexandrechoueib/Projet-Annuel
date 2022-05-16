@@ -32,11 +32,6 @@ void ezo::Vector<T>::fill(int value){
     ez::extensions::fill(_vector, value);
 }
 
-/*
-template<class T>
-bool ezo::Vector<T>::all_diff() const{
-    return ez::extensions::all_diff(_vector,compare())
-}*/
 
 
 template<class T>

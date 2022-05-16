@@ -37,7 +37,6 @@ namespace ez {
 
 
                 //Algorithm method implemente
-                bool all_diff() const;
                 T find(T value) const;
 
                 //iterator
@@ -49,10 +48,10 @@ namespace ez {
                 integer compare(const Object& y);
                 Object *clone();
 
-                friend boolean operator==(const Vector &obj1, const Vector &obj2) const ;
-                friend boolean operator!=(const Vector &obj1, const Vector &obj2) const ;
+                friend boolean operator==(const Vector<T> &obj1, const Vector<T> &obj2) const ;
+                friend boolean operator!=(const Vector<T> &obj1, const Vector<T> &obj2) const ;
         };       
     }
 }
 
-#endif /* OBJECTS_INTEGER_H_ */
+#endif /* OBJECTS_VECTOR_H_ */
