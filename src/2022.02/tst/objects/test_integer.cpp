@@ -7,7 +7,6 @@
 
 #include <gtest/gtest.h>
 #include "objects/integer.h"
-#include <vector>
 
 using namespace std;
 using namespace ez;

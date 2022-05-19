@@ -7,6 +7,9 @@
 #include "essential/range.h"
 #include "objects/container.h"
 
+using namespace ez::essential;
+using namespace ez::objects;
+
 
 namespace ez {
 
@@ -15,22 +18,21 @@ namespace ez {
         template<class T>
         class Vector : public Object , public Container{
             private:
-                Range _range_x;
+                Range _range;
                 std::vector<T> _vector;
-
+                
             public :
-                typedef Vector self;
                 typedef T * iterator;
 
-                Vector():_range_x(1);
-                Vector(const Range& r):_range_x(r.first_value());
-                Vector<T>(const Vector<T>& vector){
-                    _vector = vector;
-                    
+                Vector():_range(1,20){};
+                Vector(const Range& r):_range(r){};
+                Vector(Vector<T>& Vector): _range(1,20) {
+                    _vector = Vector.getVector();
+                    _size = _vector.size();
                 }
 
-                T get(int i) const;
-                void fill(int value);
+                T get(int i) const ;
+                void fill(T value);
                 void set(int i, T value);
                 void push_back(T value);
                 void delete_value(int position);
@@ -39,17 +41,19 @@ namespace ez {
                 //Algorithm method implemente
                 T find(T value) const;
 
+                std::vector<T> getVector(){ return _vector ;};
+
                 //iterator
-                iterator begin() const{ return _vector.begin() };
-                iterator end() const { return _vector.end() };
+                iterator begin() const{ return _vector.begin() ;};
+                iterator end() const { return _vector.end() ;};
                 
                 //Virtual method from Object
-                std::ostream& print (std::ostream& stream);
-                integer compare(const Object& y);
-                Object *clone();
+                std::ostream& print (std::ostream& stream) const;
+                integer compare(const Object& y) const;
+                Object* clone();
 
-                friend boolean operator==(const Vector<T> &obj1, const Vector<T> &obj2) const ;
-                friend boolean operator!=(const Vector<T> &obj1, const Vector<T> &obj2) const ;
+                bool operator==(const Vector<T> &obj2) const  ;
+                bool operator!=(const Vector<T> &obj2) const  ;
         };       
     }
 }

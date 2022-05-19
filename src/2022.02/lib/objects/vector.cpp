@@ -6,32 +6,25 @@ namespace ezo = ez::objects;
 
 
 template<class T>
-T ezo::Vector<T>::get(int i){
-    int index = _range_x.to_index(i);
-    return _vector[index];
-}
-
-template<class T>
 void ezo::Vector<T>::set(int i,T value){
-    int index = _range_x.to_index(i);
+    int index = const_cast<Range&>(_range).to_index(i);
     _vector[index] = value;
 }
 template<class T>
 T ezo::Vector<T>::get(int i) const{
-    int index = difference(_range,i)+1;
+    int index = const_cast<Range&>(_range).to_index(i);
     return _vector[index];
 }
 template<class T>
 void ezo::Vector<T>::push_back(T value){
-    _vector.push_back(T);
+    _vector.push_back(value);
     _size++; 
 }
 
 template<class T>
-void ezo::Vector<T>::fill(int value){
+void ezo::Vector<T>::fill(T value){
     ez::extensions::fill(_vector, value);
 }
-
 
 
 template<class T>
@@ -44,23 +37,43 @@ void ezo::Vector<T>::delete_value(int position){
 
 
 template<class T>
-boolean operator==(const ezo::Vector<T> &obj1, const ezo::Vector<T> &obj2) const{
-     if(ojb1.size() = obj2.size()) return false;
-
-     for(unsigned int i=0 ; i < obj1.size() ; i++){
-         if(obj1[i] != obj2[i]) 
-            return false;
-     }
-     return true;
+bool ezo::Vector<T>::operator==(const ezo::Vector<T> &obj2) const {
+    return this->_vector == obj2._vector ;
 }
 template<class T>
-boolean operator!=(const ezo::Vector<T> &obj1, const ezo::Vector<T> &obj2) const{
-    return !(obj1 == obj2);
+bool ezo::Vector<T>::operator!=(const ezo::Vector<T> &obj2) const {
+    return !(this == obj2);
 }
 
 template<class T>
-ezo::Object *clone(){
+Object* ezo::Vector<T>::clone(){
     return new ezo::Vector<T>(*this);
+}
+
+template<class T>
+std::ostream& ezo::Vector<T>::print (std::ostream& stream) const{
+    stream << "size :"+ _size;
+    stream << std::endl;
+    stream << " vector : ";
+    for(int i = const_cast<Range&>(_range).first_value(); i < const_cast<Range&>(_range).last_value() ; i++ ){
+        stream << _vector[i] << " ";
+    }
+    stream << std::endl;
+
+    return stream;
+}
+
+	
+/**
+* compare two objects
+* @return 0 if objects are identical, negative value if this < y,
+* positive value if this > y
+*/
+template<class T>
+integer ezo::Vector<T>::compare(const Object& y) const{
+    Vector<T>& y_obj = *dynamic_cast<Vector *>(&const_cast<Object&>(y));
+    if(_vector == y_obj._vector) return 0;
+    return _vector < y_obj._vector ? -1 : +1;
 }
 
 

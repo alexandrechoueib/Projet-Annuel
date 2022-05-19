@@ -39,7 +39,6 @@ namespace objects {
      Base class for containers that contains the number of
      elements of the container.
  */
-template<class DataType>
 class Container {
 protected:
 
