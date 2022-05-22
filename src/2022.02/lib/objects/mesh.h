@@ -1,4 +1,10 @@
+#ifndef OBJECTS_MESH_H_
+#define OBJECTS_MESH_H_
+
 #include "essential/types.h"
+#include "essential/range.h"
+#include "objects/container.h"
+#include "objects/object.h"
 #include <vector>
 using namespace ez::essential;
 
@@ -11,7 +17,7 @@ namespace objects {
      The Mesh class which is a third-dimensional static container.
  */
 template<class T>
-class Mesh: public Container {
+class Mesh: public Object, public Container {
 protected:
 
 	// range of dimension 1 elements
@@ -23,6 +29,8 @@ protected:
 
     // container of type vector
     std::vector<std::vector<std::vector <T>>> _data;
+
+	typedef T* iterator;
 	
 public:
 	/*
@@ -60,10 +68,10 @@ public:
 	    Iterators begin & end
 	 */
 	iterator begin() const { 
-		return _data.begin() 
+		return _data.begin() ;
 	};
 	iterator end() const { 
-		return _data.end() 
+		return _data.end() ;
 	};
 
 	Range range_x() {

@@ -16,13 +16,13 @@ text remedy_error_message = "You need to overload it "
 		"in the class from where it was called";
 
 
-std::ostream& Object::print(std::ostream& stream) {
+std::ostream& Object::print(std::ostream& stream) const {
 	notify("the print method" << cause_error_message << remedy_error_message);
 	return stream;
 }
 
 
-integer Object::compare(const Object& y) {
+integer Object::compare(const Object& y) const{
 	notify("the compare method" << cause_error_message << remedy_error_message);
 }
 

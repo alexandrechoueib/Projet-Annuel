@@ -77,7 +77,7 @@ public:
 	 * in a human readable format
 	 * @param stream output stream for example std::cout
 	 */
-	virtual std::ostream& print(std::ostream& stream);
+	virtual std::ostream& print(std::ostream& stream) const;
 
 	
 	/**
@@ -85,7 +85,7 @@ public:
 	 * @return 0 if objects are identical, negative value if this < y,
 	 * positive value if this > y
 	 */
-	virtual integer compare(const Object& y);
+	virtual integer compare(const Object& y) const;
 
 	/**
 	 * return a copy of the object

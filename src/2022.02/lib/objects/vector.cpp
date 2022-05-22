@@ -1,9 +1,23 @@
 #include "objects/vector.h"
 #include "essential/exception.h"
 #include "extensions/algorithms.h"
+#include "natural.h"
 
 namespace ezo = ez::objects;
 
+template<class T>
+ezo::Vector<T>::Vector():_range(1,20){
+    _size = new Natural(_vector.size());
+}
+
+template<class T>
+ezo::Vector<T>::Vector(const Range& r):_range(r){};
+
+template<class T>
+ezo::Vector<T>::Vector(Vector<T>& Vector):_range(1,20){
+    _vector = Vector.getVector();
+    _size = Vector.size();
+}
 
 template<class T>
 void ezo::Vector<T>::set(int i,T value){
@@ -51,7 +65,7 @@ Object* ezo::Vector<T>::clone(){
 }
 
 template<class T>
-std::ostream& ezo::Vector<T>::print (std::ostream& stream) const{
+std::ostream& ezo::Vector<T>::print(std::ostream& stream) const{
     stream << "size :"+ _size;
     stream << std::endl;
     stream << " vector : ";

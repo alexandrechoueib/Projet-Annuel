@@ -1,4 +1,11 @@
+#ifndef OBJECTS_GRID_H_
+#define OBJECTS_GRID_H_
+
 #include "essential/types.h"
+#include "objects/object.h"
+#include "essential/range.h"
+#include "objects/container.h"
+
 #include <vector>
 using namespace ez::essential;
 
@@ -11,7 +18,7 @@ namespace objects {
      The Grid class which is a two-dimensional static container.
  */
 template<class T>
-class Grid: public Container {
+class Grid: public Object , public Container {
 protected:
 
 	// range of dimension 1 elements
@@ -22,13 +29,14 @@ protected:
     // container of type vector
     std::vector<std::vector <T>> _data;
 	
+	//Iterator
+	typedef T* iterator ;
 public:
 	/*
 	   @WHAT
 	    Constructor using integers
 	 */
 	Grid(int, int, T);
-
     /*
 	   @WHAT
 	    Constructor using ranges
@@ -58,10 +66,10 @@ public:
 	    Iterators begin & end
 	 */
 	iterator begin() const { 
-		return _data.begin() 
+		return _data.begin() ;
 	};
 	iterator end() const { 
-		return _data.end() 
+		return _data.end() ;
 	};
 
 	Range range_x() {
@@ -77,11 +85,11 @@ public:
 	   @WHAT
 	    Destructor
 	 */
-	~Grid() { }
+	~Grid() { };
 };
 
 } // end of namespace objects
 
 } // end of namespace ez
 
-#endif /* OBJECTS_CONTAINER_H_ */
+#endif /* OBJECTS_GRID_H_ */

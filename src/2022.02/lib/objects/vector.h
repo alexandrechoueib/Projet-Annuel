@@ -24,22 +24,19 @@ namespace ez {
             public :
                 typedef T * iterator;
 
-                Vector():_range(1,20){};
-                Vector(const Range& r):_range(r){};
-                Vector(Vector<T>& Vector): _range(1,20) {
-                    _vector = Vector.getVector();
-                    _size = _vector.size();
-                }
+                Vector();
+                Vector(const Range& r);
+                Vector(Vector<T>& Vector);
 
-                T get(int i) const ;
-                void fill(T value);
-                void set(int i, T value);
-                void push_back(T value);
-                void delete_value(int position);
+                T get(int) const ;
+                void fill(T);
+                void set(int , T);
+                void push_back(T);
+                void delete_value(int);
 
 
                 //Algorithm method implemente
-                T find(T value) const;
+                T find(T) const;
 
                 std::vector<T> getVector(){ return _vector ;};
 
@@ -48,12 +45,14 @@ namespace ez {
                 iterator end() const { return _vector.end() ;};
                 
                 //Virtual method from Object
-                std::ostream& print (std::ostream& stream) const;
-                integer compare(const Object& y) const;
-                Object* clone();
+                std::ostream& print (std::ostream& stream) const override;
+                integer compare(const Object& y) const override;
+                Object* clone() override;
 
                 bool operator==(const Vector<T> &obj2) const  ;
                 bool operator!=(const Vector<T> &obj2) const  ;
+
+                ~Vector() ;
         };       
     }
 }

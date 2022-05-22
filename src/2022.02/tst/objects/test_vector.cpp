@@ -7,21 +7,24 @@
 
 #include <gtest/gtest.h>
 #include "objects/vector.h"
-#include "essential/range.h"
-
-using namespace std;
-using namespace ez;
 
 namespace eze = ez::essential;
 namespace ezo = ez::objects;
 
-
+/*
+* Test pour création d'un vector et remplissage du vector avec une valeur
+*/
 TEST( TestVector, Constructor ) {
-
-	ezo::Vector vector(range(10,20));
-	//EXPECT_EQ( i1.value(), 10 );
+	ezo::Vector<int> vec ;
 
 }
+
+TEST( TestVector, fill ) {
+	ezo::Vector<int> vec ;
+	vec.fill(15);
+	EXPECT_EQ( vec.get(0) , 15 );
+}
+
 
 int main(int argc, char *argv[]) {
 	::testing::InitGoogleTest( &argc, argv );

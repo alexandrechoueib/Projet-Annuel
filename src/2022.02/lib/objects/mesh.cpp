@@ -31,7 +31,7 @@ ezo::Mesh<T>::Mesh(const ezo::Mesh<T>& mesh_copy) {
     _range_x = mesh_copy.range_x();
     _range_y = mesh_copy.range_y();
     _range_z = mesh_copy.range_z();
-    _size = mesh_copy.size();
+    _size = const_cast<Mesh&>(mesh_copy).size();
     _data = mesh_copy._data();
 }
 
@@ -40,7 +40,7 @@ T ezo::Mesh<T>::get(int i, int j, int k) {
     int index_x = _range_x.to_index(i);
     int index_y = _range_y.to_index(j);
     int index_z = _range_z.to_index(k);
-    return _data[index_x][index_y][index_k];
+    return _data[index_x][index_y][index_z];
 }
 
 template<class T>
@@ -48,5 +48,5 @@ void ezo::Mesh<T>::set(int i, int j, int k, T value) {
     int index_x = _range_x.to_index(i);
     int index_y = _range_y.to_index(j);
     int index_z = _range_y.to_index(k);
-    _data[index_x][index_y][index_k] = value;
+    _data[index_x][index_y][index_z] = value;
 }

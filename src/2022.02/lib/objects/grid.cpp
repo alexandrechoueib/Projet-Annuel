@@ -1,6 +1,7 @@
 #include "objects/grid.h"
 #include "essential/exception.h"
 #include "essential/range.h"
+#include "objects/container.h"
 
 namespace ezo = ez::objects;
 
@@ -27,7 +28,7 @@ template<class T>
 ezo::Grid<T>::Grid(const ezo::Grid<T>& grid_copy) {
     _range_x = grid_copy.range_x();
     _range_y = grid_copy.range_y();
-    _size = grid_copy.size();
+    _size = const_cast<Grid&>(grid_copy).size();
     _data = grid_copy._data();
 }
 
