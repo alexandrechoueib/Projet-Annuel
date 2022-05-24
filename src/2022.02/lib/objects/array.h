@@ -25,7 +25,7 @@ protected:
 	Range _range_x;
 
     // container of type vector
-    sstd::vector <T> _data;
+    std::vector <T> _data;
 	
 	//Iterator
 	typedef T* iterator ;
@@ -70,9 +70,11 @@ public:
 		return _data.end() ;
 	};
 
+
 	Range range_x() {
 		return _range_x;
 	}
+
 	std::vector <T> data(){
 		return _data;
 	}

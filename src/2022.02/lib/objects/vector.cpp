@@ -8,15 +8,19 @@ namespace ezo = ez::objects;
 template<class T>
 ezo::Vector<T>::Vector():_range(1,20){
     _size = new Natural(_vector.size());
+    _dim = 1;
 }
 
 template<class T>
-ezo::Vector<T>::Vector(const Range& r):_range(r){};
+ezo::Vector<T>::Vector(const Range& r):_range(r){
+    _dim = 1;
+};
 
 template<class T>
 ezo::Vector<T>::Vector(Vector<T>& Vector):_range(1,20){
     _vector = Vector.getVector();
     _size = Vector.size();
+    _dim = 1;
 }
 
 template<class T>
@@ -43,9 +47,8 @@ void ezo::Vector<T>::fill(T value){
 
 template<class T>
 void ezo::Vector<T>::delete_value(int position){
-    for(int i=position ; i < _vector.size() ; i++){
-        _vector[i++] = _vector[i];
-    }
+    unsigned int valueToDelete = _range.to_index(position); 
+    _vector.erase(_vector.begin() + position) ;
     _size--;
 }
 

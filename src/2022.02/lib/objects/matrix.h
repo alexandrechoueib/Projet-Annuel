@@ -10,17 +10,17 @@ namespace ez {
         template<class T>
         class Matrix : public Object, public Container {
             private:
+                Range _range_row;
+                Range _range_colomn;
                 ez::objects::Vector<ez::objects::Vector<T>> _matrix;
-
             public:
                 Matrix<T>();
-                Matrix<T>(const Range &r);
+                Matrix<T>(const Range &r, const Range &c );
                 Matrix<T>(const Matrix<T> &matrix);
                 
                 T get(int row, int column) const;
                 void fill(T value);
                 void set(int row,int column, T value);
-                void push_back(T value);
                 void delete_column(int position);
                 void delete_row(int position);
 

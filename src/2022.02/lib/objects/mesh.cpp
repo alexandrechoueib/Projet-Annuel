@@ -12,6 +12,7 @@ ezo::Mesh<T>::Mesh(int size_x, int size_y, int size_z, T init_value) {
     _range_z = new Range(1, size_z);
     _size = size_x * size_y * size_z;
     _data = new std::vector<std::vector<std::vector<T>>>(size_x, std::vector<std::vector<T>>(size_y, std::vector<T>(size_z, init_value)));
+    _dim = 3;
 }
 
 template<class T>
@@ -24,6 +25,7 @@ ezo::Mesh<T>::Mesh(const ez::essential::Range& range_x, const ez::essential::Ran
     int size_z = _range_z.size();
     _size = size_x * size_y * size_z;
     _data = new std::vector<std::vector<std::vector<T>>>(size_x, std::vector<std::vector<T>>(size_y, std::vector<T>(size_z, init_value)));
+    _dim = 3;
 }
 
 template<class T>
@@ -33,6 +35,7 @@ ezo::Mesh<T>::Mesh(const ezo::Mesh<T>& mesh_copy) {
     _range_z = mesh_copy.range_z();
     _size = const_cast<Mesh&>(mesh_copy).size();
     _data = mesh_copy._data();
+    _dim = 3;
 }
 
 template<class T> 

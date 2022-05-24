@@ -44,6 +44,7 @@ protected:
 
 	// number of elements
 	natural _size;
+	unsigned int _dim;
 	
 public:
 
@@ -76,7 +77,11 @@ public:
 	virtual natural size() {
 		return _size;
 	}
-			
+
+
+	virtual int getDimension() const {
+		return _dim;
+	}		
 	
 };
 

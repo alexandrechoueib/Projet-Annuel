@@ -23,9 +23,11 @@ namespace ez {
                 
             public :
                 typedef T * iterator;
-
+                //default constructor 
                 Vector();
+                //constructor with specific range
                 Vector(const Range& r);
+                //constructor with vector
                 Vector(Vector<T>& Vector);
 
                 T get(int) const ;
@@ -35,10 +37,9 @@ namespace ez {
                 void delete_value(int);
 
 
-                //Algorithm method implemente
+                //Algorithm method implemented
                 T find(T) const;
 
-                std::vector<T> getVector(){ return _vector ;};
 
                 //iterator
                 iterator begin() const{ return _vector.begin() ;};
@@ -53,6 +54,9 @@ namespace ez {
                 bool operator!=(const Vector<T> &obj2) const  ;
 
                 ~Vector() ;
+            protected :
+                std::vector<T> getVector(){ return _vector ;};
+
         };       
     }
 }
