@@ -19,11 +19,18 @@ namespace ez {
                 Matrix<T>(const Matrix<T> &matrix);
                 
                 T get(int row, int column) const;
+              
                 void fill(T value);
                 void set(int row,int column, T value);
                 void delete_column(int position);
                 void delete_row(int position);
 
+                int size_row() {
+                    return _range_row.end() - _range_row.begin();
+                }
+                int size_col(){
+                    return _range_colomn.end() - _range_colomn.begin();
+                }
 
                 //friend boolean operator==(const Matrix<T> &obj1, const Matrix<T> &obj2)  ;
                 //friend boolean operator!=(const Matrix<T> &obj1, const Matrix<T> &obj2)  ;

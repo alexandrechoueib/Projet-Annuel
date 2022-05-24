@@ -10,6 +10,9 @@ namespace ez {
         template<class T>
         class Volume : public Object, public Container {
             private:
+                Range range_x;
+                Range range_y;
+                Range range_z;
                 ez::objects::Vector<ez::objects::Vector<ez::objects::Vector<T>>> _volume;
 
             public:

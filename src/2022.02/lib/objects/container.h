@@ -79,7 +79,7 @@ public:
 	}
 
 
-	virtual int getDimension() const {
+	virtual int dimension() const {
 		return _dim;
 	}		
 	

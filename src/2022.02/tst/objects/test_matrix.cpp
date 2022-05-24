@@ -33,11 +33,27 @@ TEST( TestVector, setAValue ) {
 }
 
 TEST( TestVector, contrutorRange ) {
-	Range range(10,25);
-	ezo::Vector<std::string> vec(range) ;
-	vec.set(11,"bonjour");
-	EXPECT_EQ( vec.get(11) , "bonjour" );
+	Range range_row(10,25);
+    Range range_colomn(10,25);
+
+	ezo::Matrix<std::string> matrix(range_row,range_colomn) ;
+	matrix.set(11,12,"bonjour");
+	EXPECT_EQ( matrix.get(11,12) , "bonjour" );
 }
+
+TEST( TestVector, egality ) {
+	Range range_row(10,25);
+    Range range_colomn(10,25);
+
+	ezo::Matrix<std::string> matrix(range_row,range_colomn) ;
+    ezo::Matrix<std::string> matrix2(range_row,range_colomn) ;
+
+	matrix.fill("bonjour");
+    matrix2.fill("bonjour");
+
+	EXPECT_EQ(matrix == matrix2 , true );
+}
+
 
 
 int main(int argc, char *argv[]) {
