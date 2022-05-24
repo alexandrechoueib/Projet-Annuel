@@ -25,6 +25,20 @@ TEST( TestVector, fill ) {
 	EXPECT_EQ( vec.get(0) , 15 );
 }
 
+TEST( TestVector, setAValue ) {
+	Range range(10,25);
+	ezo::Vector<std::string> vec(range) ;
+	vec.set(11,"bonjour");
+	EXPECT_EQ( vec.get(11) , "bonjour" );
+}
+
+TEST( TestVector, contrutorRange ) {
+	Range range(10,25);
+	ezo::Vector<std::string> vec(range) ;
+	vec.set(11,"bonjour");
+	EXPECT_EQ( vec.get(11) , "bonjour" );
+}
+
 
 int main(int argc, char *argv[]) {
 	::testing::InitGoogleTest( &argc, argv );
